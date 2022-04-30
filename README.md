@@ -1,1 +1,0 @@
-# assume-wisely-blog
