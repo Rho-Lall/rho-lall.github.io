@@ -5,7 +5,6 @@ module.exports = {
   },
   plugins: [],
 
-    module.exports = {
-      pathPrefix: "/assume-wisely-blog",
-  }
+  pathPrefix: "/assume-wisely-blog",
+
 }
