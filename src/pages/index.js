@@ -1,6 +1,6 @@
 
+import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const IndexPage = () => {
@@ -9,7 +9,10 @@ const IndexPage = () => {
     <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
 
       <p>Just sample text for now.</p>
-
+      <StaticImage
+        alt="Data Savvy for Data Driven Decision Making."
+        src="../images/icon.png"
+      />
     </Layout> 
 
 )

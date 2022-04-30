@@ -20,7 +20,7 @@ const Layout = ({ pageTitle, children}) => {
             </nav>
 
             <main>
-                <h1>{pageTitle}</h1>
+                <h1 className={heading}>{pageTitle}</h1>
                 {children}
             </main>
         </div>

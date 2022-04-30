@@ -3,7 +3,10 @@ module.exports = {
     title: `assume-wisely-blog`,
     siteUrl: `https://rho-lall.github.io/assume-wisely-blog/`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 
   pathPrefix: "/assume-wisely-blog",
 
