@@ -1,14 +1,17 @@
 
 import * as React from 'react'
+import { Link } from 'gatsby'
+import Layout from '../components/layout'
 
 const IndexPage = () => {
   return (
-    <main> 
-      <title>Assume Wisely Blog</title>
-      <h1>Welcome to my Gatsby Site</h1>
-      <p>I am following a tutorial.</p> 
-    
-    </main>
+
+    <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
+
+      <p>Just sample text for now.</p>
+
+    </Layout> 
+
 )
 
 }
