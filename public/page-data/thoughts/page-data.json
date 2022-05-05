@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-thoughts-index-js",
+    "path": "/thoughts/",
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"July 25, 2021","title":"Yet Another Post"},"id":"a85824cf-c9f4-54db-9974-50b886042c2e","slug":"third","parent":{"id":"f1fcc807-91bf-52e5-a383-d8a8b34d3722","name":"third","modifiedTime":"2022-05-04T02:53:29.369Z"}},{"frontmatter":{"date":"July 24, 2021","title":"Another Post"},"id":"918c08b5-b745-5966-afb5-7642846b3fdd","slug":"second","parent":{"id":"83c86b56-8021-56fe-8d83-0fe47baedc43","name":"second","modifiedTime":"2022-05-04T02:54:02.851Z"}},{"frontmatter":{"date":"July 23, 2021","title":"My First Post"},"id":"d7474470-0b21-569f-a6d0-7bcefe8fbeb6","slug":"first","parent":{"id":"ea396392-58e9-5d79-b576-d10b0224c235","name":"first","modifiedTime":"2022-05-04T02:53:51.835Z"}}]}},"pageContext":{}},
+    "staticQueryHashes": ["1609057278"]}
