@@ -8,7 +8,9 @@ const IndexPage = () => {
 
     <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
 
-      <p>Just sample text for now.</p>
+      <br></br>
+      <br></br>
+
       <StaticImage
         alt="Data Savvy for Data Driven Decision Making."
         src="../images/icon.png"

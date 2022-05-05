@@ -3804,7 +3804,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
 /* harmony import */ var _layout_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout.module.css */ "./src/components/layout.module.css");
+
 
 
 
@@ -3817,16 +3819,13 @@ const Layout = ({
   const data = _public_page_data_sq_d_1609057278_json__WEBPACK_IMPORTED_MODULE_0__.data;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.container
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("title", null, pageTitle, " | ", data.site.siteMetadata.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("header", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.siteTitle
-  }, data.site.siteMetadata.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("title", null, pageTitle, " | ", data.site.siteMetadata.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinks
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
-  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+    alt: "Data Savvy for Data Driven Decision Making.",
+    src: "../images/LOGO_black.png",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/538081080.json */ "./.cache/caches/gatsby-plugin-image/538081080.json")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about",
@@ -3836,9 +3835,34 @@ const Layout = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/thoughts",
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
-  }, "Random Thoughts")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h1", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.heading
-  }, pageTitle), children));
+  }, "Random Thoughts")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinks
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/",
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+  }, "BUSINESS ACUMEN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/about",
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+  }, "DATA SCIENCE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/thoughts",
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+  }, "DEVELOPMENT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/thoughts",
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+  }, "DESIGN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/thoughts",
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+  }, "MY JOURNEY")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, children));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
@@ -3867,7 +3891,7 @@ __webpack_require__.r(__webpack_exports__);
 const IndexPage = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     pageTitle: 'Data Savvy for Data Driven Decision Making'
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Just sample text for now."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     alt: "Data Savvy for Data Driven Decision Making.",
     src: "../images/icon.png",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3233496048.json */ "./.cache/caches/gatsby-plugin-image/3233496048.json")
@@ -4788,6 +4812,17 @@ function mitt(all                 ) {
 
 "use strict";
 module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#683898","images":{"fallback":{"src":"/static/53aa06cf17e4239d0dba6ffd09854e02/ccc41/icon.png","srcSet":"/static/53aa06cf17e4239d0dba6ffd09854e02/bf8e1/icon.png 128w,\\n/static/53aa06cf17e4239d0dba6ffd09854e02/acb7c/icon.png 256w,\\n/static/53aa06cf17e4239d0dba6ffd09854e02/ccc41/icon.png 512w","sizes":"(min-width: 512px) 512px, 100vw"},"sources":[{"srcSet":"/static/53aa06cf17e4239d0dba6ffd09854e02/6766a/icon.webp 128w,\\n/static/53aa06cf17e4239d0dba6ffd09854e02/22bfc/icon.webp 256w,\\n/static/53aa06cf17e4239d0dba6ffd09854e02/d689f/icon.webp 512w","type":"image/webp","sizes":"(min-width: 512px) 512px, 100vw"}]},"width":512,"height":512}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/538081080.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/538081080.json ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/7bb9dc26646e6e390ab0a6f364e0d8cb/893ca/LOGO_black.png","srcSet":"/static/7bb9dc26646e6e390ab0a6f364e0d8cb/6de41/LOGO_black.png 100w,\\n/static/7bb9dc26646e6e390ab0a6f364e0d8cb/5dfe0/LOGO_black.png 200w,\\n/static/7bb9dc26646e6e390ab0a6f364e0d8cb/893ca/LOGO_black.png 400w","sizes":"(min-width: 400px) 400px, 100vw"},"sources":[{"srcSet":"/static/7bb9dc26646e6e390ab0a6f364e0d8cb/6f2cf/LOGO_black.webp 100w,\\n/static/7bb9dc26646e6e390ab0a6f364e0d8cb/0fef8/LOGO_black.webp 200w,\\n/static/7bb9dc26646e6e390ab0a6f364e0d8cb/b769a/LOGO_black.webp 400w","type":"image/webp","sizes":"(min-width: 400px) 400px, 100vw"}]},"width":400,"height":100}');
 
 /***/ }),
 
