@@ -12,9 +12,9 @@ const Layout = ({ pageTitle, children}) => {
     const data = useStaticQuery(graphql`
         query siteTitle {
             site {
-            siteMetadata {
-                title
-            }
+                siteMetadata {
+                    title
+                }
             }
         }
     `)
@@ -25,22 +25,24 @@ const Layout = ({ pageTitle, children}) => {
             
             <nav>
                 <ul className={navLinks}>
-                    <StaticImage
-                        alt="Data Savvy for Data Driven Decision Making."
-                        src="../images/LOGO_black.png"
-                    />    
+                    <Link to='/'>
+                        <StaticImage
+                            alt="Data Savvy for Data Driven Decision Making."
+                            src="../images/LOGO_black.png"
+                        />    
+                    </Link>
                     <li className={navLinkItem}><Link to="/about" className={navLinkText}>About Me</Link></li>
-                    <li className={navLinkItem}><Link to="/thoughts" className={navLinkText}>Random Thoughts</Link></li>
+                    {/* <li className={navLinkItem}><Link to="/thoughts" className={navLinkText}>Random Thoughts</Link></li> */}
                 </ul>
             </nav>
 
             <nav>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/" className={navLinkText}>BUSINESS ACUMEN</Link></li>
-                    <li className={navLinkItem}><Link to="/about" className={navLinkText}>DATA SCIENCE</Link></li>
-                    <li className={navLinkItem}><Link to="/thoughts" className={navLinkText}>DEVELOPMENT</Link></li>
-                    <li className={navLinkItem}><Link to="/thoughts" className={navLinkText}>DESIGN</Link></li>
-                    <li className={navLinkItem}><Link to="/thoughts" className={navLinkText}>MY JOURNEY</Link></li>
+                    <li className={navLinkItem}><Link to="/" className={navLinkText}>DATA SCIENCE</Link></li>
+                    <li className={navLinkItem}><Link to="/" className={navLinkText}>DEVELOPMENT</Link></li>
+                    <li className={navLinkItem}><Link to="/" className={navLinkText}>DESIGN</Link></li>
+                    <li className={navLinkItem}><Link to="/" className={navLinkText}>MY JOURNEY</Link></li>
                 </ul>
             </nav>
 

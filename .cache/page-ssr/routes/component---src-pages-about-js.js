@@ -3821,21 +3821,18 @@ const Layout = ({
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.container
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("title", null, pageTitle, " | ", data.site.siteMetadata.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinks
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     alt: "Data Savvy for Data Driven Decision Making.",
     src: "../images/LOGO_black.png",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/538081080.json */ "./.cache/caches/gatsby-plugin-image/538081080.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about",
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
-  }, "About Me")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "/thoughts",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
-  }, "Random Thoughts")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
+  }, "About Me")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinks
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
@@ -3845,22 +3842,22 @@ const Layout = ({
   }, "BUSINESS ACUMEN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "/about",
+    to: "/",
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
   }, "DATA SCIENCE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "/thoughts",
+    to: "/",
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
   }, "DEVELOPMENT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "/thoughts",
+    to: "/",
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
   }, "DESIGN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "/thoughts",
+    to: "/",
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
   }, "MY JOURNEY")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, children));
 };
@@ -3883,16 +3880,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+//import { StaticImage } from 'gatsby-plugin-image'
+ //import {Link, graphql } from 'gatsby'
+//import { MDXRenderer } from 'gatsby-plugin-mdx'
+//import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 
 
-const AboutPage = () => {
+const IndexPage = ({
+  data
+}) => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    pageTitle: 'Fullstack Business Intelligence Developer - Rho Lall'
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " First let me introduce myself."));
+    pageTitle: 'Data Savvy for Data Driven Decision Making'
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "First, let me introduce myself."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Do you find yourself sifting through signal and noise? Is there a lot of low value data to sift through? Data is only as powerful as the insights we can unlock, data is no longer the constraint, it\u2019s not that the data isn\u2019t accessible; it's that we are not accessible to the data. Instead. Let\u2019s build insight that drives action, let\u2019s build tools that cater to our human experience, what does limit us isn\u2019t the data . . ."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat purus vel nibh cursus ullamcorper. Phasellus porta tempus metus, vitae consequat nisl pellentesque venenatis. Fusce finibus eleifend nibh ut posuere. Sed blandit massa nec facilisis ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. In in nisl faucibus lorem eleifend tincidunt. Pellentesque ac fermentum erat. Suspendisse tincidunt at felis at efficitur. Suspendisse et leo eget purus mollis elementum. Vivamus ac dictum felis, vel feugiat dolor. Mauris ut orci placerat, interdum tellus nec, tristique elit. Curabitur nulla lectus, malesuada vel luctus id, malesuada condimentum nisl. Sed finibus lorem aliquam augue porta bibendum. Vivamus ac tellus ut ex feugiat hendrerit. Aliquam iaculis, lacus at rhoncus ultricies, nunc purus ornare velit, sit amet tempus metus ligula sit amet augue. Nunc non rutrum erat, non finibus libero. Duis eget augue tincidunt, porta odio vel, hendrerit ligula. Donec hendrerit tincidunt pellentesque. Fusce condimentum nulla tortor, nec blandit urna lobortis ut. Nunc aliquet quam eu luctus posuere."));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AboutPage);
+const query = "2977994839";
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 
 /***/ }),
 
