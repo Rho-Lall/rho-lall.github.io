@@ -3804,8 +3804,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var _layout_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout.module.css */ "./src/components/layout.module.css");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _components_global_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/global.css */ "./src/components/global.css");
+/* harmony import */ var _components_global_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_global_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _layout_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layout.module.css */ "./src/components/layout.module.css");
+
 
 
 
@@ -3818,47 +3821,47 @@ const Layout = ({
 }) => {
   const data = _public_page_data_sq_d_1609057278_json__WEBPACK_IMPORTED_MODULE_0__.data;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.container
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.container
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("title", null, pageTitle, " | ", data.site.siteMetadata.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinks
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinks
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.StaticImage, {
     alt: "Data Savvy for Data Driven Decision Making.",
     src: "../images/LOGO_black.png",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/538081080.json */ "./.cache/caches/gatsby-plugin-image/538081080.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
   }, "About Me")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinks
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinks
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
   }, "BUSINESS ACUMEN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
   }, "DATA SCIENCE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
   }, "DEVELOPMENT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
   }, "DESIGN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkItem
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.navLinkText
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
   }, "MY JOURNEY")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, children));
 };
 
@@ -4831,6 +4834,16 @@ function mitt(all                 ) {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mitt);
 //# sourceMappingURL=mitt.es.js.map
+
+
+/***/ }),
+
+/***/ "./src/components/global.css":
+/*!***********************************!*\
+  !*** ./src/components/global.css ***!
+  \***********************************/
+/***/ (() => {
+
 
 
 /***/ }),

@@ -1719,7 +1719,7 @@ var plugins = [{
     "remarkPlugins": [],
     "rehypePlugins": [],
     "mediaTypes": ["text/markdown", "text/x-markdown"],
-    "root": "/Users/Rho.l/Documents/CODE/githubIO/Rho-Lall.github.io",
+    "root": "/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io",
     "commonmark": false
   }
 }];
@@ -6750,23 +6750,23 @@ if (false) {} else {
 
 /***/ "react-dom/server":
 /*!***********************************************************************************************************!*\
-  !*** external "/Users/Rho.l/Documents/CODE/githubIO/Rho-Lall.github.io/node_modules/react-dom/server.js" ***!
+  !*** external "/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io/node_modules/react-dom/server.js" ***!
   \***********************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/Rho.l/Documents/CODE/githubIO/Rho-Lall.github.io/node_modules/react-dom/server.js");
+module.exports = require("/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
 /*!******************************************************************************************************!*\
-  !*** external "/Users/Rho.l/Documents/CODE/githubIO/Rho-Lall.github.io/node_modules/react/index.js" ***!
+  !*** external "/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io/node_modules/react/index.js" ***!
   \******************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/Rho.l/Documents/CODE/githubIO/Rho-Lall.github.io/node_modules/react/index.js");
+module.exports = require("/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io/node_modules/react/index.js");
 
 /***/ }),
 

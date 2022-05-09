@@ -1,11 +1,11 @@
 var plugins = [{
       name: 'gatsby-plugin-image',
-      plugin: require('/Users/Rho.l/Documents/CODE/githubIO/Rho-Lall.github.io/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-mdx',
-      plugin: require('/Users/Rho.l/Documents/CODE/githubIO/Rho-Lall.github.io/node_modules/gatsby-plugin-mdx/gatsby-ssr.js'),
-      options: {"plugins":[],"extensions":[".mdx"],"defaultLayouts":{},"gatsbyRemarkPlugins":[],"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/Users/Rho.l/Documents/CODE/githubIO/Rho-Lall.github.io","commonmark":false},
+      plugin: require('/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io/node_modules/gatsby-plugin-mdx/gatsby-ssr.js'),
+      options: {"plugins":[],"extensions":[".mdx"],"defaultLayouts":{},"gatsbyRemarkPlugins":[],"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io","commonmark":false},
     }]
 /* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:

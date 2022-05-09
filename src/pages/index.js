@@ -8,9 +8,6 @@ import Layout from '../components/layout'
 
 const IndexPage = ({data}) => {
 
-    //const image = getImage(data.allMdx.frontmatter.hero_image)
-    // const image = getImage('../../../images/icon.png')
-
   return (
     <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
 
