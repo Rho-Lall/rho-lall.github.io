@@ -1712,9 +1712,22 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-mdx/gatsby-ssr.js */ "./node_modules/gatsby-plugin-mdx/gatsby-ssr.js"),
   options: {
     "plugins": [],
+    "gatsbyRemarkPlugins": [{
+      "resolve": "/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io/node_modules/gatsby-remark-images",
+      "id": "32658888-e97e-563f-9132-b45b813fd0fb",
+      "name": "gatsby-remark-images",
+      "version": "6.13.0",
+      "modulePath": "/Users/Rho.l/Documents/CODE/gitHubIO/rho-lall.github.io/node_modules/gatsby-remark-images/index.js",
+      "pluginOptions": {
+        "plugins": [],
+        "maxWidth": 1200
+      },
+      "nodeAPIs": ["pluginOptionsSchema"],
+      "browserAPIs": ["onRouteUpdate"],
+      "ssrAPIs": []
+    }],
     "extensions": [".mdx"],
     "defaultLayouts": {},
-    "gatsbyRemarkPlugins": [],
     "lessBabel": false,
     "remarkPlugins": [],
     "rehypePlugins": [],

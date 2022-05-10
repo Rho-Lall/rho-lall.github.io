@@ -3894,7 +3894,7 @@ const AboutPage = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     pageTitle: 'Data Savvy'
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: " text-3xl font-bold underline text-red-700"
+    className: " text-3xl font-bold underline text-indigo-700"
   }, "About Me"));
 };
 

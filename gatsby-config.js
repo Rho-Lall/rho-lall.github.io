@@ -15,7 +15,21 @@ module.exports = {
         path: `${__dirname}/thoughts`,
       }
     },
-    "gatsby-plugin-mdx",
+    "gatsby-remark-images",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth:1200,
+            }
+          }
+        ]
+      }
+    },
+    
   ],
 
   pathPrefix: "",
