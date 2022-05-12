@@ -2,10 +2,8 @@ import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import "../components/global.css"
-import {    container,
-            navLinks,
+import {    navLinks,
             navLinkItem,
-            navLinkText
         } from './layout.module.css'
 
 
@@ -37,7 +35,7 @@ const Layout = ({ pageTitle, children}) => {
                     </li>
 
                     <li className={navLinkItem}>
-                        <Link to="/about" className=" text-red-700 ">
+                        <Link to="/about" className=" text-secondary ">
                             About Me
                         </Link>
                     </li>
@@ -45,13 +43,13 @@ const Layout = ({ pageTitle, children}) => {
                 </ul>
             </nav>
 
-            <nav>
+            <nav className='flex justify-center'>
                 <ul className={navLinks}>
-                    <li className={navLinkItem}><Link to="/" className={navLinkText}>BUSINESS ACUMEN</Link></li>
-                    <li className={navLinkItem}><Link to="/" className={navLinkText}>DATA SCIENCE</Link></li>
-                    <li className={navLinkItem}><Link to="/" className={navLinkText}>DEVELOPMENT</Link></li>
-                    <li className={navLinkItem}><Link to="/" className={navLinkText}>DESIGN</Link></li>
-                    <li className={navLinkItem}><Link to="/" className={navLinkText}>MY JOURNEY</Link></li>
+                    <li className={navLinkItem}><Link to="/" className='text-primary'>BUSINESS ACUMEN</Link></li>
+                    <li className={navLinkItem}><Link to="/" className='text-primary'>DATA SCIENCE</Link></li>
+                    <li className={navLinkItem}><Link to="/" className='text-primary'>DEVELOPMENT</Link></li>
+                    <li className={navLinkItem}><Link to="/" className='text-primary'>DESIGN</Link></li>
+                    <li className={navLinkItem}><Link to="/" className='text-primary'>MY JOURNEY</Link></li>
                 </ul>
             </nav>
 

@@ -3987,7 +3987,9 @@ const Layout = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about",
     className: " text-red-700 "
-  }, "About Me")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
+  }, "About Me")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", {
+    className: "flex justify-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinks
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
@@ -4051,7 +4053,9 @@ const BlogPost = ({
     pageTitle: data.mdx.frontmatter.title
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     className: "heading"
-  }, data.mdx.frontmatter.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Posted: ", data.mdx.frontmatter.date), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.GatsbyImage, {
+  }, data.mdx.frontmatter.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "heading-posted"
+  }, "Posted: ", data.mdx.frontmatter.date), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.GatsbyImage, {
     image: image,
     alt: "Alt text can com from frontmatter."
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_mdx__WEBPACK_IMPORTED_MODULE_1__.MDXRenderer, null, data.mdx.body));

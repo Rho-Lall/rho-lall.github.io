@@ -11,15 +11,15 @@ const BlogPost = ({data}) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
 
-      <h1 className='heading'>{data.mdx.frontmatter.title}</h1>
-      
-      <p>Posted: {data.mdx.frontmatter.date}</p>
-    
       <GatsbyImage
         image={image}
         alt="Alt text can com from frontmatter."
       />
 
+      <h1 className='heading'>{data.mdx.frontmatter.title}</h1>
+      
+      <p className='heading-posted'>Posted: {data.mdx.frontmatter.date}</p>
+    
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>      

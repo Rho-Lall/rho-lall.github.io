@@ -16,7 +16,16 @@ module.exports = {
       padding: '8rem'
     },
 
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#057aff', 
+        secondary: 'lightslategrey',
+      },
+      textColor: {
+        primary: '#057aff', 
+        secondary: 'lightslategrey',
+      },
+    },
   },
   plugins: [],
 }

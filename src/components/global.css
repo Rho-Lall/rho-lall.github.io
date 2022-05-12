@@ -6,6 +6,15 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 
+body {
+    @apply text-secondary
+}
+
 .heading {
-    @apply text-purple-700 text-4xl flex justify-center py-10;
+    @apply text-primary text-4xl flex justify-center pt-10 pb-2;
   }
+
+  .heading-posted {
+    @apply flex justify-center pb-8;
+  }
+
