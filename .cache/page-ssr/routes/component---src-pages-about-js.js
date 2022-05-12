@@ -1034,7 +1034,6 @@ module.exports["default"] = camelCase;
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "navLinkItem": () => (/* binding */ navLinkItem),
-/* harmony export */   "navLinkText": () => (/* binding */ navLinkText),
 /* harmony export */   "navLinks": () => (/* binding */ navLinks),
 /* harmony export */   "siteTitle": () => (/* binding */ siteTitle)
 /* harmony export */ });
@@ -1042,7 +1041,6 @@ __webpack_require__.r(__webpack_exports__);
 var siteTitle = "layout-module--site-title--5N6mf";
 var navLinks = "layout-module--nav-links--EROwB";
 var navLinkItem = "layout-module--nav-link-item--pfCo2";
-var navLinkText = "layout-module--nav-link-text--ac2nV";
 
 
 /***/ }),
@@ -3832,7 +3830,7 @@ const Layout = ({
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about",
-    className: " text-red-700 "
+    className: " text-secondary "
   }, "About Me")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", {
     className: "flex justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
@@ -3841,27 +3839,27 @@ const Layout = ({
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
+    className: "text-primary"
   }, "BUSINESS ACUMEN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
+    className: "text-primary"
   }, "DATA SCIENCE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
+    className: "text-primary"
   }, "DEVELOPMENT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
+    className: "text-primary"
   }, "DESIGN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
+    className: "text-primary"
   }, "MY JOURNEY")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, children));
 };
 
@@ -3894,7 +3892,7 @@ const AboutPage = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     pageTitle: 'Data Savvy'
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: " text-3xl font-bold "
+    className: " text-3xl font-bold text-secondary "
   }, "About Me"));
 };
 

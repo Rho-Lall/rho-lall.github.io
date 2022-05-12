@@ -22,28 +22,21 @@ const Layout = ({ pageTitle, children}) => {
     return (
         <div className=' container '>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-            
-            <nav>
-                <ul className={navLinks}>
-                    <li className={navLinkItem}>
-                        <Link to='/'>
-                            <StaticImage
-                                alt="Data Savvy for Data Driven Decision Making."
-                                src="../images/LOGO_black.png"
-                            />    
-                        </Link>
-                    </li>
 
-                    <li className={navLinkItem}>
-                        <Link to="/about" className=" text-secondary ">
-                            About Me
-                        </Link>
-                    </li>
-                    {/* <li className={navLinkItem}><Link to="/thoughts" className={navLinkText}>Random Thoughts</Link></li> */}
-                </ul>
+            <nav className='flex flex-row justify-end items-end pb-5'>
+                <div className=' text-7xl' >
+                    Rho Lall
+                </div>
+                
+                <div className= " text-secondary px-2 " >   
+                    <Link to="/about">
+                        ( About Me )
+                    </Link>    
+                </div>    
+                
             </nav>
 
-            <nav className='flex justify-center'>
+            <nav className='flex flex-row justify-center pb-10'>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/" className='text-primary'>BUSINESS ACUMEN</Link></li>
                     <li className={navLinkItem}><Link to="/" className='text-primary'>DATA SCIENCE</Link></li>
@@ -52,8 +45,6 @@ const Layout = ({ pageTitle, children}) => {
                     <li className={navLinkItem}><Link to="/" className='text-primary'>MY JOURNEY</Link></li>
                 </ul>
             </nav>
-
-            <br/>
 
             <main>
                 
