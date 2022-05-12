@@ -5,6 +5,17 @@ module.exports = {
     './components/**/*.{html,js}'
   ],
   theme: {
+
+    fontFamily: {
+      display: ['Lato', 'sans-serif'],
+      body: ['Merriweather', 'sans-serif']
+    },
+
+    container: {
+      center: true,
+      padding: '8rem'
+    },
+
     extend: {},
   },
   plugins: [],
