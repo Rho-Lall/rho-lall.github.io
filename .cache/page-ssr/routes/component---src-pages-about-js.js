@@ -3831,7 +3831,7 @@ const Layout = ({
     src: "../images/LOGO_black.png",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/538081080.json */ "./.cache/caches/gatsby-plugin-image/538081080.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkItem
+    className: "text-red-700"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about",
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinkText
@@ -3893,8 +3893,8 @@ __webpack_require__.r(__webpack_exports__);
 const AboutPage = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     pageTitle: 'Data Savvy'
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: " text-3xl font-bold underline text-indigo-700"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    className: " text-3xl font-bold text-indigo-700"
   }, "About Me"));
 };
 

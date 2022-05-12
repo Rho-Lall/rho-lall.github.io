@@ -27,13 +27,20 @@ const Layout = ({ pageTitle, children}) => {
             
             <nav>
                 <ul className={navLinks}>
-                    <Link to='/'>
-                        <StaticImage
-                            alt="Data Savvy for Data Driven Decision Making."
-                            src="../images/LOGO_black.png"
-                        />    
-                    </Link>
-                    <li className={navLinkItem}><Link to="/about" className={navLinkText}>About Me</Link></li>
+                    <li className={navLinkItem}>
+                        <Link to='/'>
+                            <StaticImage
+                                alt="Data Savvy for Data Driven Decision Making."
+                                src="../images/LOGO_black.png"
+                            />    
+                        </Link>
+                    </li>
+
+                    <li className={navLinkItem}>
+                        <Link to="/about" className=" text-red-700 ">
+                            About Me
+                        </Link>
+                    </li>
                     {/* <li className={navLinkItem}><Link to="/thoughts" className={navLinkText}>Random Thoughts</Link></li> */}
                 </ul>
             </nav>
@@ -47,6 +54,8 @@ const Layout = ({ pageTitle, children}) => {
                     <li className={navLinkItem}><Link to="/" className={navLinkText}>MY JOURNEY</Link></li>
                 </ul>
             </nav>
+
+            <br/>
 
             <main>
                 

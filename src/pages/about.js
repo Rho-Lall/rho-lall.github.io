@@ -11,7 +11,9 @@ const AboutPage = () => {
   return (
         <Layout pageTitle={'Data Savvy'}>
             
-                <h2 className=" text-3xl font-bold underline text-indigo-700">About Me</h2>
+          <br/>
+          
+          <h2 className=" text-3xl font-bold text-red-700">About Me</h2>
             
 
         </Layout> 
