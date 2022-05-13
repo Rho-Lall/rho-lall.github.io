@@ -13,7 +13,8 @@ module.exports = {
 
     container: {
       center: true,
-      padding: '8rem'
+      padding: '8rem',
+      maxWidth: '500px',
     },
 
     extend: {
