@@ -3968,7 +3968,7 @@ const Layout = ({
 }) => {
   const data = _public_page_data_sq_d_1609057278_json__WEBPACK_IMPORTED_MODULE_0__.data;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: " container "
+    className: " container max-w-screen-xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("title", null, pageTitle, " | ", data.site.siteMetadata.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", {
     className: "flex flex-row justify-end items-end pb-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
@@ -3980,7 +3980,7 @@ const Layout = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about"
   }, "( About Me )"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", {
-    className: "flex flex-row justify-center pb-10"
+    className: "flex flex-row justify-evenly pb-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_4__.navLinks
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
