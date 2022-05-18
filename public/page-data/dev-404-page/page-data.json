@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---cache-dev-404-page-js",
     "path": "/dev-404-page/",
-    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"},{"path":"/about/"},{"path":"/"},{"path":"/thoughts/"},{"path":"/thoughts/building-insight/"},{"path":"/thoughts/second/"},{"path":"/thoughts/third/"},{"path":"/thoughts/first/"},{"path":"/thoughts/building-marketing-blogs-with-react/"}]}},"pageContext":{}},
+    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"},{"path":"/about/"},{"path":"/"},{"path":"/thoughts/"},{"path":"/thoughts/building-insight/"},{"path":"/thoughts/building-marketing-blogs-with-react/"},{"path":"/thoughts/first/"},{"path":"/thoughts/third/"},{"path":"/thoughts/second/"}]}},"pageContext":{}},
     "staticQueryHashes": []}
