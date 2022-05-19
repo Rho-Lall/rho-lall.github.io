@@ -7,6 +7,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 
 // Starting Point to deploy production version of blog
+// Add new branch, source.
 
 
 const IndexPage = ({data}) => {
