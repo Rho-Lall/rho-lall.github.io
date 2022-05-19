@@ -6,6 +6,7 @@ import {Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 
+// Starting Point to deploy production version of blog
 
 
 const IndexPage = ({data}) => {
