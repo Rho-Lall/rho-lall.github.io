@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import Layout from '../../components/layout'
 
 
-const BlogPage = ({data}) => {
+const BlogPage = () => {
 
     //const image = getImage(data.allMdx.frontmatter.hero_image)
     // const image = getImage('../../../images/icon.png')
@@ -16,7 +16,7 @@ const BlogPage = ({data}) => {
             <br/>
             <br/>            
 
-            {
+            {/* {
                 data.allMdx.nodes.map((node) => (
 
                     <article key={node.id}>
@@ -29,17 +29,17 @@ const BlogPage = ({data}) => {
                             </Link>
                         </h2>
 
-                        {/* <GatsbyImage
+                        <GatsbyImage
                             image={data.allMdx.node.frontmatter.hero_image}
                             alt={node.frontmatter.hero_alt}
-                        /> */}
+                        />
                         
                         <p>{node.frontmatter.author}</p>
                         <p>{node.frontmatter.date}</p>
                         <br/>
                     </article>
                 ))
-            }
+            } */}
 
         </Layout> 
     )
