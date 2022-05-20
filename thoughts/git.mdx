@@ -1,0 +1,61 @@
+---
+title: "Understanding Git"
+date: "2022-05-09"
+hero_image: ./media/DEVELOPMENT.png
+hero_alt: "Understanding Git."
+expertise: "Development"
+author: "Rho Lall"
+short: "A little Git goes a long way. You can get pretty deep into a development career with just the basics. 
+"
+
+---
+<br/>
+<br/>
+
+A little Git goes a long way. You can get pretty deep into a development career with just the basics. This video on [Git Core Concepts](https://www.youtube.com/watch?v=uR6G2v_WsRA) is a good starting place.
+I developed a workflow based on ten lines of Git code. I learned how to deal with merge conflicts but, if you organize your work well they don't come up.
+<br/>
+
+To start:
+- git status (make sure there isn't any uncommited code)
+- git checkout <your development branch name>
+- git pull (make sure you are working off of the most up to date code)
+- clear (not needed but i like to keep my terminal clean)
+- git checkout -b <new branch name, ususally a task name>
+<br/>
+
+And now You are clear to code.
+<br/>
+
+When you are ready to make a commit:
+- git status (I always want to check)
+- git add .
+- git commit -m "<Your commit description.>"
+<br/>
+
+Commit often. I do lots of small commits and comment my process.
+<br/>
+
+Then when I am done with the task:
+- git push
+- git push --set-upstream origin (only needed on the first push for a new branch)
+<br/>
+
+ That's it. A crib sheet with those ten lines of code saw me through my entire development career up until . . . a couple of days ago. These are the basics. 
+ <br/>
+
+ From here forward is what i consider intermidiate Git. A couple of days ago i added four lines to my crib sheet:
+ <br/>
+ **F'ing Up with Git**
+ - git log --oneline
+ - q (to exit)
+ - git reset --hard <sha1 hash listed in the git log> (the sha1 hash identifies what step you want to go back to and resets the commit history as well as your local files)
+    - this overwrites any local changes you havn't commited
+    - It resets (clears out) the staging area and overwrites content in the working directory (local) to what it looked like at the point of the commit identified
+- git push -f origin main (for when you just want your remote to match what you have locally)
+<br/>
+
+
+
+
+
