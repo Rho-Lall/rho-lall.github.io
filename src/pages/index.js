@@ -6,8 +6,6 @@ import {Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 
-// Starting Point to deploy production version of blog
-// Add new branch, source.
 
 
 const IndexPage = ({data}) => {
@@ -30,7 +28,11 @@ const IndexPage = ({data}) => {
             <div className='basis-1/3 flex flex-col'>
                 <div>
                     <p>From <span className='text-primary'>{head.frontmatter.expertise}</span></p>
-                    <h2 className='text-xl'>{head.frontmatter.title}</h2>
+                    <h2 className='text-xl'>
+                        <Link to={`/thoughts/${head.slug}`} className='text-xl'>
+                            {head.frontmatter.title}
+                        </Link>                    
+                    </h2>
                     <br/>
                     <p>{head.frontmatter.short}</p>
                 </div>
