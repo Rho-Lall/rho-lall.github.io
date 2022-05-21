@@ -20,7 +20,7 @@ const IndexPage = ({data}) => {
 
                 <GatsbyImage
                     image={getImage(head.frontmatter.hero_image)}
-                    alt='test alt text.'
+                    alt={head.frontmatter.hero_alt}
                 />
 
             </div>

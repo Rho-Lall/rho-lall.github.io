@@ -1,11 +1,15 @@
 ---
 title: "Understanding Git"
 date: "2022-05-09"
-hero_image: ./media/DEVELOPMENT.png
+hero_image: ./media/fullstack_fundamentals_git_blogheader.png
 hero_alt: "Understanding Git."
 expertise: "Development"
 author: "Rho Lall"
 short: "A little Git goes a long way. You can get pretty deep into a development career with just the basics. 
+
+I share my workflow driven by ten lines of Git code.
+
+From there I share some intermediate questions with answers and a list of resources I've found helpful.
 "
 
 ---
@@ -16,29 +20,30 @@ A little Git goes a long way. You can get pretty deep into a development career 
 I developed a workflow based on ten lines of Git code. I learned how to deal with merge conflicts but, if you organize your work well they don't come up.
 <br/>
 
-To start:
-- git status (make sure there isn't any uncommited code)
-- git checkout *your-development-branch-name*
-- git pull (make sure you are working off of the most up to date code)
-- clear (not needed but i like to keep my terminal clean)
-- git checkout -b *new-branch-name, ususally a task name*
+**To start:**
+
+    - git status (make sure there isn't any uncommited code)
+    - git checkout *your-development-branch-name*
+    - git pull (make sure you are working off of the most up to date code)
+    - clear (not needed but i like to keep my terminal clean)
+    - git checkout -b *new-branch-name, ususally a task name*
 <br/>
 
-And now You are clear to code.
-<br/>
 
-When you are ready to make a commit:
-- git status (I always want to check)
-- git add .
-- git commit -m "*Your commit description.*"
+You are clear to code. When you are ready to make a commit,
+
+    - git status (I always want to check)
+    - git add .
+    - git commit -m "*Your commit description.*"
 <br/>
 
 Commit often. I do lots of small commits and comment my process.
 <br/>
 
-Then when I am done with the task:
-- git push
-- git push --set-upstream origin (only needed on the first push for a new branch)
+**Then when I am done with the task:**
+
+    - git push
+    - git push --set-upstream origin (only needed on the first push for a new branch)
 <br/>
 
  That's it. A crib sheet with those ten lines of code saw me through my entire development career up until . . . a couple of days ago. These are the basics. 
@@ -46,11 +51,64 @@ Then when I am done with the task:
 
  From here forward is what i consider intermidiate Git. A couple of days ago i added four lines to my crib sheet:
  <br/>
+
  **F'ing Up with Git**
- - git log --oneline
- - q (to exit)
- - git reset --hard *sha1-hash-listed-in-the-git-log* (the sha1 hash identifies what step you want to go back to and resets the commit history as well as your local files)
-    - this overwrites any local changes you havn't commited
-    - It resets (clears out) the staging area and overwrites content in the working directory (local) to what it looked like at the point of the commit identified
-- git push -f origin main (for when you just want your remote to match what you have locally)
+    - git log --oneline
+    - q (to exit)
+    - git reset --hard _sha1-hash-listed-in-the-git-log_
 <br/>
+
+The sha1 hash identifies what step you want to go back to and resets the commit history as well as your local files.
+This overwrites any local changes you havn't commited
+It resets (clears out) the staging area and overwrites content in the working directory (local) to what it looked like at the point of the commit identified
+Lastly, when you just want your remote to match what you have locally:
+    - git push -f origin main
+<br/>
+
+**Questions**
+**What is a git working tree? What is a commit graph?**
+There are three logical areas in which we work with our files: the working tree, staging area, and git history. The working tree is our file system. When we add, delete, and edit files, we do that in the working tree. The git history is the commit graph or commit history. To commit a change made in the working tree, that change needs to be staged (moved to the staging area).
+We can unstage a file using,  git reset head fileName
+We can then restore the working tree file using, git checkout –fileName
+<br/>
+
+**What is the best practice for managing branches?**
+Branches allow us to work on different versions of the sames files in parallel. Edits on one branch are independent of the other branches. We can have a production branch, a development branch, and a branch to address bug fixes.
+The way git knows what branch we are on is a special pointer called head. HEAD points to a branch, not specifically to a commit. In Git speak, HEAD tells us what we have checked out.
+Technically, a branch is just a pointer to a sha1 hash.
+<br/>
+
+**How do i keep track of where i am in the commit path? How do i keep track of what branch i have files in (main / gh-pages / source)?**
+Checkout a branch. The working tree will be updated to reflect the files in that branch. you can lookt at the commit graph to see changes. 
+You can also use git diff to compare differences between branches. 
+
+- git log —all –decorate –oneline –graph 
+- alias graph=’git log —all –decorate –oneline –graph’
+- git diff
+
+<br/>
+
+- **What is the origin? And what is the master / main?**
+- **Do they exist (coexist) in both the local and remote repository?**
+- **Or is one origin and the other main, (IE Local is origin and remote is main)?**
+
+- Origin is an alias for the pointer to a remote repository (ie. git@github.com:user/repository.git). Master and main are names given to the default branch of a repository.
+Origin/master is a remote-tracking branch.  It tells us what the master branch looks like @ origin. Fetch returns just the commit log to check if there are changes. To bring those changes in we use merge. Git pull combines these two commands into one action.
+
+    - git fetch origin
+    - git merge origin/main
+    - git pull
+<br/>
+
+Adding more context to origin-master, le can look at the command, git push origin master, which uploads files to the remote (origin) in the master branch. 
+<br/>
+
+
+
+**Git Resources**
+- [How to Reset, Revert, & Return to Previous States in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
+- [Git Core Concepts](https://www.youtube.com/watch?v=uR6G2v_WsRA)
+- [Git Branches](https://www.youtube.com/watch?v=FyAAIHHClqI)  
+- [Git Remotes](https://www.youtube.com/watch?v=Gg4bLk8cGNo)
+- [Pro Git Book](https://git-scm.com/book/en/v2)
+- [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
