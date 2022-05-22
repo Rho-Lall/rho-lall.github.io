@@ -24,13 +24,13 @@ const Layout = ({ pageTitle, children}) => {
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
 
             <nav className='flex flex-row justify-end items-end pb-5'>
-                <div className=' text-7xl' >
+                <div className='text-5xl md:text-7xl' >
                     <Link to='/'>
                     Rho Lall
                     </Link>
                 </div>
                 
-                <div className= " text-secondary px-2 " >   
+                <div className= "hidden md:block text-secondary px-2 " >   
                     <Link to="/about">
                         ( About Me )
                     </Link>    
@@ -38,7 +38,7 @@ const Layout = ({ pageTitle, children}) => {
                 
             </nav>
 
-            <nav className='flex flex-row justify-evenly pb-10'>
+            <nav className='hidden md:flex flex-row justify-evenly pb-10'>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/" className='text-primary'>BUSINESS ACUMEN</Link></li>
                     <li className={navLinkItem}><Link to="/" className='text-primary'>DATA SCIENCE</Link></li>

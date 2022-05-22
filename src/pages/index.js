@@ -15,7 +15,7 @@ const IndexPage = ({data}) => {
   return (
     <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
 
-        <div className='flex flex-row'>
+        <div className='flex flex-row mb-5'>
             <div className='basis-2/3 px-2'>
 
                 <GatsbyImage
@@ -28,12 +28,13 @@ const IndexPage = ({data}) => {
             <div className='basis-1/3 flex flex-col'>
                 <div>
                     <p>From <span className='text-primary'>{head.frontmatter.expertise}</span></p>
-                    <h2 className='text-xl'>
-                        <Link to={`/thoughts/${head.slug}`} className='text-xl'>
-                            {head.frontmatter.title}
-                        </Link>                    
-                    </h2>
-                    <br/>
+                    <div className='h-20'>
+                        <h2 className='text-xl'>
+                            <Link to={`/thoughts/${head.slug}`} className='text-xl'>
+                                {head.frontmatter.title}
+                            </Link>                    
+                        </h2>
+                    </div>
                     <p>{head.frontmatter.short}</p>
                 </div>
 
@@ -57,18 +58,19 @@ const IndexPage = ({data}) => {
 
                             <p>From <span className='text-primary'>{node.frontmatter.expertise}</span></p>
 
-                            <h2>
-                                <Link to={`/thoughts/${node.slug}`} className='text-xl'>
-                                    {node.frontmatter.title}
-                                </Link>
-                            </h2>
-
                             <GatsbyImage
                                 image={getImage(node.frontmatter.hero_image)}
                                 alt='test alt text.'
                             />
+                            <div className='h-20 mt-2'>
+                                <h2>
+                                    <Link to={`/thoughts/${node.slug}`} className='text-xl'>
+                                        {node.frontmatter.title}
+                                    </Link>
+                                </h2>
+                            </div>
 
-                            <p>{node.frontmatter.short}</p>
+                            <p className='mb-6'>{node.frontmatter.short}</p>
 
                             <div className='mt-auto'>
                                 <hr/>
