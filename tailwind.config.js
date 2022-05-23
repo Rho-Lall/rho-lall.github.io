@@ -7,7 +7,7 @@ module.exports = {
   theme: {
 
     fontFamily: {
-      display: ['Lato', 'sans-serif'],
+      display: ['Vollkorn', 'sans-serif'],
       body: ['Merriweather', 'sans-serif']
     },
 

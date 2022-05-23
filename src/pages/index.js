@@ -39,9 +39,10 @@ const IndexPage = ({data}) => {
                 </div>
 
                 <div className='mt-auto'>
-                    <hr/>
+                    
                     <p className=''>{head.frontmatter.date}</p>
-
+                    <hr/>
+                    
                 </div>
                 
 
@@ -73,8 +74,9 @@ const IndexPage = ({data}) => {
                             <p className='mb-6'>{node.frontmatter.short}</p>
 
                             <div className='mt-auto'>
-                                <hr/>
+                                
                                 <p>{node.frontmatter.date}</p>
+                                <hr/>
                             </div>
                         </article>
 

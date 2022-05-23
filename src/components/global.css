@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 
@@ -22,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   @apply text-primary;
 }
 
-h1:not(:first-child), h2, h3{
+h1:not(:first-child), h2:not(:first-child), h3{
   @apply mt-5;
 }
 
@@ -58,7 +59,7 @@ p {
   @apply mt-2
 }
 
-a {
+p a {
   @apply underline 
 }
 
@@ -72,10 +73,6 @@ em {
 
 blockquote p {
   @apply italic text-lg leading-9 text-center mx-3 my-3
-}
-
-ul, ol {
-  @apply font-thin ml-2 my-1
 }
 
 code {
