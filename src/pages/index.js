@@ -15,8 +15,8 @@ const IndexPage = ({data}) => {
   return (
     <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
 
-        <div className='flex flex-row mb-5'>
-            <div className='basis-2/3 px-2'>
+        <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
+            <div className='md:basis-2/3 px-0 lg:px-2'>
 
                 <GatsbyImage
                     image={getImage(head.frontmatter.hero_image)}
@@ -25,10 +25,10 @@ const IndexPage = ({data}) => {
 
             </div>
 
-            <div className='basis-1/3 flex flex-col'>
-                <div>
+            <div className=' md:basis-1/3 flex flex-col'>
+                <div className='mb-2 lg:mb-0'>
                     <p>From <span className='text-primary'>{head.frontmatter.expertise}</span></p>
-                    <div className='h-20'>
+                    <div className='h-10 lg:h-20'>
                         <h2 className='text-xl'>
                             <Link to={`/thoughts/${head.slug}`} className='text-xl'>
                                 {head.frontmatter.title}
@@ -41,7 +41,7 @@ const IndexPage = ({data}) => {
                 <div className='mt-auto'>
                     <hr/>
                     <p className=''>{head.frontmatter.date}</p>
-                    <p className=''>{head.frontmatter.author}</p>
+
                 </div>
                 
 
@@ -50,11 +50,11 @@ const IndexPage = ({data}) => {
 
         </div>
         <br/>
-        <div className='flex flex-row flex-wrap inline '>
+        <div className='flex flex-col lg:flex-row flex-wrap inline '>
             { 
                 data.allMdx.nodes.slice(1).map((node) => (
 
-                        <article key={node.id} className='basis-1/3 px-2 pb-2 flex flex-col'>
+                        <article key={node.id} className='basis-1/3 px-2 pb-2 flex flex-col mb-2'>
 
                             <p>From <span className='text-primary'>{node.frontmatter.expertise}</span></p>
 
@@ -75,7 +75,6 @@ const IndexPage = ({data}) => {
                             <div className='mt-auto'>
                                 <hr/>
                                 <p>{node.frontmatter.date}</p>
-                                <p>{node.frontmatter.author}</p>
                             </div>
                         </article>
 
