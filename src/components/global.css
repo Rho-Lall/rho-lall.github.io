@@ -14,7 +14,70 @@ body {
     @apply text-primary text-4xl flex justify-center pt-10 pb-2;
   }
 
-  .heading-posted {
-    @apply flex justify-center pb-8;
-  }
+.heading-posted {
+  @apply flex justify-center pb-8;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  @apply text-primary;
+}
+
+h1:not(:first-child), h2, h3{
+  @apply mt-5;
+}
+
+h4, h5, h6{
+  @apply mt-2;
+}
+
+h1:not(:first-child) {
+  @apply text-3xl font-bold
+}
+
+h2 {
+  @apply text-2xl font-medium
+}
+
+h3 {
+  @apply text-xl font-medium
+}
+
+h4 {
+  @apply font-extralight uppercase
+}
+
+h5 {
+  @apply text-base font-extralight
+}
+
+h6 {
+  @apply text-base font-thin
+}
+
+p {
+  @apply mt-2
+}
+
+a {
+  @apply underline 
+}
+
+strong {
+  @apply font-bold text-primary
+}
+
+em {
+  @apply italic
+}
+
+blockquote p {
+  @apply italic text-lg leading-9 text-center mx-3 my-3
+}
+
+ul, ol {
+  @apply font-thin ml-2 my-1
+}
+
+code {
+  @apply leading-9 text-white bg-slate-500
+}
