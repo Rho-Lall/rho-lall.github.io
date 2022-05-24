@@ -55,7 +55,7 @@ const IndexPage = ({data}) => {
             { 
                 data.allMdx.nodes.slice(1).map((node) => (
 
-                        <article key={node.id} className='basis-1/3 px-2 pb-2 flex flex-col mb-2'>
+                        <article key={node.id} className='basis-1/3 pb-2 flex flex-col mb-2 px-1'>
 
                             <p>From <span className='text-primary'>{node.frontmatter.expertise}</span></p>
 

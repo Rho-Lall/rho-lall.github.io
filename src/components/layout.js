@@ -20,7 +20,7 @@ const Layout = ({ pageTitle, children}) => {
     `)
 
     return (
-        <div className='md:mx-20 lg:container lg:max-w-screen-xl'>
+        <div className='px-2 md:mx-20 lg:container lg:max-w-screen-xl'>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
 
             <nav className='flex flex-row justify-end items-end pb-5'>
