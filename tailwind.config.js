@@ -6,11 +6,6 @@ module.exports = {
   ],
   theme: {
 
-    fontFamily: {
-      display: ['Vollkorn', 'sans-serif'],
-      body: ['Merriweather', 'sans-serif']
-    },
-
     container: {
       center: true,
       padding: '8rem',
@@ -25,6 +20,10 @@ module.exports = {
       textColor: {
         primary: '#057aff', 
         secondary: 'lightslategrey',
+      },
+      fontFamily: {
+        display: ['Vollkorn', 'sans-serif'],
+        body: ['Merriweather', 'sans-serif']
       },
     },
   },

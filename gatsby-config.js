@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Assume Wisely`,
+    title: `rho-lall.github.io`,
     siteUrl: `https://rho-lall.github.io`,
   },
   plugins: [

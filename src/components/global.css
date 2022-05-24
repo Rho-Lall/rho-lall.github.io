@@ -8,11 +8,11 @@
 
 
 body {
-    @apply text-secondary text-justify
+    @apply text-secondary text-justify font-body
 }
 
 .heading {
-    @apply text-primary text-4xl flex justify-center pt-10 pb-2;
+    @apply text-primary text-4xl flex justify-center pt-10 pb-2 font-display;
   }
 
 .heading-posted {

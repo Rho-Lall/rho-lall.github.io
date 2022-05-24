@@ -29,8 +29,8 @@ const IndexPage = ({data}) => {
                 <div className='mb-2 lg:mb-0'>
                     <p>From <span className='text-primary'>{head.frontmatter.expertise}</span></p>
                     <div className='h-10 lg:h-20'>
-                        <h2 className='text-xl'>
-                            <Link to={`/thoughts/${head.slug}`} className='text-xl'>
+                        <h2 className='mt-3'>
+                            <Link to={`/thoughts/${head.slug}`} className='text-3xl font-display'>
                                 {head.frontmatter.title}
                             </Link>                    
                         </h2>
@@ -42,7 +42,7 @@ const IndexPage = ({data}) => {
                     
                     <p className=''>{head.frontmatter.date}</p>
                     <hr/>
-                    
+
                 </div>
                 
 
@@ -65,7 +65,7 @@ const IndexPage = ({data}) => {
                             />
                             <div className='h-20 mt-2'>
                                 <h2>
-                                    <Link to={`/thoughts/${node.slug}`} className='text-xl'>
+                                    <Link to={`/thoughts/${node.slug}`} className='text-xl font-display'>
                                         {node.frontmatter.title}
                                     </Link>
                                 </h2>

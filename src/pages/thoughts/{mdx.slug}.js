@@ -18,12 +18,15 @@ const BlogPost = ({data}) => {
 
       <h1 className='heading'>{data.mdx.frontmatter.title}</h1>
       
-      <p className='heading-posted'>Posted: {data.mdx.frontmatter.date}</p>
+      <p className='heading-posted mb-10'>Posted: {data.mdx.frontmatter.date}</p>
     
       <MDXRenderer>
         {data.mdx.body}
-      </MDXRenderer>      
-  
+      </MDXRenderer>    
+
+      <div>
+                <p className='my-20'>(c) Copywright {data.mdx.frontmatter.date} by Rho Lall, rho-lall.github.io</p>
+      </div>
     </Layout>
   )
 }
