@@ -1,10 +1,11 @@
 import React from "react"
 import styled from 'styled-components'
+import HamburgerMenu from "./hamburger-menu"
 
 const MenuIcon = styled.button`
     position: fixed;
     top: 0.5rem;  
-    right: 2 rem;
+    right: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -26,12 +27,13 @@ const MenuIcon = styled.button`
 
 const Hamburger = () => {
     return (
-        <div>
-            <MenuIcon>
+        <div className="">
+            <MenuIcon className="">
                 <div/>
                 <div/>
                 <div/>
             </MenuIcon>
+            <HamburgerMenu/>
         </div>
     )
 

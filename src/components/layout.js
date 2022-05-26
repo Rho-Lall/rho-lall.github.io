@@ -7,7 +7,6 @@ import {    navLinks,
             navLinkItem,
         } from './layout.module.css'
 
-
 const Layout = ({ pageTitle, children}) => {
 
     const data = useStaticQuery(graphql`
@@ -23,7 +22,7 @@ const Layout = ({ pageTitle, children}) => {
     return (
         <div className='px-2 md:mx-20 lg:container lg:max-w-screen-xl'>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-              
+            <Hamburger/>
             <nav className='flex flex-row justify-end mb-5 mr-10'>
                 <div className=' mr-3 font-display text-5xl md:text-7xl' >
                     <Link to='/'>
@@ -31,8 +30,6 @@ const Layout = ({ pageTitle, children}) => {
                     </Link>
                 </div>
 
-                <Hamburger/> 
-                          
             </nav>
             
             <nav className='hidden md:flex flex-row justify-evenly mb-5 font-display'>
