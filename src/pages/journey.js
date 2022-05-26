@@ -28,14 +28,14 @@ const IndexPage = ({data}) => {
             <div className=' md:basis-1/3 flex flex-col'>
                 <div className='mb-2 lg:mb-0'>
                     <p>From <span className='text-primary'>{head.frontmatter.expertise}</span></p>
-                    <div className='h-10 lg:h-20'>
+                    <div className=''>
                         <h2 className='mt-3'>
                             <Link to={`/thoughts/${head.slug}`} className='text-3xl font-display'>
                                 {head.frontmatter.title}
                             </Link>                    
                         </h2>
                     </div>
-                    <p>{head.frontmatter.short}</p>
+                    <p >{head.frontmatter.short}</p>
                 </div>
 
                 <div className='mt-auto'>
