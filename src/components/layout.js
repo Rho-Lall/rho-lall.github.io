@@ -40,11 +40,11 @@ const Layout = ({ pageTitle, children}) => {
 
             <nav className='hidden md:flex flex-row justify-evenly pb-10 font-display'>
                 <ul className={navLinks}>
-                    <li className={navLinkItem}><Link to="/" className='text-primary'>BUSINESS ACUMEN</Link></li>
-                    <li className={navLinkItem}><Link to="/" className='text-primary'>DATA SCIENCE</Link></li>
-                    <li className={navLinkItem}><Link to="/" className='text-primary'>DEVELOPMENT</Link></li>
-                    <li className={navLinkItem}><Link to="/" className='text-primary'>DESIGN</Link></li>
-                    <li className={navLinkItem}><Link to="/" className='text-primary'>MY JOURNEY</Link></li>
+                    <li className={navLinkItem}><Link to="/business" className='text-primary'>BUSINESS ACUMEN</Link></li>
+                    <li className={navLinkItem}><Link to="/datascience" className='text-primary'>DATA SCIENCE</Link></li>
+                    <li className={navLinkItem}><Link to="/development" className='text-primary'>DEVELOPMENT</Link></li>
+                    <li className={navLinkItem}><Link to="/design" className='text-primary'>DESIGN</Link></li>
+                    <li className={navLinkItem}><Link to="/journey" className='text-primary'>MY JOURNEY</Link></li>
                 </ul>
             </nav>
 
