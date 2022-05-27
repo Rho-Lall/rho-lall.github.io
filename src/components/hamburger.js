@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from 'styled-components'
 import HamburgerMenu from "./hamburger-menu"
 
@@ -26,14 +26,17 @@ const MenuIcon = styled.button`
 `
 
 const Hamburger = () => {
+
+    const [nav, showNav] = useState(false)
+
     return (
         <div className="md:hidden">
-            <MenuIcon className="">
+            <MenuIcon onClick={ () => showNav(!nav) } >
                 <div/>
                 <div/>
                 <div/>
             </MenuIcon>
-            <HamburgerMenu/>
+            <HamburgerMenu nav={nav}/>
             
         </div>
     )

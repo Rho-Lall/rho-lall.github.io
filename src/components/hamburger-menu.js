@@ -3,6 +3,9 @@ import styled from 'styled-components'
 
 const MenuLinks = styled.nav`
     position: fixed;
+    top: 0;
+    right 0;
+    transform: ${({ nav }) => (nav ? "translateX(0)" : "translateX(100%)")};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,30 +23,38 @@ const MenuLinks = styled.nav`
             font-size: 1.5em;
         }
     }
+
+    a {
+        transition: color 300ms;
+        :hover {
+            color: #6ab4ff;
+        }
+    }
 `
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({nav}) => {
+
     return (
         <div className="flex justify-end">
-            <MenuLinks>
+            <MenuLinks nav={nav}>
                 <ul>
                     <li>
-                        <a href="#">Business Acumen</a>
+                        <a href="/business">Business Acumen</a>
                     </li>
                     <li>
-                        <a href="#">Data Science</a>
+                        <a href="/datascience">Data Science</a>
                     </li>
                     <li>
-                        <a href="#">Development</a>
+                        <a href="/development">Development</a>
                     </li>
                     <li>
-                        <a href="#">Design</a>
+                        <a href="/design">Design</a>
                     </li>
                     <li>
-                        <a href="#">My Journey</a>
+                        <a href="/journey">My Journey</a>
                     </li>
                     <li>
-                        <a href="#">About Me</a>
+                        <a href="/about">About Me</a>
                     </li>
                 </ul>
             </MenuLinks>
