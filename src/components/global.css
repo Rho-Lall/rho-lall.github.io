@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1:not(:first-child), h2:not(:first-child), h3{
-  @apply mt-5;
+  @apply mt-10;
 }
 
 h4, h5, h6{
@@ -56,11 +56,16 @@ h6 {
 }
 
 p {
-  @apply mt-2
+  @apply mt-4
 }
 
 p a {
   @apply underline 
+
+}
+
+p a img {
+  @apply w-full drop-shadow-xl
 }
 
 strong {
@@ -72,9 +77,10 @@ em {
 }
 
 blockquote p {
-  @apply italic text-lg leading-9 text-center mx-3 my-3
+  @apply italic text-lg leading-9 text-center mx-3 my-2
 }
 
 code {
   @apply leading-9 text-white bg-slate-500
 }
+
