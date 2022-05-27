@@ -5,6 +5,7 @@ const MenuLinks = styled.nav`
     position: fixed;
     top: 0;
     right 0;
+    transition: transform 300ms;
     transform: ${({ nav }) => (nav ? "translateX(0)" : "translateX(100%)")};
     display: flex;
     flex-direction: column;

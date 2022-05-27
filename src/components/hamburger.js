@@ -17,11 +17,24 @@ const MenuIcon = styled.button`
     z-index: 5; 
 
     div {
-        width: 2rem;
+        width: 1.5rem;
         height: .2rem;
         background: lightslategrey;
         border-radius: 5px;
         transform-origin: 1px;
+
+        :first-child {
+            transform: ${({nav}) => nav ? 'rotate(45deg)' : 'rotate(0)'}
+        }
+    
+        :nth-child(2) {
+            opacity: ${({nav}) => nav ? '0' : '1'}
+        }
+
+        :nth-child(3) {
+            transform: ${({nav}) => nav ? 'rotate(-45deg)' : 'rotate(0)'}
+        }
+        transition: opacity 300ms, transform 300ms;
     }
 `
 
@@ -31,7 +44,7 @@ const Hamburger = () => {
 
     return (
         <div className="md:hidden">
-            <MenuIcon onClick={ () => showNav(!nav) } >
+            <MenuIcon nav={nav} onClick={ () => showNav(!nav) } >
                 <div/>
                 <div/>
                 <div/>
