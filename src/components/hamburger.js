@@ -27,13 +27,14 @@ const MenuIcon = styled.button`
 
 const Hamburger = () => {
     return (
-        <div className="">
+        <div className="md:hidden">
             <MenuIcon className="">
                 <div/>
                 <div/>
                 <div/>
             </MenuIcon>
             <HamburgerMenu/>
+            
         </div>
     )
 

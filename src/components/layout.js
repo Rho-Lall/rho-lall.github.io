@@ -20,11 +20,11 @@ const Layout = ({ pageTitle, children}) => {
     `)
 
     return (
-        <div className='px-2 md:mx-20 lg:container lg:max-w-screen-xl'>
+        <div className='md:mx-20 lg:container lg:max-w-screen-xl'>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             <Hamburger/>
-            <nav className='flex flex-row justify-end mb-5 mr-10'>
-                <div className=' mr-3 font-display text-5xl md:text-7xl' >
+            <nav className='z-0 flex flex-row justify-end mr-20 md:mr-0 mb-5'>
+                <div className='font-display text-5xl md:text-7xl' >
                     <Link to='/'>
                         Rho Lall
                     </Link>
@@ -32,7 +32,7 @@ const Layout = ({ pageTitle, children}) => {
 
             </nav>
             
-            <nav className='hidden md:flex flex-row justify-evenly mb-5 font-display'>
+            <nav className='z-0 hidden md:flex flex-row justify-evenly mb-5 font-display'>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/business" className='text-primary'>BUSINESS ACUMEN</Link></li>
                     <li className={navLinkItem}><Link to="/datascience" className='text-primary'>DATA SCIENCE</Link></li>
@@ -42,7 +42,7 @@ const Layout = ({ pageTitle, children}) => {
                 </ul>
             </nav>
 
-            <main >
+            <main className='z-0 px-2'>
                 
                 {children}
 

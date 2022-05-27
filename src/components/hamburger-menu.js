@@ -2,20 +2,29 @@ import React from "react"
 import styled from 'styled-components'
 
 const MenuLinks = styled.nav`
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
     height: 100vh;
-    width: 100%;
+    width: 50%;
     background: #d7d7d7;
-    z-index: 5; 
+    opacity: .95;
+    z-index: 4;
+    ul {
+        li {
+            margin-bottom: 20px;
+            color: #057aff;
+            font-size: 1.5em;
+        }
+    }
 `
 
 const HamburgerMenu = () => {
     return (
-        <div>
+        <div className="flex justify-end">
             <MenuLinks>
                 <ul>
                     <li>
