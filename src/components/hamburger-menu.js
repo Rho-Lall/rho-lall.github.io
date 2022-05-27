@@ -11,9 +11,9 @@ const MenuLinks = styled.nav`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
     height: 100vh;
-    width: 50%;
+    width: 75%;
     background: #d7d7d7;
     opacity: .95;
     z-index: 4;
@@ -22,6 +22,9 @@ const MenuLinks = styled.nav`
             margin-bottom: 1rem;
             color: #057aff;
             font-size: 1.5em;
+            border: 2px solid #057aff;
+            padding: 0 1rem 0 1rem;
+            
         }
     }
 
