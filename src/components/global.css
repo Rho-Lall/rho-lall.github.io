@@ -20,10 +20,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply text-primary;
+  @apply text-primary capitalize;
 }
 
-h1:not(:first-child), h2:not(:first-child), h3{
+h1:not(:first-child), h2:not(:first-child) {
+  @apply mt-20;
+}
+
+h3{
   @apply mt-10;
 }
 
@@ -36,7 +40,7 @@ h1:not(:first-child) {
 }
 
 h2 {
-  @apply text-2xl font-medium
+  @apply text-2xl font-medium 
 }
 
 h3 {
@@ -77,10 +81,16 @@ em {
 }
 
 blockquote p {
-  @apply italic text-lg leading-9 text-center mx-3 my-2
+  @apply italic text-lg text-slate-600 leading-9 text-center mx-3 my-20
 }
 
 code {
   @apply leading-9 text-white bg-slate-500
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin: 1rem 0 0 1rem;
 }
 
