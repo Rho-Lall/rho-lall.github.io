@@ -19,6 +19,7 @@ const MenuLinks = styled.nav`
     z-index: 4;
     ul {
         li {
+            list-style: none;
             margin-bottom: 1rem;
             color: #057aff;
             font-size: 1.5em;
