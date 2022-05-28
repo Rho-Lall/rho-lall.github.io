@@ -56,7 +56,7 @@ h5 {
 }
 
 h6 {
-  @apply text-base font-thin
+  @apply italic text-lg text-slate-600 leading-9 text-center mx-3
 }
 
 p {
