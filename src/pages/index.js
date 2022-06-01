@@ -72,7 +72,7 @@ const IndexPage = ({data}) => {
                                 </h2>
                             </div>
 
-                            <p className='mb-6'>{node.frontmatter.short}</p>
+                            <p className='mb-6 px-2'>{node.frontmatter.short}</p>
 
                             <div className='mt-auto'>
                                 
