@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
+import {Helmet} from 'react-helmet'
 
 const BlogPost = ({data}) => {
 
@@ -10,6 +11,17 @@ const BlogPost = ({data}) => {
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
+        <Helmet>
+          <meta name="description" content={data.mdx.frontmatter.short}/>
+          <meta name="keywords" content={data.mdx.frontmatter.keywords}/>
+          <meta name="author" content="Rho Lall"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:description" content={data.mdx.frontmatter.short}/>
+          <meta property="og:image" content={image}/>
+          <meta property="og:locale" content="en_US"/>
+          <meta property="og:url" content="https://rho-lall.github.io"/>
+          <link rel="canonical" href="https://rho-lall.github.io"/>
+      </Helmet>
 
       <GatsbyImage
         image={image}
@@ -36,6 +48,8 @@ query blogPost($id: String) {
   mdx(id: {eq: $id}) {
     frontmatter {
       title
+      short
+      keywords
       date(formatString: "MMMM D, YYYY")
       hero_image {
         childImageSharp {

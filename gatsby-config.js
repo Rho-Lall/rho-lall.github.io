@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://rho-lall.github.io`,
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",

@@ -6,7 +6,7 @@ import {Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 //import Hamburger from '../components/hamburger'
-
+import {Helmet} from 'react-helmet'
 
 
 const IndexPage = ({data}) => {
@@ -15,6 +15,17 @@ const IndexPage = ({data}) => {
 
   return (
     <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
+        <Helmet>
+            <meta name="description" content="Thoughts on data driven decision making for data savvy managers and leaders."/>
+            <meta name="keywords" content="Data Savvy Manager,Data Driven Decision Making"/>
+            <meta name="author" content="Rho Lall"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:description" content="Thoughts on data driven decision making for data savvy managers and leaders."/>
+            <meta property="og:image" content="../thoughts/media/data_savvy.png"/>
+            <meta property="og:locale" content="en_US"/>
+            <meta property="og:url" content="https://rho-lall.github.io"/>
+            <link rel="canonical" href="https://rho-lall.github.io"/>
+        </Helmet>
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
