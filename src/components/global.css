@@ -85,7 +85,7 @@ blockquote p {
 }
 
 code {
-  @apply leading-9 text-white bg-slate-500
+  @apply text-white bg-slate-500
 }
 
 ul {
