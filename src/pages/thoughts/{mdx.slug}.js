@@ -37,7 +37,7 @@ const BlogPost = ({data}) => {
       </MDXRenderer>    
 
       <div>
-                <p className='my-20'>(c) Copywright {data.mdx.frontmatter.date} by Rho Lall, rho-lall.github.io</p>
+                <p className='my-20'> © {new Date(data.mdx.frontmatter.date).getFullYear()} &middot; Rho Lall</p>
       </div>
     </Layout>
   )
