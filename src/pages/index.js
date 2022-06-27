@@ -77,13 +77,13 @@ const IndexPage = ({data}) => {
                             />
                             <div className='h-20 mt-2'>
                                 <h2>
-                                    <Link to={`/thoughts/${node.slug}`} className='text-xl font-display'>
+                                    <Link to={`/thoughts/${node.slug}`} className='text-lg font-display'>
                                         {node.frontmatter.title}
                                     </Link>
                                 </h2>
                             </div>
 
-                            <p className='mb-6 px-2'>{node.frontmatter.short}</p>
+                            <p className='mb-6 px-2 text-sm'>{node.frontmatter.short}</p>
 
                             <div className='mt-auto'>
                                 
