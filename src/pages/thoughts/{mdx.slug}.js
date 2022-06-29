@@ -36,6 +36,8 @@ const BlogPost = ({data}) => {
         {data.mdx.body}
       </MDXRenderer>    
 
+      
+
       <footer className='mt-12'>
         <div className='flex space-x-8 justify-center'>
           <div>

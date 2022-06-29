@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 
 
 
-const IndexPage = ({data}) => {
+const DesignPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
 
@@ -124,4 +124,4 @@ query designThoughts {
   }
 `
 
-export default IndexPage
+export default DesignPage
