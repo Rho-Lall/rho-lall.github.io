@@ -36,9 +36,24 @@ const BlogPost = ({data}) => {
         {data.mdx.body}
       </MDXRenderer>    
 
-      <div>
-                <p className='my-20'> © {new Date(data.mdx.frontmatter.date).getFullYear()} &middot; Rho Lall</p>
-      </div>
+      <footer className='mt-12'>
+        <div className='flex space-x-8 justify-center'>
+          <div>
+            Name
+          </div>
+
+          <div>
+            eMail
+          </div>
+
+          <div>
+            Submit
+          </div>
+
+        </div>
+
+        <p className='my-20'> © {new Date(data.mdx.frontmatter.date).getFullYear()} &middot; Rho Lall</p>
+      </footer>
     </Layout>
   )
 }
