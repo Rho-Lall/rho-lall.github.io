@@ -39,6 +39,10 @@ const BlogPost = ({data}) => {
       
 
       <footer className='mt-20'>
+        <div>
+          <h2 className='text-center'>Git Sum (un)common sense,</h2>
+          <br/>
+        </div>
         <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
         <form action="https://app.convertkit.com/forms/3393489/subscriptions"
             className='bg-slate-100 p-1' 
@@ -52,7 +56,7 @@ const BlogPost = ({data}) => {
           >
             <div className='flex space-x-8 justify-around my-1'>
               <div>
-                <h2>Don't miss my upcoming thoughts:</h2> 
+                <h2>Don't miss my next thought:</h2> 
               </div>
               <div className='text-blue-700 font-semibold py-2 px-4 border border-blue-500 rounded'>
                 <input 
@@ -72,7 +76,7 @@ const BlogPost = ({data}) => {
                     <div></div>
                     <div></div>
                   </div>
-                  <span>Yes! Keep me up to date.</span>
+                  <span>Make Better Decisions</span>
                 </button>
               </div>
 
