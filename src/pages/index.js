@@ -8,6 +8,7 @@ import Layout from '../components/layout'
 //import Hamburger from '../components/hamburger'
 import {Helmet} from 'react-helmet'
 
+// create an MVP chart component that reads data from an API.
 
 const IndexPage = ({data}) => {
 
