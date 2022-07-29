@@ -10,6 +10,32 @@ import {Helmet} from 'react-helmet'
 
 // create an MVP chart component that reads data from an API.
 
+// BUSINESS KEYWORDS
+// business intelligence reporting          1k - 10k
+// data driven decision making              1k - 10k
+// data driven decisions                                100 - 1k
+// using data to make decisions                         100 -1k
+
+// DATA SCIENCE KEYWORDS
+// data science programming                 1k - 10k   
+// datascientist                            1k - 10k
+// job of data scientist                    1k - 10k
+// data driven insights                                 100 - 1k
+// data driven solutions                                100 - 1k
+
+// DEVELOPMENT KEYWORDS
+// bi developer                             1k - 10k
+// data driven development                              100 - 1k
+
+// DESIGN KEYWORDS
+// data driven marketing                    1k - 10k
+// data driven organization                             100 -1k
+
+// MY JOURNEY KEYWORDS
+// data driven storytelling                             100 - 1k
+// data driven culture                                  100 - 1k
+
+
 const IndexPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
