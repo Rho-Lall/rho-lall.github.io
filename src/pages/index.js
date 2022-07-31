@@ -8,7 +8,9 @@ import Layout from '../components/layout'
 //import Hamburger from '../components/hamburger'
 import {Helmet} from 'react-helmet'
 
+// MVP LIST
 // create an MVP chart component that reads data from an API.
+// create an mdx thought for each of these key words, (15 in total, 500 ish words each)
 
 // BUSINESS KEYWORDS
 // business intelligence reporting          1k - 10k
