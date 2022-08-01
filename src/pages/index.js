@@ -38,6 +38,13 @@ import {Helmet} from 'react-helmet'
 // data driven culture                                  100 - 1k
 
 
+// no experience data analyst jobs                      100 - 1k
+// entry level data analyst jobs no experience          100 - 1k
+// data analyst jobs no experience                      100 - 1k
+// data analyst no experience                           100 - 1k
+
+
+
 const IndexPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
