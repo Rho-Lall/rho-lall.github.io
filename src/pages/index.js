@@ -40,7 +40,6 @@ import {Helmet} from 'react-helmet'
 
 // no experience data analyst jobs                      100 - 1k
 // entry level data analyst jobs no experience          100 - 1k
-// data analyst jobs no experience                      100 - 1k
 // data analyst no experience                           100 - 1k
 
 
