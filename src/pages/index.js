@@ -37,10 +37,20 @@ import {Helmet} from 'react-helmet'
 // data driven storytelling                             100 - 1k
 // data driven culture                                  100 - 1k
 
-
+// EXPERIENCE
 // no experience data analyst jobs                      100 - 1k
 // entry level data analyst jobs no experience          100 - 1k
 // data analyst no experience                           100 - 1k
+
+// LOOKER
+// looker bi                                            100 - 1k
+// looker tableau                                       100 - 1k
+// snowflake looker                                                 10 - 100
+// dbt looker                                                       10 - 100
+// looker view                                                      10 - 100
+// zendesk looker                                                   10 - 100
+// shopify looker                                                   10 - 100
+
 
 
 
