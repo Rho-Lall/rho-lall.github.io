@@ -81,7 +81,7 @@ em {
 }
 
 blockquote p {
-  @apply italic text-lg text-slate-600 leading-9 text-center mx-3 my-20
+  @apply italic text-lg text-slate-600 text-center
 }
 
 code {
