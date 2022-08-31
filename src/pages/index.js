@@ -11,9 +11,10 @@ import {Helmet} from 'react-helmet'
 // MVP LIST
 // create an MVP chart component that reads data from an API.
 // create an mdx thought for each of these key words, (15 in total, 500 ish words each)
+// Add fuctionality that programatically searches mdx.text for specific keywords and links to a specific page.
 
 // BUSINESS KEYWORDS
-// business intelligence reporting          1k - 10k
+// DONE     business intelligence reporting          1k - 10k
 // data driven decision making              1k - 10k
 // data driven decisions                                100 - 1k
 // using data to make decisions                         100 -1k
