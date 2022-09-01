@@ -9,9 +9,11 @@ import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
 
 // MVP LIST
+// Create site map
+// Add fuctionality that programatically searches mdx.text for specific keywords and links to a specific page.
+// create a search feature to find content.
 // create an MVP chart component that reads data from an API.
 // create an mdx thought for each of these key words, (15 in total, 500 ish words each)
-// Add fuctionality that programatically searches mdx.text for specific keywords and links to a specific page.
 
 // BUSINESS KEYWORDS
 // DONE     business intelligence reporting          1k - 10k
