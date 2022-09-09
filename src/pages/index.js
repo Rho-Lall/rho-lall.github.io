@@ -8,6 +8,8 @@ import Layout from '../components/layout'
 //import Hamburger from '../components/hamburger'
 import {Helmet} from 'react-helmet'
 
+// Placeholder for Counterfactial Analysis Post
+
 // MVP LIST
 // DONE     Create site map
 // DONE     Did not find a plugin that scrapes mdx and adds links programatically. Must be done manually.
