@@ -9,6 +9,7 @@ import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
 
 // Placeholder for Counterfactial Analysis Post
+// Placeholder for Lift Testing
 
 // MVP LIST
 // DONE     Create site map
