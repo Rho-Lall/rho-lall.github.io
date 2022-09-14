@@ -62,16 +62,17 @@ import {Helmet} from 'react-helmet'
 const IndexPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
+    const image = getImage("/thoughts/media/data_savvy_3.png")
 
   return (
     <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
         <Helmet>
-            <meta name="description" content="Thoughts on data driven decision making for data savvy managers and leaders."/>
-            <meta name="keywords" content="Data Savvy Manager,Data Driven Decision Making"/>
+            <meta name="description" content="Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."/>
+            <meta property="og:description" content="Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."/>
+            <meta name="keywords" content="data driven decision making, business intelligence reporting, using data to make decisions"/>
             <meta name="author" content="Rho Lall"/>
             <meta property="og:type" content="website"/>
-            <meta property="og:description" content="Thoughts on data driven decision making for data savvy managers and leaders."/>
-            <meta property="og:image" content="/thoughts/media/data_savvy_3.png"/>
+            <meta property="og:image" content={image}/>
             <meta property="og:locale" content="en_US"/>
             <meta property="og:url" content="https://rho-lall.github.io"/>
             <link rel="canonical" href="https://rho-lall.github.io"/>
