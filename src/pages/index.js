@@ -65,7 +65,7 @@ const IndexPage = ({data}) => {
     const image = getImage("/thoughts/media/data_savvy_3.png")
 
   return (
-    <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
+    <Layout pageTitle={'Data Driven Storytelling Fosters Data Driven Culture'}>
         {/* <Helmet>
             <meta name="description" content="Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."/>
             <meta property="og:description" content="Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."/>

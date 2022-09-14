@@ -13,7 +13,7 @@ const DataSciencePage = ({data}) => {
     const head = data.allMdx.nodes[0];
 
   return (
-    <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
+    <Layout pageTitle={'Data Science Programming for the DataScientist'}>
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>

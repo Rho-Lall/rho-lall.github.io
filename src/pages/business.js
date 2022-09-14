@@ -13,7 +13,7 @@ const BusinessPage = ({data}) => {
     const head = data.allMdx.nodes[0];
 
   return (
-    <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
+    <Layout pageTitle={'Business Intelligence Reporting for Data Driven Decision Making'}>
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
