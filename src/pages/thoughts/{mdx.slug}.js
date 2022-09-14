@@ -12,9 +12,6 @@ const BlogPost = ({data}) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
         <Helmet>
-          <meta name="description" content={data.mdx.frontmatter.short}/>
-          <meta name="keywords" content={data.mdx.frontmatter.keywords}/>
-          <meta name="author" content="Rho Lall"/>
           <meta property="og:title" content={data.mdx.frontmatter.title}/>
           <meta property="og:type" content="website"/>
           <meta property="og:description" content={data.mdx.frontmatter.short}/>
@@ -22,7 +19,13 @@ const BlogPost = ({data}) => {
           <meta property="og:locale" content="en_US"/>
           <meta property="og:url" content="https://rho-lall.github.io"/>
           <link rel="canonical" href="https://rho-lall.github.io"/>
-          <meta name="twitter:card" content="summary"></meta>
+          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta name="twitter:creator" content="@rho_Lall"></meta>
+          <meta name="twitter:title" content={data.mdx.frontmatter.title}/>
+          <meta name="title" content={data.mdx.frontmatter.title}/>
+          <meta name="description" content={data.mdx.frontmatter.short}/>
+          <meta name="keywords" content={data.mdx.frontmatter.keywords}/>
+          <meta name="author" content="Rho Lall"/>
       </Helmet>
 
       <GatsbyImage
