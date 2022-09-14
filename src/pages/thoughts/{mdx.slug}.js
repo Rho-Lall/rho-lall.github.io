@@ -22,6 +22,7 @@ const BlogPost = ({data}) => {
           <meta property="og:locale" content="en_US"/>
           <meta property="og:url" content="https://rho-lall.github.io"/>
           <link rel="canonical" href="https://rho-lall.github.io"/>
+          <meta name="twitter:card" content={data.mdx.frontmatter.short}></meta>
       </Helmet>
 
       <GatsbyImage
