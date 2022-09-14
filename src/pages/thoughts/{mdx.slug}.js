@@ -13,11 +13,12 @@ const BlogPost = ({data}) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
         <Helmet>
           <meta property="og:title" content={data.mdx.frontmatter.title}/>
-          <meta property="og:type" content="website"/>
+          <meta property="og:type" content="blog"/>
           <meta property="og:description" content={data.mdx.frontmatter.short}/>
           <meta property="og:image" content={image}/>
           <meta property="og:locale" content="en_US"/>
           <meta property="og:url" content={urlslug}/>
+          <meta property="og:site_name" content="rho-lall.github.io"/>
           <link rel="canonical" href={urlslug}/>
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:creator" content="@rho_Lall"></meta>
