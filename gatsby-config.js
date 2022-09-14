@@ -2,6 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `rho-lall.github.io`,
     siteUrl: `https://rho-lall.github.io`,
+    author: `Rho Lall`,
+    keywords: `business intelligence reporting, data driven decision making, data driven decisions, using data to make decisions`,
+    image: '/thoughts/media/data_savvy_3.png',
+    descrption: `Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions.`
+
   },
   plugins: [
     {

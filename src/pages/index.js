@@ -71,7 +71,7 @@ const IndexPage = ({data}) => {
             <meta name="author" content="Rho Lall"/>
             <meta property="og:type" content="website"/>
             <meta property="og:description" content="Thoughts on data driven decision making for data savvy managers and leaders."/>
-            <meta property="og:image" content="thoughts/media/data_savvy_.png"/>
+            <meta property="og:image" content="/thoughts/media/data_savvy_3.png"/>
             <meta property="og:locale" content="en_US"/>
             <meta property="og:url" content="https://rho-lall.github.io"/>
             <link rel="canonical" href="https://rho-lall.github.io"/>
