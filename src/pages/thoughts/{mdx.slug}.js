@@ -15,6 +15,7 @@ const BlogPost = ({data}) => {
           <meta name="description" content={data.mdx.frontmatter.short}/>
           <meta name="keywords" content={data.mdx.frontmatter.keywords}/>
           <meta name="author" content="Rho Lall"/>
+          <meta property="og:title" content={data.mdx.frontmatter.title}/>
           <meta property="og:type" content="website"/>
           <meta property="og:description" content={data.mdx.frontmatter.short}/>
           <meta property="og:image" content={image}/>
