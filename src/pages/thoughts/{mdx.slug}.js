@@ -8,7 +8,7 @@ import {Helmet} from 'react-helmet'
 const BlogPost = ({data}) => {
 
   const image = getImage(data.mdx.frontmatter.hero_image)
-
+  const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.slug}`
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
         <Helmet>
@@ -17,8 +17,8 @@ const BlogPost = ({data}) => {
           <meta property="og:description" content={data.mdx.frontmatter.short}/>
           <meta property="og:image" content={image}/>
           <meta property="og:locale" content="en_US"/>
-          <meta property="og:url" content="https://rho-lall.github.io"/>
-          <link rel="canonical" href="https://rho-lall.github.io"/>
+          <meta property="og:url" content={urlslug}/>
+          <link rel="canonical" href={urlslug}/>
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:creator" content="@rho_Lall"></meta>
           <meta name="twitter:title" content={data.mdx.frontmatter.title}/>
@@ -109,6 +109,7 @@ query blogPost($id: String) {
         }
       }
     }
+    slug
     body
   }
 }
