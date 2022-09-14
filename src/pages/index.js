@@ -66,7 +66,7 @@ const IndexPage = ({data}) => {
 
   return (
     <Layout pageTitle={'Data Savvy for Data Driven Decision Making'}>
-        <Helmet>
+        {/* <Helmet>
             <meta name="description" content="Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."/>
             <meta property="og:description" content="Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."/>
             <meta name="keywords" content="data driven decision making, business intelligence reporting, using data to make decisions"/>
@@ -76,7 +76,7 @@ const IndexPage = ({data}) => {
             <meta property="og:locale" content="en_US"/>
             <meta property="og:url" content="https://rho-lall.github.io"/>
             <link rel="canonical" href="https://rho-lall.github.io"/>
-        </Helmet>
+        </Helmet> */}
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
