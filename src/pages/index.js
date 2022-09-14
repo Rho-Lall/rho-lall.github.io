@@ -8,12 +8,11 @@ import Layout from '../components/layout'
 //import Hamburger from '../components/hamburger'
 import {Helmet} from 'react-helmet'
 
-// Placeholder for Lift Testing
 
 // MVP LIST
 // DONE     Create site map
 // DONE     Did not find a plugin that scrapes mdx and adds links programatically. Must be done manually.
-// Fix Social Share functionality with Open Graph: https://www.digitalocean.com/community/tutorials/how-to-boost-seo-using-gatsby-s-seo-component-and-gatsby-react-helmet
+// WORKING  Fix Social Share functionality with Open Graph: https://www.digitalocean.com/community/tutorials/how-to-boost-seo-using-gatsby-s-seo-component-and-gatsby-react-helmet
 // create a search feature to find content.
 // create an MVP chart component that reads data from an API.
 // create an mdx thought for each of these key words, (15 in total, 500 ish words each)
