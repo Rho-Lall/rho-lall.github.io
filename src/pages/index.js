@@ -63,20 +63,34 @@ const IndexPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
     const image = getImage("/thoughts/media/data_savvy_3.png")
+    const description = "Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."
+    const seokeywords = "data driven decision making, business intelligence reporting, using data to make decisions"
+    const canonical = "https://rho-lall.github.io"
+    const urlslug = "https://rho-lall.github.io"
 
-  return (
+    return (
     <Layout pageTitle={'Data Driven Storytelling Fosters Data Driven Culture'}>
-        {/* <Helmet>
-            <meta name="description" content="Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."/>
-            <meta property="og:description" content="Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."/>
-            <meta name="keywords" content="data driven decision making, business intelligence reporting, using data to make decisions"/>
-            <meta name="author" content="Rho Lall"/>
-            <meta property="og:type" content="website"/>
+        <Helmet>
+            <meta property="og:title" content={pageTitle}/>
             <meta property="og:image" content={image}/>
+            <meta property="og:description" content={description}/>
+            <meta property="og:url" content={urlslug}/>
+            <meta property="og:site_name" content="rho-lall.github.io"/>
+            <meta property="og:type" content="website"/>
             <meta property="og:locale" content="en_US"/>
-            <meta property="og:url" content="https://rho-lall.github.io"/>
-            <link rel="canonical" href="https://rho-lall.github.io"/>
-        </Helmet> */}
+
+            <meta name="twitter:card" content="summary_large_image"></meta>
+            <meta name="twitter:creator" content="@rho_Lall"></meta>
+            <meta name="twitter:title" content={pageTitle}/>
+
+            <link rel="canonical" href={canonical}/>
+
+            <meta name="title" content={pageTitle}/>
+            <meta name="description" content={description}/>
+            <meta name="keywords" content={seokeywords}/>
+            <meta name="author" content="Rho Lall"/>
+
+        </Helmet>
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
