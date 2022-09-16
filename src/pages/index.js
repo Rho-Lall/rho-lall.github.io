@@ -73,7 +73,7 @@ const IndexPage = ({data}) => {
     return (
     <Layout pageTitle={page_title}>
         <Helmet>
-            <meta property="og:title" content={pageTitle}/>
+            <meta property="og:title" content={page_title}/>
             <meta property="og:image" content={image}/>
             <meta property="og:description" content={description}/>
             <meta property="og:url" content={urlslug}/>
@@ -84,11 +84,11 @@ const IndexPage = ({data}) => {
             <meta name="twitter:card" content="summary_large_image"></meta>
             <meta name="twitter:image" content={image_twitter} />
             <meta name="twitter:creator" content="@rho_Lall"></meta>
-            <meta name="twitter:title" content={pageTitle}/>
+            <meta name="twitter:title" content={page_title}/>
 
             <link rel="canonical" href={site_name}/>
 
-            <meta name="title" content={pageTitle}/>
+            <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
             <meta name="author" content="Rho Lall"/>
