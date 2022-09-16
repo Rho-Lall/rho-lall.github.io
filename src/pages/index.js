@@ -63,9 +63,10 @@ const IndexPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
     const image = getImage("/thoughts/media/data_savvy_3.png")
+    const image_twitter = getImage("/thoughts/media/business_twitter.png")
     const description = "Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."
     const seokeywords = "data driven decision making, business intelligence reporting, using data to make decisions"
-    const canonical = "https://rho-lall.github.io"
+    const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
 
     return (
@@ -75,15 +76,16 @@ const IndexPage = ({data}) => {
             <meta property="og:image" content={image}/>
             <meta property="og:description" content={description}/>
             <meta property="og:url" content={urlslug}/>
-            <meta property="og:site_name" content="rho-lall.github.io"/>
+            <meta property="og:site_name" content={site_name}/>
             <meta property="og:type" content="website"/>
             <meta property="og:locale" content="en_US"/>
 
             <meta name="twitter:card" content="summary_large_image"></meta>
+            <meta name="twitter:image" content={image_twitter} />
             <meta name="twitter:creator" content="@rho_Lall"></meta>
             <meta name="twitter:title" content={pageTitle}/>
 
-            <link rel="canonical" href={canonical}/>
+            <link rel="canonical" href={site_name}/>
 
             <meta name="title" content={pageTitle}/>
             <meta name="description" content={description}/>
