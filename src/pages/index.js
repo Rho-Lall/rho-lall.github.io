@@ -68,9 +68,10 @@ const IndexPage = ({data}) => {
     const seokeywords = "data driven decision making, business intelligence reporting, using data to make decisions"
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
+    const page_title = "Data Driven Storytelling Fosters Data Driven Culture"
 
     return (
-    <Layout pageTitle={'Data Driven Storytelling Fosters Data Driven Culture'}>
+    <Layout pageTitle={page_title}>
         <Helmet>
             <meta property="og:title" content={pageTitle}/>
             <meta property="og:image" content={image}/>
