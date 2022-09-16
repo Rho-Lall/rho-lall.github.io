@@ -1,5 +1,5 @@
 
-//import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import {Link, graphql } from 'gatsby'
 //import { MDXRenderer } from 'gatsby-plugin-mdx'
@@ -11,8 +11,8 @@ import {Helmet} from 'react-helmet'
 const DevelopmentPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
-    const image = getImage("/thoughts/media/development_3.png")
-    const image_twitter = getImage("/thoughts/media/business_twitter.png")
+    const image = <StaticImage src="../../thoughts/media/data_savvy_3.png"/> 
+    const image_twitter = <StaticImage src="../../thoughts/media/business_twitter.png"/>     
     const description = "BI Developers need to have a clear understanding of data driven development in order to be effective. This article provides insights from a BI Developer on the matter."
     const seokeywords = "bi developer, data driven development"
     const site_name = "https://rho-lall.github.io"

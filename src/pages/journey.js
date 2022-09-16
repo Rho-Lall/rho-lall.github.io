@@ -1,5 +1,5 @@
 
-//import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import {Link, graphql } from 'gatsby'
 //import { MDXRenderer } from 'gatsby-plugin-mdx'
@@ -12,8 +12,8 @@ import {Helmet} from 'react-helmet'
 const JourneyPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
-    const image = getImage("/thoughts/media/my_journey_6.png")
-    const image_twitter = getImage("/thoughts/media/business_twitter.png")
+    const image = <StaticImage src="../../thoughts/media/data_savvy_3.png"/> 
+    const image_twitter = <StaticImage src="../../thoughts/media/business_twitter.png"/>     
     const description = "A data driven culture is key to success in the digital age. Learn how data driven storytelling can help you create a data driven culture and achieve your business goals."
     const seokeywords = "data driven storytelling, data driven culture"
     const site_name = "https://rho-lall.github.io"

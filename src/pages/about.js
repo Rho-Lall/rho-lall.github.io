@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 //import {Link, graphql } from 'gatsby'
 //import { MDXRenderer } from 'gatsby-plugin-mdx'
-//import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 
 const AboutPage = () => {
@@ -20,9 +20,9 @@ const AboutPage = () => {
           <p className='mb-10'>I think I will document my learning path as a professional developer because that doesn't exist outside of the Ethereum community. There's a lot of attention and resources for Ethereum but frankly, XRP/XLM are better technologies. There will be demand for these technologies in the future. I'm hoping to do my part to contribute to the XRP XLM community.</p>
 
           <div className=''>
-          <StaticImage src="../images/about_rho_lall.png"/>
+          <StaticImage src="../images/about_rho_lall.png"/>    
           </div>
-
+          
         </Layout> 
 
     )

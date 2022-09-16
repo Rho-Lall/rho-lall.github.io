@@ -1,5 +1,5 @@
 
-//import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import {Link, graphql } from 'gatsby'
 //import { MDXRenderer } from 'gatsby-plugin-mdx'
@@ -12,8 +12,8 @@ import {Helmet} from 'react-helmet'
 const BusinessPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
-    const image = getImage("/thoughts/media/business_.png")
-    const image_twitter = getImage("/thoughts/media/business_twitter.png")
+    const image = <StaticImage src="../../thoughts/media/data_savvy_3.png"/> 
+    const image_twitter = <StaticImage src="../../thoughts/media/business_twitter.png"/>     
     const description = "Everything you need to know about business intelligence reporting and using data to make better decisions for your business."
     const seokeywords = "data driven decision making, business intelligence reporting, using data to make decisions"
     const site_name = "https://rho-lall.github.io"

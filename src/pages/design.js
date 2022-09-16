@@ -1,5 +1,5 @@
 
-//import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import {Link, graphql } from 'gatsby'
 //import { MDXRenderer } from 'gatsby-plugin-mdx'
@@ -12,8 +12,8 @@ import {Helmet} from 'react-helmet'
 const DesignPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
-    const image = getImage("/thoughts/media/development_3.png")
-    const image_twitter = getImage("/thoughts/media/business_twitter.png")
+    const image = <StaticImage src="../../thoughts/media/data_savvy_3.png"/> 
+    const image_twitter = <StaticImage src="../../thoughts/media/business_twitter.png"/>     
     const description = "A data driven marketing strategy is important to any organization that wants to drive strategic decisions and focus on a measurable business outcome. Find out how to implement this strategy in your organization today!"
     const seokeywords = "data driven marketing, data driven organization"
     const site_name = "https://rho-lall.github.io"
