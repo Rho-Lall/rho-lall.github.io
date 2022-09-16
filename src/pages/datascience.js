@@ -5,15 +5,47 @@ import {Link, graphql } from 'gatsby'
 //import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
+import {Helmet} from 'react-helmet'
 
 
 
 const DataSciencePage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
+    const image = getImage("/thoughts/media/development_3.png")
+    const image_twitter = getImage("/thoughts/media/business_twitter.png")
+    const description = "A collection of resources for data science programming, with a focus on SQL and Python. It's for a datascientist who want to learn how to program, or a programmer who wants to become a datascientist."
+    const seokeywords = "data science programming, datascientist"
+    const site_name = "https://rho-lall.github.io"
+    const urlslug = "https://rho-lall.github.io"
+    const page_title = "Data Science Programming for the DataScientist"
 
   return (
     <Layout pageTitle={'Data Science Programming for the DataScientist'}>
+
+        <Helmet>
+
+            <meta property="og:title" content={page_title}/>
+            <meta property="og:image" content={image}/>
+            <meta property="og:description" content={description}/>
+            <meta property="og:url" content={urlslug}/>
+            <meta property="og:site_name" content={site_name}/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:locale" content="en_US"/>
+
+            <meta name="twitter:card" content="summary_large_image"></meta>
+            <meta name="twitter:image" content={image_twitter} />
+            <meta name="twitter:creator" content="@rho_Lall"></meta>
+            <meta name="twitter:title" content={page_title}/>
+
+            <link rel="canonical" href={site_name}/>
+
+            <meta name="title" content={page_title}/>
+            <meta name="description" content={description}/>
+            <meta name="keywords" content={seokeywords}/>
+            <meta name="author" content="Rho Lall"/>
+
+        </Helmet>
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>

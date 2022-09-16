@@ -64,12 +64,12 @@ const IndexPage = ({data}) => {
     const head = data.allMdx.nodes[0];
     const image = getImage("/thoughts/media/data_savvy_3.png")
     const image_twitter = getImage("/thoughts/media/business_twitter.png")
-    const description = "Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions."
+    const description = "Everything you need to know about business intelligence reporting and using data to make better decisions for your business."
     const seokeywords = "data driven decision making, business intelligence reporting, using data to make decisions"
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
-    const page_title = "Data Driven Storytelling Fosters Data Driven Culture"
-
+    const page_title = "Data Driven Decision Making Powered By Business Intelligence Reporting"
+    // Data Driven Storytelling Fosters Data Driven Culture
     return (
     <Layout pageTitle={page_title}>
         <Helmet>
