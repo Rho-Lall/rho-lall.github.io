@@ -5,8 +5,8 @@ import {Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
-import image from "../../thoughts/media/data_savvy_3.png"
-import imageTwitter from "../../thoughts/media/social/business_share.png"
+import image from "../../thoughts/media/social/business_twitter.png"
+// import imageSquare from "../../thoughts/media/social/business_share.png"
 
 
 // MVP LIST
@@ -69,13 +69,15 @@ const IndexPage = ({data}) => {
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
     const page_title = "Fostering Data Driven Culture thru Data Driven Storytelling"
-    const imagesquare = "https://rho-lall.github.io" + imageTwitter
+    const socialimage = "https://rho-lall.github.io" + image
+    // const socialimagesq = "https://rho-lall.github.io" + imageSquare
+    
 
     return (
     <Layout pageTitle={page_title}>
         <Helmet>
             <meta property="og:title" content={page_title}/>
-            <meta property="og:image" content={imagesquare}/>
+            <meta property="og:image" content={socialimage}/>
             <meta property="og:description" content={description}/>
             <meta property="og:url" content={urlslug}/>
             <meta property="og:site_name" content={site_name}/>
@@ -83,7 +85,7 @@ const IndexPage = ({data}) => {
             <meta property="og:locale" content="en_US"/>
 
             <meta name="twitter:card" content="summary_large_image"></meta>
-            <meta name="twitter:image" content={imagesquare} />
+            <meta name="twitter:image" content={socialimage} />
             <meta name="twitter:creator" content="@rho_Lall"></meta>
             <meta name="twitter:title" content={page_title}/>
 

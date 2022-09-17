@@ -4,13 +4,13 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import {Helmet} from 'react-helmet'
-import imageTwitter from "../../../thoughts/media/social/business_share.png"
+// import imageSquare from "../../../thoughts/media/social/business_share.png"
 
 const BlogPost = ({data}) => {
 
-  const image = getImage(data.mdx.frontmatter.hero_image)
   const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.slug}`
-  const imagesquare = "https://rho-lall.github.io" + imageTwitter
+  const socialimage = "https://rho-lall.github.io" + getImage(data.mdx.frontmatter.hero_image)
+  // const socialimagesq = "https://rho-lall.github.io" + imageSquare
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
@@ -18,13 +18,13 @@ const BlogPost = ({data}) => {
           <meta property="og:title" content={data.mdx.frontmatter.title}/>
           <meta property="og:type" content="blog"/>
           <meta property="og:description" content={data.mdx.frontmatter.short}/>
-          <meta property="og:image" content={image}/>
+          <meta property="og:image" content={socialimage}/>
           <meta property="og:locale" content="en_US"/>
           <meta property="og:url" content={urlslug}/>
           <meta property="og:site_name" content="rho-lall.github.io"/>
           <link rel="canonical" href={urlslug}/>
-          <meta name="twitter:card" content="summary"></meta>
-          <meta name="twitter:image" content={imagesquare} />
+          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta name="twitter:image" content={socialimage} />
           <meta name="twitter:creator" content="@rho_Lall"></meta>
           <meta name="twitter:title" content={data.mdx.frontmatter.title}/>
           <meta name="title" content={data.mdx.frontmatter.title}/>
@@ -34,7 +34,7 @@ const BlogPost = ({data}) => {
       </Helmet>
 
       <GatsbyImage
-        image={image}
+        image={socialimage}
         alt={data.mdx.frontmatter.hero_alt}
       />
 
