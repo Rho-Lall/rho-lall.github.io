@@ -7,7 +7,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
 import image from "../../thoughts/media/my_journey_.png"
-import imageTwitter from "../../thoughts/media/business_twitter.png"  
+import imageTwitter from "../../thoughts/media/social/business_share.png"
 
 
 
@@ -19,6 +19,7 @@ const JourneyPage = ({data}) => {
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
     const page_title = "Fostering Data Driven Culture thru Data Driven Storytelling"
+    const imagesquare = "https://www.rho-lall.github.io" + imageTwitter
 
   return (
     <Layout pageTitle={page_title}>
@@ -32,8 +33,8 @@ const JourneyPage = ({data}) => {
             <meta property="og:type" content="website"/>
             <meta property="og:locale" content="en_US"/>
 
-            <meta name="twitter:card" content="summary_large_image"></meta>
-            <meta name="twitter:image" content={imageTwitter} />
+            <meta name="twitter:card" content="summary"></meta>
+            <meta name="twitter:image" content={imagesquare} />
             <meta name="twitter:creator" content="@rho_Lall"></meta>
             <meta name="twitter:title" content={page_title}/>
 
