@@ -1,19 +1,19 @@
 
-import { StaticImage } from 'gatsby-plugin-image'
+//import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import {Link, graphql } from 'gatsby'
 //import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
+import image from "../../thoughts/media/data_savvy_3.png"
+import imageTwitter from "../../thoughts/media/business_twitter.png"  
 
 
 
 const DataSciencePage = ({data}) => {
 
-    const head = data.allMdx.nodes[0];
-    const image = <StaticImage src="../../thoughts/media/data_savvy_3.png"/> 
-    const image_twitter = <StaticImage src="../../thoughts/media/business_twitter.png"/>     
+    const head = data.allMdx.nodes[0]; 
     const description = "A collection of resources for data science programming, with a focus on SQL and Python. It's for a datascientist who want to learn how to program, or a programmer who wants to become a datascientist."
     const seokeywords = "data science programming, datascientist"
     const site_name = "https://rho-lall.github.io"
@@ -34,7 +34,7 @@ const DataSciencePage = ({data}) => {
             <meta property="og:locale" content="en_US"/>
 
             <meta name="twitter:card" content="summary_large_image"></meta>
-            <meta name="twitter:image" content={image_twitter} />
+            <meta name="twitter:image" content={imageTwitter} />
             <meta name="twitter:creator" content="@rho_Lall"></meta>
             <meta name="twitter:title" content={page_title}/>
 
