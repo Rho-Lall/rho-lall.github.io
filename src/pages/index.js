@@ -75,7 +75,7 @@ const IndexPage = ({data}) => {
     <Layout pageTitle={page_title}>
         <Helmet>
             <meta property="og:title" content={page_title}/>
-            <meta property="og:image" content={image}/>
+            <meta property="og:image" content={imagesquare}/>
             <meta property="og:description" content={description}/>
             <meta property="og:url" content={urlslug}/>
             <meta property="og:site_name" content={site_name}/>
