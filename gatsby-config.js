@@ -3,10 +3,13 @@ module.exports = {
     title: `rho-lall.github.io`,
     siteUrl: `https://rho-lall.github.io`,
     author: `Rho Lall`,
-    keywords: `business intelligence reporting, data driven decision making, data driven decisions, using data to make decisions`,
+    keywords: `data driven decision making, business intelligence reporting, using data to make decisions`,
     image: '/thoughts/media/data_savvy_3.png',
-    descrption: `Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions.`
-
+    descrption: `Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions.`,
+    og: {
+      siteName: 'Fostering a Data Driven Culture with Data Driven Storytelling',
+      twitterCreator: '@rho_lall'
+    },
   },
   plugins: [
     {
