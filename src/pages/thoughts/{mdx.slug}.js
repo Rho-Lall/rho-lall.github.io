@@ -9,6 +9,7 @@ import {Helmet} from 'react-helmet'
 const BlogPost = ({data}) => {
 
   const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.slug}`
+  const featureimage = getImage(data.mdx.frontmatter.hero_image)
   const socialimage = `https://rho-lall.github.io/thoughts${getSrc(data.mdx.frontmatter.hero_image)}`
   // const socialimagesq = "https://rho-lall.github.io" + imageSquare
 
@@ -34,7 +35,7 @@ const BlogPost = ({data}) => {
       </Helmet>
 
       <GatsbyImage
-        image={socialimage}
+        image={featureimage}
         alt={data.mdx.frontmatter.hero_alt}
       />
 
