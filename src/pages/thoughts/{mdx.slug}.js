@@ -10,7 +10,7 @@ const BlogPost = ({data}) => {
 
   const image = getImage(data.mdx.frontmatter.hero_image)
   const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.slug}`
-  const imagesquare = "https://www.rho-lall.github.io" + imageTwitter
+  const imagesquare = "https://rho-lall.github.io" + imageTwitter
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>

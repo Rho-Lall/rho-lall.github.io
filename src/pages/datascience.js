@@ -19,7 +19,7 @@ const DataSciencePage = ({data}) => {
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
     const page_title = "Data Science Programming for the DataScientist"
-    const imagesquare = "https://www.rho-lall.github.io" + imageTwitter
+    const imagesquare = "https://rho-lall.github.io" + imageTwitter
 
   return (
     <Layout pageTitle={'Data Science Programming for the DataScientist'}>

@@ -19,7 +19,7 @@ const JourneyPage = ({data}) => {
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
     const page_title = "Fostering Data Driven Culture thru Data Driven Storytelling"
-    const imagesquare = "https://www.rho-lall.github.io" + imageTwitter
+    const imagesquare = "https://rho-lall.github.io" + imageTwitter
 
   return (
     <Layout pageTitle={page_title}>
