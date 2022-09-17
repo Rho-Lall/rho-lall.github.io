@@ -4,6 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import {Helmet} from 'react-helmet'
+import imageTwitter from "../../thoughts/media/business_twitter.png"  
 
 const BlogPost = ({data}) => {
 
@@ -21,6 +22,7 @@ const BlogPost = ({data}) => {
           <meta property="og:site_name" content="rho-lall.github.io"/>
           <link rel="canonical" href={urlslug}/>
           <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta name="twitter:image" content={imageTwitter} />
           <meta name="twitter:creator" content="@rho_Lall"></meta>
           <meta name="twitter:title" content={data.mdx.frontmatter.title}/>
           <meta name="title" content={data.mdx.frontmatter.title}/>
