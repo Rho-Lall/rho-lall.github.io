@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage, getSrc } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import {Helmet} from 'react-helmet'
 // import imageSquare from "../../../thoughts/media/social/business_share.png"
@@ -9,7 +9,7 @@ import {Helmet} from 'react-helmet'
 const BlogPost = ({data}) => {
 
   const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.slug}`
-  const socialimage = "https://rho-lall.github.io" + getImage(data.mdx.frontmatter.hero_image)
+  const socialimage = `https://rho-lall.github.io/thoughts${getSrc(data.mdx.frontmatter.hero_image)}`
   // const socialimagesq = "https://rho-lall.github.io" + imageSquare
 
   return (
