@@ -82,7 +82,7 @@ const IndexPage = ({data}) => {
             <meta property="og:type" content="website"/>
             <meta property="og:locale" content="en_US"/>
 
-            <meta name="twitter:card" content="summary"></meta>
+            <meta name="twitter:card" content="summary_large_image"></meta>
             <meta name="twitter:image" content={imagesquare} />
             <meta name="twitter:creator" content="@rho_Lall"></meta>
             <meta name="twitter:title" content={page_title}/>
