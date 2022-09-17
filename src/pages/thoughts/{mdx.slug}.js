@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import {Helmet} from 'react-helmet'
-import imageTwitter from "../../thoughts/media/business_twitter.png"  
+import imageTwitter from "../../../thoughts/media/business_twitter.png"  
 
 const BlogPost = ({data}) => {
 
