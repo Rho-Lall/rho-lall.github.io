@@ -5,16 +5,15 @@ import {Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
-import image from "../../thoughts/media/social/business_twitter.png"
-// import imageSquare from "../../thoughts/media/social/business_share.png"
+import imagesq from "../../thoughts/media/social/business_sq.png"
 
 
 // MVP LIST
 // DONE     Create site map
 // DONE     Did not find a plugin that scrapes mdx and adds links programatically. Must be done manually.
 // WORKING  Fix Social Share functionality with Open Graph: https://www.digitalocean.com/community/tutorials/how-to-boost-seo-using-gatsby-s-seo-component-and-gatsby-react-helmet
-// Include email capture footer as part of the layout component
-// create pagination for the blog
+// Include email capture footer as part of the layout component.
+// create pagination for the blog.
 // create a search feature to find content.
 // create an MVP chart component that reads data from an API.
 // create an mdx thought for each of these key words, (15 in total, 500 ish words each)
@@ -69,8 +68,7 @@ const IndexPage = ({data}) => {
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
     const page_title = "Fostering Data Driven Culture thru Data Driven Storytelling"
-    const socialimage = "https://rho-lall.github.io" + image
-    // const socialimagesq = "https://rho-lall.github.io" + imageSquare
+    const socialimage = "https://rho-lall.github.io" + imagesq
     
 
     return (
