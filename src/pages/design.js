@@ -6,8 +6,7 @@ import {Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
-import image from "../../thoughts/media/design_.png"
-import imageTwitter from "../../thoughts/media/social/business_share.png"
+import imagesq from "../../thoughts/media/social/business_sq.png"
 
 
 
@@ -19,7 +18,7 @@ const DesignPage = ({data}) => {
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
     const page_title = "Data Driven Marketing for the Data Driven Organization"
-    const imagesquare = "https://rho-lall.github.io" + imageTwitter
+    const imagesquare = "https://rho-lall.github.io" + imagesq
 
   return (
     <Layout pageTitle={page_title}>
@@ -27,7 +26,7 @@ const DesignPage = ({data}) => {
         <Helmet>
 
             <meta property="og:title" content={page_title}/>
-            <meta property="og:image" content={image}/>
+            <meta property="og:image" content={imagesquare}/>
             <meta property="og:description" content={description}/>
             <meta property="og:url" content={urlslug}/>
             <meta property="og:site_name" content={site_name}/>
