@@ -7,6 +7,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
 import imagesq from "../../thoughts/media/social/business_sq.png"
+import image from "../../thoughts/media/business_.png"
 
 
 const DevelopmentPage = ({data}) => {
@@ -17,22 +18,23 @@ const DevelopmentPage = ({data}) => {
     const site_name = "https://rho-lall.github.io"
     const urlslug = "https://rho-lall.github.io"
     const page_title = "BI Developer insights into data driven development"
-    const imagesquare = "https://rho-lall.github.io" + imagesq
+    const socialimagesq = "https://rho-lall.github.io" + imagesq
+    const socialimage = "https://rho-lall.github.io" + image
 
   return (
     <Layout pageTitle={page_title}>
 
         <Helmet>
             <meta property="og:title" content={page_title}/>
-            <meta property="og:image" content={imagesquare}/>
+            <meta property="og:image" content={socialimagesq}/>
             <meta property="og:description" content={description}/>
             <meta property="og:url" content={urlslug}/>
             <meta property="og:site_name" content={site_name}/>
             <meta property="og:type" content="website"/>
             <meta property="og:locale" content="en_US"/>
 
-            <meta name="twitter:card" content="summary"></meta>
-            <meta name="twitter:image" content={imagesquare} />
+            <meta name="twitter:card" content="summary_large_image"></meta>
+            <meta name="twitter:image" content={socialimage} />
             <meta name="twitter:creator" content="@rho_Lall"></meta>
             <meta name="twitter:title" content={page_title}/>
 
