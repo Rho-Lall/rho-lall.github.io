@@ -10,7 +10,7 @@ const BlogPost = ({data}) => {
 
   const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.slug}`
   const featureimage = getImage(data.mdx.frontmatter.hero_image)
-  const socialimage = `https://rho-lall.github.io/thoughts${getSrc(data.mdx.frontmatter.hero_image)}`
+  const socialimage = `https://rho-lall.github.io${getSrc(data.mdx.frontmatter.hero_image)}`
   // const socialimagesq = "https://rho-lall.github.io" + imageSquare
 
   return (
