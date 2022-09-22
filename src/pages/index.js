@@ -15,10 +15,10 @@ import image from "../../thoughts/media/business_.png"
 // DONE     Create site map
 // DONE     Did not find a plugin that scrapes mdx and adds links programatically. Must be done manually.
 // DONE     Fix Social Share functionality with Open Graph: https://www.digitalocean.com/community/tutorials/how-to-boost-seo-using-gatsby-s-seo-component-and-gatsby-react-helmet
-// Nail down the SEO for the site by getting key pages indexed.
+// create pagination for the blog: https://www.gatsbyjs.com/docs/adding-pagination/
 // Include email capture footer as part of the layout component.
-// create pagination for the blog.
-// create a search feature to find content.
+// create a search feature to find content: https://www.gatsbyjs.com/docs/adding-search-with-algolia
+// Nail down the SEO for the site by getting key pages indexed.
 // create an MVP chart component that reads data from an API. Possibly from my LinkedIn post performance?
 // create an mdx thought for each of these key words, (15 in total, 500 ish words each)
 
