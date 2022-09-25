@@ -15,7 +15,7 @@ const ExperiencePage = () => {
             
           <h1 className='heading mb-20'>{title}</h1>
             
-          <p className='mb-5'>Hi, I’m Tim from rho-lall.github.io.</p>
+          <p className='mb-5'>Hi, I’m Rho from rho-lall.github.io.</p>
           <p className='mb-5'>Are you struggling to get hired in data science because you don’t have enough experience? It can be tough to get your foot in the door. But I found a way. And now I want to show you how you can too.  </p>
           <p className='mb-10'>I wrote a book called Experience: Closing the Gap Between Recent College Grad & and Data Scientist. It's packed with everything you need to know to close the gap between being recent college grad and becoming an experienced hire.  </p>
           <p className='mb-5'>You'll learn how to:</p>
