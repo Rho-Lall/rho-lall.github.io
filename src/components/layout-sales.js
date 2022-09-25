@@ -7,7 +7,7 @@ import {    navLinks,
             navLinkItem,
         } from './layout.module.css'
 
-const LayoutSales = ({ pageTitle, children}) => {
+const LayoutSales = ({children}) => {
 
     // const data = useStaticQuery(graphql`
     //     query siteTitle {
@@ -23,12 +23,14 @@ const LayoutSales = ({ pageTitle, children}) => {
         <div className='md:mx-20 lg:container lg:max-w-screen-xl'>
             {/* <title>{pageTitle} | {data.site.siteMetadata.title}</title> */}
 
-            <main className='z-0 px-2'>
+            {/* <main className='z-0 px-2'>
                 
                 {children}
 
-            </main>
-
+            </main> */}
+            <p>
+            TEST LAYOUT_SALES
+            </p>
 
         </div>
     )

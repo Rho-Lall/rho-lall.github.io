@@ -11,7 +11,7 @@ const title = 'Experience: Closing the Gap Between Recent College Grad & and Dat
 const ExperiencePage = () => {
 
   return (
-        <LayoutSales pageTitle={title}>
+        <div>
             
           <h1 className='heading mb-20'>{title}</h1>
             
@@ -36,7 +36,7 @@ const ExperiencePage = () => {
           <StaticImage src="../images/about_rho_lall.png"/>    
           </div> */}
           
-        </LayoutSales> 
+        </div> 
 
     )
 
