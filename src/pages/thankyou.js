@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 
 
-const ThankyouPage = (data) => {
+const ThankyouPage = ({data}) => {
 
-    const {author, siteUrl } = data.site.siteMetadata; 
+    const {author, siteUrl } = data.site.siteMetadata;  
 
     return (
         <Layout>
@@ -27,19 +27,20 @@ const ThankyouPage = (data) => {
     )
 }
 
-export default ThankyouPage 
-
-
 export const query = graphql`
-    query MyQuery {
+    query site_data {
         site {
-        siteMetadata {
-            author
-            description
-            keywords
-            siteUrl
-            title
-        }
+            siteMetadata {
+                author
+                description
+                keywords
+                siteUrl
+                title
+            }
         }
     }
 `
+
+export default ThankyouPage 
+
+
