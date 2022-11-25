@@ -14,13 +14,14 @@ import image from "../../thoughts/media/business_.png"
 const BusinessPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];   
+    const {author, siteUrl } = data.site.siteMetadata;  
     const description = "Everything you need to know about business intelligence reporting and using data to make better decisions for your business."
     const seokeywords = "data driven decision making, business intelligence reporting, using data to make decisions"
-    const site_name = "https://rho-lall.github.io"
-    const urlslug = "https://rho-lall.github.io"
+    const site_name = siteUrl
+    const urlslug = siteUrl
     const page_title = "Business Intelligence Reporting for Data Driven Decision Making"
-    const socialimagesq = "https://rho-lall.github.io" + imagesq
-    const socialimage = "https://rho-lall.github.io" + image
+    const socialimagesq = siteUrl + imagesq
+    const socialimage = siteUrl + image
 
   return (
     <Layout pageTitle={page_title}>
@@ -44,7 +45,7 @@ const BusinessPage = ({data}) => {
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
-            <meta name="author" content="Rho Lall"/>
+            <meta name="author" content={author}/>
 
         </Helmet>
 
@@ -153,6 +154,15 @@ query businessThoughts {
         }
         body
       }
+    }
+    site {
+        siteMetadata {
+          author
+          siteUrl
+          title
+          keywords
+          description
+        }
     }
   }
 `

@@ -14,13 +14,14 @@ import image from "../../thoughts/media/business_.png"
 const DesignPage = ({data}) => {
 
     const head = data.allMdx.nodes[0]; 
+    const {author, siteUrl } = data.site.siteMetadata;  
     const description = "A data driven marketing strategy is important to any organization that wants to drive strategic decisions and focus on a measurable business outcome. Find out how to implement this strategy in your organization today!"
     const seokeywords = "data driven marketing, data driven organization"
-    const site_name = "https://rho-lall.github.io"
-    const urlslug = "https://rho-lall.github.io"
+    const site_name = siteUrl
+    const urlslug = siteUrl
     const page_title = "Data Driven Marketing for the Data Driven Organization"
-    const socialimagesq = "https://rho-lall.github.io" + imagesq
-    const socialimage = "https://rho-lall.github.io" + image
+    const socialimagesq = siteUrl + imagesq
+    const socialimage = siteUrl + image
 
   return (
     <Layout pageTitle={page_title}>
@@ -45,7 +46,7 @@ const DesignPage = ({data}) => {
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
-            <meta name="author" content="Rho Lall"/>
+            <meta name="author" content={author}/>
 
         </Helmet>
 
@@ -154,6 +155,15 @@ query designThoughts {
         }
         body
       }
+    }
+    site {
+        siteMetadata {
+          author
+          siteUrl
+          title
+          keywords
+          description
+        }
     }
   }
 `

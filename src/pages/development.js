@@ -12,14 +12,15 @@ import image from "../../thoughts/media/business_.png"
 
 const DevelopmentPage = ({data}) => {
 
-    const head = data.allMdx.nodes[0];    
+    const head = data.allMdx.nodes[0];  
+    const {author, siteUrl } = data.site.siteMetadata;  
     const description = "BI Developers need to have a clear understanding of data driven development in order to be effective. This article provides insights from a BI Developer on the matter."
     const seokeywords = "bi developer, data driven development"
-    const site_name = "https://rho-lall.github.io"
-    const urlslug = "https://rho-lall.github.io"
+    const site_name = siteUrl
+    const urlslug = siteUrl
     const page_title = "BI Developer insights into data driven development"
-    const socialimagesq = "https://rho-lall.github.io" + imagesq
-    const socialimage = "https://rho-lall.github.io" + image
+    const socialimagesq = siteUrl + imagesq
+    const socialimage = siteUrl + image
 
   return (
     <Layout pageTitle={page_title}>
@@ -43,7 +44,7 @@ const DevelopmentPage = ({data}) => {
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
-            <meta name="author" content="Rho Lall"/>
+            <meta name="author" content={author}/>
 
         </Helmet>
 
@@ -151,6 +152,15 @@ query developmentThoughts {
           }
         }
         body
+      }
+    }
+    site {
+      siteMetadata {
+        author
+        siteUrl
+        title
+        keywords
+        description
       }
     }
   }

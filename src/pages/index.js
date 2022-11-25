@@ -66,16 +66,14 @@ import image from "../../thoughts/media/business_.png"
 
 const IndexPage = ({data}) => {
 
-    const head = data.allMdx.nodes[0];   
-    const description = "Everything you need to know about business intelligence reporting and using data to make better decisions for your business."
-    const seokeywords = "data driven culture, data driven storytelling, data driven decision making, business intelligence reporting, using data to make decisions"
-    const site_name = "https://rho-lall.github.io"
-    const urlslug = "https://rho-lall.github.io"
-    const page_title = "Fostering Data Driven Culture thru Data Driven Storytelling"
-    const socialimage = "https://rho-lall.github.io" + image
-    const socialimagesq_1 = "https://rho-lall.github.io" + imagesq1
-    const socialimagesq_2 = "https://rho-lall.github.io" + imagesq2
-    const socialimagesq_3 = "https://rho-lall.github.io" + imagesq3
+    const head = data.allMdx.nodes[0];
+    const {author, description, keywords, siteUrl, title } = data.site.siteMetadata;
+    const seokeywords = keywords  // "data driven culture, data driven storytelling, data driven decision making, business intelligence reporting, using data to make decisions"
+    const page_title = title
+    const socialimage = siteUrl + image
+    const socialimagesq_1 = siteUrl + imagesq1
+    const socialimagesq_2 = siteUrl + imagesq2
+    const socialimagesq_3 = siteUrl + imagesq3
 
     
 
@@ -84,8 +82,8 @@ const IndexPage = ({data}) => {
         <Helmet>
             <meta property="og:title" content={page_title}/>
             <meta property="og:description" content={description}/>
-            <meta property="og:url" content={urlslug}/>
-            <meta property="og:site_name" content={site_name}/>
+            <meta property="og:url" content={siteUrl}/>
+            <meta property="og:site_name" content={siteUrl}/>
             <meta property="og:type" content="website"/>
             <meta property="og:locale" content="en_US"/>
             <meta property="og:image" content={socialimagesq_1}/>
@@ -97,12 +95,12 @@ const IndexPage = ({data}) => {
             <meta name="twitter:creator" content="@rho_Lall"></meta>
             <meta name="twitter:title" content={page_title}/>
 
-            <link rel="canonical" href={site_name}/>
+            <link rel="canonical" href={siteUrl}/>
 
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
-            <meta name="author" content="Rho Lall"/>
+            <meta name="author" content={author}/>
 
         </Helmet>
 
@@ -181,35 +179,49 @@ const IndexPage = ({data}) => {
 }
 
 export const query = graphql`
-query thoughtList {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+    query thoughtList {
+        allMdx(sort: {fields: frontmatter___date, order: DESC}) {
         nodes {
             frontmatter {
-                date(formatString: "MMMM D, YYYY")
-                title
-                expertise
-                author
-                short
-                hero_alt
-                hero_image {
-                    childImageSharp {
-                      gatsbyImageData
-                    }
+            date(formatString: "MMMM D, YYYY")
+            title
+            expertise
+            author
+            short
+            hero_alt
+            hero_image {
+                childImageSharp {
+                gatsbyImageData
                 }
+            }
             }
             id
             slug
             parent {
-                ... on File {
-                    id
-                    name
-                    modifiedTime
-                }
+            ... on File {
+                id
+                name
+                modifiedTime
+            }
             }
             body
         }
+        }
+        site {
+        siteMetadata {
+            author
+            description
+            image
+            keywords
+            siteUrl
+            title
+            og {
+            siteName
+            twitterCreator
+            }
+        }
+        }
     }
-}
 `
 
 export default IndexPage

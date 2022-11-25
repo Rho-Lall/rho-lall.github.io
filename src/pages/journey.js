@@ -13,14 +13,15 @@ import image from "../../thoughts/media/business_.png"
 
 const JourneyPage = ({data}) => {
 
-    const head = data.allMdx.nodes[0];   
+    const head = data.allMdx.nodes[0];
+    const {author, siteUrl } = data.site.siteMetadata;   
     const description = "A data driven culture is key to success in the digital age. Learn how data driven storytelling can help you create a data driven culture and achieve your business goals."
     const seokeywords = "data driven storytelling, data driven culture"
-    const site_name = "https://rho-lall.github.io"
-    const urlslug = "https://rho-lall.github.io"
+    const site_name = siteUrl
+    const urlslug = siteUrl
     const page_title = "Fostering Data Driven Culture thru Data Driven Storytelling"
-    const socialimagesq = "https://rho-lall.github.io" + imagesq
-    const socialimage = "https://rho-lall.github.io" + image
+    const socialimagesq = siteUrl + imagesq
+    const socialimage = siteUrl + image
 
   return (
     <Layout pageTitle={page_title}>
@@ -44,7 +45,7 @@ const JourneyPage = ({data}) => {
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
-            <meta name="author" content="Rho Lall"/>
+            <meta name="author" content={author}/>
 
         </Helmet>
 
@@ -153,6 +154,19 @@ query journeyThoughts {
         }
         body
       }
+    }
+    site {
+        siteMetadata {
+            author
+            description
+            keywords
+            og {
+            siteName
+            twitterCreator
+            }
+            siteUrl
+            title
+        }
     }
   }
 `

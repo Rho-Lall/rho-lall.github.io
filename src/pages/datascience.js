@@ -14,13 +14,14 @@ import image from "../../thoughts/media/business_.png"
 const DataSciencePage = ({data}) => {
 
     const head = data.allMdx.nodes[0]; 
+    const {author, siteUrl } = data.site.siteMetadata;  
     const description = "A collection of resources for data science programming, with a focus on SQL and Python. It's for a datascientist who want to learn how to program, or a programmer who wants to become a datascientist."
     const seokeywords = "data science programming, datascientist"
-    const site_name = "https://rho-lall.github.io"
-    const urlslug = "https://rho-lall.github.io"
+    const site_name = siteUrl
+    const urlslug = siteUrl
     const page_title = "Data Science Programming for the DataScientist"
-    const socialimagesq = "https://rho-lall.github.io" + imagesq
-    const socialimage = "https://rho-lall.github.io" + image
+    const socialimagesq = siteUrl + imagesq
+    const socialimage = siteUrl + image
 
   return (
     <Layout pageTitle={'Data Science Programming for the DataScientist'}>
@@ -45,7 +46,7 @@ const DataSciencePage = ({data}) => {
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
-            <meta name="author" content="Rho Lall"/>
+            <meta name="author" content={author}/>
 
         </Helmet>
 
@@ -154,6 +155,15 @@ query datascienceThoughts {
         }
         body
       }
+    }
+    site {
+        siteMetadata {
+          author
+          siteUrl
+          title
+          keywords
+          description
+        }
     }
   }
 `

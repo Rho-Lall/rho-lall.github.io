@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `rho-lall.github.io`,
-    siteUrl: `https://rho-lall.github.io`,
+    title: `Assume Wisely`,
+    siteUrl: `https://assumewisely.com`,
     author: `Rho Lall`,
-    keywords: `data driven decision making, business intelligence reporting, using data to make decisions`,
+    keywords: `business intelligence reporting, data driven decision making, using data to make decisions`,
     image: '/thoughts/media/data_savvy_3.png',
-    descrption: `Drive data driven decision making, leverage business intelligence reporting to empower leaders by using data to make decisions.`,
+    description: `Business intelligence reporting resources to use data to make better decisions for your business.`,
     og: {
       siteName: 'Fostering a Data Driven Culture with Data Driven Storytelling',
       twitterCreator: '@rho_lall'
@@ -17,7 +17,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-097E0H123B", // Google Analytics / GA
+          "G-5RV9B2QZSZ", // Google Analytics / GA
           // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
           // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
