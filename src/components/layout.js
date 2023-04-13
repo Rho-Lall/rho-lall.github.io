@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-// import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import Hamburger from './hamburger'
 import "../components/global.css"
 import {    navLinks,
@@ -26,7 +26,7 @@ const Layout = ({ pageTitle, children}) => {
             <nav className='z-0 flex flex-row justify-end mr-20 md:mr-0 mb-5'>
                 <div className='font-display text-5xl md:text-7xl' >
                     <Link to='/'>
-                        Rho Lall
+                        <StaticImage src="../images/LOGO_grey.png"/>    
                     </Link>
                 </div>
 
