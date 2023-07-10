@@ -1,5 +1,5 @@
 
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import {Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
@@ -9,13 +9,15 @@ import imagesq1 from "../../thoughts/media/social/business_sq.png"
 import imagesq2 from "../../thoughts/media/social/business_sq_4.png"
 import imagesq3 from "../../thoughts/media/social/business_sq_5.png"
 import image from "../../thoughts/media/business_.png"
-import icon from "../../src/images/favicon.png"
+import icon from "../../src/images/e_gliph_white.png"
 
 
 // MVP LIST
 // DONE     Create site map
 // DONE     Did not find a plugin that scrapes mdx and adds links programatically. Must be done manually.
 // DONE     Fix Social Share functionality with Open Graph: https://www.digitalocean.com/community/tutorials/how-to-boost-seo-using-gatsby-s-seo-component-and-gatsby-react-helmet
+
+// Create a favicon for the site
 // create pagination for the blog: https://www.gatsbyjs.com/docs/adding-pagination/
 // Include email capture footer as part of the layout component.
 // create a search feature to find content: https://www.gatsbyjs.com/docs/adding-search-with-algolia
@@ -104,8 +106,6 @@ const IndexPage = ({data}) => {
             <meta name="keywords" content={seokeywords}/>
             <meta name="author" content={author}/>
         </Helmet>
-        
-        {/* <StaticImage src="../../src/images/favicon.png" alt="A kitten" /> */}
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>

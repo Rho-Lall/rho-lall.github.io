@@ -4,6 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage, getSrc } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import {Helmet} from 'react-helmet'
+// import icon from "../../src/images/e_gliph_white.png"
 // import imageSquare from "../../../thoughts/media/social/business_share.png"
 
 const BlogPost = ({data}) => {
@@ -11,6 +12,7 @@ const BlogPost = ({data}) => {
   const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.slug}`
   const featureimage = getImage(data.mdx.frontmatter.hero_image)
   const socialimage = `https://rho-lall.github.io${getSrc(data.mdx.frontmatter.hero_image)}`
+  // const favicon = siteUrl + icon
   // const socialimagesq = "https://rho-lall.github.io" + imageSquare
 
   return (
@@ -24,6 +26,7 @@ const BlogPost = ({data}) => {
           <meta property="og:url" content={urlslug}/>
           <meta property="og:site_name" content="rho-lall.github.io"/>
           <link rel="canonical" href={urlslug}/>
+          {/* <link rel="icon" href={favicon}/> */}
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:image" content={socialimage} />
           <meta name="twitter:creator" content="@rho_Lall"></meta>
