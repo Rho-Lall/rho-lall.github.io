@@ -75,7 +75,7 @@ const IndexPage = ({data}) => {
     const socialimagesq_1 = siteUrl + imagesq1
     const socialimagesq_2 = siteUrl + imagesq2
     const socialimagesq_3 = siteUrl + imagesq3
-    const favicon = icon
+    const favicon = siteUrl + icon
     
 
     return (
@@ -97,7 +97,7 @@ const IndexPage = ({data}) => {
             <meta name="twitter:title" content={page_title}/>
 
             <link rel="canonical" href={siteUrl}/>
-            <link rel="icon" href="../../src/images/favicon.png"/>
+            <link rel="icon" href={favicon}/>
 
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
@@ -105,7 +105,7 @@ const IndexPage = ({data}) => {
             <meta name="author" content={author}/>
         </Helmet>
         
-        <StaticImage src="../../src/images/favicon.png" alt="A kitten" />
+        {/* <StaticImage src="../../src/images/favicon.png" alt="A kitten" /> */}
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
