@@ -22,6 +22,8 @@ const AboutPage = () => {
           <p className='mb-5'>The passion that drives me is learning and uncovering new insight. </p>
           <p className='mb-5'>I dabble in architecture. I’m currently building a second-generation data stack using DBT, Snowflake, Looker, and Streamlit. I've built databases,  APIs, websites . . . and I've set my sites on blockchain development specifically using XRP and XLM.</p>
 
+          <StaticImage src="../../src/images/gliph.png"/>
+          <StaticImage src="../../src/images/gliph_wt.png"/>        
         </Layout> 
 
     )
