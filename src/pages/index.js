@@ -7,14 +7,14 @@ import imagesq1 from "../../thoughts/media/social/business_sq.png"
 import imagesq2 from "../../thoughts/media/social/business_sq_4.png"
 import imagesq3 from "../../thoughts/media/social/business_sq_5.png"
 import image from "../../thoughts/media/business_.png"
-import faviconImage from "../../src/images/gliph.png"
+import faviconImage from "/src/images/gliph.png"
 
 // MVP LIST
 // DONE     Create site map
 // DONE     Did not find a plugin that scrapes mdx and adds links programatically. Must be done manually.
 // DONE     Fix Social Share functionality with Open Graph: https://www.digitalocean.com/community/tutorials/how-to-boost-seo-using-gatsby-s-seo-component-and-gatsby-react-helmet
 
-// Create a favicon for the site
+// DONE     Create a favicon for the site
 // create pagination for the blog: https://www.gatsbyjs.com/docs/adding-pagination/
 // Include email capture footer as part of the layout component.
 // create a search feature to find content: https://www.gatsbyjs.com/docs/adding-search-with-algolia
@@ -71,7 +71,6 @@ const IndexPage = ({data}) => {
     const socialimagesq_1 = siteUrl + imagesq1
     const socialimagesq_2 = siteUrl + imagesq2
     const socialimagesq_3 = siteUrl + imagesq3
-    const favicon = siteUrl + faviconImage
     
 
     return (
@@ -93,14 +92,14 @@ const IndexPage = ({data}) => {
             <meta name="twitter:title" content={page_title}/>
 
             <link rel="canonical" href={siteUrl}/>
-            <link rel="icon" href={favicon}/>
+            <link rel="icon" href="https://assumewisely.com/static/fbd7ed6a78857ed0fbb1b2eea422eb92/b024c/gliph_wt.png"/>
 
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
             <meta name="author" content={author}/>
         </Helmet>
-        
+    
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
 
