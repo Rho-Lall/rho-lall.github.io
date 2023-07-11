@@ -7,7 +7,7 @@ import imagesq1 from "../../thoughts/media/social/business_sq.png"
 import imagesq2 from "../../thoughts/media/social/business_sq_4.png"
 import imagesq3 from "../../thoughts/media/social/business_sq_5.png"
 import image from "../../thoughts/media/business_.png"
-import favicon_img from "../..//src/images/e_gliph_white.png"
+// import favicon_img from "../../src/images/gliph_wt.png"
 
 // MVP LIST
 // DONE     Create site map
@@ -71,7 +71,7 @@ const IndexPage = ({data}) => {
     const socialimagesq_1 = siteUrl + imagesq1
     const socialimagesq_2 = siteUrl + imagesq2
     const socialimagesq_3 = siteUrl + imagesq3
-    const favicon = siteUrl + favicon_img
+    // const favi = siteUrl + favicon_img
     
 
     return (
@@ -93,14 +93,15 @@ const IndexPage = ({data}) => {
             <meta name="twitter:title" content={page_title}/>
 
             <link rel="canonical" href={siteUrl}/>
-            <link rel="icon" href={favicon}/>
+            {/* <link rel="icon" href={favi}/> */}
 
             <meta name="title" content={page_title}/>
             <meta name="description" content={description}/>
             <meta name="keywords" content={seokeywords}/>
             <meta name="author" content={author}/>
         </Helmet>
-        
+
+
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
 
