@@ -7,7 +7,7 @@ import imagesq1 from "../../thoughts/media/social/business_sq.png"
 import imagesq2 from "../../thoughts/media/social/business_sq_4.png"
 import imagesq3 from "../../thoughts/media/social/business_sq_5.png"
 import image from "../../thoughts/media/business_.png"
-//import favicon_img from "../../src/images/.png"
+//import favicon_img from "../../src/images/gliph.png"
 
 // MVP LIST
 // DONE     Create site map
