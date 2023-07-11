@@ -1,16 +1,13 @@
-
-// import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import {Link, graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
 import imagesq1 from "../../thoughts/media/social/business_sq.png"
 import imagesq2 from "../../thoughts/media/social/business_sq_4.png"
 import imagesq3 from "../../thoughts/media/social/business_sq_5.png"
 import image from "../../thoughts/media/business_.png"
-import icon from "../../src/images/e_gliph_white.png"
-
+import favicon_img from "../..//src/images/e_gliph_white.png"
 
 // MVP LIST
 // DONE     Create site map
@@ -64,9 +61,6 @@ import icon from "../../src/images/e_gliph_white.png"
 // zendesk looker                                                   10 - 100
 // shopify looker                                                   10 - 100
 
-
-
-
 const IndexPage = ({data}) => {
 
     const head = data.allMdx.nodes[0];
@@ -77,7 +71,7 @@ const IndexPage = ({data}) => {
     const socialimagesq_1 = siteUrl + imagesq1
     const socialimagesq_2 = siteUrl + imagesq2
     const socialimagesq_3 = siteUrl + imagesq3
-    const favicon = siteUrl + icon
+    const favicon = siteUrl + favicon_img
     
 
     return (
@@ -106,9 +100,11 @@ const IndexPage = ({data}) => {
             <meta name="keywords" content={seokeywords}/>
             <meta name="author" content={author}/>
         </Helmet>
-
+        
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
+
+
 
                 <GatsbyImage
                     image={getImage(head.frontmatter.hero_image)}
