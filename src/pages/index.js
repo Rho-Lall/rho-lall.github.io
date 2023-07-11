@@ -1,13 +1,13 @@
 import * as React from 'react'
 import {Link, graphql } from 'gatsby'
-import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage} from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
 import imagesq1 from "../../thoughts/media/social/business_sq.png"
 import imagesq2 from "../../thoughts/media/social/business_sq_4.png"
 import imagesq3 from "../../thoughts/media/social/business_sq_5.png"
 import image from "../../thoughts/media/business_.png"
-// import favicon_img from "../../src/images/gliph_wt.png"
+//import favicon_img from "../../src/images/.png"
 
 // MVP LIST
 // DONE     Create site map
@@ -100,7 +100,6 @@ const IndexPage = ({data}) => {
             <meta name="keywords" content={seokeywords}/>
             <meta name="author" content={author}/>
         </Helmet>
-
 
         <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
             <div className='md:basis-2/3 px-0 lg:px-2'>
