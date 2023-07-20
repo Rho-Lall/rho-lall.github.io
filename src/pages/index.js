@@ -23,43 +23,44 @@ import faviconImage from "/src/images/gliph.png"
 // create an mdx thought for each of these key words, (15 in total, 500 ish words each)
 
 // BUSINESS KEYWORDS
-// DONE     business intelligence reporting          1k - 10k
-// data driven decision making              1k - 10k
-// data driven decisions                                100 - 1k
-// using data to make decisions                         100 -1k
+// DONE     business intelligence reporting              1k - 10k
+// DONE     date warehousing for dummies pdf             10 -100 (mostly because I are already starting to rank && i am seeing )
+// data driven decision making                  1k - 10k
+// data driven decisions                        100 - 1k
+// using data to make decisions                 100 -1k
 
 // DATA SCIENCE KEYWORDS
-// data science programming                 1k - 10k   
-// datascientist                            1k - 10k
-// job of data scientist                    1k - 10k
-// data driven insights                                 100 - 1k
-// data driven solutions                                100 - 1k
+// data science programming                     1k - 10k   
+// datascientist                                1k - 10k
+// job of data scientist                        1k - 10k
+// data driven insights                         100 - 1k
+// data driven solutions                        100 - 1k
 
 // DEVELOPMENT KEYWORDS
-// bi developer                             1k - 10k
-// data driven development                              100 - 1k
+// bi developer                                 1k - 10k
+// data driven development                      100 - 1k
 
 // DESIGN KEYWORDS
-// data driven marketing                    1k - 10k
-// data driven organization                             100 -1k
+// data driven marketing                        1k - 10k
+// data driven organization                     100 -1k
 
 // MY JOURNEY KEYWORDS
-// data driven storytelling                             100 - 1k
-// data driven culture                                  100 - 1k
+// data driven storytelling                     100 - 1k
+// data driven culture                          100 - 1k
 
 // EXPERIENCE
-// no experience data analyst jobs                      100 - 1k
-// entry level data analyst jobs no experience          100 - 1k
-// data analyst no experience                           100 - 1k
+// no experience data analyst jobs              100 - 1k
+// entry level data analyst jobs no experience  100 - 1k
+// data analyst no experience                   100 - 1k
 
 // LOOKER
-// looker bi                                            100 - 1k
-// looker tableau                                       100 - 1k
-// snowflake looker                                                 10 - 100
-// dbt looker                                                       10 - 100
-// looker view                                                      10 - 100
-// zendesk looker                                                   10 - 100
-// shopify looker                                                   10 - 100
+// looker bi                                    100 - 1k
+// looker tableau                               100 - 1k
+// snowflake looker                             10 - 100
+// dbt looker                                   10 - 100
+// looker view                                  10 - 100
+// zendesk looker                               10 - 100
+// shopify looker                               10 - 100
 
 const IndexPage = ({data}) => {
 
