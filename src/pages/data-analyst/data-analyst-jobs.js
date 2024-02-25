@@ -21,7 +21,6 @@ const DataAnalystJobsPage = ({data}) => {
                 <div className='flex flex-col'>
                     <div className='flex md:flex-row flex-col place-content-center gap-4'>
                         <div className='md:w-1/2  pt-2'>
-                            <StaticImage src="../images/about_rho_lall.png"/>   
                             <StaticImage src="../images/interview_challenge_banner_224.png"/>   
                         </div>
 
@@ -111,7 +110,7 @@ const DataAnalystJobsPage = ({data}) => {
                             <StaticImage src="../images/interview_challenge_banner_224.png"/>
                             <div class='flex flex-row justify-end'>
                                 <div className=''>
-                                    <p class=''>Let my hindsight be your forsight. Follow me on <a href="https://www.linkedin.com/in/rholall" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a></p>
+                                    <p class=''>Follow me on <a href="https://www.linkedin.com/in/rholall" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a></p>
                                 </div>
                                 <div className='w-5 h-5 mt-4 mx-1'>
                                     <StaticImage src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo"/>
