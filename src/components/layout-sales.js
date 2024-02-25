@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-// import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 // import Hamburger from './hamburger'
 import "../components/global.css"
 import {    navLinks,
@@ -21,16 +21,18 @@ const LayoutSales = ({children}) => {
 
     return (
         <div className='md:mx-20 lg:container lg:max-w-screen-xl'>
-            {/* <title>{pageTitle} | {data.site.siteMetadata.title}</title> */}
 
-            {/* <main className='z-0 px-2'>
+            <main className='z-0'>
                 
                 {children}
 
-            </main> */}
-            <p>
-            TEST LAYOUT_SALES
-            </p>
+            </main >
+
+            <nav className='justify-around mt-5'>
+                    <Link to='/'>
+                        <StaticImage src="../images/LOGO_grey.png"/>    
+                    </Link>
+            </nav>
 
         </div>
     )
