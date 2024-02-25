@@ -19,35 +19,107 @@ const DataAnalystJobsPage = ({data}) => {
             <LayoutSales pageTitle={page_title}>
             
                 <div className='flex flex-col'>
-                    <div className='flex flex-row'>
-                        <div>
-                            {/* <StaticImage src="../images/about_rho_lall.png"/>    */}
+                    <div className='flex md:flex-row flex-col place-content-center gap-4'>
+                        <div className='md:w-1/2  pt-2'>
+                            <StaticImage src="../images/about_rho_lall.png"/>   
                             <StaticImage src="../images/interview_challenge_banner_224.png"/>   
                         </div>
 
-                        <div className='justify-center'>
-                            <h3 className='text-xl text-justify ml-12 mt-5'>{lead}</h3>
-                            <h3 className='text-4xl text-center mr-12 ml-12 mt-0 mb-5'>{headline}</h3>
-                            <h3 className='text-2xl text-center mr-5 ml-5 my-0'>{subhead}</h3>
-                            <h3 className='text-2xl text-center mr-5 ml-5 my-0'>{subhead2}</h3>
-                            <div className='flex flex-col items-center my-2'>
+                        <div className='justify-center md:w-1/2 flex flex-col'>
+                            <div className='h-2/3'>
+                                <h3 className='text-xl text-justify ml-12 mt-5'>{lead}</h3>
+                                <h3 className='text-4xl text-center mr-12 ml-12 mt-0 mb-5'>{headline}</h3>
+                                <h3 className='text-2xl text-center mr-5 ml-5 my-0'>{subhead}</h3>
+                                <h3 className='text-2xl text-center mr-5 ml-5 my-0'>{subhead2}</h3>
+                            </div>
+
+                            <div className='flex flex-col items-center my-5 h-1/3'>
                                 <button class="bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
                                     <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
                                     </svg>
-                                    <span>DOWNLOAD FREE</span>
+                                    <span>SAVE YOUR COPY</span>
                                 </button>
                             </div>
                         </div>  
                     </div>
                 </div>
 
-                <div className='bg-violet-400'>
-                    <div className='justify-around'>
-                        <h3 className='justify-around'>You will find out . . . </h3>
-                    </div>      
+                <div>
+                    <div className='bg-violet-400 mt-1'>
+                        <div className='justify-center'>
+                            <h2 className='text-center text-white'>You will find out . . . </h2>
+                        </div>      
+                    </div>
+
+                    <div className='flex md:flex-row flex-col bg-violet-400 justify-center'>
+
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
+                                <div class="px-6 py-4">
+                                    <div class="text-green-700 font-bold text-xl mb-2">Secret # 1</div>
+                                    <p class="text-gray-700 text-base mb-4">
+                                        Don't know Python? Get it emailed to your every week.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
+                                <div class="px-6 py-4">
+                                    <div class="text-green-700 font-bold text-xl mb-2">Secret # 2</div>
+                                    <p class="text-gray-700 text-base mb-4">
+                                        Get the CODE. Tweek it as you like.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
+                                <div class="px-6 py-4">
+                                    <div class="text-green-700 font-bold text-xl mb-2">Secret # 3</div>
+                                    <p class="text-gray-700 text-base mb-4">
+                                        How I overcame my own inexperience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+     
                 </div>
-                
+
+                <div className='flex flex-col'>
+                    <div className='flex md:flex-row flex-col place-content-center gap-4'>
+                        <div className='justify-center md:w-1/2 flex flex-col'>
+                            <div className='mx-5 md:mx-0'>
+                                <h3 className='text-xl text-justify mt-10'>My First step . . . </h3>
+                                <p>I started with a simple need that you might relate to: earn more money for my growing family...and to cover my growing medical bills. </p>
+                                <p>I had the skills but I just needed someone to take a chance so I could prove it.</p>
+                                <p>And then I found a python script that scraps open data analyst jobs. I run that script every week so it is fresh on Monday morning. You can access it here.</p>
+                                <p>I've even included the script so you can run it yourself.</p>
+                                <p>If I can do this, so can you! I'll show you how.</p>
+                            </div>
+
+                            <div className='flex flex-col items-center my-10'>
+                                <button class="bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                        <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
+                                    </svg>
+                                    <span>ACCESS THE LIST</span>
+                                </button>
+                            </div>
+                        </div>  
+                        <div className='md:w-1/2'>
+                            <h3 className='text-center pt-1'>I'm Rho Lall . . . </h3>
+                            <StaticImage src="../images/about_rho_lall.png"/>   
+                            <StaticImage src="../images/interview_challenge_banner_224.png"/>
+                            <div class='flex flex-row justify-end'>
+                                <div className=''>
+                                    <p class=''>Follow me on <a href="https://www.linkedin.com/in/rholall" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a></p>
+                                </div>
+                                <div className='w-5 h-5 mt-4 mx-1'>
+                                    <StaticImage src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo"/>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>                
             </LayoutSales>
 
             
