@@ -21,7 +21,8 @@ const DataAnalystJobsPage = ({data}) => {
                 <div className='flex flex-col'>
                     <div className='flex md:flex-row flex-col place-content-center gap-4'>
                         <div className='md:w-1/2  pt-2'>
-                            <StaticImage src="../images/interview_challenge_banner_224.png"/>   
+                            {/* <StaticImage src="../images/LOGO_grey.png"/>    */}
+                            <StaticImage src='../../thoughts/media/interview_challenge.png'/>
                         </div>
 
                         <div className='justify-center md:w-1/2 flex flex-col'>
