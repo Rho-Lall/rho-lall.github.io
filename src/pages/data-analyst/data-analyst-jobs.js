@@ -111,7 +111,7 @@ const DataAnalystJobsPage = ({data}) => {
                             <StaticImage src="../images/interview_challenge_banner_224.png"/>
                             <div class='flex flex-row justify-end'>
                                 <div className=''>
-                                    <p class=''>Follow me on <a href="https://www.linkedin.com/in/rholall" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a></p>
+                                    <p class=''>Let my hindsight be your forsight. Follow me on <a href="https://www.linkedin.com/in/rholall" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a></p>
                                 </div>
                                 <div className='w-5 h-5 mt-4 mx-1'>
                                     <StaticImage src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo"/>
