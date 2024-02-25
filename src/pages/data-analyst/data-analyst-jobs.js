@@ -21,7 +21,7 @@ const DataAnalystJobsPage = ({data}) => {
                 <div className='flex flex-col'>
                     <div className='flex flex-row'>
                         <div>
-                            <StaticImage src="../images/about_rho_lall.png"/>   
+                            {/* <StaticImage src="../images/about_rho_lall.png"/>    */}
                             <StaticImage src="../images/interview_challenge_banner_224.png"/>   
                         </div>
 
