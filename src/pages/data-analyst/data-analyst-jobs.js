@@ -42,24 +42,24 @@ const DataAnalystJobsPage = ({data}) => {
                 </div>
 
                 <div>
-                    <div className='bg-blue-700 mt-2 mt-1 md:mt-5'>
+                    <div className='bg-blue-700 mt-1 md:mt-5'>
                         <div className='justify-center'>
                             <h2 className='text-center text-white'>You will find out . . . </h2>
                         </div>      
                     </div>
 
-                    <div className='flex md:flex-row flex-col bg-blue-700 justify-center'>
+                    <div className='flex md:flex-row flex-col bg-blue-700 items-center'>
 
-                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-2 my-2">
                                 <div class="px-6 py-4">
                                     <div class="text-pink-700 font-bold text-xl mb-2">Secret # 1</div>
                                     <p class="text-gray-700 text-base mb-4">
-                                        80% of jobs are not on job boards.
+                                        80% of jobs are not on job boards. Find out where they are.
                                     </p>
                                 </div>
                             </div>
                             
-                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-2 my-2">
                                 <div class="px-6 py-4">
                                     <div class="text-pink-700 font-bold text-xl mb-2">Secret # 2</div>
                                     <p class="text-gray-700 text-base mb-4">
@@ -68,7 +68,7 @@ const DataAnalystJobsPage = ({data}) => {
                                 </div>
                             </div>
 
-                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-2 my-2">
                                 <div class="px-6 py-4">
                                     <div class="text-pink-700 font-bold text-xl mb-2">Secret # 3</div>
                                     <p class="text-gray-700 text-base mb-4">
@@ -76,7 +76,7 @@ const DataAnalystJobsPage = ({data}) => {
                                     </p>
                                 </div>
                             </div>
-                        </div> 
+                    </div> 
      
                 </div>
 
