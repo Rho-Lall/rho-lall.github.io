@@ -3,6 +3,7 @@ import * as React from 'react'
 // import { Helmet } from 'react-helmet'
 import LayoutSales from '../../components/layout-sales';
 import { StaticImage } from 'gatsby-plugin-image'
+import LeadCaptureDataAnalystJobs from '../../components/lead-capture/data-analyst-jobs';
 import { graphql } from 'gatsby'
 
 
@@ -14,6 +15,7 @@ const DataAnalystJobsPage = ({data}) => {
     const headline = 'Find data analyst jobs.'
     const subhead = 'entry level data analyst jobs'
     const subhead2 = 'remote no experience'
+    const ad_image = '../../images/ads/industry_leagues.png'
 
     return (
             <LayoutSales pageTitle={page_title}>
@@ -21,7 +23,7 @@ const DataAnalystJobsPage = ({data}) => {
                 <div className='flex flex-col'>
                     <div className='flex md:flex-row flex-col place-content-center gap-4'>
                         <div className='md:w-1/2  pt-2 shadow-lg'> 
-                            <StaticImage src='../../images/ads/data_analyst_jobs.png'/> 
+                            <StaticImage src={ad_image}/> 
                         </div>
 
                         <div className='justify-center md:w-1/2 flex flex-col'>
@@ -33,19 +35,14 @@ const DataAnalystJobsPage = ({data}) => {
                             </div>
 
                             <div className='flex flex-col items-center my-5 h-1/3'>
-                                <button class="bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-                                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                        <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
-                                    </svg>
-                                    <span>SAVE YOUR COPY</span>
-                                </button>
+                                <LeadCaptureDataAnalystJobs cta='GET YOUR COPY!'/>
                             </div>
                         </div>  
                     </div>
                 </div>
 
                 <div>
-                    <div className='bg-blue-700 mt-1'>
+                    <div className='bg-blue-700 mt-2 mt-1 md:mt-5'>
                         <div className='justify-center'>
                             <h2 className='text-center text-white'>You will find out . . . </h2>
                         </div>      
@@ -89,19 +86,20 @@ const DataAnalystJobsPage = ({data}) => {
                             <div className='mx-5 md:mx-0'>
                                 <h3 className='text-xl text-justify mt-10'>My First step . . . </h3>
                                 <p>I started with a simple need that you might relate to: earn more money for my growing family...and to cover my growing medical bills. </p>
-                                <p>I had the skills but I just needed someone to take a chance on mr so could prove it.</p>
+                                <p>I had the skills but I just needed someone to take a chance on me so could prove it.</p>
                                 <p>So then I had an aha moment that changed my job search forever.</p>
                                 <p>I want to share my insight with you, how I overcame my own inexperience.</p>
                                 <p>If I can do this, so can you! I'll show you how.</p>
                             </div>
 
                             <div className='flex flex-col items-center my-10'>
-                                <button class="bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                                {/* <button class="bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
                                     <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
                                     </svg>
                                     <span>DOWNLOAD FREE</span>
-                                </button>
+                                </button> */}
+                                <LeadCaptureDataAnalystJobs cta='DOWNLOAD FREE'/>
                             </div>
                         </div>  
                         <div className='md:w-1/2'>
