@@ -6,8 +6,6 @@ import "../components/global.css"
 import {    navLinks,
             navLinkItem,
         } from './layout.module.css'
-import Hotjar from '@hotjar/browser'
-import HotJarScript from './scripts'
 
 const Layout = ({ pageTitle, children}) => {
 
@@ -45,7 +43,6 @@ const Layout = ({ pageTitle, children}) => {
             </nav>
 
             <main className='z-0 px-2'>
-                <HotJarScript/>
                 {children}
 
             </main>

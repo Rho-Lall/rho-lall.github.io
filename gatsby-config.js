@@ -56,10 +56,18 @@ module.exports = {
       }
     },
     "gatsby-plugin-sitemap",
-    "@hotjar/browser"
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: false, // optional parameter to include script in development
+        id: 3881909,
+        sv: 6,
+      },
+    },
     
   ],
 
   pathPrefix: "",
+
 
 }
