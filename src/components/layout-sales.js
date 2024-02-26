@@ -6,6 +6,7 @@ import "../components/global.css"
 import {    navLinks,
             navLinkItem,
         } from './layout.module.css'
+import HotJarScript from './scripts'
 
 const LayoutSales = ({children}) => {
 
@@ -23,7 +24,7 @@ const LayoutSales = ({children}) => {
         <div className='md:mx-20 lg:container lg:max-w-screen-xl'>
 
             <main className='z-0'>
-                
+                <HotJarScript/>
                 {children}
 
             </main >

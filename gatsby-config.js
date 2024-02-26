@@ -56,6 +56,7 @@ module.exports = {
       }
     },
     "gatsby-plugin-sitemap",
+    "@hotjar/browser"
     
   ],
 
