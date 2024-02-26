@@ -20,9 +20,8 @@ const DataAnalystJobsPage = ({data}) => {
             
                 <div className='flex flex-col'>
                     <div className='flex md:flex-row flex-col place-content-center gap-4'>
-                        <div className='md:w-1/2  pt-2'>
-                            {/* <StaticImage src="../images/LOGO_grey.png"/>    */}
-                            <StaticImage src='../../thoughts/media/interview_challenge.png'/>
+                        <div className='md:w-1/2  pt-2 shadow-lg'> 
+                            <StaticImage src='../../images/ads/data_analyst_jobs.png'/> 
                         </div>
 
                         <div className='justify-center md:w-1/2 flex flex-col'>
@@ -46,37 +45,37 @@ const DataAnalystJobsPage = ({data}) => {
                 </div>
 
                 <div>
-                    <div className='bg-violet-400 mt-1'>
+                    <div className='bg-blue-700 mt-1'>
                         <div className='justify-center'>
                             <h2 className='text-center text-white'>You will find out . . . </h2>
                         </div>      
                     </div>
 
-                    <div className='flex md:flex-row flex-col bg-violet-400 justify-center'>
+                    <div className='flex md:flex-row flex-col bg-blue-700 justify-center'>
 
                             <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
                                 <div class="px-6 py-4">
-                                    <div class="text-green-700 font-bold text-xl mb-2">Secret # 1</div>
+                                    <div class="text-pink-700 font-bold text-xl mb-2">Secret # 1</div>
                                     <p class="text-gray-700 text-base mb-4">
-                                        Don't know Python? Get it emailed to your every week.
+                                        80% of jobs are not on job boards.
                                     </p>
                                 </div>
                             </div>
                             
                             <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
                                 <div class="px-6 py-4">
-                                    <div class="text-green-700 font-bold text-xl mb-2">Secret # 2</div>
+                                    <div class="text-pink-700 font-bold text-xl mb-2">Secret # 2</div>
                                     <p class="text-gray-700 text-base mb-4">
-                                        Get the CODE. Tweek it as you like.
+                                        Breaking down the market for data analyst jobs.
                                     </p>
                                 </div>
                             </div>
 
                             <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4 my-2">
                                 <div class="px-6 py-4">
-                                    <div class="text-green-700 font-bold text-xl mb-2">Secret # 3</div>
+                                    <div class="text-pink-700 font-bold text-xl mb-2">Secret # 3</div>
                                     <p class="text-gray-700 text-base mb-4">
-                                        How I overcame my own inexperience.
+                                        Get interviews without filling out 350 applications and wading through a sea of rejection.
                                     </p>
                                 </div>
                             </div>
@@ -90,9 +89,9 @@ const DataAnalystJobsPage = ({data}) => {
                             <div className='mx-5 md:mx-0'>
                                 <h3 className='text-xl text-justify mt-10'>My First step . . . </h3>
                                 <p>I started with a simple need that you might relate to: earn more money for my growing family...and to cover my growing medical bills. </p>
-                                <p>I had the skills but I just needed someone to take a chance so I could prove it.</p>
-                                <p>And then I found a python script that scraps open data analyst jobs. I run that script every week so it is fresh on Monday morning. You can access it here.</p>
-                                <p>I've even included the script so you can run it yourself.</p>
+                                <p>I had the skills but I just needed someone to take a chance on mr so could prove it.</p>
+                                <p>So then I had an aha moment that changed my job search forever.</p>
+                                <p>I want to share my insight with you, how I overcame my own inexperience.</p>
                                 <p>If I can do this, so can you! I'll show you how.</p>
                             </div>
 
@@ -101,14 +100,14 @@ const DataAnalystJobsPage = ({data}) => {
                                     <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
                                     </svg>
-                                    <span>ACCESS THE LIST</span>
+                                    <span>DOWNLOAD FREE</span>
                                 </button>
                             </div>
                         </div>  
                         <div className='md:w-1/2'>
                             <h3 className='text-center pt-1'>I'm Rho Lall . . . </h3>
-                            <StaticImage src="../images/about_rho_lall.png"/>   
-                            <StaticImage src="../images/interview_challenge_banner_224.png"/>
+                            
+                            <StaticImage className='shadow-lg' src="../images/about_rho_lall.png"/>   
                             <div class='flex flex-row justify-end'>
                                 <div className=''>
                                     <p class=''>Follow me on <a href="https://www.linkedin.com/in/rholall" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a></p>
