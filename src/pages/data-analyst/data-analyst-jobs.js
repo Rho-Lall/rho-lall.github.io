@@ -35,7 +35,7 @@ const DataAnalystJobsPage = ({data}) => {
                             </div>
 
                             <div className='flex flex-col items-center my-5 h-1/3'>
-                                <LeadCaptureDataAnalystJobs cta='GET YOUR COPY!'/>
+                                <LeadCaptureDataAnalystJobs cta='SAVE YOUR SEAT!'/>
                             </div>
                         </div>  
                     </div>
@@ -99,7 +99,7 @@ const DataAnalystJobsPage = ({data}) => {
                                     </svg>
                                     <span>DOWNLOAD FREE</span>
                                 </button> */}
-                                <LeadCaptureDataAnalystJobs cta='DOWNLOAD FREE'/>
+                                <LeadCaptureDataAnalystJobs cta='REGISTER NOW'/>
                             </div>
                         </div>  
                         <div className='md:w-1/2'>
