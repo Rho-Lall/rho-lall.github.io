@@ -105,7 +105,7 @@ const DataAnalystJobsPage = ({data}) => {
                         <div className='md:w-1/2'>
                             <h3 className='text-center pt-1'>I'm Rho Lall . . . </h3>
                             
-                            <StaticImage className='shadow-lg' src="../images/about_rho_lall.png"/>   
+                            <StaticImage className='shadow-lg' src="../../images/about_rho_lall.png"/>   
                             <div class='flex flex-row justify-end'>
                                 <div className=''>
                                     <p class=''>Follow me on <a href="https://www.linkedin.com/in/rholall" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a></p>

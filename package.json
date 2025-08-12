@@ -16,8 +16,10 @@
     "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
+    "@babel/core": "^7.28.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "ajv": "^8.17.1",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.13.1",
     "gatsby-plugin-google-gtag": "^4.16.0",
