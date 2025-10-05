@@ -63,7 +63,7 @@ const DevelopmentPage = ({data}) => {
                     <p>From <span className='text-primary'>{head.frontmatter.expertise}</span></p>
                     <div className=''>
                         <h2 className='mt-3'>
-                            <Link to={`/thoughts/${head.slug}`} className='text-3xl font-display'>
+                            <Link to={`/thoughts/${head.fields.slug}`} className='text-3xl font-display'>
                                 {head.frontmatter.title}
                             </Link>                    
                         </h2>
@@ -98,7 +98,7 @@ const DevelopmentPage = ({data}) => {
                             />
                             <div className='h-20 mt-2'>
                                 <h2>
-                                    <Link to={`/thoughts/${node.slug}`} className='text-xl font-display'>
+                                    <Link to={`/thoughts/${node.fields.slug}`} className='text-xl font-display'>
                                         {node.frontmatter.title}
                                     </Link>
                                 </h2>
@@ -143,7 +143,9 @@ query developmentThoughts {
           }
         }
         id
-        slug
+        fields {
+          slug
+        }
         parent {
           ... on File {
             id

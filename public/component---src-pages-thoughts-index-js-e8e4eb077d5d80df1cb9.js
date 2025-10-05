@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkassume_wisely_blog=self.webpackChunkassume_wisely_blog||[]).push([[15],{2433:function(e,l,t){t.r(l);var n=t(7294),u=t(7177);l.default=function(){return n.createElement(u.Z,{pageTitle:"Random Thoughts"},n.createElement("br",null),n.createElement("br",null))}}}]);
-//# sourceMappingURL=component---src-pages-thoughts-index-js-e8e4eb077d5d80df1cb9.js.map

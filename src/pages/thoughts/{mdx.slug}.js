@@ -9,7 +9,7 @@ import {Helmet} from 'react-helmet'
 
 const BlogPost = ({data}) => {
 
-  const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.slug}`
+  const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.fields.slug}`
   const featureimage = getImage(data.mdx.frontmatter.hero_image)
   const socialimage = `https://rho-lall.github.io${getSrc(data.mdx.frontmatter.hero_image)}`
   // const favicon = siteUrl + icon
@@ -118,7 +118,9 @@ query blogPost($id: String) {
         }
       }
     }
-    slug
+    fields {
+      slug
+    }
     body
   }
 }
