@@ -44,19 +44,19 @@ const HamburgerMenu = ({nav}) => {
             <MenuLinks nav={nav}>
                 <ul>
                     <li>
-                        <a href="/business">AI Strategy</a>
+                        <a href="/ai-strategy">AI Strategy</a>
                     </li>
                     <li>
-                        <a href="/datascience">Artificial Intelligence</a>
+                        <a href="/artificial-intelligence">Artificial Intelligence</a>
                     </li>
                     <li>
-                        <a href="/development">Analytics Engineering</a>
+                        <a href="/analytics-engineering">Analytics Engineering</a>
                     </li>
                     <li>
                         <a href="/design">Design</a>
                     </li>
                     <li>
-                        <a href="/journey">My Journey</a>
+                        <a href="/my-journey">My Journey</a>
                     </li>
                     <li>
                         <a href="/about">About Me</a>

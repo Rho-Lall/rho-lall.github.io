@@ -34,11 +34,11 @@ const Layout = ({ pageTitle, children}) => {
             
             <nav className='z-0 hidden md:flex flex-row justify-evenly mb-5 font-display'>
                 <ul className={navLinks}>
-                    <li className={navLinkItem}><Link to="/business" className='text-primary'>AI STRATEGY</Link></li>
-                    <li className={navLinkItem}><Link to="/datascience" className='text-primary'>ARTIFICIAL INTELLIGENCE</Link></li>
-                    <li className={navLinkItem}><Link to="/development" className='text-primary'>ANALYTICS ENGINEERING</Link></li>
+                    <li className={navLinkItem}><Link to="/ai-strategy" className='text-primary'>AI STRATEGY</Link></li>
+                    <li className={navLinkItem}><Link to="/artificial-intelligence" className='text-primary'>ARTIFICIAL INTELLIGENCE</Link></li>
+                    <li className={navLinkItem}><Link to="/analytics-engineering" className='text-primary'>ANALYTICS ENGINEERING</Link></li>
                     <li className={navLinkItem}><Link to="/design" className='text-primary'>DESIGN</Link></li>
-                    <li className={navLinkItem}><Link to="/journey" className='text-primary'>MY JOURNEY</Link></li>
+                    <li className={navLinkItem}><Link to="/my-journey" className='text-primary'>MY JOURNEY</Link></li>
                 </ul>
             </nav>
 
