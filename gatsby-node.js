@@ -7,52 +7,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     // Get the parent file node
     const parent = getNode(node.parent)
     
-    // Extract just the filename without the folder structure
-    const filename = path.basename(parent.relativePath, '.mdx')
+    // Create slug that includes the folder structure
+    const relativePath = parent.relativePath
+    // Remove the .mdx extension and create the full path
+    const fullSlug = relativePath.replace('.mdx', '')
     
-    // Create a custom slug field that ignores the folder structure
     createNodeField({
       node,
       name: 'slug',
-      value: filename,
+      value: fullSlug,
     })
   }
-}
-
-exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
-
-  // Query for all MDX files
-  const result = await graphql(`
-    query {
-      allMdx {
-        nodes {
-          id
-          fields {
-            slug
-          }
-          internal {
-            contentFilePath
-          }
-        }
-      }
-    }
-  `)
-
-  if (result.errors) {
-    reporter.panicOnBuild('Error loading MDX files', result.errors)
-    return
-  }
-
-  // Create pages for each MDX file
-  const posts = result.data.allMdx.nodes
-  posts.forEach((post) => {
-    createPage({
-      path: `/thoughts/${post.fields.slug}/`,
-      component: `${path.resolve('./src/pages/thoughts/{mdx.slug}.js')}?__contentFilePath=${post.internal.contentFilePath}`,
-      context: {
-        id: post.id,
-      },
-    })
-  })
 }

@@ -44,13 +44,13 @@ const HamburgerMenu = ({nav}) => {
             <MenuLinks nav={nav}>
                 <ul>
                     <li>
-                        <a href="/business">Business Acumen</a>
+                        <a href="/business">AI Strategy</a>
                     </li>
                     <li>
-                        <a href="/datascience">Data Science</a>
+                        <a href="/datascience">Artificial Intelligence</a>
                     </li>
                     <li>
-                        <a href="/development">Development</a>
+                        <a href="/development">Analytics Engineering</a>
                     </li>
                     <li>
                         <a href="/design">Design</a>
