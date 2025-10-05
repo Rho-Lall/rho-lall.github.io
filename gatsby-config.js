@@ -64,6 +64,257 @@ module.exports = {
         sv: 6,
       },
     },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.frontmatter.short || node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                      short
+                      expertise
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Assume Wisely - All Posts",
+            description: "Business intelligence reporting resources to use data to make better decisions for your business.",
+          },
+          // AI Strategy RSS Feed
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.frontmatter.short || node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { expertise: { eq: "AI Strategy" } } }
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                      short
+                      expertise
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/ai-strategy/rss.xml",
+            title: "Assume Wisely - AI Strategy",
+            description: "AI Strategy insights and business intelligence reporting resources.",
+          },
+          // Artificial Intelligence RSS Feed
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.frontmatter.short || node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { expertise: { eq: "Artificial Intelligence" } } }
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                      short
+                      expertise
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/artificial-intelligence/rss.xml",
+            title: "Assume Wisely - Artificial Intelligence",
+            description: "Artificial Intelligence and data science programming resources.",
+          },
+          // Analytics Engineering RSS Feed
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.frontmatter.short || node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { expertise: { eq: "Analytics Engineering" } } }
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                      short
+                      expertise
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/analytics-engineering/rss.xml",
+            title: "Assume Wisely - Analytics Engineering",
+            description: "Analytics Engineering and BI development insights.",
+          },
+          // Design RSS Feed
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.frontmatter.short || node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { expertise: { eq: "Design" } } }
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                      short
+                      expertise
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/design/rss.xml",
+            title: "Assume Wisely - Design",
+            description: "Data-driven design and marketing insights.",
+          },
+          // My Journey RSS Feed
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.frontmatter.short || node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { expertise: { eq: "My Journey" } } }
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                      short
+                      expertise
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/my-journey/rss.xml",
+            title: "Assume Wisely - My Journey",
+            description: "Personal insights and journey in data-driven storytelling.",
+          },
+        ],
+      },
+    },
     
   ],
 
