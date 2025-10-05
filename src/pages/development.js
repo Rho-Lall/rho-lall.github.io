@@ -126,7 +126,7 @@ export const query = graphql`
 query developmentThoughts {
     allMdx(
       sort: {fields: frontmatter___date, order: DESC}
-      filter: {frontmatter: {expertise: {eq: "Development"}}}
+      filter: {frontmatter: {expertise: {eq: "Analytics Engineering"}}}
     ) {
       nodes {
         frontmatter {

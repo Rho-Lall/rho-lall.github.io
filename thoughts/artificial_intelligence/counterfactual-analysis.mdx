@@ -1,0 +1,66 @@
+---
+title: "Counterfactual Analysis"
+date: "2022-09-03"
+hero_image: ../media/data_savvy_3.png
+hero_alt: "Counterfactual Analysis"
+expertise: "Artificial Intelligence"
+author: "Rho Lall"
+keywords: "data science programming, datascientist, job of data scientist, data driven insights, data driven solutions"
+short: "
+
+Counterfactual analysis can be used to determine the lift of a campaign or ad. 
+
+"
+
+---
+How would things be different if something hadn't happened? This is what counterfactual analysis looks at. For example, we can look at how sales change as a result of a new marketing campaign and attribute the incremental lift in sales due to the campaign. By doing this, we can understand what portion of sales is a result of the campaign, and which would have happened anyway. Counterfactual analysis can be done in addition to traditional lift analysis or when traditional lift analysis is not possible.
+
+To figure out what would have happened without the campaign, break your audience into two groups. The first group sees the ad. The second group is similar to the first group, but doesn't see the ad.
+
+The results from this second control group allow us to see what would have happened with our test group had they not seen the ad.
+
+Counterfactual impact evaluation methods encompass double difference analysis (or difference-in-difference), randomized selection of subjects, propensity score matching and instrumental variable analysis. It is also possible to combine methods. For example, propensity score matching can be used to create treatment and control groups, while double difference analysis can be employed to evaluate the impact of the treatment.
+
+## Double Difference Analysis
+Double difference analysis compares treatment and control groups at different time periods. The first step is to look at the difference between the groups. The second step is to look at the difference over time between the groups.
+
+Double difference analysis takes into account that there are some invisible characteristics that account for differences between the treatment and control groups. If these characteristics do not change over time, their impact can be eliminated by comparing both groups before and after the treatment.
+
+Double difference means that two kinds of differences are assessed. Firstly, the difference in time (before and after the intervention), and secondly, the difference between individuals who were subjected to the intervention and those who were not.
+
+Let's look at how to analyze the average number of sales per day as an example. Assume that an intervention is applied to the treatment group, they see an ad. This will cause a change in time (“before-after”). We can measure much this treatment changes things by subtracting the change in average number of sales per day for the control group from the change in average number of sales per day for the treatment group. This will give us a double difference estimator (treatment’s impact estimate).
+
+Double difference analysis is based on the idea that, if there was no treatment, the average number of sales per day in the treatment group would be the same as the average number of sales per day in the control group. The counterfactual situation is what would have happened if there was no treatment.
+
+## Double Difference Regression
+Double difference regression helps to see if the impact is statistically significant. It also helps to take into account the influence of additional periodic or structural factors.
+
+We can develop this regression model:
+
+Yi,t = a + b1*Ti + b2*Pt + b3*Ti*Pt + ԑi,t
+
+where:
+
+**Yi** is the outcome of a sale in a particular period. This can be measured by the number of sales.
+
+**Ti** is a variable that has two possible values: 1, if a product participated in the treatment, and 0, if a product did not participate in the treatment.
+
+**Pt** is a variable that can have two different values. The first value, 0, reflects the time period before the intervention happened. The second value, 1, reflects the time period after the intervention happened.
+
+**Ti*Pt** is the outcome of the two previous variables which acquires value 1 only when the outcome of the product that received the treatment, in the period after the treatment, is taken into account.
+
+**ԑi,t** is an error of the regression.
+
+**a, b1, b2, b3** are parameters of the regression that are under evaluation.
+
+**a** reflects the average outcome (sale) of the product which did not participate in the treatment, in the period before receiving the treatment;
+
+**b1** reflects the initial difference between the treatment and control groups;
+
+**b2** reflects the difference in the outcomes (e.g. sales) of the products that did not participate in the treatment between periods;
+
+**b3** reflects an impact estimate.
+
+The significance of the parameters is evaluated at the same time. For example, if the parameter that reflects the impact estimate is not statistically significant, then it is important to be careful about saying that the assistance definitely had an impact.
+
+**TLDR:** Counterfactual analysis can be used to determine the lift of a campaign or ad. Counterfactual analysis is a method used to determine the difference in outcomes between groups that saw an ad and groups that did not. This analysis takes into account that there are some invisible characteristics that account for differences between groups. If these characteristics do not change over time, their impact can be eliminated by comparing both groups before and after the test group sees the ad.

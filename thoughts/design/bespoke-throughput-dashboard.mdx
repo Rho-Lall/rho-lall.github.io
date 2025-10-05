@@ -1,0 +1,34 @@
+---
+title: "A Bespoke Throughput Dashboard"
+date: "2021-07-08"
+hero_image: ../media/design_3.png
+hero_alt: "A Bespoke Throughput Dashboard"
+expertise: "Design"
+author: "Rho Lall"
+keywords: "data science programming, datascientist, job of data scientist, data driven insights, data driven solutions"
+short: "
+
+​Let me tell you about a bespoke throughput dashboard I created: a cloud based Excel workbook that breaks out visualizations by activity which engages decision makers while maintaining accessibility.
+
+"
+
+---
+Let me tell you about a bespoke throughput dashboard I created: a cloud based Excel workbook that breaks out visualizations by activity which engages decision makers while maintaining accessibility.
+
+If you are familiar with Lean production, TPM, or the theory of constraints then you appreciate the need for a “Throughput Dashboard” to identify and manage constraints including the primary bottleneck. You understand that by focusing resources on optimizing and raising the capacity of the bottleneck you raise the productivity of the entire process. If you don’t, you should check out, The Goal by Eliyahu Goldratt (the Audiobook is fantastic!).
+
+One of my team’s responsibilities is managing the primary bottleneck. To do that we use a throughput dashboard which looks alot like a calendar. The original calendar exists in Google Sheets. There is a tab for each month. The projects for each week are broken out by client and report type. The report types are color coded so you can see what you are getting on any given week. (See image directly below.)
+
+It worked. It wasn’t intuitive, you needed some training to understand it because there was a lot going on. But it did the job and it worked. As our processes matured and our capacity increased we started to see our dashboard begin to buckle. Cracks were starting to form.
+
+The new dashboard tracks projects at a granular level which allows us to dynamically reschedule projects into infinite combinations as needed. It tracks scheduling, rescheduling, & cancellations as separate records. This is all captured in one large table hidden in the background. Pivot tables aggregate the data into the various views as needed.
+
+The first view is the Year At A Glance (See top image). Each open week has a green light. Closed weeks are indicated with red lights. This is all the information that most consultants need when scheduling. For management, and those who are curious additional detail is given.
+
+There is a second table (also hidden) that scheduled capacity for the year. This table accounts for holidays and scheduled time off. Both this table and the main table are combined in the Excel Data Model to provide a joined Pivot that provides availability calculations for each week.
+
+The second view is the weekly view (see below). This is a pivot table configured to breakout the projects for a given week. This allows each project to be seen at different levels of granularity. It includes a tool to facilitate delegating assignments.
+
+The third view is a One on One view (see below). This view is new. It’s not possible on the original dashboard. It is also a pivot table that is configured with a slight variation on the filters to allow the consultants to see just the projects they have scheduled either for a given month or the rest of the year. This allows everyone to be on the same page with what has been planed.
+
+This is version 3.0 of this throughput dashboard. It’s the first production version. It is fully accessible on the cloud. Future versions will include automation for scheduling new projects as well as additional visualizations. It isn't as sexy as what can be done in Tableau. It isn't designed to be. That is ok with me.
