@@ -1,8 +1,7 @@
-import * as React from 'react'
-import {Link, graphql } from 'gatsby'
-import { GatsbyImage, getImage} from 'gatsby-plugin-image'
+import { Link, graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import imagesq1 from "../../thoughts/media/social/business_sq.png"
 import imagesq2 from "../../thoughts/media/social/business_sq_4.png"
 import imagesq3 from "../../thoughts/media/social/business_sq_5.png"
@@ -62,86 +61,86 @@ import faviconImage from "/src/images/gliph.png"
 // zendesk looker                               10 - 100
 // shopify looker                               10 - 100
 
-const IndexPage = ({data}) => {
+const IndexPage = ({ data }) => {
 
     const head = data.allMdx.nodes[0];
-    const {author, description, keywords, siteUrl, title } = data.site.siteMetadata;
+    const { author, description, keywords, siteUrl, title } = data.site.siteMetadata;
     const seokeywords = keywords  // "data driven culture, data driven storytelling, data driven decision making, business intelligence reporting, using data to make decisions"
     const page_title = title
     const socialimage = siteUrl + image
     const socialimagesq_1 = siteUrl + imagesq1
     const socialimagesq_2 = siteUrl + imagesq2
     const socialimagesq_3 = siteUrl + imagesq3
-    
+
 
     return (
-    <Layout pageTitle={page_title}>
-        <Helmet>
-            <meta property="og:title" content={page_title}/>
-            <meta property="og:description" content={description}/>
-            <meta property="og:url" content={siteUrl}/>
-            <meta property="og:site_name" content={siteUrl}/>
-            <meta property="og:type" content="website"/>
-            <meta property="og:locale" content="en_US"/>
-            <meta property="og:image" content={socialimagesq_1}/>
-            <meta property="og:image" content={socialimagesq_2}/>
-            <meta property="og:image" content={socialimagesq_3}/>
+        <Layout pageTitle={page_title}>
+            <Helmet>
+                <meta property="og:title" content={page_title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:url" content={siteUrl} />
+                <meta property="og:site_name" content={siteUrl} />
+                <meta property="og:type" content="website" />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:image" content={socialimagesq_1} />
+                <meta property="og:image" content={socialimagesq_2} />
+                <meta property="og:image" content={socialimagesq_3} />
 
-            <meta name="twitter:card" content="summary_large_image"></meta>
-            <meta name="twitter:image" content={socialimage} />
-            <meta name="twitter:creator" content="@rho_Lall"></meta>
-            <meta name="twitter:title" content={page_title}/>
+                <meta name="twitter:card" content="summary_large_image"></meta>
+                <meta name="twitter:image" content={socialimage} />
+                <meta name="twitter:creator" content="@rho_Lall"></meta>
+                <meta name="twitter:title" content={page_title} />
 
-            <link rel="canonical" href={siteUrl}/>
-            <link rel="icon" href="https://assumewisely.com/static/fbd7ed6a78857ed0fbb1b2eea422eb92/b024c/gliph_wt.png"/>
+                <link rel="canonical" href={siteUrl} />
+                <link rel="icon" href="https://assumewisely.com/static/fbd7ed6a78857ed0fbb1b2eea422eb92/b024c/gliph_wt.png" />
 
-            <meta name="title" content={page_title}/>
-            <meta name="description" content={description}/>
-            <meta name="keywords" content={seokeywords}/>
-            <meta name="author" content={author}/>
-        </Helmet>
-    
-        <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
-            <div className='md:basis-2/3 px-0 lg:px-2'>
+                <meta name="title" content={page_title} />
+                <meta name="description" content={description} />
+                <meta name="keywords" content={seokeywords} />
+                <meta name="author" content={author} />
+            </Helmet>
+
+            <div className='flex flex-col lg:flex-row mb-0 lg:mb-5'>
+                <div className='md:basis-2/3 px-0 lg:px-2'>
 
 
 
-                <GatsbyImage
-                    image={getImage(head.frontmatter.hero_image)}
-                    alt={head.frontmatter.hero_alt}
-                />
+                    <GatsbyImage
+                        image={getImage(head.frontmatter.hero_image)}
+                        alt={head.frontmatter.hero_alt}
+                    />
 
-            </div>
+                </div>
 
-            <div className=' md:basis-1/3 flex flex-col'>
-                <div className='mb-2 lg:mb-0'>
-                    <p>From <span className='text-primary'>{head.frontmatter.expertise}</span></p>
-                    <div className=''>
-                        <h2 className='mt-3'>
-                            <Link to={`/thoughts/${head.fields.slug.replace(/_/g, '-')}`} className='text-3xl font-display'>
-                                {head.frontmatter.title}
-                            </Link>                    
-                        </h2>
+                <div className=' md:basis-1/3 flex flex-col'>
+                    <div className='mb-2 lg:mb-0'>
+                        <p>From <span className='text-primary'>{head.frontmatter.expertise}</span></p>
+                        <div className=''>
+                            <h2 className='mt-3'>
+                                <Link to={`/thoughts/${head.fields.slug.replace(/_/g, '-')}`} className='text-3xl font-display'>
+                                    {head.frontmatter.title}
+                                </Link>
+                            </h2>
+                        </div>
+                        <p>{head.frontmatter.short}</p>
                     </div>
-                    <p>{head.frontmatter.short}</p>
+
+                    <div className='mt-auto'>
+
+                        <p className=''>{head.frontmatter.date}</p>
+                        <hr />
+
+                    </div>
+
+
                 </div>
 
-                <div className='mt-auto'>
-                    
-                    <p className=''>{head.frontmatter.date}</p>
-                    <hr/>
-
-                </div>
-                
 
             </div>
-
-
-        </div>
-        <br/>
-        <div className='flex flex-col lg:flex-row flex-wrap inline '>
-            { 
-                data.allMdx.nodes.slice(1).map((node) => (
+            <br />
+            <div className='flex flex-col lg:flex-row flex-wrap inline '>
+                {
+                    data.allMdx.nodes.slice(1).map((node) => (
 
                         <article key={node.id} className='basis-1/3 pb-2 flex flex-col mb-2 px-1'>
 
@@ -162,18 +161,18 @@ const IndexPage = ({data}) => {
                             <p className='mb-6 px-2 text-sm'>{node.frontmatter.short}</p>
 
                             <div className='mt-auto'>
-                                
+
                                 <p>{node.frontmatter.date}</p>
-                                <hr/>
+                                <hr />
                             </div>
                         </article>
 
-                ))
-            }
-        </div>
-    </Layout> 
+                    ))
+                }
+            </div>
+        </Layout>
 
-)
+    )
 
 }
 
