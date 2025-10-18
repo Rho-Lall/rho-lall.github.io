@@ -3,10 +3,10 @@ import { Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import { Helmet } from 'react-helmet'
-import imagesq1 from "../../thoughts/media/social/business_sq.png"
-import imagesq2 from "../../thoughts/media/social/business_sq_4.png"
-import imagesq3 from "../../thoughts/media/social/business_sq_5.png"
-import image from "../../thoughts/media/business_.png"
+import imagesq1 from "../images/media/social/business_sq.png"
+import imagesq2 from "../images/media/social/business_sq_4.png"
+import imagesq3 from "../images/media/social/business_sq_5.png"
+import image from "../images/media/business_.png"
 import faviconImage from "/src/images/gliph.png"
 
 // MVP LIST

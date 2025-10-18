@@ -41,6 +41,13 @@ module.exports = {
         path: `${__dirname}/thoughts`,
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      }
+    },
     "gatsby-remark-images",
     {
       resolve: `gatsby-plugin-mdx`,
@@ -49,7 +56,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth:1200,
+              maxWidth: 1200,
             }
           }
         ]
@@ -315,7 +322,7 @@ module.exports = {
         ],
       },
     },
-    
+
   ],
 
   pathPrefix: "",

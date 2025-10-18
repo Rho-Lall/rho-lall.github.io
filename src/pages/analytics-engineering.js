@@ -6,8 +6,8 @@ import {Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {Helmet} from 'react-helmet'
-import imagesq from "../../thoughts/media/social/business_sq.png"
-import image from "../../thoughts/media/business_.png"
+import imagesq from "../images/media/social/business_sq.png"
+import image from "../images/media/business_.png"
 
 
 const DevelopmentPage = ({data}) => {
