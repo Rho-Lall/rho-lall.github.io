@@ -1,38 +1,23 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-// import Hamburger from './hamburger'
 import "../components/global.css"
-import {    navLinks,
-            navLinkItem,
-        } from './layout.module.css'
 
-const LayoutSales = ({children}) => {
-
-    // const data = useStaticQuery(graphql`
-    //     query siteTitle {
-    //         site {
-    //             siteMetadata {
-    //                 title
-    //             }
-    //         }
-    //     }
-    // `)
+const LayoutSales = ({ pageTitle, children }) => {
 
     return (
-        <div className='md:mx-20 lg:container lg:max-w-screen-xl'>
-
-            <main className='z-0'>
+        <div className="min-h-screen bg-white">
+            {/* Main Content Area - Full Width for Sales Pages */}
+            <main>
                 {children}
+            </main>
 
-            </main >
-
-            <nav className='justify-around mt-5'>
-                    <Link to='/'>
-                        <StaticImage src="../images/LOGO_grey.png"/>    
-                    </Link>
-            </nav>
-
+            {/* Minimal Footer */}
+            <footer className="py-8 px-4 md:px-8 mt-16 border-t border-gray-200">
+                <div className="max-w-6xl mx-auto text-center text-gray-600 text-sm">
+                    <p>&copy; {new Date().getFullYear()} Rho Lall. All rights reserved.</p>
+                </div>
+            </footer>
         </div>
     )
 

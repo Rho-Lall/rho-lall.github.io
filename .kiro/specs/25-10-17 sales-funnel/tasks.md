@@ -2,25 +2,25 @@
 
 ## Phase 1A: Manual Squeeze Page (Prove Basic Functionality)
 
-- [ ] 1. Consolidate image organization
+- [x] 1. Consolidate image organization
   - Move all images from `thoughts/media/` to `src/images/`
   - Update blog files that reference the old media paths
   - Organize images in logical subdirectories under `src/images/`
   - _Requirements: 4.3, 4.5_
 
-- [ ] 2. Create basic page structure and hero section
+- [x] 2. Create basic page structure and hero section
   - Create `src/pages/ai/index.js` file with Layout component
   - Build hero section with image, headline, subheadline using variables
   - Create placeholder email capture form component (functional UI, no backend)
   - _Requirements: 1.1, 1.2, 4.1, 4.5_
 
-- [ ] 3. Add benefits section
+- [x] 3. Add benefits section
   - Create benefits section with bullet points/features
   - Include placeholder form in benefits section
   - Style with existing Tailwind classes for consistency
   - _Requirements: 1.1, 1.2, 4.1, 4.2_
 
-- [ ] 4. Add credibility section (Who is Rho Lall?)
+- [x] 4. Add credibility section (Who is Rho Lall?)
   - Create credibility/about section with your photo and bio
   - Style to match existing site patterns
   - Make responsive for mobile/tablet/desktop
