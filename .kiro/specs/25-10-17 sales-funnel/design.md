@@ -25,14 +25,23 @@ This design document outlines a phased approach to building a reusable Money Mod
 
 ## Architecture
 
-### Overall Money Model System Structure
+### Overall Money Model System Structure (Updated)
 ```
 Money Model System
-├── YAML Configuration Files (define content for each funnel)
-├── Gatsby Pages (squeeze.js, tripwire.js, oto.js, etc.)
-│   └── Each page manages the navigation for its scope. ie button redirects
-├── Shared React Components (forms, layout elements)
-└── External Integrations (ConvertKit forms, Stripe payments)
+├── Static Site (Gatsby - Current Project)
+│   ├── Squeeze Pages (/ai/, /data-analyst/, etc.)
+│   ├── Tripwire Pages (/ai/tripwire, etc.)
+│   ├── Thank You Pages (post-purchase redirects)
+│   └── Static Content & Styling
+├── Server Project (Phase 2 - Separate Repository)
+│   ├── Form Processing API
+│   ├── Stripe Payment Integration
+│   ├── Database (user data, transactions)
+│   └── Webhook Handlers
+└── External Integrations
+    ├── ConvertKit (email capture)
+    ├── Stripe (payment processing)
+    └── Analytics (tracking, if needed)
 ```
 
 ### Generalized Page Architecture
@@ -49,110 +58,61 @@ Funnel Page Structure
 
 **Pattern**: Each page (squeeze, tripwire, OTO, etc.) will use the same architectural approach - load YAML config, extract relevant content, render with shared components. This ensures consistency and reusability across all funnel pages.
 
-*Detailed implementation will be developed during Phase 1 and 2.*
+*Detailed implementation will be developed during Phase 1 and 3.*
 
 ### Technology Stack
-- **Framework**: Gatsby (extending existing site)
+
+#### Static Site (Current Project)
+- **Framework**: Gatsby 5 (upgraded from Gatsby 4)
 - **Styling**: Tailwind CSS (using existing classes and patterns)
-- **Layout**: Existing Layout component from src/components/layout.js
-- **Configuration**: YAML files (new addition)
-- **Forms**: ConvertKit integration (following existing src/components/lead-capture pattern)
-- **Payments**: Stripe (future phases)
-- **Routing**: Gatsby's file-based routing system (src/pages/)
+- **Node.js**: v23.6.1 (compatible with Gatsby 5)
+
+#### Server Project (Phase 2 - Separate Project)
+- **Framework**: TBD (Node.js + Express, Next.js API routes, or similar)
+- **Database**: TBD (PostgreSQL, MongoDB, or similar)
+- **Forms**: Server-side validation and processing
+- **Hosting**: TBD (separate from static site)
 
 ### YAML Configuration Schema
-```yaml
-funnel:
-  name: "Example Funnel"
-  slug: "example"
-  
-squeeze_page:
-  hero_image: "/images/hero.jpg"
-  headline: "Get Your Free Guide"
-  subheadline: "Learn the secrets to..."
-  bullet_points:
-    - "Benefit 1"
-    - "Benefit 2"
-    - "Benefit 3"
-  cta_text: "Get Instant Access"
-  convertkit_form_id: "123456"
-  
-# Future phases will add:
-# tripwire_offer: { ... }
-# oto_offer: { ... }
-# stripe_config: { ... }
-```
 
-## Phase 1 Detailed Design
-
-### Component Architecture
-
-**Squeeze Page Component:**
-```
-SqueezePage
+SqueezePage (/ai/)
 ├── Hero Section (image, headline, subheadline)
-├── Benefits Section (bullet points)
-├── Form Section (ConvertKit integration)
+├── Benefits Section (bullet points)  
+├── Credibility Section (bio, photo)
+├── Bonus Section (additional offer)
+├── CTA Section (final call-to-action)
+└── Form Sections (placeholder forms → tripwire page)
+
+TripwirePage (/ai/tripwire)
+├── Hero Section (limited time offer)
+├── Product Section (details, pricing, benefits)
+├── CTA Section (buy now / no thanks buttons)
 └── Footer (consistent with site)
-```
-
-**Shared Components:**
-- `FunnelLayout` - Wrapper that provides consistent styling
-- `ConvertKitForm` - Reusable form component (based on existing pattern)
-- `YAMLLoader` - Utility to load and parse funnel configurations
-
-### YAML Configuration System
-**File Structure:**
-```
-src/data/funnels/
-├── example-funnel.yaml
-└── [future-funnel].yaml
-```
-
-### Routing Strategy
-
-**Phase 1 Routes (Gatsby Pages):**
-- `src/pages/[slug]/index.js` - Squeeze page → `https://site.com/[slug]`
-
-**Future Phase Routes (Scaffolding):**
-- `src/pages/[slug]/[step].js` - Dynamic routing for all funnel steps
-  - Tripwire: `https://site.com/[slug]/[custom-tripwire-slug]`
-  - OTO: `https://site.com/[slug]/[custom-oto-slug]`
-  - Bump: `https://site.com/[slug]/[custom-bump-slug]`
-  - Cart pages: `https://site.com/[slug]/[custom-cart-slug]`
-  - Thank you: `https://site.com/[slug]/[custom-thankyou-slug]`
-
-**URL Structure**: YAML configuration defines custom URL slugs for marketing-friendly URLs instead of technical names.
-
-### Data Flow
-
-1. **Configuration Loading**: Direct YAML import using js-yaml library
-2. **Page Rendering**: Each page imports its funnel's YAML config
-3. **Form Submission**: ConvertKit handles lead capture
-4. **Navigation**: Button clicks redirect to URLs defined in YAML config
-
-**YAML Import Pattern:**
-```javascript
-import yaml from 'js-yaml'
-import funnelConfigRaw from '../../data/funnels/data-analyst-jobs.yaml'
-
-const funnelConfig = yaml.load(funnelConfigRaw)
-```
 
 
-## Phase 2: Stripe Integration Proof of Concept
-- Tripwire offer page component
-- Stripe checkout integration (buttons, success/cancel URLs)
-- Basic thank you page
-- *Prove end-to-end payment processing works*
-- *Detailed design TBD during Phase 2*
+## Phase 2: Separate Server Project
+**Key Architectural Change**: Phase 2 will be implemented as a separate server-side project in a new repository, not as an extension of the current Gatsby static site.
+- **Server Setup**: New Node.js/Express server project
+- **Form Handling**: Server-side form processing and validation
+- **Database**: User data and transaction storage
+- **API Endpoints**: RESTful API for funnel interactions
 
-## Phase 3: Full Funnel Logic
+### Integration Between Projects
+- **Form Submission**: Forms POST to separate server endpoints
+
+## Phase 3: MVP Stripe Integration
+- integrate functional lead capture form
+- integrate stripe with tripwire
+- address MDX mapping for blogs with GraphQL
+- *Detailed design TBD after Phase 2*
+
+## Phase 4: Complete Funnel
+- finalize YAML deployment for copy
 - OTO offer page (reuse tripwire structure)
 - Order bump functionality and logic
 - Conditional routing between squeeze → tripwire → bump/OTO → thank you
 - Complete funnel state management
-- *Detailed design TBD during Phase 3*
+- *Detailed design TBD after Phase 3*
 
 ## Technical Decisions
 
@@ -169,7 +129,6 @@ const funnelConfig = yaml.load(funnelConfigRaw)
 - Provides flexibility to adjust approach based on learnings
 
 ### Integration Patterns
-- **ConvertKit**: Follow existing pattern from src/components/lead-capture/data-analyst-jobs.js
 - **Gatsby**: Use existing Layout component and file-based routing system
 - **Styling**: Extend existing Tailwind classes and responsive patterns
 - **SEO**: Use existing Helmet pattern for meta tags and social sharing

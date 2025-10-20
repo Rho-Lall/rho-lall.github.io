@@ -96,7 +96,7 @@ const AITestSqueezePage = () => {
                                                 />
                                             </div>
                                             <Link
-                                                to="/ai/you2.o-one-time-offer"
+                                                to="/ai/tripwire"
                                                 className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 text-lg rounded-lg transition duration-200 shadow-lg hover:shadow-xl text-center"
                                             >
                                                 Become AI emPowered
@@ -251,7 +251,7 @@ const AITestSqueezePage = () => {
                                 />
                             </div>
                             <Link
-                                to="/ai/you2.o-one-time-offer"
+                                to="/ai/tripwire"
                                 className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 text-lg rounded-lg transition duration-200 shadow-lg hover:shadow-xl text-center"
                             >
                                 Become AI emPowered
@@ -399,7 +399,7 @@ const AITestSqueezePage = () => {
                                 />
                             </div>
                             <Link
-                                to="/ai/you2.o-one-time-offer"
+                                to="/ai/tripwire"
                                 className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 text-lg rounded-lg transition duration-200 shadow-lg hover:shadow-xl text-center"
                             >
                                 Become AI emPowered

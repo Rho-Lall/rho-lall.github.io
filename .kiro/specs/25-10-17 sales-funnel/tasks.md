@@ -64,7 +64,7 @@
   - Refactor both pages to load content from YAML
   - _Requirements: 3.1, 3.3_
 
-- [ ] 11. Test YAML-driven pages
+- [x] 11. Test YAML-driven pages
   - Verify both pages work identically with YAML configuration
   - Test navigation flow with YAML-driven content
   - Test with different YAML content

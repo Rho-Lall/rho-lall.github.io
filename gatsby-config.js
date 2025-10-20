@@ -48,13 +48,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       }
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `funnels`,
-        path: `${__dirname}/src/funnels`,
-      }
-    },
     "gatsby-transformer-yaml",
     "gatsby-remark-images",
     {
@@ -103,7 +96,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
                   guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.body }],
                 })
               })
             },
@@ -114,7 +107,7 @@ module.exports = {
                 ) {
                   nodes {
                     excerpt
-                    html
+                    body
                     fields {
                       slug
                     }
@@ -141,7 +134,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
                   guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.body }],
                 })
               })
             },
@@ -153,7 +146,7 @@ module.exports = {
                 ) {
                   nodes {
                     excerpt
-                    html
+                    body
                     fields {
                       slug
                     }
@@ -180,7 +173,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
                   guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.body }],
                 })
               })
             },
@@ -192,7 +185,7 @@ module.exports = {
                 ) {
                   nodes {
                     excerpt
-                    html
+                    body
                     fields {
                       slug
                     }
@@ -219,7 +212,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
                   guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.body }],
                 })
               })
             },
@@ -231,7 +224,7 @@ module.exports = {
                 ) {
                   nodes {
                     excerpt
-                    html
+                    body
                     fields {
                       slug
                     }
@@ -258,7 +251,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
                   guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.body }],
                 })
               })
             },
@@ -270,7 +263,7 @@ module.exports = {
                 ) {
                   nodes {
                     excerpt
-                    html
+                    body
                     fields {
                       slug
                     }
@@ -297,7 +290,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
                   guid: site.siteMetadata.siteUrl + '/thoughts/' + node.fields.slug.replace(/_/g, '-'),
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.body }],
                 })
               })
             },
@@ -309,7 +302,7 @@ module.exports = {
                 ) {
                   nodes {
                     excerpt
-                    html
+                    body
                     fields {
                       slug
                     }

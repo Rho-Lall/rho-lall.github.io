@@ -1,18 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - Design]]></title><description><![CDATA[Data-driven design and marketing insights.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Oct 2025 22:30:18 GMT</lastBuildDate><item><title><![CDATA[Building Insight]]></title><description><![CDATA[Do you find yourself sifting through signal and noise? Is there a lot of low value data to sift through?
-Data is only as powerful as . . .  ]]></description><link>https://assumewisely.com/thoughts/design/building-insight</link><guid isPermaLink="false">https://assumewisely.com/thoughts/design/building-insight</guid><pubDate>Wed, 04 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Do you find yourself sifting through signal and noise? Is there a lot of low value data to sift through?&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Data is only as powerful as the insights we can unlock, data is no longer the constraint, it’s not that the data isn’t accessible; it&amp;#x27;s that we are not accessible to the data. &lt;/p&gt;&lt;p&gt;Instead. Build insight that drives action, build tools that cater to our human experience, what does limit us isn’t the data, but the questions we ask!&lt;/p&gt;&lt;p&gt;All it takes to break free is a simple shift in focus by asking two main questions:&lt;/p&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Are we asking the right questions?&lt;/li&gt;&lt;li&gt;What is the key insight?&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;p&gt;&lt;strong&gt;What are the right questions?&lt;/strong&gt; A lot of data products are based on KPIs, as they should. Best practice for layout design employs the inverted pyramid. Display KPIs at the top for easy reference,  follow up with historical and contextual trends to build understanding, close with a table to export detail for further exploration and analysis. &lt;/p&gt;&lt;br/&gt;&lt;p&gt;Use separate dashboards to report on drivers for these KPIs in a similar fashion. But KPIs are not questions. KPIs answer the question, how are we doing? &lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;strong&gt;What is the key insight?&lt;/strong&gt;  KPIs are not insights. Insight is the story we tell to provide understanding about our KPIs.
-Marshall McLuhan, known for his studies of the effects of mass media on thought and behaviour said,
-&lt;strong&gt;“A point of view can be a dangerous luxury when substituted for insight and understanding.”&lt;/strong&gt;
-Historical trends and context related to drivers are not a substitute for understanding.
-Our point of view is also not a substitute for understanding. Taken together and combined with other points of view, they can lead to understanding.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;strong&gt;Build in action or build inaction.&lt;/strong&gt; According to Carly Fiorina, the goal is to turn data into information, and information into insight. Unfortunately, that isn’t true in practice. Insight alone is worthless unless it changes behavior and enables better decision making. We must build tools that cater to the human experience. Three key actions we can take on include:
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - Design]]></title><description><![CDATA[Data-driven design and marketing insights.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Oct 2025 00:37:22 GMT</lastBuildDate><item><title><![CDATA[Building Insight]]></title><description><![CDATA[Do you find yourself sifting through signal and noise? Is there a lot of low value data to sift through?
+Data is only as powerful as . . .  ]]></description><link>https://assumewisely.com/thoughts/design/building-insight</link><guid isPermaLink="false">https://assumewisely.com/thoughts/design/building-insight</guid><pubDate>Wed, 04 May 2022 00:00:00 GMT</pubDate><content:encoded>
+Do you find yourself sifting through signal and noise? Is there a lot of low value data to sift through?
+&lt;br/&gt;
+
+Data is only as powerful as the insights we can unlock, data is no longer the constraint, it’s not that the data isn’t accessible; it&apos;s that we are not accessible to the data. 
+
+Instead. Build insight that drives action, build tools that cater to our human experience, what does limit us isn’t the data, but the questions we ask!
+
+All it takes to break free is a simple shift in focus by asking two main questions:
+&lt;br/&gt;
+
+- Are we asking the right questions?
+- What is the key insight?
+
+&lt;br/&gt;
+
+
+**What are the right questions?** A lot of data products are based on KPIs, as they should. Best practice for layout design employs the inverted pyramid. Display KPIs at the top for easy reference,  follow up with historical and contextual trends to build understanding, close with a table to export detail for further exploration and analysis. 
+&lt;br/&gt;
+
+Use separate dashboards to report on drivers for these KPIs in a similar fashion. But KPIs are not questions. KPIs answer the question, how are we doing? 
+&lt;br/&gt;
+
+**What is the key insight?**  KPIs are not insights. Insight is the story we tell to provide understanding about our KPIs. 
+Marshall McLuhan, known for his studies of the effects of mass media on thought and behaviour said, 
+**“A point of view can be a dangerous luxury when substituted for insight and understanding.”**
+ Historical trends and context related to drivers are not a substitute for understanding. 
+ Our point of view is also not a substitute for understanding. Taken together and combined with other points of view, they can lead to understanding.
+ &lt;br/&gt;
+
+**Build in action or build inaction.** According to Carly Fiorina, the goal is to turn data into information, and information into insight. Unfortunately, that isn’t true in practice. Insight alone is worthless unless it changes behavior and enables better decision making. We must build tools that cater to the human experience. Three key actions we can take on include:
 put analytics to work for people who are not data experts
 leverage data to make lives easier
-embed an immersive experience into current workflows&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;strong&gt;TLDR: &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Share insights in a way that drives action. Build tools that cater to human experience:&lt;/p&gt;&lt;pre&gt;&lt;code&gt;- put analytics to work for people who are not data experts
-- leverage data to make lives easier
-- embed an immersive experience into current workflows
-&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;&lt;p&gt;Shift focus by asking two questions:&lt;/p&gt;&lt;pre&gt;&lt;code&gt;- Are decision makers empowered to ask the right questions?
-- What is the key insight?
-&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;&lt;p&gt;Pro tip to asking the right questions, start with KPIs and their drivers. There are more, but start here.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Insight is the story we tell to bring understanding to the KPIs.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;If you would like to dig deeper into this topic Meghan O&amp;#x27;Hern, Data Analytics Solution Consultant at Looker,
-recently spoke on &lt;a href=&quot;https://www.youtube.com/watch?v=T90-pv0E_0E&quot;&gt;&lt;u&gt;Leveraging AI and ML to Humanize Data Experiences&lt;/u&gt;&lt;/a&gt;.
-Her thoughts serve as the inspiration for this post.&lt;/p&gt;&lt;br/&gt;&lt;br/&gt;</content:encoded></item><item><title><![CDATA[A Bespoke Throughput Dashboard]]></title><description><![CDATA[
+embed an immersive experience into current workflows
+&lt;br/&gt;
+
+**TLDR: **
+
+Share insights in a way that drives action. Build tools that cater to human experience:
+
+    - put analytics to work for people who are not data experts
+    - leverage data to make lives easier
+    - embed an immersive experience into current workflows
+
+&lt;br/&gt;
+
+Shift focus by asking two questions:
+
+    - Are decision makers empowered to ask the right questions?
+    - What is the key insight?
+&lt;br/&gt;
+
+Pro tip to asking the right questions, start with KPIs and their drivers. There are more, but start here.
+&lt;br/&gt;
+
+Insight is the story we tell to bring understanding to the KPIs.
+&lt;br/&gt;
+
+**Resources**
+
+If you would like to dig deeper into this topic Meghan O&apos;Hern, Data Analytics Solution Consultant at Looker, 
+recently spoke on [&lt;u&gt;Leveraging AI and ML to Humanize Data Experiences&lt;/u&gt;](https://www.youtube.com/watch?v=T90-pv0E_0E). 
+Her thoughts serve as the inspiration for this post.
+&lt;br/&gt;
+&lt;br/&gt;</content:encoded></item><item><title><![CDATA[A Bespoke Throughput Dashboard]]></title><description><![CDATA[
 ​Let me tell you about a bespoke throughput dashboard I created: a cloud based Excel workbook that breaks out visualizations by activity which engages decision makers while maintaining accessibility.
-]]></description><link>https://assumewisely.com/thoughts/design/bespoke-throughput-dashboard</link><guid isPermaLink="false">https://assumewisely.com/thoughts/design/bespoke-throughput-dashboard</guid><pubDate>Thu, 08 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Let me tell you about a bespoke throughput dashboard I created: a cloud based Excel workbook that breaks out visualizations by activity which engages decision makers while maintaining accessibility.&lt;/p&gt;&lt;p&gt;If you are familiar with Lean production, TPM, or the theory of constraints then you appreciate the need for a “Throughput Dashboard” to identify and manage constraints including the primary bottleneck. You understand that by focusing resources on optimizing and raising the capacity of the bottleneck you raise the productivity of the entire process. If you don’t, you should check out, The Goal by Eliyahu Goldratt (the Audiobook is fantastic!).&lt;/p&gt;&lt;p&gt;One of my team’s responsibilities is managing the primary bottleneck. To do that we use a throughput dashboard which looks alot like a calendar. The original calendar exists in Google Sheets. There is a tab for each month. The projects for each week are broken out by client and report type. The report types are color coded so you can see what you are getting on any given week. (See image directly below.)&lt;/p&gt;&lt;p&gt;It worked. It wasn’t intuitive, you needed some training to understand it because there was a lot going on. But it did the job and it worked. As our processes matured and our capacity increased we started to see our dashboard begin to buckle. Cracks were starting to form.&lt;/p&gt;&lt;p&gt;The new dashboard tracks projects at a granular level which allows us to dynamically reschedule projects into infinite combinations as needed. It tracks scheduling, rescheduling, &amp;amp; cancellations as separate records. This is all captured in one large table hidden in the background. Pivot tables aggregate the data into the various views as needed.&lt;/p&gt;&lt;p&gt;The first view is the Year At A Glance (See top image). Each open week has a green light. Closed weeks are indicated with red lights. This is all the information that most consultants need when scheduling. For management, and those who are curious additional detail is given.&lt;/p&gt;&lt;p&gt;There is a second table (also hidden) that scheduled capacity for the year. This table accounts for holidays and scheduled time off. Both this table and the main table are combined in the Excel Data Model to provide a joined Pivot that provides availability calculations for each week.&lt;/p&gt;&lt;p&gt;The second view is the weekly view (see below). This is a pivot table configured to breakout the projects for a given week. This allows each project to be seen at different levels of granularity. It includes a tool to facilitate delegating assignments.&lt;/p&gt;&lt;p&gt;The third view is a One on One view (see below). This view is new. It’s not possible on the original dashboard. It is also a pivot table that is configured with a slight variation on the filters to allow the consultants to see just the projects they have scheduled either for a given month or the rest of the year. This allows everyone to be on the same page with what has been planed.&lt;/p&gt;&lt;p&gt;This is version 3.0 of this throughput dashboard. It’s the first production version. It is fully accessible on the cloud. Future versions will include automation for scheduling new projects as well as additional visualizations. It isn&amp;#x27;t as sexy as what can be done in Tableau. It isn&amp;#x27;t designed to be. That is ok with me.&lt;/p&gt;</content:encoded></item></channel></rss>
+]]></description><link>https://assumewisely.com/thoughts/design/bespoke-throughput-dashboard</link><guid isPermaLink="false">https://assumewisely.com/thoughts/design/bespoke-throughput-dashboard</guid><pubDate>Thu, 08 Jul 2021 00:00:00 GMT</pubDate><content:encoded>Let me tell you about a bespoke throughput dashboard I created: a cloud based Excel workbook that breaks out visualizations by activity which engages decision makers while maintaining accessibility.
+
+If you are familiar with Lean production, TPM, or the theory of constraints then you appreciate the need for a “Throughput Dashboard” to identify and manage constraints including the primary bottleneck. You understand that by focusing resources on optimizing and raising the capacity of the bottleneck you raise the productivity of the entire process. If you don’t, you should check out, The Goal by Eliyahu Goldratt (the Audiobook is fantastic!).
+
+One of my team’s responsibilities is managing the primary bottleneck. To do that we use a throughput dashboard which looks alot like a calendar. The original calendar exists in Google Sheets. There is a tab for each month. The projects for each week are broken out by client and report type. The report types are color coded so you can see what you are getting on any given week. (See image directly below.)
+
+It worked. It wasn’t intuitive, you needed some training to understand it because there was a lot going on. But it did the job and it worked. As our processes matured and our capacity increased we started to see our dashboard begin to buckle. Cracks were starting to form.
+
+The new dashboard tracks projects at a granular level which allows us to dynamically reschedule projects into infinite combinations as needed. It tracks scheduling, rescheduling, &amp; cancellations as separate records. This is all captured in one large table hidden in the background. Pivot tables aggregate the data into the various views as needed.
+
+The first view is the Year At A Glance (See top image). Each open week has a green light. Closed weeks are indicated with red lights. This is all the information that most consultants need when scheduling. For management, and those who are curious additional detail is given.
+
+There is a second table (also hidden) that scheduled capacity for the year. This table accounts for holidays and scheduled time off. Both this table and the main table are combined in the Excel Data Model to provide a joined Pivot that provides availability calculations for each week.
+
+The second view is the weekly view (see below). This is a pivot table configured to breakout the projects for a given week. This allows each project to be seen at different levels of granularity. It includes a tool to facilitate delegating assignments.
+
+The third view is a One on One view (see below). This view is new. It’s not possible on the original dashboard. It is also a pivot table that is configured with a slight variation on the filters to allow the consultants to see just the projects they have scheduled either for a given month or the rest of the year. This allows everyone to be on the same page with what has been planed.
+
+This is version 3.0 of this throughput dashboard. It’s the first production version. It is fully accessible on the cloud. Future versions will include automation for scheduling new projects as well as additional visualizations. It isn&apos;t as sexy as what can be done in Tableau. It isn&apos;t designed to be. That is ok with me.</content:encoded></item></channel></rss>
