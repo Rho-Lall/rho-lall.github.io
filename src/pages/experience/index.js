@@ -1,17 +1,20 @@
 
-import { StaticImage } from 'gatsby-plugin-image'
-import * as React from 'react'
-//import {Link, graphql } from 'gatsby'
-//import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import LayoutSales from '../components/layout'
-
-const title = 'Experience: Closing the Gap Between Recent College Grad & and Data Scientist.'
+import React from 'react'
+import LayoutSales from '../../components/layout-sales'
+import { Helmet } from 'react-helmet'
 
 const ExperiencePage = () => {
+  const pageTitle = 'Experience: Closing the Gap Between Recent College Grad & Data Scientist'
 
   return (
-        <div>
+    <LayoutSales pageTitle={pageTitle}>
+      <Helmet>
+        <meta name="description" content="A book for recent college grads struggling to get hired in data science. Learn how to close the gap between graduation and becoming an experienced hire." />
+        <meta name="keywords" content="data science jobs, recent college grad, data scientist career, tech jobs" />
+        <meta name="author" content="Rho Lall" />
+      </Helmet>
+
+      <div className="max-w-4xl mx-auto px-6 py-8">
             
           <p className='mb-5'>Are you a recent college grad struggling to get hired? Do you,</p>
           <h1 className='mb-5'>Want A Job In Data Science?</h1>
@@ -31,14 +34,9 @@ const ExperiencePage = () => {
           <p className='mb-5'>PS The book is expected to be published in the fall, and subscribers will receive early access as well as a special discount.</p>
           <p className='mb-10'>PPS I will share some insider access as well as deleted content that didn't make the final cut for the book.</p>
 
-          {/* <div className=''>
-          <StaticImage src="../images/about_rho_lall.png"/>    
-          </div> */}
-          
-        </div> 
-
-    )
-
+        </div>
+    </LayoutSales>
+  )
 }
 
 export default ExperiencePage

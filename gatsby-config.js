@@ -48,6 +48,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `funnels`,
+        path: `${__dirname}/src/funnels`,
+      }
+    },
+    "gatsby-transformer-yaml",
     "gatsby-remark-images",
     {
       resolve: `gatsby-plugin-mdx`,

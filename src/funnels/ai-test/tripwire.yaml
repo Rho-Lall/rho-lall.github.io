@@ -1,0 +1,89 @@
+# AI Funnel - Tripwire Page Content
+
+hero_section:
+  image: ""
+  headline: "Limited ONE TIME Offer"
+  sub_headline: |
+    **Start saving time with AI**
+    before Day 1 of You 2.0:
+    Become an AI emPowered Human
+  copy: ""
+  offer_price: "TODAY ONLY $27"
+  
+product_section:
+  image: "../../images/ads/Results Now AI Action Pack.png"
+  headline: ""
+  sub_headline: ""
+  copy: |
+    You just unlocked You 2.0: Become an AI emPowered Human. But what if you could get your first real win today?
+    
+    **This is your implementation shortcut.**
+    
+    The Results Now AI Action Pack gives you practical tools that bridge the gap between theory and thruput. See results before you start the You 2.0 eCourse.
+    
+    No overthinking. No overwhelm.
+    
+    **Just momentum. Right now.**
+    
+    ## What's Inside the AI Action Pack — Total Value $175+
+    
+    Get plug-and-play tools that save time, reduce friction, and help you act fast:
+    
+    ### 🧠 Automate Your Brain Template Pack — $47 Value
+    Paste and play ready-made workflows to streamline your day, cut mental drag, but build mental muscle.
+    
+    ### ✍️ JIRA EPIC Story Writer — $57 Value
+    Your team does great work. This tool helps them communicate it. Designed to turn scattered notes and half-finished tickets into crisp stories that showcase real business value.
+    
+    ### 🤖 AI Decision Coach Agent — $37 Value
+    Get clarity on your next move. This agent walks you through structured questions to speed up tough calls.
+    
+    ### ⏱️ Time Audit + Task Organizer (Lite) — $37 Value
+    Spot your biggest time leaks. Organize chaos into calm with this Notion-powered task triage tool. Built for serious productivity. Once it starts working, it keeps working. It will reshape how you operate.
+    
+    *It's one of my only tools that I've stopped using... and it still works!*
+    
+    ### 🎁 THIS WEEK ONLY: Project Planning Agent (Ash)
+    Go from "someday project" to next action in 3 minutes or less. Thinks like a Chief of Staff.
+    
+    ## Get the AI Action Pack for $27
+    
+    ✅ $225+ Value
+    ⏳ Today only — just $27
+    
+    Because you just joined You 2.0, you get:
+    - 4 time-saving AI tools
+    - 1 bonus project manager
+    - Zero fluff, Just momentum
+    
+    ### 💡 Why so cheap?
+    You're here to move fast. This pack helps you do exactly that.
+    
+    **Total VALUE: $225**
+    **Today Only $27**
+
+cta_section:
+  image: ""
+  headline: "Get my Results Now AI Action Pack today!"
+  sub_headline: ""
+  copy: ""
+
+# Buttons and Actions
+buttons:
+  primary_text: "Yes Please Buy"
+  secondary_text: "no thanks"
+  secondary_url: "#"
+
+# Colors and Styling
+colors:
+  accent_color: "rgb(186, 215, 57)"  # Yellow-green accent
+  background_dark: "rgba(19, 47, 69)"  # Dark blue background
+  price_color: "red"  # Red for pricing
+  value_color: "green"  # Green for value amounts
+
+# SEO and Meta
+meta:
+  title: "Limited One Time Offer - You 2.0"
+  description: "Limited time offer - Start saving time with AI before Day 1 of You 2.0"
+  keywords: "AI course, limited offer, productivity, time saving"
+  author: "Rho Lall"
