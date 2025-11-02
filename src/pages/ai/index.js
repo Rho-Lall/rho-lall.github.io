@@ -3,6 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import LayoutSales from '../../components/layout-sales'
 import { Helmet } from 'react-helmet'
+import LeadCaptureForm from '../../components/lead-capture/lead-capture'
 
 // YAML-driven content - synced from src/funnels/ai-test/index.yaml
 const funnelData = {
@@ -26,6 +27,9 @@ const funnelData = {
         headline: "BECOME an AI emPowered Human today!"
     }
 }
+
+// API endpoint for form submissions
+const apiEndpoint = 'https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads'
 
 const AITestSqueezePage = () => {
     const pageTitle = "AI Test Funnel - YAML Integration Demo"
@@ -73,35 +77,7 @@ const AITestSqueezePage = () => {
 
                                     {/* Hero Form */}
                                     <div className="hero-form max-w-md mx-auto">
-                                        <div className="space-y-4">
-                                            <div>
-                                                <input
-                                                    type="text"
-                                                    placeholder="First Name"
-                                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                                                />
-                                            </div>
-                                            <div>
-                                                <input
-                                                    type="email"
-                                                    placeholder="Email Address"
-                                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                                                />
-                                            </div>
-                                            <div>
-                                                <textarea
-                                                    placeholder="Tell me a little about what you are struggling with or hope to do with AI."
-                                                    rows="4"
-                                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 resize-none"
-                                                />
-                                            </div>
-                                            <Link
-                                                to="/ai/tripwire"
-                                                className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 text-lg rounded-lg transition duration-200 shadow-lg hover:shadow-xl text-center"
-                                            >
-                                                Become AI emPowered
-                                            </Link>
-                                        </div>
+                                        <LeadCaptureForm apiEndpoint={apiEndpoint} />
                                     </div>
                                 </div>
                             </div>
@@ -228,35 +204,7 @@ const AITestSqueezePage = () => {
                     {/* Second Form */}
                     <div className="bg-gray-50 p-8 rounded-lg shadow-md">
                         <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Ready to Get Started?</h3>
-                        <div className="space-y-4">
-                            <div>
-                                <input
-                                    type="text"
-                                    placeholder="First Name"
-                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                                />
-                            </div>
-                            <div>
-                                <input
-                                    type="email"
-                                    placeholder="Email Address"
-                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                                />
-                            </div>
-                            <div>
-                                <textarea
-                                    placeholder="Tell me a little about what you are struggling with or hope to do with AI."
-                                    rows="4"
-                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 resize-none"
-                                />
-                            </div>
-                            <Link
-                                to="/ai/tripwire"
-                                className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 text-lg rounded-lg transition duration-200 shadow-lg hover:shadow-xl text-center"
-                            >
-                                Become AI emPowered
-                            </Link>
-                        </div>
+                        <LeadCaptureForm apiEndpoint={apiEndpoint} />
                     </div>
                 </div>
             </section>
@@ -374,37 +322,7 @@ const AITestSqueezePage = () => {
 
                     {/* Final Form */}
                     <div className="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
-                        <form className="space-y-4">
-                            <div>
-                                <input
-                                    type="text"
-                                    placeholder="First Name"
-                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <input
-                                    type="email"
-                                    placeholder="Email Address"
-                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <textarea
-                                    placeholder="Tell me a little about what you are struggling with or hope to do with AI."
-                                    rows="4"
-                                    className="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 resize-none"
-                                />
-                            </div>
-                            <Link
-                                to="/ai/tripwire"
-                                className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 text-lg rounded-lg transition duration-200 shadow-lg hover:shadow-xl text-center"
-                            >
-                                Become AI emPowered
-                            </Link>
-                        </form>
+                        <LeadCaptureForm apiEndpoint={apiEndpoint} />
                     </div>
                 </div>
             </section>
