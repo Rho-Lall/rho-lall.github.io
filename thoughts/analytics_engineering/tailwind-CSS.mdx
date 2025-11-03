@@ -24,7 +24,7 @@ The areas of a webpage are header, nav, main, aside, & footer.
 ## Talking intelligently about code
 
 A "CSS Rule" is defined as:
-![CSS Rule](./media/content/css_rule.png)
+{/* ![CSS Rule](./media/content/css_rule.png) */}
 
 Collectively a property and its value are called a declaration.
 
@@ -34,7 +34,7 @@ Collectively a property and its value are called a declaration.
 
 ## Page Layout
 
-[Order](https://tailwindcss.com/docs/order): classname='order-#'
+[Order](https://tailwindcss.com/docs/order): `classname='order-#'`
 - order is a child element that defines the order elements appear in (row vs column for responsive design)
 
 [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -44,7 +44,7 @@ Collectively a property and its value are called a declaration.
  is intended for larger scale layouts. (And possibly data visualizations?)
 
 [Display](https://tailwindcss.com/docs/display)
-: Hide an element on mobile: classname='hidden md:flex'
+: Hide an element on mobile: `className='hidden md:flex'`
 
 ## Margins & Padding
 
@@ -52,20 +52,22 @@ Collectively a property and its value are called a declaration.
 and the padding property controls the space inside an element.
 
 ## Sizing
-[Height](https://tailwindcss.com/docs/height) : h-{number}, h-px
+[Height](https://tailwindcss.com/docs/height) : `h-{number}`, `h-px`
 
 ## Styled Components
 
+```bash
 yarn add styled-components gatsby-plugin-styled-components babel-plugin-styled-components
+```
 
 [Hamburger Menu with Gatsby and Styled Components](https://www.youtube.com/watch?v=6cb56Luubd4)
 
 ## Importing Fonts
 [How to add a Google Font to your Gatsby Tailwind Project](https://www.itzami.com/blog/how-to-add-a-google-font-to-your-gatsby-tailwind-project)
 
-**Font-Family** has several default values which will use the default font related to that value: serif, san-serif, monospace, etm. You can also reference the font name directly.
+**Font-Family** has several default values which will use the default font related to that value: `serif`, `sans-serif`, `monospace`, etc. You can also reference the font name directly.
 
-![web safe fonts](./media/content/web_safe_fonts.png)
+{/* ![web safe fonts](./media/content/web_safe_fonts.png) */}
 
 Reference [cssFontStack](cssfontstack.com) to research font adoption when choosing fonts.
 
@@ -81,9 +83,9 @@ It's best to specify an italic only when you're sure that font has been designed
 
 **Letter-Spacing** or 'tracking' is the white space between letters. 
 
-**Text-Align** values include: center, left, right, & justify. When using justify make sure to set a max width. The ideal line has a length of 60 to 80 characters.
+**Text-Align** values include: `center`, `left`, `right`, & `justify`. When using justify make sure to set a max width. The ideal line has a length of 60 to 80 characters.
 
-**Text-Transform** with a value 'capitalize' will Proper Case the text.
+**Text-Transform** with a value `'capitalize'` will Proper Case the text.
 
 ## MDX
 [MDX](https://www.gatsbyjs.com/docs/glossary/mdx/)

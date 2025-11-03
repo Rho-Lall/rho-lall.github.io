@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - Analytics Engineering]]></title><description><![CDATA[Analytics Engineering and BI development insights.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Nov 2025 23:37:51 GMT</lastBuildDate><item><title><![CDATA[Snowflake DateDiff Business Days: How do I exclude weekends?]]></title><description><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - Analytics Engineering]]></title><description><![CDATA[Analytics Engineering and BI development insights.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Nov 2025 00:25:02 GMT</lastBuildDate><item><title><![CDATA[Snowflake DateDiff Business Days: How do I exclude weekends?]]></title><description><![CDATA[
 A common ask in analytics engineering is to return the working days between two dates not the calendar days.
 ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/snowflake-datediff-business-days</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/snowflake-datediff-business-days</guid><pubDate>Mon, 24 Jul 2023 00:00:00 GMT</pubDate><content:encoded>
 This is the code leverages Snowflake DateDiff to calculate business days.
@@ -362,7 +362,7 @@ I can gnerate this dynamically using slugs. The slugs take into account my
 folder structure. I don&apos;t just name something &apos;untitled&apos;. I am purposeful and aware in naming pieces
 of work with file names that relate to the site structure. 
 
-This is the technical side of SEO. There is also the strategic dimension that deals with language, word choice as well as reasearch into the market for information.</content:encoded></item><item><title><![CDATA[Tailwind CSS]]></title><description><![CDATA[ Notes on using Tailwind CSS that I find useful and want to keep handy.  ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tailwind-CSS</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tailwind-CSS</guid><pubDate>Sun, 22 May 2022 00:00:00 GMT</pubDate><content:encoded>
+This is the technical side of SEO. There is also the strategic dimension that deals with language, word choice as well as reasearch into the market for information.</content:encoded></item><item><title><![CDATA[Tailwind CSS]]></title><description><![CDATA[ Notes on using Tailwind CSS that I find useful and want to keep handy.  ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tailwind-css</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tailwind-css</guid><pubDate>Sun, 22 May 2022 00:00:00 GMT</pubDate><content:encoded>
 ## Responsive Design
 [Responsive Design Docs](https://tailwindcss.com/docs/responsive-design)
 : Breakpoint Prefixes: sm, md, lg, xl, 2xl
@@ -375,7 +375,7 @@ The areas of a webpage are header, nav, main, aside, &amp; footer.
 ## Talking intelligently about code
 
 A &quot;CSS Rule&quot; is defined as:
-![CSS Rule](./media/content/css_rule.png)
+{/* ![CSS Rule](./media/content/css_rule.png) */}
 
 Collectively a property and its value are called a declaration.
 
@@ -385,7 +385,7 @@ Collectively a property and its value are called a declaration.
 
 ## Page Layout
 
-[Order](https://tailwindcss.com/docs/order): classname=&apos;order-#&apos;
+[Order](https://tailwindcss.com/docs/order): `classname=&apos;order-#&apos;`
 - order is a child element that defines the order elements appear in (row vs column for responsive design)
 
 [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -395,7 +395,7 @@ Collectively a property and its value are called a declaration.
  is intended for larger scale layouts. (And possibly data visualizations?)
 
 [Display](https://tailwindcss.com/docs/display)
-: Hide an element on mobile: classname=&apos;hidden md:flex&apos;
+: Hide an element on mobile: `className=&apos;hidden md:flex&apos;`
 
 ## Margins &amp; Padding
 
@@ -403,20 +403,22 @@ Collectively a property and its value are called a declaration.
 and the padding property controls the space inside an element.
 
 ## Sizing
-[Height](https://tailwindcss.com/docs/height) : h-{number}, h-px
+[Height](https://tailwindcss.com/docs/height) : `h-{number}`, `h-px`
 
 ## Styled Components
 
+```bash
 yarn add styled-components gatsby-plugin-styled-components babel-plugin-styled-components
+```
 
 [Hamburger Menu with Gatsby and Styled Components](https://www.youtube.com/watch?v=6cb56Luubd4)
 
 ## Importing Fonts
 [How to add a Google Font to your Gatsby Tailwind Project](https://www.itzami.com/blog/how-to-add-a-google-font-to-your-gatsby-tailwind-project)
 
-**Font-Family** has several default values which will use the default font related to that value: serif, san-serif, monospace, etm. You can also reference the font name directly.
+**Font-Family** has several default values which will use the default font related to that value: `serif`, `sans-serif`, `monospace`, etc. You can also reference the font name directly.
 
-![web safe fonts](./media/content/web_safe_fonts.png)
+{/* ![web safe fonts](./media/content/web_safe_fonts.png) */}
 
 Reference [cssFontStack](cssfontstack.com) to research font adoption when choosing fonts.
 
@@ -432,9 +434,9 @@ It&apos;s best to specify an italic only when you&apos;re sure that font has bee
 
 **Letter-Spacing** or &apos;tracking&apos; is the white space between letters. 
 
-**Text-Align** values include: center, left, right, &amp; justify. When using justify make sure to set a max width. The ideal line has a length of 60 to 80 characters.
+**Text-Align** values include: `center`, `left`, `right`, &amp; `justify`. When using justify make sure to set a max width. The ideal line has a length of 60 to 80 characters.
 
-**Text-Transform** with a value &apos;capitalize&apos; will Proper Case the text.
+**Text-Transform** with a value `&apos;capitalize&apos;` will Proper Case the text.
 
 ## MDX
 [MDX](https://www.gatsbyjs.com/docs/glossary/mdx/)
