@@ -12,7 +12,7 @@ import LeadCaptureForm from '../../components/lead-capture/lead-capture'
 const apiEndpoint = 'https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads'
 const buttonText = 'Ten cent, My two cents is free'
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, children }) => {
 
   const urlslug = `https://rho-lall.github.io/thoughts/${data.mdx.fields.slug}`
   const featureimage = getImage(data.mdx.frontmatter.hero_image)
@@ -51,7 +51,9 @@ const BlogPost = ({ data }) => {
 
       <p className='heading-posted mb-10'>Posted: {data.mdx.frontmatter.date}</p>
 
-      <div>MDX content will be rendered here</div>
+      <div className="prose prose-lg max-w-none">
+        {children}
+      </div>
 
 
 
