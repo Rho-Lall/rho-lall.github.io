@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - All Posts]]></title><description><![CDATA[Business intelligence reporting resources to use data to make better decisions for your business.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Nov 2025 00:20:14 GMT</lastBuildDate><item><title><![CDATA[Why Dashboards Don't Deliver (and What Actually Does)]]></title><description><![CDATA[Most teams drown themselves in dashboards and call it transparency. But visibility isn't clarity. Learn why dashboards fail and what decision architecture can do instead.]]></description><link>https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</guid><pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - All Posts]]></title><description><![CDATA[Business intelligence reporting resources to use data to make better decisions for your business.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Nov 2025 00:25:02 GMT</lastBuildDate><item><title><![CDATA[Why Dashboards Don't Deliver (and What Actually Does)]]></title><description><![CDATA[Most teams drown themselves in dashboards and call it transparency. But visibility isn't clarity. Learn why dashboards fail and what decision architecture can do instead.]]></description><link>https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</guid><pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate><content:encoded>
 ![heroImage](https://cdn.marblism.com/nq85jXcSRRf.webp)
 
 Most teams drown themselves in dashboards and call it “transparency.”
@@ -1381,7 +1381,94 @@ Business intelligence reporting can be a powerful tool for business leaders, but
 - Follow best practices for data governance.
 - Use business intelligence reports to make informed decisions.
 
-With business intelligence reporting in place, companies can trust the data they are working with to make informed decisions.</content:encoded></item><item><title><![CDATA[Understanding Git]]></title><description><![CDATA[A little Git goes a long way. You can get pretty deep into a development career with just . . .  ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/git</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/git</guid><pubDate>Mon, 09 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;br/&gt;
+With business intelligence reporting in place, companies can trust the data they are working with to make informed decisions.</content:encoded></item><item><title><![CDATA[Tailwind CSS]]></title><description><![CDATA[ Notes on using Tailwind CSS that I find useful and want to keep handy.  ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tailwind-css</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tailwind-css</guid><pubDate>Sun, 22 May 2022 00:00:00 GMT</pubDate><content:encoded>
+## Responsive Design
+[Responsive Design Docs](https://tailwindcss.com/docs/responsive-design)
+: Breakpoint Prefixes: sm, md, lg, xl, 2xl
+
+## The Holy Grail
+Typical (best practice) web page design practice. A header and footer sandwich the main content of the page. 
+Often the main content will have sidebars that we can refer to as nav on the left, and aside on the right.
+The areas of a webpage are header, nav, main, aside, &amp; footer.
+
+## Talking intelligently about code
+
+A &quot;CSS Rule&quot; is defined as:
+{/* ![CSS Rule](./media/content/css_rule.png) */}
+
+Collectively a property and its value are called a declaration.
+
+## Difference between rem &amp; em:
+    - em unit allows setting the font size of an element relative to the font size of its parent
+    - rem is based upon the font-size value of the root element, which is the `&lt;html&gt;` element
+
+## Page Layout
+
+[Order](https://tailwindcss.com/docs/order): `classname=&apos;order-#&apos;`
+- order is a child element that defines the order elements appear in (row vs column for responsive design)
+
+[FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+ is a tool that is most appropriate for app components, and small-scale layouts.
+
+[Grid layout](https://css-tricks.com/snippets/css/complete-guide-grid/)
+ is intended for larger scale layouts. (And possibly data visualizations?)
+
+[Display](https://tailwindcss.com/docs/display)
+: Hide an element on mobile: `className=&apos;hidden md:flex&apos;`
+
+## Margins &amp; Padding
+
+[Margin](https://tailwindcss.com/docs/margin): The margin property controls the space outside an element, 
+and the padding property controls the space inside an element.
+
+## Sizing
+[Height](https://tailwindcss.com/docs/height) : `h-{number}`, `h-px`
+
+## Styled Components
+
+```bash
+yarn add styled-components gatsby-plugin-styled-components babel-plugin-styled-components
+```
+
+[Hamburger Menu with Gatsby and Styled Components](https://www.youtube.com/watch?v=6cb56Luubd4)
+
+## Importing Fonts
+[How to add a Google Font to your Gatsby Tailwind Project](https://www.itzami.com/blog/how-to-add-a-google-font-to-your-gatsby-tailwind-project)
+
+**Font-Family** has several default values which will use the default font related to that value: `serif`, `sans-serif`, `monospace`, etc. You can also reference the font name directly.
+
+{/* ![web safe fonts](./media/content/web_safe_fonts.png) */}
+
+Reference [cssFontStack](cssfontstack.com) to research font adoption when choosing fonts.
+
+## Styling Text
+
+There are three main properties for text: size, weight (bold), &amp; style (italics). 
+
+**Font-Style** has two similar values, italics as well as oblique.  In the purest (type designer) sense, an oblique is a roman font that has been skewed a certain number of degrees (8-12 degrees, usually). An italic is created by the type designer with specific characters (notably lowercase a) drawn differently to create a more calligraphic, as well as slanted version.
+
+It&apos;s best to specify an italic only when you&apos;re sure that font has been designed with one, so make sure to import the italic version of the font. Some fonts were meant not to be italicized or obliqued... but people did anyway. Operating systems will, upon clicking the &apos;italic&apos; icon, skew the font and create an oblique on the fly. Not a pleasant sight.
+
+**Line-Height** or &apos;leading&apos; is the white space between lines of text. For reading text on desktop devices, the ideal line height of around 1.5 to 1.6. It always depends on your typeface, and the shorter the line, the lower the line height can be, especially for headings.
+
+**Letter-Spacing** or &apos;tracking&apos; is the white space between letters. 
+
+**Text-Align** values include: `center`, `left`, `right`, &amp; `justify`. When using justify make sure to set a max width. The ideal line has a length of 60 to 80 characters.
+
+**Text-Transform** with a value `&apos;capitalize&apos;` will Proper Case the text.
+
+## MDX
+[MDX](https://www.gatsbyjs.com/docs/glossary/mdx/)
+: MDX makes it possible to include React components in your Gatsby blog posts and pages.
+[MDXProvider](https://www.gatsbyjs.com/docs/how-to/routing/customizing-components/)
+
+[Gatsby JS Course: Add Styles to Markdown](https://www.youtube.com/watch?v=zOYshXpGdv4)
+
+[Customizing Markdown Components](https://www.gatsbyjs.com/docs/how-to/routing/customizing-components/)
+
+
+
+</content:encoded></item><item><title><![CDATA[Understanding Git]]></title><description><![CDATA[A little Git goes a long way. You can get pretty deep into a development career with just . . .  ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/git</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/git</guid><pubDate>Mon, 09 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;br/&gt;
 &lt;br/&gt;
 
 A little Git goes a long way. You can get pretty deep into a development career with just the basics. This video on [Git Core Concepts](https://www.youtube.com/watch?v=uR6G2v_WsRA) is a good starting place.
