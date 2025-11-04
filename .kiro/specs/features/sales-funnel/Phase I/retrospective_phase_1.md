@@ -2,7 +2,7 @@
 
 ## Phase 1
 
-When I started this project, I thought I would spend the time spec out and design well upfront. And that would translate into the AI moving through the process quickly and independently. That was not the case.  That said it really was a team effort. Neither I, nor Kiro, could have completed this phase independently, at least not in the time that it took. 
+When I started this project, I thought I would spend the time to spec out and design well upfront. And that would translate into the AI moving through the process quickly and independently. That was not the case.  That said it really was a team effort. Neither I, nor Kiro, could have completed this phase independently, at least not in the time that it took. 
 
 The phase required a lot of refactoring, upgrading node, upgrading to Gatsby 5. We refractured the images. This took more time than planned for. It always does. Kiro did a lot of the heavy lifting to accomplish this background work.
 
