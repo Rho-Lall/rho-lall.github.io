@@ -17,11 +17,6 @@ Standard deployment process for the Gatsby site to GitHub Pages.
 - [ ] All imports are used and necessary
 - [ ] Consistent code formatting applied
 
-### Testing
-- [ ] Forms submit successfully to API endpoints
-- [ ] Redirects work correctly after form submission
-- [ ] Responsive design tested on mobile and desktop
-- [ ] All pages build without errors
 
 ## Deployment Commands
 
