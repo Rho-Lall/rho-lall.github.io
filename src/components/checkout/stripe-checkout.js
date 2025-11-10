@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 
 // Configuration Constants
 // Backend API endpoint for creating Stripe checkout sessions
-const STRIPE_API_ENDPOINT = 'https://payment.bulldozer.life/ecommerce/create-checkout-session';
+const STRIPE_API_ENDPOINT = 'https://payment.bulldozer.life/create-checkout-session';
 
 // Stripe Price IDs
 // Note: Use test Price IDs for development, production Price IDs for live environment
