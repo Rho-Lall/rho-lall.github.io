@@ -24,11 +24,11 @@ The backend payment processing system has been built and deployed in a separate 
     - _Requirements: 4.4_
   
   - [x] 1.2 Create configuration constants file
-    - Create configuration file with backend API endpoint: `https://0ux6zkhi08.execute-api.us-east-1.amazonaws.com/prod`
+    - Create configuration file with backend API endpoint: `https://payment.bulldozer.life/ecommerce`
     - Add Stripe Price ID constant (from step 1.1)
-    - Define success URL pattern (current page + `?payment=success`)
-    - Define cancel URL pattern (current page + `?payment=cancelled`)
-    - Set up configuration to support both test and production Price IDs
+    - Define success URL to redirect to `/thankyou` page
+    - Define cancel URL to return to current offer page
+    - Set up configuration to support both test and production Price IDs with `isTest` parameter
     - _Requirements: 4.4_
 
 - [x] 2. Create or enhance Buy Button component

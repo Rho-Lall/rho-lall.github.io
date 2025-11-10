@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 
 // Configuration Constants
 // Backend API endpoint for creating Stripe checkout sessions
-const STRIPE_API_ENDPOINT = 'https://0ux6zkhi08.execute-api.us-east-1.amazonaws.com/prod';
+const STRIPE_API_ENDPOINT = 'https://payment.bulldozer.life/ecommerce/create-checkout-session';
 
 // Stripe Price IDs
 // Note: Use test Price IDs for development, production Price IDs for live environment
@@ -24,25 +24,10 @@ const STRIPE_PRICE_ID = process.env.NODE_ENV === 'production'
   ? STRIPE_PRICE_ID_PROD 
   : STRIPE_PRICE_ID_TEST;
 
-/**
- * Generate success URL for Stripe checkout
- * @param {string} currentUrl - The current page URL
- * @returns {string} Success redirect URL
- */
-const getSuccessUrl = (currentUrl) => {
-  return `${currentUrl}?payment=success`;
-};
+// Use test mode for development
+const USE_TEST_MODE = process.env.NODE_ENV !== 'production';
 
-/**
- * Generate cancel URL for Stripe checkout
- * @param {string} currentUrl - The current page URL
- * @returns {string} Cancel redirect URL
- */
-const getCancelUrl = (currentUrl) => {
-  return `${currentUrl}?payment=cancelled`;
-};
-
-const StripeCheckout = ({ priceId, buttonText = "Buy Now", buttonClassName = "" }) => {
+const StripeCheckout = ({ priceId, successUrl, cancelUrl, buttonText = "Buy Now", buttonClassName = "", isTest }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -51,7 +36,9 @@ const StripeCheckout = ({ priceId, buttonText = "Buy Now", buttonClassName = "" 
     setError('');
 
     try {
-      const currentUrl = window.location.href.split('?')[0]; // Remove any existing query params
+      const baseUrl = window.location.origin;
+      const defaultSuccessUrl = successUrl || `${baseUrl}/thankyou`;
+      const defaultCancelUrl = cancelUrl || window.location.href.split('?')[0];
       
       const response = await fetch(STRIPE_API_ENDPOINT, {
         method: 'POST',
@@ -59,9 +46,10 @@ const StripeCheckout = ({ priceId, buttonText = "Buy Now", buttonClassName = "" 
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          priceId: priceId || STRIPE_PRICE_ID,
-          successUrl: getSuccessUrl(currentUrl),
-          cancelUrl: getCancelUrl(currentUrl),
+          productId: priceId || STRIPE_PRICE_ID,
+          successUrl: defaultSuccessUrl,
+          cancelUrl: defaultCancelUrl,
+          isTest: isTest !== undefined ? isTest : USE_TEST_MODE,
         }),
       });
 
@@ -70,13 +58,17 @@ const StripeCheckout = ({ priceId, buttonText = "Buy Now", buttonClassName = "" 
         throw new Error(errorData.error?.message || 'Failed to create checkout session');
       }
 
-      const { sessionUrl } = await response.json();
+      const data = await response.json();
+      
+      if (!data.success || !data.url) {
+        throw new Error(data.error?.message || 'No checkout URL received from server');
+      }
       
       // Redirect to Stripe checkout
-      window.location.href = sessionUrl;
+      window.location.href = data.url;
       
     } catch (err) {
-      setError('Unable to process checkout. Please try again.');
+      setError(err.message || 'Unable to process checkout. Please try again.');
       console.error('Checkout error:', err);
       setIsLoading(false);
     }

@@ -3,6 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import LayoutSales from '../../../components/layout-sales'
 import { Helmet } from 'react-helmet'
 import ReactMarkdown from 'react-markdown'
+import StripeCheckout from '../../../components/checkout/stripe-checkout'
 
 
 // YAML data - imported as JavaScript object for Gatsby compatibility
@@ -92,89 +93,28 @@ You're here to move fast. This pack helps you do exactly that.
 }
 
 // Configuration Constants
-const STRIPE_API_ENDPOINT = 'https://0ux6zkhi08.execute-api.us-east-1.amazonaws.com/prod'
 const STRIPE_PRICE_ID = 'price_1SReks2uBHxDuQdErHcHumBk'
 
 // Offer Selection Component
 const OfferSelection = ({ primaryText, secondaryText }) => {
-    const [isLoading, setIsLoading] = useState(false)
-    const [error, setError] = useState('')
-
-    const handleCheckout = async () => {
-        setIsLoading(true)
-        setError('')
-
-        try {
-            const baseUrl = window.location.origin
-            const successUrl = `${baseUrl}/offer/results-now-ai-action-pack/?payment=success`
-            const cancelUrl = `${baseUrl}/offer/results-now-ai-action-pack/?payment=cancelled`
-
-            console.log('Calling Stripe API...')
-            
-            const response = await fetch(STRIPE_API_ENDPOINT, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    priceId: STRIPE_PRICE_ID,
-                    successUrl,
-                    cancelUrl,
-                }),
-            })
-
-            console.log('API Response status:', response.status)
-
-            if (!response.ok) {
-                const errorData = await response.json()
-                console.error('API Error Response:', errorData)
-                throw new Error(errorData.error?.message || errorData.message || 'Failed to create checkout session')
-            }
-
-            const data = await response.json()
-            console.log('API Success Response:', data)
-            
-            const { sessionUrl } = data
-            
-            if (!sessionUrl) {
-                throw new Error('No checkout URL received from server')
-            }
-
-            // Redirect to Stripe checkout
-            window.location.href = sessionUrl
-            
-        } catch (err) {
-            setError(err.message || 'Unable to process checkout. Please try again.')
-            console.error('Checkout error:', err)
-            setIsLoading(false)
-        }
-    }
-
     const handleDecline = () => {
         window.location.href = '/thankyou'
     }
 
     return (
         <div className="text-center space-y-4 mt-8">
-            {error && (
-                <div className="p-4 rounded-lg bg-red-100 border border-red-400 text-red-700 mb-4">
-                    <p className="font-bold mb-1">Checkout Error</p>
-                    <p>{error}</p>
-                </div>
-            )}
-            
-            <button 
-                onClick={handleCheckout}
-                disabled={isLoading}
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 text-xl rounded-lg transition duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-                {isLoading ? 'Processing...' : (primaryText || "I want it")}
-            </button>
+            <StripeCheckout 
+                priceId={STRIPE_PRICE_ID}
+                successUrl={`${typeof window !== 'undefined' ? window.location.origin : ''}/thankyou`}
+                cancelUrl={`${typeof window !== 'undefined' ? window.location.href.split('?')[0] : ''}`}
+                buttonText={primaryText || "I want it"}
+                buttonClassName="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 text-xl rounded-lg transition duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                isTest={true}
+            />
             
             <button 
                 onClick={handleDecline}
-                disabled={isLoading}
-                className="block w-full text-blue-600 hover:text-blue-800 underline bg-transparent border-0 cursor-pointer disabled:opacity-50"
+                className="block w-full text-blue-600 hover:text-blue-800 underline bg-transparent border-0 cursor-pointer"
             >
                 {secondaryText || "no thanks"}
             </button>
