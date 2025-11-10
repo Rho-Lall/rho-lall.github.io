@@ -46,7 +46,7 @@ const LeadCaptureForm = ({ apiEndpoint, buttonText = "Become AI emPowered" }) =>
 
             const result = await response.json();
             // Redirect to offer page on success
-            navigate('/offer/results_now_ai_action_pack/');
+            navigate('/offer/results-now-ai-action-pack/');
 
         } catch (error) {
             setMessage('Something went wrong. Please try again.');

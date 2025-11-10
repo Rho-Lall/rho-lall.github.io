@@ -45,7 +45,7 @@ npm run deploy
 - AI forms: https://rho-lall.github.io/ai/
 - Data analyst forms: https://rho-lall.github.io/data-analyst/data-analyst-jobs/
 - Blog forms: https://rho-lall.github.io/thoughts/[any-post]/
-- Offer page: https://rho-lall.github.io/offer/results_now_ai_action_pack/
+- Offer page: https://rho-lall.github.io/offer/results-now-ai-action-pack/
 
 ### Functionality Tests
 - [ ] Forms accept user input
