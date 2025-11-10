@@ -60,12 +60,12 @@ const StripeCheckout = ({ priceId, successUrl, cancelUrl, buttonText = "Buy Now"
 
       const data = await response.json();
       
-      if (!data.success || !data.url) {
+      if (!data.success || !data.checkoutUrl) {
         throw new Error(data.error?.message || 'No checkout URL received from server');
       }
       
       // Redirect to Stripe checkout
-      window.location.href = data.url;
+      window.location.href = data.checkoutUrl;
       
     } catch (err) {
       setError(err.message || 'Unable to process checkout. Please try again.');
