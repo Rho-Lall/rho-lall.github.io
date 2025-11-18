@@ -3,19 +3,19 @@ import { StaticImage } from 'gatsby-plugin-image'
 import LayoutSales from '../../../components/layout-sales'
 import { Helmet } from 'react-helmet'
 import OfferSelection from '../../../components/offer-selection/offer-selection'
-import OfferBase from '../../../components/offer/base'
-import offerData from '../../../data/offers/results-now-ai-action-pack'
+import OTOBase from '../../../components/one-time-offer/base'
+import offerData from '../../../data/oto/6-month-roi-strategy-map'
 
 /**
- * Offer Page: Results Now AI Action Pack
+ * Standard OTO Page: 6 Month ROI Strategy Map
  * 
- * Main offer page displayed after lead capture.
- * Customer can proceed to checkout or decline to see OTO.
+ * Displayed when customers decline the initial offer.
+ * Provides a second opportunity to purchase with full checkout process.
  * 
- * Requirements: 1.1, 2.1, 2.2, 2.3, 2.4, 2.5
+ * Requirements: 4.1, 4.2, 5.3
  */
 
-const OfferPage = () => {
+const OTOPage = () => {
     return (
         <LayoutSales pageTitle={offerData.meta.title}>
             <Helmet>
@@ -23,16 +23,17 @@ const OfferPage = () => {
                 <meta name="description" content={offerData.meta.description} />
                 <meta name="keywords" content={offerData.meta.keywords} />
                 <meta name="author" content={offerData.meta.author} />
+                <meta name="robots" content="noindex, nofollow" />
             </Helmet>
 
-            <OfferBase 
+            <OTOBase 
                 offerData={offerData}
                 timerMinutes={offerData.timer_minutes}
                 productImage={
                     <div className="product-image">
                         <StaticImage
-                            src="../../images/ads/Results Now AI Action Pack.png"
-                            alt="Results Now AI Action Pack"
+                            src="../../../images/me_t2.png"
+                            alt="6 Month ROI Strategy Map"
                             className="w-full h-auto"
                             placeholder="blurred"
                         />
@@ -41,15 +42,15 @@ const OfferPage = () => {
             >
                 {/* Offer Selection Buttons */}
                 <OfferSelection 
-                    checkoutUrl="/offer/results-now-ai-action-pack/checkout/"
-                    declineUrl="/one-time-offer/6-month-roi-strategy-map/"
-                    primaryText={offerData.buttons?.primary_text || "Yes Please"}
-                    secondaryText={offerData.buttons?.secondary_text || "No thanks"}
+                    checkoutUrl="/one-time-offer/6-month-roi-strategy-map/checkout/"
+                    declineUrl="/thankyou/"
+                    primaryText={offerData.buttons?.primary_text || "Yes, I Want This"}
+                    secondaryText={offerData.buttons?.secondary_text || "No thanks, take me to my purchase"}
                 />
-            </OfferBase>
+            </OTOBase>
 
         </LayoutSales>
     )
 }
 
-export default OfferPage
+export default OTOPage

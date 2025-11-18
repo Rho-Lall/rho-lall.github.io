@@ -1,0 +1,49 @@
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import StripeCheckout from '../../../components/checkout/stripe-checkout'
+import offerData from '../../../data/oto/6-month-roi-strategy-map'
+
+/**
+ * OTO Checkout Page: 6 Month ROI Strategy Map
+ * 
+ * Embedded Stripe checkout for the OTO.
+ * On successful payment, redirects to thank you page.
+ * On cancel, redirects back to OTO offer page.
+ * 
+ * Requirements: 4.3, 4.4
+ */
+
+const OTOCheckoutPage = () => {
+  // Get base URL for constructing success/cancel URLs
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
+  
+  // Success URL: Thank you page (end of funnel)
+  const successUrl = `${baseUrl}/thankyou/`
+  
+  // Cancel URL: Back to OTO offer page
+  const cancelUrl = `${baseUrl}/one-time-offer/6-month-roi-strategy-map/`
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Checkout - {offerData.meta.title}</title>
+        <meta name="description" content={`Complete your purchase of ${offerData.meta.title}`} />
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+
+      {/* Embedded Checkout - Full Screen */}
+      <div className="w-full h-screen flex items-center justify-center p-4">
+        <div className="w-full max-w-2xl shadow-lg rounded-lg p-6 bg-white">
+          <StripeCheckout
+            priceId={offerData.stripe.priceId}
+            successUrl={successUrl}
+            cancelUrl={cancelUrl}
+            isTest={true}
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default OTOCheckoutPage
