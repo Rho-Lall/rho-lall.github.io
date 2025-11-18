@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - All Posts]]></title><description><![CDATA[Business intelligence reporting resources to use data to make better decisions for your business.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 10 Nov 2025 04:00:48 GMT</lastBuildDate><item><title><![CDATA[Why Dashboards Don't Deliver (and What Actually Does)]]></title><description><![CDATA[Most teams drown themselves in dashboards and call it transparency. But visibility isn't clarity. Learn why dashboards fail and what decision architecture can do instead.]]></description><link>https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</guid><pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - All Posts]]></title><description><![CDATA[Business intelligence reporting resources to use data to make better decisions for your business.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 18 Nov 2025 02:57:45 GMT</lastBuildDate><item><title><![CDATA[Why Dashboards Don't Deliver (and What Actually Does)]]></title><description><![CDATA[Most teams drown themselves in dashboards and call it transparency. But visibility isn't clarity. Learn why dashboards fail and what decision architecture can do instead.]]></description><link>https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</guid><pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate><content:encoded>
 ![heroImage](https://cdn.marblism.com/nq85jXcSRRf.webp)
 
 Most teams drown themselves in dashboards and call it “transparency.”
@@ -1973,21 +1973,6 @@ I built this [first 20 hours time tracker](https://docs.google.com/spreadsheets/
 
 
 
-</content:encoded></item><item><title><![CDATA[Tortoise IS The New Black]]></title><description><![CDATA[
-Notes on using Tailwind CSS that I find useful and want to keep handy. 
-]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>
-I had the chance to dig into some data from Warby Parker as part of a combined project with Codecademy. 
-I distilled data from several tables into a series of actionable insights about two of their marketing funnels. 
-It was fun, for sure: “Any fool can complicate things. It takes genius to simplify them”, Albert Einstein.
-
-A big takeaway from looking at the data is a preference for tortoise frames for both men and women. 
-That preference was measurable in survey data as well as purchase data. 
-When asked, women preferred tortoise to black with a 10% margin of error. 
-Actual purchases confirmed this preference with a narrower margin of error, 5%.  Read here for [detail on my findings](https://www.slideshare.net/RhoLall/tortoise-is-the-new-black)
-, and my [github repo](https://github.com/Rho-Lall/sql/tree/master/Warby%20Parker%20Codecademy%20-%20Tortoise%20IS%20The%20New%20Black).
-
-Part of the project included a [code review from Codecademy](https://github.com/Rho-Lall/sql/issues/1). I am appreciative of the feedback. 
-I often recommend Codecademy and have taken other courses from them as well.
 </content:encoded></item><item><title><![CDATA[Snowflake SQL: How do I exclude weekends between two dates in Snowflake SQL?]]></title><description><![CDATA[
 Common ask in BI is to return the working days between two dates not the calendar days.
 ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/snowflake-remove-weekends-from-date-range</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/snowflake-remove-weekends-from-date-range</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>This post has been updated with additional content and a cleaner format. You can read the updated 2023 version here:
@@ -2040,6 +2025,21 @@ This pattern can be adjusted to accommodate different week start days
 [Snowflake DateDiff Business Days](/thoughts/snowflake-datediff-business-days): How Do I Exclude Weekends?  
 https://docs.snowflake.com/en/sql-reference/functions-date-time.html#label-calendar-weeks-weekdays
 
+</content:encoded></item><item><title><![CDATA[Tortoise IS The New Black]]></title><description><![CDATA[
+Notes on using Tailwind CSS that I find useful and want to keep handy. 
+]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>
+I had the chance to dig into some data from Warby Parker as part of a combined project with Codecademy. 
+I distilled data from several tables into a series of actionable insights about two of their marketing funnels. 
+It was fun, for sure: “Any fool can complicate things. It takes genius to simplify them”, Albert Einstein.
+
+A big takeaway from looking at the data is a preference for tortoise frames for both men and women. 
+That preference was measurable in survey data as well as purchase data. 
+When asked, women preferred tortoise to black with a 10% margin of error. 
+Actual purchases confirmed this preference with a narrower margin of error, 5%.  Read here for [detail on my findings](https://www.slideshare.net/RhoLall/tortoise-is-the-new-black)
+, and my [github repo](https://github.com/Rho-Lall/sql/tree/master/Warby%20Parker%20Codecademy%20-%20Tortoise%20IS%20The%20New%20Black).
+
+Part of the project included a [code review from Codecademy](https://github.com/Rho-Lall/sql/issues/1). I am appreciative of the feedback. 
+I often recommend Codecademy and have taken other courses from them as well.
 </content:encoded></item><item><title><![CDATA[F*uck the Marshmallow: Greatness is Upon You]]></title><description><![CDATA[ You might call this a rant.  This gets in the face of the American fable: work hard, persevere, succeed.  At first this new research was hard to swallow. But now, I’ve taken the time to ponder. Discomfort has subsided. Now I’m pissed. ]]></description><link>https://assumewisely.com/thoughts/ai-strategy/greatness-is-upon-you</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/greatness-is-upon-you</guid><pubDate>Wed, 06 Jun 2018 00:00:00 GMT</pubDate><content:encoded>The Atlantic published an article that is making its way around social media, [&lt;u&gt;Why Rich Kids Are So Good at the Marshmallow Test&lt;/u&gt;](https://web.archive.org/web/20200120001040/https://www.theatlantic.com/family/archive/2018/06/marshmallow-test/561779/). 
 Affluence—not willpower—seems to be what’s behind some kids&apos; capacity to delay gratification. Here are some take aways i clipped from social media posts:
 
@@ -2418,7 +2418,10 @@ Heed the call: seek God, pray, believe, and walk the Savior&apos;s prepared path
 
 God “gives strength to the weary and increases the power of the weak.”“Though the righteous fall seven times, they rise again.”
 
-~ A Yearning For Home, Dieter F Uchtdorf</content:encoded></item><item><title><![CDATA[Is Networking Overrated?]]></title><description><![CDATA[
+~ A Yearning For Home, Dieter F Uchtdorf</content:encoded></item><item><title><![CDATA[Perception VS Reality]]></title><description><![CDATA[ That is because perceptions are hard to change. Perceptions are like averages in that respect. It doesn't matter . . . ]]></description><link>https://assumewisely.com/thoughts/artificial-intelligence/perception-vs-reality</link><guid isPermaLink="false">https://assumewisely.com/thoughts/artificial-intelligence/perception-vs-reality</guid><pubDate>Fri, 16 Mar 2018 00:00:00 GMT</pubDate><content:encoded>I have two colleagues who have busted their behinds in the last few months to improve on areas where they were infamously bad. But if you asked around (like a survey) who is the worst? Their names are still at the top of the list!
+
+That is because perceptions are hard to change. Perceptions are like averages in that respect. It doesn&apos;t matter how much improvement there is, all the front end poor performance is baked in. If you want to see the trends, you are better served with a moving average.
+</content:encoded></item><item><title><![CDATA[Is Networking Overrated?]]></title><description><![CDATA[
 We all have that person in our lives who seems to be connected to everyone. That person with the perfect elevator pitch. That person who knows how to work a room. That person who keeps winning friends and influencing people. That that person who never eats alone.
 ]]></description><link>https://assumewisely.com/thoughts/ai-strategy/networking-overrated</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/networking-overrated</guid><pubDate>Fri, 16 Mar 2018 00:00:00 GMT</pubDate><content:encoded>We all have that person in our lives who seems to be connected to everyone. That person with the perfect elevator pitch. That person who knows how to work a room. That person who keeps winning friends and influencing people. That that person who never eats alone. That person who&apos;s the quintessential networker. Don&apos;t you just hate them? Maybe not outright, but did you know networking skills have more to do with career progression than any other skill? Eighty percent of job openings are never publicly advertised: so maybe you just hate that somehow networking and making connections is SO easy to them and every time you try it feels sleazy.
 
@@ -2538,10 +2541,7 @@ All in one day.
 
 Brainstorm 10 people you want to or should meet. Connect with them. Use the scripts above. Schedule and take the calls. Use the second script to ask for referrals for other informational interviews. Repeat.
 
-Do it.</content:encoded></item><item><title><![CDATA[Perception VS Reality]]></title><description><![CDATA[ That is because perceptions are hard to change. Perceptions are like averages in that respect. It doesn't matter . . . ]]></description><link>https://assumewisely.com/thoughts/artificial-intelligence/perception-vs-reality</link><guid isPermaLink="false">https://assumewisely.com/thoughts/artificial-intelligence/perception-vs-reality</guid><pubDate>Fri, 16 Mar 2018 00:00:00 GMT</pubDate><content:encoded>I have two colleagues who have busted their behinds in the last few months to improve on areas where they were infamously bad. But if you asked around (like a survey) who is the worst? Their names are still at the top of the list!
-
-That is because perceptions are hard to change. Perceptions are like averages in that respect. It doesn&apos;t matter how much improvement there is, all the front end poor performance is baked in. If you want to see the trends, you are better served with a moving average.
-</content:encoded></item><item><title><![CDATA[Push the Button]]></title><description><![CDATA[
+Do it.</content:encoded></item><item><title><![CDATA[Push the Button]]></title><description><![CDATA[
 Begin. With the humility of someone who's not sure, and the excitement of someone who knows that it's possible. ]]></description><link>https://assumewisely.com/thoughts/ai-strategy/push-the-button</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/push-the-button</guid><pubDate>Wed, 14 Mar 2018 00:00:00 GMT</pubDate><content:encoded>Begin when you are unprepared. Just begin.
 
 In Entrata there&apos;s a setting, &quot;Go Live with Entrata&quot;. You can only ever press this button once. When pressed it grays out and cannot be toggled off. It does several things but most notably it enables the general ledger functions.
