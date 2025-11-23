@@ -11,20 +11,22 @@ import { loadStripe } from '@stripe/stripe-js';
  * @param {string} successUrl - URL to redirect after successful payment (optional)
  * @param {string} cancelUrl - URL to redirect on cancel (optional)
  * @param {boolean} isTest - Whether to use test mode (optional, defaults based on NODE_ENV)
+ * @param {object} appearance - Stripe appearance customization object (optional)
  */
 
 // Configuration Constants
 // Backend API endpoint for creating Stripe checkout sessions
-const STRIPE_API_ENDPOINT = 'https://payment.bulldozer.life/create-checkout-session';
+const STRIPE_API_ENDPOINT = 'https://payment.bulldozer.life/ecommerce/create-checkout-session';
 
-// Stripe publishable keys
-const STRIPE_PUBLISHABLE_KEY_TEST = process.env.GATSBY_STRIPE_PUBLISHABLE_KEY_TEST || 'pk_test_...';
-const STRIPE_PUBLISHABLE_KEY_PROD = process.env.GATSBY_STRIPE_PUBLISHABLE_KEY_PROD || 'pk_live_...';
+// Stripe publishable keys (loaded from credentials/.env via symlink)
+const STRIPE_PUBLISHABLE_KEY_TEST = process.env.GATSBY_STRIPE_PUBLISHABLE_KEY_TEST;
+const STRIPE_PUBLISHABLE_KEY_PROD = process.env.GATSBY_STRIPE_PUBLISHABLE_KEY_PROD;
 
-const StripeCheckout = ({ priceId, successUrl, cancelUrl, isTest = false }) => {
+const StripeCheckout = ({ priceId, successUrl, cancelUrl, isTest = false, appearance }) => {
   // Determine which Stripe key to use based on isTest prop
   // Default is LIVE mode (isTest = false), only use test keys when explicitly set to true
   const STRIPE_PUBLISHABLE_KEY = isTest ? STRIPE_PUBLISHABLE_KEY_TEST : STRIPE_PUBLISHABLE_KEY_PROD;
+  
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
   const [clientSecret, setClientSecret] = useState('');
@@ -65,10 +67,9 @@ const StripeCheckout = ({ priceId, successUrl, cancelUrl, isTest = false }) => {
           },
           body: JSON.stringify({
             priceId: priceId,
+            productType: 'offer', // Backend expects 'offer' or 'oto'
             successUrl: defaultSuccessUrl,
             cancelUrl: defaultCancelUrl,
-            isTest: isTest,
-            mode: 'embedded', // Request embedded checkout mode
           }),
           signal: controller.signal,
         });
@@ -131,14 +132,20 @@ const StripeCheckout = ({ priceId, successUrl, cancelUrl, isTest = false }) => {
           clientSecret,
         });
 
+        if (!checkout) {
+          throw new Error('Failed to initialize Stripe checkout');
+        }
+
         checkout.mount(checkoutRef.current);
         checkoutInstance.current = checkout;
         setIsLoading(false);
 
-        // Listen for checkout completion
-        checkout.on('complete', () => {
-          handleCheckoutComplete();
-        });
+        // Listen for checkout completion (if supported)
+        if (typeof checkout.on === 'function') {
+          checkout.on('complete', () => {
+            handleCheckoutComplete();
+          });
+        }
 
       } catch (err) {
         setError(err.message || 'Failed to initialize embedded checkout. Please try again.');
@@ -164,12 +171,15 @@ const StripeCheckout = ({ priceId, successUrl, cancelUrl, isTest = false }) => {
     const sessionIdFromUrl = urlParams.get('session_id');
     const finalSessionId = sessionIdFromUrl || sessionId;
 
+    console.log('Checkout complete - Session ID:', finalSessionId);
+
     // Redirect to success URL with session ID for one-click upsell
     if (successUrl) {
       const separator = successUrl.includes('?') ? '&' : '?';
       const redirectUrl = finalSessionId 
         ? `${successUrl}${separator}session=${finalSessionId}`
         : successUrl;
+      console.log('Redirecting to:', redirectUrl);
       window.location.href = redirectUrl;
     }
   };
@@ -207,7 +217,11 @@ const StripeCheckout = ({ priceId, successUrl, cancelUrl, isTest = false }) => {
         </div>
       )}
       
-      <div ref={checkoutRef} className={isLoading || error ? 'hidden' : ''}></div>
+      <div 
+        ref={checkoutRef} 
+        className={isLoading || error ? 'hidden' : ''} 
+        style={{ backgroundColor: '#ffffff' }}
+      ></div>
     </div>
   );
 };

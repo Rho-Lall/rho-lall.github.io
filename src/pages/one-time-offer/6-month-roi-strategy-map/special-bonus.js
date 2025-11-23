@@ -14,38 +14,34 @@ import offerData from '../../../data/oto/6-month-roi-strategy-map'
  * Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 5.1, 5.2, 6.4, 10.1
  */
 
-// Backend API endpoint for one-click upsell
-const ONE_CLICK_UPSELL_API = 'https://payment.bulldozer.life/one-click-upsell'
+// Backend API endpoints
+const GET_UUID_API = 'https://payment.bulldozer.life/ecommerce/get-uuid'
+const ONE_CLICK_UPSELL_API = 'https://payment.bulldozer.life/ecommerce/one-click-upsell'
 
 const OneClickUpsellPage = () => {
-  const [sessionId, setSessionId] = useState('')
+  const [stripeSessionId, setStripeSessionId] = useState('')
   const [isProcessing, setIsProcessing] = useState(false)
   const [error, setError] = useState('')
 
-  // Extract session ID from URL on component mount
+  // Extract Stripe session ID from URL on mount
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const urlParams = new URLSearchParams(window.location.search)
-      const session = urlParams.get('session')
-      
-      // TEMPORARILY COMMENTED OUT FOR REVIEW
-      // if (!session) {
-      //   // No session ID - redirect to standard OTO page
-      //   navigate('/one-time-offer/6-month-roi-strategy-map/')
-      // } else {
-      //   setSessionId(session)
-      // }
-      
-      // For now, just set the session ID if it exists
-      if (session) {
-        setSessionId(session)
-      }
+    if (typeof window === 'undefined') return
+
+    const urlParams = new URLSearchParams(window.location.search)
+    const sessionId = urlParams.get('session_id')
+    
+    if (!sessionId) {
+      console.warn('No session_id found in URL')
+      navigate('/one-time-offer/6-month-roi-strategy-map/')
+      return
     }
+
+    setStripeSessionId(sessionId)
   }, [])
 
   // Handle one-click purchase
   const handlePurchase = async () => {
-    if (!sessionId) {
+    if (!stripeSessionId) {
       setError('Invalid session. Please try again.')
       return
     }
@@ -58,13 +54,70 @@ const OneClickUpsellPage = () => {
     const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
 
     try {
-      const response = await fetch(ONE_CLICK_UPSELL_API, {
+      // Step 1: Get UUID from Stripe session ID with retry logic
+      // Retry up to 10 times with exponential backoff (webhook may still be processing)
+      let uuidData = null
+      let lastError = null
+      
+      for (let i = 0; i < 10; i++) {
+        try {
+          const uuidResponse = await fetch(`${GET_UUID_API}?stripeSessionId=${stripeSessionId}`, {
+            signal: controller.signal,
+          })
+
+          if (!uuidResponse.ok) {
+            const errorData = await uuidResponse.json().catch(() => ({}))
+            lastError = new Error(errorData.error?.message || 'Failed to retrieve session')
+            
+            // If it's a "not found" error, retry with backoff
+            if (errorData.found === false || uuidResponse.status === 404) {
+              await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1))) // Exponential backoff
+              continue
+            }
+            
+            // For other errors, throw immediately
+            throw lastError
+          }
+
+          const data = await uuidResponse.json()
+          
+          if (data.success && data.sessionId) {
+            uuidData = data
+            break
+          }
+          
+          // Session not ready yet, retry with backoff
+          if (data.found === false) {
+            await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)))
+            continue
+          }
+          
+          throw new Error('Invalid session response')
+          
+        } catch (err) {
+          if (err.name === 'AbortError') throw err // Don't retry on timeout
+          lastError = err
+          
+          // Last attempt failed
+          if (i === 9) throw lastError
+          
+          // Retry with backoff
+          await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)))
+        }
+      }
+      
+      if (!uuidData || !uuidData.sessionId) {
+        throw new Error(lastError?.message || 'Payment session not ready. Please try again.')
+      }
+
+      // Step 2: Process one-click upsell with UUID
+      const upsellResponse = await fetch(ONE_CLICK_UPSELL_API, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          sessionId: sessionId,
+          sessionId: uuidData.sessionId,
           priceId: offerData.stripe.priceId,
         }),
         signal: controller.signal,
@@ -72,12 +125,12 @@ const OneClickUpsellPage = () => {
 
       clearTimeout(timeoutId)
 
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}))
-        throw new Error(errorData.error?.message || `Server error: ${response.status}`)
+      if (!upsellResponse.ok) {
+        const errorData = await upsellResponse.json().catch(() => ({}))
+        throw new Error(errorData.error?.message || `Server error: ${upsellResponse.status}`)
       }
 
-      const data = await response.json()
+      const data = await upsellResponse.json()
 
       if (!data.success) {
         throw new Error(data.error?.message || 'Payment failed. Please try again.')
@@ -137,9 +190,9 @@ const OneClickUpsellPage = () => {
           {/* One-Click Purchase Button */}
           <button
             onClick={handlePurchase}
-            disabled={isProcessing || !sessionId}
+            disabled={isProcessing || !stripeSessionId}
             className={`w-full font-bold py-4 px-8 text-xl rounded-lg transition duration-200 shadow-lg hover:shadow-xl ${
-              isProcessing || !sessionId
+              isProcessing || !stripeSessionId
                 ? 'bg-gray-400 cursor-not-allowed'
                 : 'bg-green-600 hover:bg-green-700 text-white'
             }`}

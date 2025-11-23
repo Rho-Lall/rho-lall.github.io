@@ -47,6 +47,8 @@ const OTOPage = () => {
                     primaryText={offerData.buttons?.primary_text || "Yes, I Want This"}
                     secondaryText={offerData.buttons?.secondary_text || "No thanks, take me to my purchase"}
                 />
+                
+                {/* Note: One-click upsell requires backend implementation at /one-click-upsell endpoint */}
             </OTOBase>
 
         </LayoutSales>

@@ -31,8 +31,8 @@ const OTOCheckoutPage = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      {/* Embedded Checkout - Full Screen */}
-      <div className="w-full h-screen flex items-center justify-center p-4">
+      {/* Embedded Checkout */}
+      <div className="w-full min-h-screen flex items-start justify-center p-4 pt-12">
         <div className="w-full max-w-2xl shadow-lg rounded-lg p-6 bg-white">
           <StripeCheckout
             priceId={offerData.stripe.priceId}

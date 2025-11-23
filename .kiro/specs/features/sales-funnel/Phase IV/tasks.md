@@ -65,9 +65,10 @@ Phase IV builds on Phase III's basic payment integration to create a complete sa
   
   - [x] 2.3 Update checkout success handling
     - Detect successful payment completion in embedded mode
-    - Extract session ID from backend response
-    - Redirect to one-click upsell page with session ID as URL parameter
-    - Example: `/one-time-offer/special-bonus/?session=abc123`
+    - Configure success URL to redirect to one-click upsell page
+    - Stripe will append session_id to the success URL automatically
+    - Success URL format: `/one-time-offer/special-bonus/?session_id={CHECKOUT_SESSION_ID}`
+    - Note: The session_id comes from Stripe's redirect, not from backend API response
     - _Requirements: 1.4, 6.1_
 
 - [x] 3. Create Reusable OfferSelection Component and Update Offer Page
@@ -106,9 +107,11 @@ Phase IV builds on Phase III's basic payment integration to create a complete sa
     - _Requirements: 3.1, 3.2, 5.1_
   
   - [x] 5.2 Implement one-click purchase logic
-    - Extract session ID from URL
-    - Call backend one-click upsell endpoint with session ID
-    - Backend retrieves payment method using session ID
+    - Extract Stripe session_id from URL parameters (e.g., `?session_id=cs_test_abc123`)
+    - When user clicks upsell button (NOT on page load):
+      - Call `GET /get-uuid?stripeSessionId={session_id}` to get internal UUID
+      - Implement retry logic: up to 10 attempts with exponential backoff (webhook may be processing)
+      - If UUID retrieved successfully, call `POST /one-click-upsell` with UUID and upsell priceId
     - Handle loading state during payment processing
     - On success: redirect to thank you page
     - On error: display error message (stay on page)

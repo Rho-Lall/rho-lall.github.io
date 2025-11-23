@@ -1,7 +1,37 @@
-node_modules
-.cache/*
-/.cache/*
+# Dependencies
+node_modules/
+
+# Build output
+.cache/
+public/
 .DS_Store
-# Scri
-pts folder
+
+# Credentials folder - NEVER COMMIT THIS FOLDER
+# Contains all sensitive API keys and environment variables
+credentials/
+
+# Environment files (if copied/linked to root)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Scripts folder
 scripts/

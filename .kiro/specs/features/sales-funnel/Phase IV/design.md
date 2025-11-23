@@ -65,9 +65,17 @@ Lead Capture → Offer → Checkout → Branch:
 
 ### Funnel Flow
 ```
-Lead Capture → Offer Page → Checkout → Branch:
-  ├─ Purchase → One-Click Upsell (special-bonus) → Thank You
-  └─ Decline → Standard OTO → Checkout → Thank You
+Lead Capture → Offer Page → Branch:
+
+PURCHASE PATH:
+  Offer Page → Offer Checkout → [Payment Success] → 
+    One-Click Upsell (special-bonus) → Branch:
+      ├─ Accept Upsell → Thank You
+      └─ Decline Upsell → Thank You
+
+DECLINE PATH:
+  Offer Page → "No Thanks" → Standard OTO → OTO Checkout → [Payment Success] → Thank You
+  (No one-click upsell opportunity on this path)
 ```
 
 ### File Structure
@@ -100,6 +108,30 @@ Lead Capture → Offer Page → Checkout → Branch:
 - One-click upsell API (uses existing payment method)
 - Session management to track purchase state
 - Conditional routing logic based on purchase/decline
+
+### Backend API Flow
+
+**API Base URL**: `https://194qku7n6l.execute-api.us-east-1.amazonaws.com/ecommerce`
+
+**Available Endpoints**:
+- `POST /create-checkout-session` - Create initial checkout
+- `GET /get-uuid` - Get payment session UUID (for upsell)
+- `POST /one-click-upsell` - Process upsell charge
+- `POST /stripe-webhook` - Webhook handler (Stripe only)
+
+**One-Click Upsell Flow**:
+1. Customer completes offer checkout → Stripe redirects to `/one-time-offer/special-bonus/?session_id=cs_xxx`
+2. Customer clicks upsell button → Frontend calls `GET /get-uuid?stripeSessionId=cs_xxx`
+3. Backend retrieves internal UUID from DynamoDB (stored via webhook)
+4. Frontend receives UUID → calls `POST /one-click-upsell` with UUID and upsell priceId
+5. Backend processes payment using stored payment method
+6. Frontend redirects to thank you page on success
+
+**Critical Implementation Details**:
+- **Timing**: Only call `/get-uuid` when user clicks upsell button (NOT on page load)
+- **Retry Logic**: If UUID not found, retry up to 10 times with exponential backoff (webhook may still be processing)
+- **Session Expiry**: UUIDs expire after 24 hours
+- **One-Time Use**: UUIDs are deleted after successful upsell charge
 
 ### Key Features
 - Embedded checkout experience (no redirect to checkout.stripe.com)
