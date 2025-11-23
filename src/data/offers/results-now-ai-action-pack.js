@@ -8,7 +8,8 @@
 export const offerData = {
     // Stripe Configuration
     stripe: {
-        priceId: 'price_1SReks2uBHxDuQdErHcHumBk', // Replace with actual Stripe Price ID
+        test_priceId: 'price_1SReks2uBHxDuQdErHcHumBk', // Replace with actual Stripe Price ID
+        price_id: 'price_1SReij2w8fx5rDMT84QKwhmr'
     },
 
     // Meta Information (SEO)

@@ -23,6 +23,12 @@ const OTOCheckoutPage = () => {
   // Cancel URL: Back to OTO offer page
   const cancelUrl = `${baseUrl}/one-time-offer/6-month-roi-strategy-map/`
 
+  // Determine if we're in test mode
+  const isTest = process.env.GATSBY_STRIPE_IS_TEST === 'true'
+  
+  // Select the correct price ID based on test mode
+  const priceId = isTest ? offerData.stripe.test_priceId : offerData.stripe.price_id
+
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
@@ -35,10 +41,10 @@ const OTOCheckoutPage = () => {
       <div className="w-full min-h-screen flex items-start justify-center p-4 pt-12">
         <div className="w-full max-w-2xl shadow-lg rounded-lg p-6 bg-white">
           <StripeCheckout
-            priceId={offerData.stripe.priceId}
+            priceId={priceId}
             successUrl={successUrl}
             cancelUrl={cancelUrl}
-            isTest={process.env.GATSBY_STRIPE_IS_TEST === 'true'}
+            isTest={isTest}
           />
         </div>
       </div>

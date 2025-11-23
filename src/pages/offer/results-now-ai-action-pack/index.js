@@ -16,6 +16,13 @@ import offerData from '../../../data/offers/results-now-ai-action-pack'
  */
 
 const OfferPage = () => {
+    // Check if we're in test mode
+    const isTest = process.env.GATSBY_STRIPE_IS_TEST === 'true'
+    
+    // Add TEST indicator to button text if in test mode
+    const primaryButtonText = offerData.buttons?.primary_text || "Yes Please"
+    const displayPrimaryText = isTest ? `${primaryButtonText} (TEST)` : primaryButtonText
+    
     return (
         <LayoutSales pageTitle={offerData.meta.title}>
             <Helmet>
@@ -24,6 +31,13 @@ const OfferPage = () => {
                 <meta name="keywords" content={offerData.meta.keywords} />
                 <meta name="author" content={offerData.meta.author} />
             </Helmet>
+
+            {/* Test Mode Banner */}
+            {isTest && (
+                <div className="bg-yellow-400 text-black text-center py-2 px-4 font-bold">
+                    ⚠️ TEST MODE - Using test Stripe keys and test price IDs
+                </div>
+            )}
 
             <OfferBase 
                 offerData={offerData}
@@ -43,7 +57,7 @@ const OfferPage = () => {
                 <OfferSelection 
                     checkoutUrl="/offer/results-now-ai-action-pack/checkout/"
                     declineUrl="/one-time-offer/6-month-roi-strategy-map/"
-                    primaryText={offerData.buttons?.primary_text || "Yes Please"}
+                    primaryText={displayPrimaryText}
                     secondaryText={offerData.buttons?.secondary_text || "No thanks"}
                 />
             </OfferBase>

@@ -16,6 +16,13 @@ import offerData from '../../../data/oto/6-month-roi-strategy-map'
  */
 
 const OTOPage = () => {
+    // Check if we're in test mode
+    const isTest = process.env.GATSBY_STRIPE_IS_TEST === 'true'
+    
+    // Add TEST indicator to button text if in test mode
+    const primaryButtonText = offerData.buttons?.primary_text || "Yes, I Want This"
+    const displayPrimaryText = isTest ? `${primaryButtonText} (TEST)` : primaryButtonText
+    
     return (
         <LayoutSales pageTitle={offerData.meta.title}>
             <Helmet>
@@ -25,6 +32,13 @@ const OTOPage = () => {
                 <meta name="author" content={offerData.meta.author} />
                 <meta name="robots" content="noindex, nofollow" />
             </Helmet>
+
+            {/* Test Mode Banner */}
+            {isTest && (
+                <div className="bg-yellow-400 text-black text-center py-2 px-4 font-bold">
+                    ⚠️ TEST MODE - Using test Stripe keys and test price IDs
+                </div>
+            )}
 
             <OTOBase 
                 offerData={offerData}
@@ -44,7 +58,7 @@ const OTOPage = () => {
                 <OfferSelection 
                     checkoutUrl="/one-time-offer/6-month-roi-strategy-map/checkout/"
                     declineUrl="/thankyou/"
-                    primaryText={offerData.buttons?.primary_text || "Yes, I Want This"}
+                    primaryText={displayPrimaryText}
                     secondaryText={offerData.buttons?.secondary_text || "No thanks, take me to my purchase"}
                 />
                 

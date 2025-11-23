@@ -16,6 +16,7 @@ import { loadStripe } from '@stripe/stripe-js';
 
 // Configuration Constants
 // Backend API endpoint for creating Stripe checkout sessions
+// This single endpoint handles both test and live mode based on the keys/price IDs used
 const STRIPE_API_ENDPOINT = 'https://payment.bulldozer.life/ecommerce/create-checkout-session';
 
 // Stripe publishable keys (loaded from credentials/.env via symlink)
@@ -70,6 +71,7 @@ const StripeCheckout = ({ priceId, successUrl, cancelUrl, isTest = false, appear
             productType: 'offer', // Backend expects 'offer' or 'oto'
             successUrl: defaultSuccessUrl,
             cancelUrl: defaultCancelUrl,
+            isTest: isTest, // Pass test mode flag to backend
           }),
           signal: controller.signal,
         });
