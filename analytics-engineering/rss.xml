@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - Analytics Engineering]]></title><description><![CDATA[Analytics Engineering and BI development insights.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Nov 2025 23:48:37 GMT</lastBuildDate><item><title><![CDATA[Snowflake DateDiff Business Days: How do I exclude weekends?]]></title><description><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - Analytics Engineering]]></title><description><![CDATA[Analytics Engineering and BI development insights.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Nov 2025 23:51:09 GMT</lastBuildDate><item><title><![CDATA[Snowflake DateDiff Business Days: How do I exclude weekends?]]></title><description><![CDATA[
 A common ask in analytics engineering is to return the working days between two dates not the calendar days.
 ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/snowflake-datediff-business-days</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/snowflake-datediff-business-days</guid><pubDate>Mon, 24 Jul 2023 00:00:00 GMT</pubDate><content:encoded>
 This is the code leverages Snowflake DateDiff to calculate business days.
@@ -651,7 +651,22 @@ This is my final project for my Codecademy Python class. I am coding up a script
 
 Before I started coding I read through each introduction and the murderer&apos;s note a few times. I think I have a pretty good idea of who the killer is. So I wrote down my guess and a short paragraph with my reasons why.
 
-And now it&apos;s your turn! Follow [this link](https://docs.google.com/forms/d/e/1FAIpQLSeB0imzmz2-G03aA9iOZlhh4TnsUCTAFUQwG_UXrkFvlw3i-w/viewform) to a google poll and [tell me who you think the killer is](https://web.archive.org/web/20200120000854/https://docs.google.com/forms/d/e/1FAIpQLSeB0imzmz2-G03aA9iOZlhh4TnsUCTAFUQwG_UXrkFvlw3i-w/viewform?usp=sf_link). Stay tuned to find out who did it in an upcoming post.</content:encoded></item><item><title><![CDATA[Snowflake SQL: How do I exclude weekends between two dates in Snowflake SQL?]]></title><description><![CDATA[
+And now it&apos;s your turn! Follow [this link](https://docs.google.com/forms/d/e/1FAIpQLSeB0imzmz2-G03aA9iOZlhh4TnsUCTAFUQwG_UXrkFvlw3i-w/viewform) to a google poll and [tell me who you think the killer is](https://web.archive.org/web/20200120000854/https://docs.google.com/forms/d/e/1FAIpQLSeB0imzmz2-G03aA9iOZlhh4TnsUCTAFUQwG_UXrkFvlw3i-w/viewform?usp=sf_link). Stay tuned to find out who did it in an upcoming post.</content:encoded></item><item><title><![CDATA[Tortoise IS The New Black]]></title><description><![CDATA[
+Notes on using Tailwind CSS that I find useful and want to keep handy. 
+]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>
+I had the chance to dig into some data from Warby Parker as part of a combined project with Codecademy. 
+I distilled data from several tables into a series of actionable insights about two of their marketing funnels. 
+It was fun, for sure: “Any fool can complicate things. It takes genius to simplify them”, Albert Einstein.
+
+A big takeaway from looking at the data is a preference for tortoise frames for both men and women. 
+That preference was measurable in survey data as well as purchase data. 
+When asked, women preferred tortoise to black with a 10% margin of error. 
+Actual purchases confirmed this preference with a narrower margin of error, 5%.  Read here for [detail on my findings](https://www.slideshare.net/RhoLall/tortoise-is-the-new-black)
+, and my [github repo](https://github.com/Rho-Lall/sql/tree/master/Warby%20Parker%20Codecademy%20-%20Tortoise%20IS%20The%20New%20Black).
+
+Part of the project included a [code review from Codecademy](https://github.com/Rho-Lall/sql/issues/1). I am appreciative of the feedback. 
+I often recommend Codecademy and have taken other courses from them as well.
+</content:encoded></item><item><title><![CDATA[Snowflake SQL: How do I exclude weekends between two dates in Snowflake SQL?]]></title><description><![CDATA[
 Common ask in BI is to return the working days between two dates not the calendar days.
 ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/snowflake-remove-weekends-from-date-range</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/snowflake-remove-weekends-from-date-range</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>This post has been updated with additional content and a cleaner format. You can read the updated 2023 version here:
 
@@ -703,21 +718,6 @@ This pattern can be adjusted to accommodate different week start days
 [Snowflake DateDiff Business Days](/thoughts/snowflake-datediff-business-days): How Do I Exclude Weekends?  
 https://docs.snowflake.com/en/sql-reference/functions-date-time.html#label-calendar-weeks-weekdays
 
-</content:encoded></item><item><title><![CDATA[Tortoise IS The New Black]]></title><description><![CDATA[
-Notes on using Tailwind CSS that I find useful and want to keep handy. 
-]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>
-I had the chance to dig into some data from Warby Parker as part of a combined project with Codecademy. 
-I distilled data from several tables into a series of actionable insights about two of their marketing funnels. 
-It was fun, for sure: “Any fool can complicate things. It takes genius to simplify them”, Albert Einstein.
-
-A big takeaway from looking at the data is a preference for tortoise frames for both men and women. 
-That preference was measurable in survey data as well as purchase data. 
-When asked, women preferred tortoise to black with a 10% margin of error. 
-Actual purchases confirmed this preference with a narrower margin of error, 5%.  Read here for [detail on my findings](https://www.slideshare.net/RhoLall/tortoise-is-the-new-black)
-, and my [github repo](https://github.com/Rho-Lall/sql/tree/master/Warby%20Parker%20Codecademy%20-%20Tortoise%20IS%20The%20New%20Black).
-
-Part of the project included a [code review from Codecademy](https://github.com/Rho-Lall/sql/issues/1). I am appreciative of the feedback. 
-I often recommend Codecademy and have taken other courses from them as well.
 </content:encoded></item><item><title><![CDATA[Data Warehousing for Dummies PDF: How BIG do I build?]]></title><description><![CDATA[
 I want to talk about an important question, “Should you build one large database of information (a data warehouse) and then parcel off smaller portions to different organizations, or should you build a bunch of smaller scale databases (data marts) and then integrate them together later?
 ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/data-warehousing-for-dummies-pdf-how-big-do-i-build</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/data-warehousing-for-dummies-pdf-how-big-do-i-build</guid><pubDate>Wed, 25 Apr 2018 00:00:00 GMT</pubDate><content:encoded>This is the third blog in my Data Warehousing for Dummies blog series. If you would like, I have a FREE Data Warehousing for Dummies PDF that takes you through the whole process. Today, I want to talk about an important question, “Should you build one large database of information (a data warehouse) and then parcel off smaller portions to different organizations, or should you build a bunch of smaller scale databases (data marts) and then integrate them together later?”
