@@ -39,7 +39,7 @@ const OfferCheckoutPage = () => {
             priceId={offerData.stripe.priceId}
             successUrl={successUrl}
             cancelUrl={cancelUrl}
-            isTest={true}
+            isTest={process.env.GATSBY_STRIPE_IS_TEST === 'true'}
           />
         </div>
       </div>
