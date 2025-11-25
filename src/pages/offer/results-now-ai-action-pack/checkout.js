@@ -25,7 +25,7 @@ const OfferCheckoutPage = () => {
   const cancelUrl = `${baseUrl}/offer/results-now-ai-action-pack/`
 
   // Determine if we're in test mode
-  const isTest = process.env.GATSBY_STRIPE_IS_TEST === 'true'
+  const isTest = process.env.ISTEST === 'true'
   
   // Select the correct price ID based on test mode
   const priceId = isTest ? offerData.stripe.test_priceId : offerData.stripe.price_id

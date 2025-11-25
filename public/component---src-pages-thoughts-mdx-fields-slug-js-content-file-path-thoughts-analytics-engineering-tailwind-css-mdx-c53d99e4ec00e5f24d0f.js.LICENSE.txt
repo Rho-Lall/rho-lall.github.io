@@ -1,3 +1,0 @@
-/*![CSS Rule](./media/content/css_rule.png)*/
-
-/*![web safe fonts](./media/content/web_safe_fonts.png)*/
