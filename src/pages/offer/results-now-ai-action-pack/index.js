@@ -17,7 +17,7 @@ import offerData from '../../../data/offers/results-now-ai-action-pack'
 
 const OfferPage = () => {
     // Check if we're in test mode
-    const isTest = process.env.GATSBY_STRIPE_IS_TEST === 'true'
+    const isTest = process.env.GATSBY_ISTEST === 'true'
     
     // Add TEST indicator to button text if in test mode
     const primaryButtonText = offerData.buttons?.primary_text || "Yes Please"
