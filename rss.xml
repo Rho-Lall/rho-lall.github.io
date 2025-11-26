@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - All Posts]]></title><description><![CDATA[Business intelligence reporting resources to use data to make better decisions for your business.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 26 Nov 2025 02:16:52 GMT</lastBuildDate><item><title><![CDATA[Why Dashboards Don't Deliver (and What Actually Does)]]></title><description><![CDATA[Most teams drown themselves in dashboards and call it transparency. But visibility isn't clarity. Learn why dashboards fail and what decision architecture can do instead.]]></description><link>https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</guid><pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Assume Wisely - All Posts]]></title><description><![CDATA[Business intelligence reporting resources to use data to make better decisions for your business.]]></description><link>https://assumewisely.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 26 Nov 2025 04:57:50 GMT</lastBuildDate><item><title><![CDATA[Why Dashboards Don't Deliver (and What Actually Does)]]></title><description><![CDATA[Most teams drown themselves in dashboards and call it transparency. But visibility isn't clarity. Learn why dashboards fail and what decision architecture can do instead.]]></description><link>https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/dashboards-dont-deliver</guid><pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate><content:encoded>
 ![heroImage](https://cdn.marblism.com/nq85jXcSRRf.webp)
 
 Most teams drown themselves in dashboards and call it “transparency.”
@@ -1973,21 +1973,6 @@ I built this [first 20 hours time tracker](https://docs.google.com/spreadsheets/
 
 
 
-</content:encoded></item><item><title><![CDATA[Tortoise IS The New Black]]></title><description><![CDATA[
-Notes on using Tailwind CSS that I find useful and want to keep handy. 
-]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>
-I had the chance to dig into some data from Warby Parker as part of a combined project with Codecademy. 
-I distilled data from several tables into a series of actionable insights about two of their marketing funnels. 
-It was fun, for sure: “Any fool can complicate things. It takes genius to simplify them”, Albert Einstein.
-
-A big takeaway from looking at the data is a preference for tortoise frames for both men and women. 
-That preference was measurable in survey data as well as purchase data. 
-When asked, women preferred tortoise to black with a 10% margin of error. 
-Actual purchases confirmed this preference with a narrower margin of error, 5%.  Read here for [detail on my findings](https://www.slideshare.net/RhoLall/tortoise-is-the-new-black)
-, and my [github repo](https://github.com/Rho-Lall/sql/tree/master/Warby%20Parker%20Codecademy%20-%20Tortoise%20IS%20The%20New%20Black).
-
-Part of the project included a [code review from Codecademy](https://github.com/Rho-Lall/sql/issues/1). I am appreciative of the feedback. 
-I often recommend Codecademy and have taken other courses from them as well.
 </content:encoded></item><item><title><![CDATA[Snowflake SQL: How do I exclude weekends between two dates in Snowflake SQL?]]></title><description><![CDATA[
 Common ask in BI is to return the working days between two dates not the calendar days.
 ]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/snowflake-remove-weekends-from-date-range</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/snowflake-remove-weekends-from-date-range</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>This post has been updated with additional content and a cleaner format. You can read the updated 2023 version here:
@@ -2040,6 +2025,21 @@ This pattern can be adjusted to accommodate different week start days
 [Snowflake DateDiff Business Days](/thoughts/snowflake-datediff-business-days): How Do I Exclude Weekends?  
 https://docs.snowflake.com/en/sql-reference/functions-date-time.html#label-calendar-weeks-weekdays
 
+</content:encoded></item><item><title><![CDATA[Tortoise IS The New Black]]></title><description><![CDATA[
+Notes on using Tailwind CSS that I find useful and want to keep handy. 
+]]></description><link>https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</link><guid isPermaLink="false">https://assumewisely.com/thoughts/analytics-engineering/tortoise-new-black</guid><pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate><content:encoded>
+I had the chance to dig into some data from Warby Parker as part of a combined project with Codecademy. 
+I distilled data from several tables into a series of actionable insights about two of their marketing funnels. 
+It was fun, for sure: “Any fool can complicate things. It takes genius to simplify them”, Albert Einstein.
+
+A big takeaway from looking at the data is a preference for tortoise frames for both men and women. 
+That preference was measurable in survey data as well as purchase data. 
+When asked, women preferred tortoise to black with a 10% margin of error. 
+Actual purchases confirmed this preference with a narrower margin of error, 5%.  Read here for [detail on my findings](https://www.slideshare.net/RhoLall/tortoise-is-the-new-black)
+, and my [github repo](https://github.com/Rho-Lall/sql/tree/master/Warby%20Parker%20Codecademy%20-%20Tortoise%20IS%20The%20New%20Black).
+
+Part of the project included a [code review from Codecademy](https://github.com/Rho-Lall/sql/issues/1). I am appreciative of the feedback. 
+I often recommend Codecademy and have taken other courses from them as well.
 </content:encoded></item><item><title><![CDATA[F*uck the Marshmallow: Greatness is Upon You]]></title><description><![CDATA[ You might call this a rant.  This gets in the face of the American fable: work hard, persevere, succeed.  At first this new research was hard to swallow. But now, I’ve taken the time to ponder. Discomfort has subsided. Now I’m pissed. ]]></description><link>https://assumewisely.com/thoughts/ai-strategy/greatness-is-upon-you</link><guid isPermaLink="false">https://assumewisely.com/thoughts/ai-strategy/greatness-is-upon-you</guid><pubDate>Wed, 06 Jun 2018 00:00:00 GMT</pubDate><content:encoded>The Atlantic published an article that is making its way around social media, [&lt;u&gt;Why Rich Kids Are So Good at the Marshmallow Test&lt;/u&gt;](https://web.archive.org/web/20200120001040/https://www.theatlantic.com/family/archive/2018/06/marshmallow-test/561779/). 
 Affluence—not willpower—seems to be what’s behind some kids&apos; capacity to delay gratification. Here are some take aways i clipped from social media posts:
 
