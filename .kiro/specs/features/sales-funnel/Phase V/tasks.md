@@ -67,7 +67,7 @@ This allows testing each step incrementally as you complete the tasks.
 
 ---
 
-- [ ] **Task 3: Verify DynamoDB Population (Backend Check)**
+- [x] **Task 3: Verify DynamoDB Population (Backend Check)**
 
 **Goal**: Verify that the payment session data is being written to DynamoDB correctly
 
@@ -95,7 +95,7 @@ This allows testing each step incrementally as you complete the tasks.
 
 ---
 
-- [ ] **Task 4: Fix OTO Checkout Page - Mode Handling**
+- [x] **Task 4: Fix OTO Checkout Page - Mode Handling**
 
 **Goal**: Ensure the OTO checkout page correctly uses `ISTEST` environment variable
 
@@ -122,7 +122,7 @@ This allows testing each step incrementally as you complete the tasks.
 
 ---
 
-- [ ] **Task 5: Fix Session ID Extraction in Upsell Page**
+- [x] **Task 5: Fix Session ID Extraction in Upsell Page**
 
 **Goal**: Ensure the upsell page correctly extracts the Stripe session ID from the URL
 
@@ -163,7 +163,7 @@ if (!stripeSessionId) {
 
 ---
 
-- [ ] **Task 6: Fix Price ID Selection in Upsell Page**
+- [x] **Task 6: Fix Price ID Selection in Upsell Page**
 
 **Goal**: Use the correct price ID property based on test/live mode
 
@@ -196,7 +196,7 @@ if (!stripeSessionId) {
 
 ---
 
-- [ ] **Task 7: Add Basic Error Handling to Upsell Page**
+- [x] **Task 7: Add Basic Error Handling to Upsell Page**
 
 **Goal**: Add simple try-catch to handle API errors gracefully
 
@@ -238,7 +238,7 @@ if (!stripeSessionId) {
 
 ---
 
-- [ ] **Task 8: End-to-End Testing - Test Mode**
+- [x] **Task 8: End-to-End Testing - Test Mode**
 
 **Goal**: Verify the complete funnel works in test mode
 
@@ -263,7 +263,7 @@ if (!stripeSessionId) {
 
 ---
 
-- [ ] **Task 9: End-to-End Testing - Live Mode**
+- [x] **Task 9: End-to-End Testing - Live Mode**
 
 **Goal**: Verify the complete funnel works in live mode
 
