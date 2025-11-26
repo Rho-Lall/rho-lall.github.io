@@ -23,6 +23,12 @@ const OneClickUpsellPage = () => {
   const [isProcessing, setIsProcessing] = useState(false)
   const [error, setError] = useState('')
 
+  // Determine if we're in test mode
+  const isTest = process.env.GATSBY_ISTEST === 'true'
+  
+  // Select the correct price ID based on test mode
+  const priceId = isTest ? offerData.stripe.test_priceId : offerData.stripe.price_id
+
   // Extract Stripe session ID from URL on mount
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -61,7 +67,7 @@ const OneClickUpsellPage = () => {
       
       for (let i = 0; i < 10; i++) {
         try {
-          const uuidResponse = await fetch(`${GET_UPSELL_TOKEN_API}?session_id=${stripeSessionId}`, {
+          const uuidResponse = await fetch(`${GET_UPSELL_TOKEN_API}?session_id=${stripeSessionId}&isTest=${isTest}`, {
             signal: controller.signal,
           })
 
@@ -118,7 +124,7 @@ const OneClickUpsellPage = () => {
         },
         body: JSON.stringify({
           upsellToken: uuidData.upsellToken,
-          priceId: offerData.stripe.priceId,
+          priceId: priceId,
         }),
         signal: controller.signal,
       })
@@ -171,6 +177,13 @@ const OneClickUpsellPage = () => {
         <meta name="description" content={offerData.meta.description} />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
+
+      {/* Test Mode Banner */}
+      {isTest && (
+        <div className="bg-yellow-400 text-black text-center py-2 px-4 font-bold">
+          ⚠️ TEST MODE - Using test Stripe keys and test price IDs
+        </div>
+      )}
 
       <OTOBase 
         offerData={offerData}
