@@ -15,7 +15,7 @@ import offerData from '../../../data/oto/6-month-roi-strategy-map'
  */
 
 // Backend API endpoints
-const GET_UUID_API = 'https://payment.bulldozer.life/ecommerce/get-uuid'
+const GET_UPSELL_TOKEN_API = 'https://payment.bulldozer.life/ecommerce/get-upsell-token'
 const ONE_CLICK_UPSELL_API = 'https://payment.bulldozer.life/ecommerce/one-click-upsell'
 
 const OneClickUpsellPage = () => {
@@ -61,7 +61,7 @@ const OneClickUpsellPage = () => {
       
       for (let i = 0; i < 10; i++) {
         try {
-          const uuidResponse = await fetch(`${GET_UUID_API}?stripeSessionId=${stripeSessionId}`, {
+          const uuidResponse = await fetch(`${GET_UPSELL_TOKEN_API}?session_id=${stripeSessionId}`, {
             signal: controller.signal,
           })
 
