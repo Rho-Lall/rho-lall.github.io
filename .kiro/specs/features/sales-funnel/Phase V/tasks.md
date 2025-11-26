@@ -39,7 +39,7 @@ This allows testing each step incrementally as you complete the tasks.
 
 ---
 
-- [ ] **Task 2: Fix StripeCheckout Component - Mode Handling**
+- [x] **Task 2: Fix StripeCheckout Component - Mode Handling**
 
 **Goal**: Ensure the StripeCheckout component correctly passes `isTest` to the backend API
 

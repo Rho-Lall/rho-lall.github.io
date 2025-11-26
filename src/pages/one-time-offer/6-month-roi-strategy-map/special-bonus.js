@@ -81,7 +81,7 @@ const OneClickUpsellPage = () => {
 
           const data = await uuidResponse.json()
           
-          if (data.success && data.sessionId) {
+          if (data.success && data.upsellToken) {
             uuidData = data
             break
           }
@@ -106,7 +106,7 @@ const OneClickUpsellPage = () => {
         }
       }
       
-      if (!uuidData || !uuidData.sessionId) {
+      if (!uuidData || !uuidData.upsellToken) {
         throw new Error(lastError?.message || 'Payment session not ready. Please try again.')
       }
 
@@ -117,7 +117,7 @@ const OneClickUpsellPage = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          sessionId: uuidData.sessionId,
+          upsellToken: uuidData.upsellToken,
           priceId: offerData.stripe.priceId,
         }),
         signal: controller.signal,
