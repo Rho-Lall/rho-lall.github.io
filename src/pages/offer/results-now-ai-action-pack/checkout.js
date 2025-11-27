@@ -1,6 +1,5 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import StripeCheckout from '../../../components/checkout/stripe-checkout'
+import { CheckoutPageTemplate } from '../../../funnel-0ps'
 import offerData from '../../../data/offers/results-now-ai-action-pack'
 
 /**
@@ -24,32 +23,12 @@ const OfferCheckoutPage = () => {
   // Cancel URL: Back to offer page
   const cancelUrl = `${baseUrl}/offer/results-now-ai-action-pack/`
 
-  // Determine if we're in test mode
-  const isTest = process.env.GATSBY_ISTEST === 'true'
-  
-  // Select the correct price ID based on test mode
-  const priceId = isTest ? offerData.stripe.test_priceId : offerData.stripe.price_id
-
   return (
-    <div className="min-h-screen bg-white">
-      <Helmet>
-        <title>Checkout - {offerData.meta.title}</title>
-        <meta name="description" content={`Complete your purchase of ${offerData.meta.title}`} />
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
-
-      {/* Embedded Checkout */}
-      <div className="w-full min-h-screen flex items-start justify-center p-4 pt-12">
-        <div className="w-full max-w-2xl shadow-lg rounded-lg p-6 bg-white">
-          <StripeCheckout
-            priceId={priceId}
-            successUrl={successUrl}
-            cancelUrl={cancelUrl}
-            isTest={isTest}
-          />
-        </div>
-      </div>
-    </div>
+    <CheckoutPageTemplate
+      offerData={offerData}
+      successUrl={successUrl}
+      cancelUrl={cancelUrl}
+    />
   )
 }
 
