@@ -1,0 +1,3 @@
+[submodule "src/funnel-0ps"]
+	path = src/funnel-0ps
+	url = git@github.com:Rho-Lall/funnel-0ps.git
