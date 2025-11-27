@@ -192,10 +192,10 @@ This plan extracts the Sales Funnel into a reusable Git submodule called `funnel
   - Commit changes
   - _Requirements: 7.2, 7.5, 9.5_
 
-- [-] 11. Clean up original component files
+- [x] 11. Clean up original component files
   - _Requirements: 7.3_
 
-- [-] 11.1 Remove original component files
+- [x] 11.1 Remove original component files
   - Delete `src/components/checkout/stripe-checkout.js`
   - Delete `src/components/checkout/README.md`
   - Delete `src/components/offer/base.js`
@@ -204,27 +204,27 @@ This plan extracts the Sales Funnel into a reusable Git submodule called `funnel
   - Commit deletions
   - _Requirements: 7.3_
 
-- [ ] 11.2 Verify no broken imports
+- [x] 11.2 Verify no broken imports
   - Search codebase for any remaining imports of deleted files
   - Update any remaining references to use submodule imports
   - Commit fixes if needed
   - _Requirements: 7.3_
 
-- [ ] 12. Final validation
+- [x] 12. Final validation
   - _Requirements: 9.1, 9.2, 9.3, 9.4, 9.5, 9.6_
 
-- [ ] 12.1 Build test
+- [x] 12.1 Build test
   - Run `gatsby build` and verify successful build
   - Fix any build errors
   - _Requirements: 9.1_
 
-- [ ] 12.2 Visual test
+- [x] 12.2 Visual test
   - Run `gatsby develop`
   - View offer page and verify it renders identically to pre-migration
   - View OTO page and verify it renders identically to pre-migration
   - _Requirements: 9.2, 9.4_
 
-- [ ] 12.3 Functional test - Complete funnel flow
+- [x] 12.3 Functional test - Complete funnel flow
   - Start at offer page
   - Click "Yes Please" to proceed to checkout
   - Complete test purchase with test card (4242 4242 4242 4242)
@@ -233,12 +233,12 @@ This plan extracts the Sales Funnel into a reusable Git submodule called `funnel
   - Verify entire flow works correctly
   - _Requirements: 9.3, 9.5_
 
-- [ ] 12.4 Environment test
+- [x] 12.4 Environment test
   - Verify test mode banner displays correctly when ISTEST=true
   - Verify correct Stripe keys are used based on ISTEST value
   - _Requirements: 9.6_
 
-- [ ] 12.5 Test generation scripts
+- [x] 12.5 Test generation scripts
   - Create a test offer data file
   - Run `npm run generate:offer test-offer`
   - Verify page files are created correctly
