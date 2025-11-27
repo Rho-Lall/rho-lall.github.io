@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkassume_wisely_blog=self.webpackChunkassume_wisely_blog||[]).push([[8502],{8192:function(e,s,n){n.r(s);var o=n(6540),a=n(5028),i=n(504);s.default=()=>{const e="undefined"!=typeof window?window.location.origin:"",s=e+"/one-time-offer/6-month-roi-strategy-map/special-bonus/?session_id={CHECKOUT_SESSION_ID}",n=e+"/offer/results-now-ai-action-pack/";return o.createElement(a.eG,{offerData:i.A,successUrl:s,cancelUrl:n})}}}]);
+//# sourceMappingURL=component---src-pages-offer-results-now-ai-action-pack-checkout-js-9ad9fc01d8ba0fd7ca81.js.map
