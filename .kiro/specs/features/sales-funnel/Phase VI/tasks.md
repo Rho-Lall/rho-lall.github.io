@@ -166,10 +166,10 @@ This plan extracts the Sales Funnel into a reusable Git submodule called `funnel
   - Commit changes
   - _Requirements: 7.2, 7.5, 9.3_
 
-- [ ] 10. Migrate OTO pages to use templates
+- [x] 10. Migrate OTO pages to use templates
   - _Requirements: 7.2, 7.5_
 
-- [ ] 10.1 Migrate 6-month-roi-strategy-map OTO page
+- [x] 10.1 Migrate 6-month-roi-strategy-map OTO page
   - Update `src/pages/one-time-offer/6-month-roi-strategy-map/index.js`
   - Replace boilerplate with OTOPageTemplate import
   - Pass offerData, checkoutUrl, declineUrl, productImagePath as props
@@ -177,7 +177,7 @@ This plan extracts the Sales Funnel into a reusable Git submodule called `funnel
   - Commit changes
   - _Requirements: 7.2, 7.5, 9.4_
 
-- [ ] 10.2 Migrate 6-month-roi-strategy-map checkout page
+- [x] 10.2 Migrate 6-month-roi-strategy-map checkout page
   - Update `src/pages/one-time-offer/6-month-roi-strategy-map/checkout.js`
   - Replace boilerplate with CheckoutPageTemplate import
   - Pass offerData, successUrl, cancelUrl as props
@@ -185,17 +185,17 @@ This plan extracts the Sales Funnel into a reusable Git submodule called `funnel
   - Commit changes
   - _Requirements: 7.2, 7.5_
 
-- [ ] 10.3 Migrate 6-month-roi-strategy-map upsell page
+- [x] 10.3 Migrate 6-month-roi-strategy-map upsell page
   - Update `src/pages/one-time-offer/6-month-roi-strategy-map/special-bonus.js`
   - Replace boilerplate with UpsellPageTemplate import
   - Test one-click upsell flow works correctly
   - Commit changes
   - _Requirements: 7.2, 7.5, 9.5_
 
-- [ ] 11. Clean up original component files
+- [-] 11. Clean up original component files
   - _Requirements: 7.3_
 
-- [ ] 11.1 Remove original component files
+- [-] 11.1 Remove original component files
   - Delete `src/components/checkout/stripe-checkout.js`
   - Delete `src/components/checkout/README.md`
   - Delete `src/components/offer/base.js`
