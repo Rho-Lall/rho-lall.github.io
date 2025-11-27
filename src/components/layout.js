@@ -36,10 +36,10 @@ const Layout = ({ pageTitle, children}) => {
                         minHeight: 'calc(100vh - 1rem)'
                     }}
                 >
-                    <div className='md:mx-20 lg:container lg:max-w-screen-xl'>
+                    <div className='px-4 md:px-8 lg:px-12'>
                         <title>{pageTitle} | {data.site.siteMetadata.title}</title>
                         <Hamburger/>
-                        <nav className='z-0 flex flex-row justify-end mr-20 md:mr-0 mb-5'>
+                        <nav className='z-0 flex flex-row justify-end mb-5'>
                             <div className='font-display text-5xl md:text-7xl' >
                                 <Link to='/'>
                                     <StaticImage src="../images/LOGO_grey.png"/>    
@@ -58,7 +58,7 @@ const Layout = ({ pageTitle, children}) => {
                             </ul>
                         </nav>
 
-                        <main className='z-0 px-2'>
+                        <main className='z-0'>
                             {children}
 
                         </main>
