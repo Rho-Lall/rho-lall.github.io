@@ -13,7 +13,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b main"
+    "deploy": "gatsby build && gh-pages -d public -b main",
+    "generate:offer": "node src/funnel-0ps/scripts/generate-offer.js",
+    "generate:oto": "node src/funnel-0ps/scripts/generate-oto.js"
   },
   "dependencies": {
     "@babel/core": "^7.28.0",
