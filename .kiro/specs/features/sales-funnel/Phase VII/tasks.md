@@ -54,23 +54,23 @@ This plan extracts the LeadCaptureForm component to the funnel-0ps submodule and
   - Fix any build errors if they occur
   - _Requirements: 3.2_
 
-- [-] 4. Remove AI offer pages from host project
+- [x] 4. Remove AI offer pages from host project
   - _Requirements: 4.1, 4.2, 4.3, 4.4_
 
-- [-] 4.1 Delete AI offer directory
+- [x] 4.1 Delete AI offer directory
   - Delete `src/pages/offer/results-now-ai-action-pack/` directory and all contents
   - Commit deletion to host project
   - _Requirements: 4.1_
 
-- [ ] 4.2 Verify build after offer removal
+- [x] 4.2 Verify build after offer removal
   - Run `gatsby build` and verify successful build
   - Fix any build errors if they occur
   - _Requirements: 4.3_
 
-- [ ] 5. Remove AI OTO pages from host project
+- [-] 5. Remove AI OTO pages from host project
   - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-- [ ] 5.1 Delete AI OTO directory
+- [-] 5.1 Delete AI OTO directory
   - Delete `src/pages/one-time-offer/6-month-roi-strategy-map/` directory and all contents
   - Commit deletion to host project
   - _Requirements: 5.1_
