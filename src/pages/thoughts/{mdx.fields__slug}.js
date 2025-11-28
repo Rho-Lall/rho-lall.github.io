@@ -4,13 +4,13 @@ import { graphql } from 'gatsby'
 import { GatsbyImage, getImage, getSrc } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import { Helmet } from 'react-helmet'
-import { LeadCaptureForm } from '../../funnel-0ps'
+// import { LeadCaptureForm } from '../../funnel-0ps/index.js'
 // import icon from "../../src/images/e_gliph_white.png"
 // import imageSquare from "../../../thoughts/media/social/business_share.png"
 
 // API endpoint for form submissions
-const apiEndpoint = 'https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads'
-const buttonText = 'Ten cent, My two cents is free'
+// const apiEndpoint = 'https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads'
+// const buttonText = 'Ten cent, My two cents is free'
 
 const BlogPost = ({ data, children }) => {
 
@@ -63,7 +63,8 @@ const BlogPost = ({ data, children }) => {
           <br />
         </div>
         <div className="max-w-md mx-auto">
-          <LeadCaptureForm apiEndpoint={apiEndpoint} buttonText={buttonText} />
+          {/* <LeadCaptureForm apiEndpoint={apiEndpoint} buttonText={buttonText} /> */}
+          <p className='text-center text-gray-600'>Newsletter signup temporarily disabled</p>
         </div>
 
         <p className='my-20'> © {new Date(data.mdx.frontmatter.date).getFullYear()} &middot; Rho Lall</p>

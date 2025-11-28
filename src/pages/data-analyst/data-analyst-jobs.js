@@ -3,12 +3,12 @@ import * as React from 'react'
 // import { Helmet } from 'react-helmet'
 import LayoutSales from '../../components/layout-sales';
 import { StaticImage } from 'gatsby-plugin-image'
-import { LeadCaptureForm } from '../../funnel-0ps';
+// import { LeadCaptureForm } from '../../funnel-0ps/index.js';
 import { graphql } from 'gatsby'
 
 // API endpoint for form submissions
-const apiEndpoint = 'https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads'
-const buttonText = 'Get started now!'
+// const apiEndpoint = 'https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads'
+// const buttonText = 'Get started now!'
 
 
 const DataAnalystJobsPage = ({ data }) => {
@@ -40,7 +40,8 @@ const DataAnalystJobsPage = ({ data }) => {
 
                         <div className='flex flex-col items-center'>
                             <div className='w-full max-w-md'>
-                                <LeadCaptureForm apiEndpoint={apiEndpoint} buttonText={buttonText} />
+                                {/* <LeadCaptureForm apiEndpoint={apiEndpoint} buttonText={buttonText} /> */}
+                                <p className='text-center text-gray-600'>Form temporarily disabled</p>
                             </div>
                         </div>
                     </div>
@@ -106,7 +107,8 @@ const DataAnalystJobsPage = ({ data }) => {
                                     <span>DOWNLOAD FREE</span>
                                 </button> */}
                             <div className='w-full max-w-md'>
-                                <LeadCaptureForm apiEndpoint={apiEndpoint} buttonText={buttonText} />
+                                {/* <LeadCaptureForm apiEndpoint={apiEndpoint} buttonText={buttonText} /> */}
+                                <p className='text-center text-gray-600'>Form temporarily disabled</p>
                             </div>
                         </div>
                     </div>

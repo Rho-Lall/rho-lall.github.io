@@ -80,16 +80,16 @@ This plan extracts the LeadCaptureForm component to the funnel-0ps submodule and
   - Fix any build errors if they occur
   - _Requirements: 5.3_
 
-- [-] 6. Remove local lead-capture component
+- [x] 6. Remove local lead-capture component
   - _Requirements: 1.1_
 
-- [-] 6.1 Delete local lead-capture directory
+- [x] 6.1 Delete local lead-capture directory
   - Delete `src/components/lead-capture/` directory and all contents
   - Verify no remaining references to local lead-capture component
   - Commit deletion to host project
   - _Requirements: 1.1_
 
-- [ ] 6.2 Final build verification
+- [x] 6.2 Final build verification
   - Run `gatsby build` and verify successful build
   - Fix any remaining issues
   - _Requirements: 8.1_
