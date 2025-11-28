@@ -94,10 +94,10 @@ This plan extracts the LeadCaptureForm component to the funnel-0ps submodule and
   - Fix any remaining issues
   - _Requirements: 8.1_
 
-- [ ] 7. Update submodule documentation
+- [x] 7. Update submodule documentation
   - _Requirements: 7.1, 7.2, 7.3, 7.4, 7.5_
 
-- [ ] 7.1 Document LeadCaptureForm in README
+- [x] 7.1 Document LeadCaptureForm in README
   - Add LeadCaptureForm section to `funnel-0ps/README.md`
   - Document all props: apiEndpoint, buttonText, successUrl, onSuccess, onError
   - Include example usage code
@@ -113,22 +113,22 @@ This plan extracts the LeadCaptureForm component to the funnel-0ps submodule and
   - Commit to submodule repository
   - _Requirements: 7.2, 7.3_
 
-- [ ] 8. Final validation
+- [x] 8. Final validation
   - _Requirements: 8.1, 8.2, 8.3_
 
-- [ ] 8.1 Verify submodule exports
+- [x] 8.1 Verify submodule exports
   - Verify LeadCaptureForm is exported from `funnel-0ps/index.js`
   - Verify component can be imported in test scenarios
   - _Requirements: 8.2_
 
-- [ ] 8.2 Verify host project state
+- [x] 8.2 Verify host project state
   - Verify all AI-related pages are removed
   - Verify local lead-capture component is removed
   - Verify no broken imports or references remain
   - Run final `gatsby build` and verify success
   - _Requirements: 8.1_
 
-- [ ] 8.3 Verify documentation completeness
+- [x] 8.3 Verify documentation completeness
   - Review submodule README for LeadCaptureForm documentation
   - Verify all props are documented
   - Verify usage examples are clear and complete
