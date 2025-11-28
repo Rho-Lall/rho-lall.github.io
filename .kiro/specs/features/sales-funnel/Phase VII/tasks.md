@@ -41,23 +41,23 @@ This plan extracts the LeadCaptureForm component to the funnel-0ps submodule and
   - Commit to submodule repository
   - _Requirements: 2.1_
 
-- [ ] 3. Remove AI squeeze page from host project
+- [x] 3. Remove AI squeeze page from host project
   - _Requirements: 3.1, 3.2, 3.3_
 
-- [-] 3.1 Delete AI page directory
+- [x] 3.1 Delete AI page directory
   - Delete `src/pages/ai/` directory and all contents
   - Commit deletion to host project
   - _Requirements: 3.1_
 
-- [ ] 3.2 Verify build after AI page removal
+- [x] 3.2 Verify build after AI page removal
   - Run `gatsby build` and verify successful build
   - Fix any build errors if they occur
   - _Requirements: 3.2_
 
-- [ ] 4. Remove AI offer pages from host project
+- [-] 4. Remove AI offer pages from host project
   - _Requirements: 4.1, 4.2, 4.3, 4.4_
 
-- [ ] 4.1 Delete AI offer directory
+- [-] 4.1 Delete AI offer directory
   - Delete `src/pages/offer/results-now-ai-action-pack/` directory and all contents
   - Commit deletion to host project
   - _Requirements: 4.1_
