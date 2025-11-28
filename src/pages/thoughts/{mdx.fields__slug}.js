@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import { GatsbyImage, getImage, getSrc } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import { Helmet } from 'react-helmet'
-import LeadCaptureForm from '../../components/lead-capture/lead-capture'
+import { LeadCaptureForm } from '../../funnel-0ps'
 // import icon from "../../src/images/e_gliph_white.png"
 // import imageSquare from "../../../thoughts/media/social/business_share.png"
 

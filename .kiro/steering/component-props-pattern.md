@@ -36,7 +36,7 @@ const buttonText = 'Submit Form'
 
 ## Example from LeadCaptureForm Integration
 ```javascript
-import LeadCaptureForm from '../../components/lead-capture/lead-capture'
+import { LeadCaptureForm } from '../../funnel-0ps'
 
 // API endpoint for form submissions
 const apiEndpoint = 'https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads'

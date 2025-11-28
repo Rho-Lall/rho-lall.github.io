@@ -3,7 +3,7 @@ import * as React from 'react'
 // import { Helmet } from 'react-helmet'
 import LayoutSales from '../../components/layout-sales';
 import { StaticImage } from 'gatsby-plugin-image'
-import LeadCaptureForm from '../../components/lead-capture/lead-capture';
+import { LeadCaptureForm } from '../../funnel-0ps';
 import { graphql } from 'gatsby'
 
 // API endpoint for form submissions

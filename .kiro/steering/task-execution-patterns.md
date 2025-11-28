@@ -26,8 +26,8 @@ Best practices for executing implementation tasks based on spec-driven developme
 
 ### Step 1: Component Placement
 ```javascript
-// 1. Import the component
-import LeadCaptureForm from '../../components/lead-capture/lead-capture'
+// 1. Import the component from funnel-0ps submodule
+import { LeadCaptureForm } from '../../funnel-0ps'
 
 // 2. Define constants at top of file
 const apiEndpoint = 'https://your-api-endpoint.com/api'
