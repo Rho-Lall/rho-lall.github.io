@@ -58,7 +58,7 @@ const Layout = ({ pageTitle, children}) => {
                             </ul>
                         </nav>
 
-                        <main className='z-0'>
+                        <main className='z-0 legacy-content'>
                             {children}
 
                         </main>

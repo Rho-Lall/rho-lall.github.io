@@ -5,92 +5,100 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
-    @apply text-secondary text-justify font-body
+    @apply text-secondary font-body
 }
 
-.heading {
+/* Legacy content styles - scoped to pages using the old Layout component */
+.legacy-content .heading {
     @apply text-primary text-4xl flex justify-center pt-10 pb-2 font-display;
-  }
-
-.heading-posted {
-  @apply flex justify-center pb-8;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply text-primary capitalize;
+.legacy-content .heading-posted {
+    @apply flex justify-center pb-8;
 }
 
-h1:not(:first-child), h2:not(:first-child) {
-  @apply mt-20;
+.legacy-content h1,
+.legacy-content h2,
+.legacy-content h3,
+.legacy-content h4,
+.legacy-content h5,
+.legacy-content h6 {
+    @apply text-primary capitalize;
 }
 
-h3{
-  @apply mt-10;
+.legacy-content h1:not(:first-child),
+.legacy-content h2:not(:first-child) {
+    @apply mt-20;
 }
 
-h4, h5, h6{
-  @apply mt-2;
+.legacy-content h3 {
+    @apply mt-10;
 }
 
-h1:not(:first-child) {
-  @apply text-3xl font-bold
+.legacy-content h4,
+.legacy-content h5,
+.legacy-content h6 {
+    @apply mt-2;
 }
 
-h2 {
-  @apply text-2xl font-medium 
+.legacy-content h1:not(:first-child) {
+    @apply text-3xl font-bold
 }
 
-h3 {
-  @apply text-xl font-medium
+.legacy-content h2 {
+    @apply text-2xl font-medium
 }
 
-h4 {
-  @apply font-extralight uppercase
+.legacy-content h3 {
+    @apply text-xl font-medium
 }
 
-h5 {
-  @apply text-base font-extralight
+.legacy-content h4 {
+    @apply font-extralight uppercase
 }
 
-h6 {
-  @apply italic text-lg text-slate-600 leading-9 text-center mx-3
+.legacy-content h5 {
+    @apply text-base font-extralight
 }
 
-p {
-  @apply mt-4
+.legacy-content h6 {
+    @apply italic text-lg text-slate-600 leading-9 text-center mx-3
 }
 
-p a {
-  @apply underline 
-
+.legacy-content p {
+    @apply mt-4
 }
 
-p a img {
-  @apply w-full drop-shadow-xl
+.legacy-content p a {
+    @apply underline
 }
 
-strong {
-  @apply font-bold text-primary
+.legacy-content p a img {
+    @apply w-full drop-shadow-xl
 }
 
-em {
-  @apply italic
+.legacy-content strong {
+    @apply font-bold text-primary
 }
 
-blockquote p {
-  @apply italic text-lg text-slate-600 text-center
+.legacy-content em {
+    @apply italic
 }
 
-code {
-  @apply text-white bg-slate-500
+.legacy-content blockquote p {
+    @apply italic text-lg text-slate-600 text-center
 }
 
-ul {
-  list-style-type: circle;
-  list-style-position: inside;
-  margin: 1rem 0 0 1rem;
+.legacy-content code {
+    @apply text-white bg-slate-500
 }
 
+.legacy-content ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: 1rem 0 0 1rem;
+}
