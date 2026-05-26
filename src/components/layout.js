@@ -40,9 +40,14 @@ const Layout = ({ pageTitle, children}) => {
                         <title>{pageTitle} | {data.site.siteMetadata.title}</title>
                         <Hamburger/>
                         <nav className='z-0 flex flex-row justify-end mb-5'>
-                            <div className='font-display text-5xl md:text-7xl' >
+                            <div>
                                 <Link to='/'>
-                                    <StaticImage src="../images/LOGO_grey.png"/>    
+                                    <StaticImage
+                                      src="../images/rho_lall_logo_.png"
+                                      alt="Rho Lall"
+                                      height={48}
+                                      placeholder="none"
+                                    />
                                 </Link>
                             </div>
 

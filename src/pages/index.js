@@ -68,8 +68,12 @@ const IndexPage = () => {
 
         {/* ── Header ── */}
         <header className="flex items-center justify-between px-8 lg:px-20 py-5 bg-white">
-          <Link to="/" className="font-display text-2xl font-bold text-navy tracking-tight no-underline">
-            Rho Lall
+          <Link to="/" className="no-underline">
+            <img
+              src={require("../images/rho_lall_logo_.png").default}
+              alt="Rho Lall"
+              className="h-10 w-auto"
+            />
           </Link>
           <nav className="hidden md:flex items-center gap-9">
             <Link to="/" className="text-[15px] font-medium text-navy no-underline">Home</Link>
@@ -174,15 +178,15 @@ const IndexPage = () => {
             />
             <ExpertiseCard
               icon={<><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" /></>}
-              iconColor="text-lime-muted"
-              iconBg="bg-lime-light"
+              iconColor="text-accent-muted"
+              iconBg="bg-accent-light"
               title="From Experiments to ROAI"
               description="AI pilots are easy to start but rarely scale. Tie AI projects to KPIs (and ROI) at every maturity stage to make innovation fund itself."
             />
             <ExpertiseCard
               icon={<><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" /><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" /></>}
-              iconColor="text-lime-muted"
-              iconBg="bg-lime-light"
+              iconColor="text-accent-muted"
+              iconBg="bg-accent-light"
               title="Data as Capital"
               description="Tools can be copied. Models can be replicated. Your proprietary data — structured from your own workflows — is the only durable competitive moat."
             />
@@ -227,8 +231,8 @@ const IndexPage = () => {
               </div>
 
               <div className="flex items-center gap-3.5">
-                <div className="w-9 h-9 rounded-full bg-lime/25 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-[18px] h-[18px] text-lime-muted" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <div className="w-9 h-9 rounded-full bg-accent/25 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-[18px] h-[18px] text-accent-muted" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
                   </svg>
                 </div>
@@ -280,8 +284,8 @@ const IndexPage = () => {
             <ProjectCard
               image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
               tag="Data Analysis"
-              tagColor="text-lime-muted"
-              tagBg="bg-lime/10"
+              tagColor="text-accent-muted"
+              tagBg="bg-accent/10"
               title="Deliver Weeks of Work in Hours"
               description="Interactive financial modeling and analysis toolkit for evaluating investment opportunities and market trends."
               link="https://rho-lall.github.io/financial-analysis/"
@@ -304,8 +308,8 @@ const IndexPage = () => {
             <ProjectCard
               image="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
               tag="Strategy"
-              tagColor="text-lime-muted"
-              tagBg="bg-lime/10"
+              tagColor="text-accent-muted"
+              tagBg="bg-accent/10"
               title="Ruthless Clarity On Complex Problems"
               description="Frameworks for CxOs to evaluate AI opportunities, connect pilots to ROI, and build durable competitive advantage."
               link="https://rholall.substack.com/s/ai-product-strategy"
@@ -314,8 +318,8 @@ const IndexPage = () => {
             <ProjectCard
               image="https://images.unsplash.com/photo-1628551095102-c28b858fc084?auto=format&fit=crop&w=800&q=80"
               tag="Community"
-              tagColor="text-lime-muted"
-              tagBg="bg-lime/10"
+              tagColor="text-accent-muted"
+              tagBg="bg-accent/10"
               title="Low Key Data Happy Hour"
               description="A grassroots community of data professionals meeting for casual happy hours across the US. No pitches, just people."
               link="https://lowkeydatahappyhour.com/"
@@ -345,7 +349,7 @@ const IndexPage = () => {
             className="relative z-10 flex flex-col items-center justify-center gap-8 px-8 lg:px-20 py-20"
             style={{ backgroundColor: '#1A1A2ED8', minHeight: '600px' }}
           >
-            <div className="w-full max-w-lg h-1 rounded-sm" style={{ background: 'linear-gradient(90deg, #50CFD8, #D0EA3C)' }} />
+            <div className="w-full max-w-lg h-1 rounded-sm" style={{ background: 'linear-gradient(90deg, #50CFD8, #F06449)' }} />
             <span className="text-primary text-[13px] font-bold tracking-widest">THE BLOG</span>
             <h2 className="font-display text-3xl lg:text-[44px] text-white text-center tracking-tight normal-case mt-0">
               AI Confusion to Business Clarity
@@ -372,7 +376,12 @@ const IndexPage = () => {
         <footer className="flex flex-col gap-8 px-8 lg:px-20 py-12 bg-navy-dark">
           <div className="flex flex-col md:flex-row justify-between gap-10">
             <div className="flex flex-col gap-3 max-w-xs">
-              <span className="font-display text-[22px] font-bold text-white">Rho Lall</span>
+              <img
+                src={require("../images/rho_lall_logo_.png").default}
+                alt="Rho Lall"
+                style={{ height: '32px', width: 'auto', objectFit: 'contain' }}
+                className="brightness-0 invert self-start"
+              />
               <p className="text-gray-500 text-sm leading-relaxed mt-0">
                 AI Product Strategist. Builder. Shipping strategy through code.
               </p>
