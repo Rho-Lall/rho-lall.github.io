@@ -34,10 +34,8 @@ module.exports = {
         'accent-muted': '#D94E35',
       },
       fontFamily: {
-        display: ['"Plus Jakarta Sans"', 'sans-serif'],
-        body: ['"Plus Jakarta Sans"', 'sans-serif'],
-        'display-legacy': ['Vollkorn', 'sans-serif'],
-        'body-legacy': ['Merriweather', 'sans-serif'],
+        display: ['var(--font-heading)', 'sans-serif'],
+        body: ['var(--font-body)', 'sans-serif'],
       },
     },
   },
