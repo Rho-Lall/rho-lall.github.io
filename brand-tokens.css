@@ -8,8 +8,8 @@
 
 :root {
     /* Colors */
-    --brand-primary: #50CFD8;
-    --brand-primary-light: #50CFD810;
+    --brand-primary: #2EB8CC;
+    --brand-primary-light: #2EB8CC10;
     --brand-secondary: #4A5568;
     --brand-navy: #1A1A2E;
     --brand-navy-dark: #0F0F1A;
@@ -17,7 +17,7 @@
     --brand-accent-light: #F0644915;
     --brand-accent-muted: #D94E35;
     --brand-border-soft: #E2E8F0;
-    --brand-bg-soft: #E8F9FA;
+    --brand-bg-soft: #E3F5FA;
 
     /* Typography */
     --font-heading: 'Plus Jakarta Sans', sans-serif;
