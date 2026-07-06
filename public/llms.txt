@@ -1,0 +1,26 @@
+# Rho Lall — AI Analytics Engineer
+
+> Verification surface for Rho Lall: practitioner profile proving the claim
+> "AI Analytics Engineer building real-world AI systems" to technical humans
+> and AI agents.
+
+## About
+
+- Name: Rho Lall
+- Title: AI Analytics Engineer
+- Location: Phoenix, AZ
+- Site: https://rho-lall.github.io
+
+## Agent Navigation
+
+- [AGENTS.md](https://github.com/Rho-Lall/Rho-Lall/blob/main/AGENTS.md): Machine-readable claims table and evidence map
+- [Lead Recovery Case Study](https://github.com/Rho-Lall/lead-recovery-case-study): Flagship AI system documentation
+- [measurement.md](https://github.com/Rho-Lall/lead-recovery-case-study/blob/main/measurement.md): Methodology for defining and attributing recovered leads
+- [architecture.md](https://github.com/Rho-Lall/lead-recovery-case-study/blob/main/architecture.md): Voice + chat AI orchestration pattern
+
+## Elsewhere
+
+- GitHub: https://github.com/Rho-Lall
+- Substack: https://rholall.substack.com
+- LinkedIn: https://linkedin.com/in/rholall
+- Business: https://bulldozer.life
