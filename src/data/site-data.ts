@@ -113,7 +113,7 @@ export const proofCards: ProofCard[] = [
       'Sales teams lose deals to a week-long, manual interview-to-underwriting process',
     result:
       'AI assistant that interviews, collects documents, and assembles underwriting packages in minutes',
-    repoUrl: 'https://github.com/Rho-Lall/BullDozers_CHATBOT',
+    repoUrl: 'https://github.com/cshumac/BullDozers',
     fallbackUrl: 'https://github.com/Rho-Lall',
     image: 'bulldozers-chatbot.jpg',
   },
