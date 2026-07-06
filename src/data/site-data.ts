@@ -132,6 +132,15 @@ export const personSchema: PersonSchema = {
     'AI Analytics Engineer building AI systems that recover revenue for real businesses.',
 };
 
+export function validateProofCard(card: ProofCard): boolean {
+  return (
+    card.problem.length > 0 &&
+    card.problem.length <= 120 &&
+    card.result.length > 0 &&
+    card.result.length <= 120
+  );
+}
+
 export const socialMeta: SocialMeta = {
   ogTitle: 'Rho Lall — AI Analytics Engineer',
   ogDescription: 'I build AI systems that recover revenue for real businesses.',
