@@ -1,0 +1,1645 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "X6UhKl",
+      "x": 900,
+      "y": 0,
+      "name": "Desktop",
+      "width": 1440,
+      "fill": "#E8E6E1",
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "H556V",
+          "name": "Hero Banner",
+          "width": 1024,
+          "height": 576,
+          "fill": "#D1D5DB",
+          "layout": "vertical",
+          "padding": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "justifyContent": "end",
+          "children": [
+            {
+              "type": "text",
+              "id": "Fq0Ay",
+              "name": "heroText",
+              "fill": "#FFFFFF",
+              "content": "Rho Lall",
+              "fontFamily": "$font-family",
+              "fontSize": 72,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FNVuV",
+          "name": "Content",
+          "width": 1024,
+          "fill": "$paper-white",
+          "cornerRadius": 16,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000012",
+            "offset": {
+              "x": 0,
+              "y": 4
+            },
+            "blur": 24
+          },
+          "layout": "vertical",
+          "padding": [
+            0,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "esRUl",
+              "name": "Hero",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                0,
+                0,
+                80,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vkPbl",
+                  "name": "heroSubtitle",
+                  "fill": "$navy",
+                  "content": "AI Analytics Engineer",
+                  "fontFamily": "$font-family",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "OTmb6",
+                  "name": "Taglines",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T593X0",
+                      "name": "tag1",
+                      "fill": "$secondary",
+                      "content": "I build AI systems that recover revenue for real businesses.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-family",
+                      "fontSize": 18
+                    },
+                    {
+                      "type": "text",
+                      "id": "SwJg7",
+                      "name": "tag2",
+                      "fill": "$secondary",
+                      "content": "I document solutions for both human and machine readers.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-family",
+                      "fontSize": 18
+                    },
+                    {
+                      "type": "text",
+                      "id": "JbToU",
+                      "name": "tag3",
+                      "fill": "$secondary",
+                      "content": "I bring down ruthless clarity on complex problems.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-family",
+                      "fontSize": 18
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "J7Lia",
+                  "name": "location",
+                  "opacity": 0.7,
+                  "fill": "$secondary",
+                  "content": "Phoenix, AZ",
+                  "fontFamily": "$font-family",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s4IkI",
+              "name": "Currently Building",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                60,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ww6EH",
+                  "name": "buildHead",
+                  "fill": "$navy",
+                  "content": "Currently Building",
+                  "fontFamily": "$font-family",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "z4L2w",
+                  "name": "buildDesc",
+                  "fill": "$secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Lead recovery system for appointment businesses — voice + chat AI that answers missed calls and books appointments.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-family",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "id": "cNSiR",
+                  "name": "buildLink",
+                  "fill": "$primary",
+                  "content": "Case study →",
+                  "fontFamily": "$font-family",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "N4O7V",
+              "name": "divider1",
+              "fill": "$border-soft",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "G3H1P",
+              "name": "Proof Cards Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                60,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w879H",
+                  "name": "proofHead",
+                  "fill": "$navy",
+                  "content": "Portfolio",
+                  "fontFamily": "$font-family",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "nX4u7",
+                  "name": "Proof Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "o8bC6K",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "U2DzU9",
+                          "name": "Card 1",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-soft"
+                          },
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Cj8lH",
+                              "name": "Image 1",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#D1D5DB",
+                              "cornerRadius": [
+                                8,
+                                8,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "A7QT5c",
+                              "name": "Content",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 12,
+                              "padding": 20,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "yfqeQ",
+                                  "name": "card1Name",
+                                  "fill": "$navy",
+                                  "content": "lead-recovery-case-study",
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "O9U3Ko",
+                                  "name": "card1Problem",
+                                  "fill": "$secondary",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Missed calls cost $800+ per lost client",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "bHmyL",
+                                  "name": "card1Result",
+                                  "fill": "$navy",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Voice + chat AI that books missed appointments",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HBhDi",
+                          "name": "Card 2",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-soft"
+                          },
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "lQBi6",
+                              "name": "Image 2",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#D1D5DB",
+                              "cornerRadius": [
+                                8,
+                                8,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "dyuDJ",
+                              "name": "Content",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 12,
+                              "padding": 20,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "eQuDa",
+                                  "name": "card2Name",
+                                  "fill": "$navy",
+                                  "content": "big-banana",
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "bOXO5",
+                                  "name": "card2Problem",
+                                  "fill": "$secondary",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Research takes weeks of reading without clear direction",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "aDaHQ",
+                                  "name": "card2Result",
+                                  "fill": "$navy",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "7-phase pipeline: seed papers to persuasive narrative",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZeZzM",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "F6tcq",
+                          "name": "Card 3",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-soft"
+                          },
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "VcVqR",
+                              "name": "Image 3",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#D1D5DB",
+                              "cornerRadius": [
+                                8,
+                                8,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "jKghK",
+                              "name": "Content",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 12,
+                              "padding": 20,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "W41rD",
+                                  "name": "card3Name",
+                                  "fill": "$navy",
+                                  "content": "credit-analysis",
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "V2CU9Y",
+                                  "name": "card3Problem",
+                                  "fill": "$secondary",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Consumers can't compare debt payoff strategies",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "yf1i5",
+                                  "name": "card3Result",
+                                  "fill": "$navy",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Simulator showing exact savings across snowball vs. avalanche",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uGqmK",
+                          "name": "Card 4",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-soft"
+                          },
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "U2yc5H",
+                              "name": "Image 4",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#D1D5DB",
+                              "cornerRadius": [
+                                8,
+                                8,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Y2Aaq9",
+                              "name": "Content",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 12,
+                              "padding": 20,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ouToR",
+                                  "name": "card4Name",
+                                  "fill": "$navy",
+                                  "content": "financial-analysis",
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "l79Cm",
+                                  "name": "card4Problem",
+                                  "fill": "$secondary",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "SEC filings are raw, unstructured, decision-hostile",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "r5LQ8f",
+                                  "name": "card4Result",
+                                  "fill": "$navy",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "dbt + Data Vault pipeline to interactive D3 dashboard",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xJOcX",
+                      "name": "Row 3",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "xFa2B",
+                          "name": "Card 5",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-soft"
+                          },
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Ac7jP",
+                              "name": "Image 5",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#D1D5DB",
+                              "cornerRadius": [
+                                8,
+                                8,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WIMwk",
+                              "name": "Content",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 12,
+                              "padding": 20,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xMTUp",
+                                  "name": "card5Name",
+                                  "fill": "$navy",
+                                  "content": "Riptide",
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "JqTx4",
+                                  "name": "card5Problem",
+                                  "fill": "$secondary",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "AI agent orchestration adds bloat and complexity",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "R0Qtph",
+                                  "name": "card5Result",
+                                  "fill": "$navy",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Lean framework: full SDLC orchestration in <15KB",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Q0ZXZ",
+                          "name": "Card 6",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-soft"
+                          },
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "s7Day",
+                              "name": "Image 6",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#D1D5DB",
+                              "cornerRadius": [
+                                8,
+                                8,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "YrSAm",
+                              "name": "Content",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 12,
+                              "padding": 20,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "mlYLE",
+                                  "name": "card6Name",
+                                  "fill": "$navy",
+                                  "content": "BullDozers_CHATBOT",
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "g575ng",
+                                  "name": "card6Problem",
+                                  "fill": "$secondary",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Sales qualification takes a week of back-and-forth",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "dtNMD",
+                                  "name": "card6Result",
+                                  "fill": "$navy",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Voice AI interview + document validation in minutes",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "$font-family",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "sVQKa",
+              "name": "divider2",
+              "fill": "$border-soft",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "h7CLH",
+              "name": "Elsewhere",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                60,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kwubO",
+                  "name": "elseHead",
+                  "fill": "$navy",
+                  "content": "Connect with me",
+                  "fontFamily": "$font-family",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "H0uAv",
+                  "name": "Links",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "n4Nl09",
+                      "name": "link1",
+                      "fill": "$primary",
+                      "content": "Substack →",
+                      "fontFamily": "$font-family",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZXa5E",
+                      "name": "link2",
+                      "fill": "$primary",
+                      "content": "LinkedIn →",
+                      "fontFamily": "$font-family",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UzmQk",
+                      "name": "link3",
+                      "fill": "$primary",
+                      "content": "GitHub →",
+                      "fontFamily": "$font-family",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "a7WtbS",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$navy-dark",
+          "layout": "vertical",
+          "padding": [
+            40,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "fEKkP",
+              "name": "footerText",
+              "opacity": 0.6,
+              "fill": "#FFFFFF",
+              "content": "© 2026 Rho Lall",
+              "fontFamily": "$font-family",
+              "fontSize": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "y9O8NI",
+      "x": 2440,
+      "y": 0,
+      "name": "Mobile",
+      "width": 375,
+      "fill": "$paper-white",
+      "layout": "vertical",
+      "padding": [
+        0,
+        24
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "MlPvT",
+          "name": "Hero Banner",
+          "width": "fill_container",
+          "height": 211,
+          "fill": "#D1D5DB",
+          "layout": "vertical",
+          "padding": [
+            0,
+            0,
+            20,
+            20
+          ],
+          "justifyContent": "end",
+          "children": [
+            {
+              "type": "text",
+              "id": "e7F4V7",
+              "name": "mHeroText",
+              "fill": "#FFFFFF",
+              "content": "Rho Lall",
+              "fontFamily": "$font-family",
+              "fontSize": 36,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Tcta7",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            0,
+            0,
+            60,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "WoCw7",
+              "name": "mSubtitle",
+              "fill": "$navy",
+              "content": "AI Analytics Engineer",
+              "fontFamily": "$font-family",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "xR8ow",
+              "name": "Taglines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qBNB4",
+                  "name": "mTag1",
+                  "fill": "$secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "I build AI systems that recover revenue for real businesses.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-family",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "id": "e6pmo",
+                  "name": "mTag2",
+                  "fill": "$secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "I document solutions for both human and machine readers.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-family",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "id": "hYh2H",
+                  "name": "mTag3",
+                  "fill": "$secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "I bring down ruthless clarity on complex problems.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-family",
+                  "fontSize": 16
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "C7pw3",
+              "name": "mLocation",
+              "opacity": 0.7,
+              "fill": "$secondary",
+              "content": "Phoenix, AZ",
+              "fontFamily": "$font-family",
+              "fontSize": 13
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ihGHV",
+          "name": "Currently Building",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            40,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "U3AdsJ",
+              "name": "mBuildHead",
+              "fill": "$navy",
+              "content": "Currently Building",
+              "fontFamily": "$font-family",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "ryk0A",
+              "name": "mBuildDesc",
+              "fill": "$secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Lead recovery system for appointment businesses — voice + chat AI that answers missed calls and books appointments.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-family",
+              "fontSize": 15
+            },
+            {
+              "type": "text",
+              "id": "saWBB",
+              "name": "mBuildLink",
+              "fill": "$primary",
+              "content": "Case study →",
+              "fontFamily": "$font-family",
+              "fontSize": 15,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "dbpvG",
+          "name": "mDivider1",
+          "fill": "$border-soft",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "lsaak",
+          "name": "Proof Cards Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "y5KiuO",
+              "name": "mProofHead",
+              "fill": "$navy",
+              "content": "Portfolio",
+              "fontFamily": "$font-family",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "U6blED",
+              "name": "Proof Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Z7V63",
+                  "name": "Card 1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cVFGt",
+                      "name": "Image 1",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#D1D5DB",
+                      "cornerRadius": [
+                        8,
+                        8,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k1lpOy",
+                      "name": "Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B3GFqE",
+                          "name": "mc1Name",
+                          "fill": "$navy",
+                          "content": "lead-recovery-case-study",
+                          "fontFamily": "$font-family",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OAUfr",
+                          "name": "mc1Problem",
+                          "fill": "$secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Missed calls cost $800+ per lost client",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "text",
+                          "id": "W7vbBK",
+                          "name": "mc1Result",
+                          "fill": "$navy",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Voice + chat AI that books missed appointments",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "R895F",
+                  "name": "Card 2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Xjmki",
+                      "name": "Image 2",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#D1D5DB",
+                      "cornerRadius": [
+                        8,
+                        8,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tUCEY",
+                      "name": "Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "azr0m",
+                          "name": "mc2Name",
+                          "fill": "$navy",
+                          "content": "big-banana",
+                          "fontFamily": "$font-family",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "DlHNy",
+                          "name": "mc2Problem",
+                          "fill": "$secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Research takes weeks of reading without clear direction",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "text",
+                          "id": "ginte",
+                          "name": "mc2Result",
+                          "fill": "$navy",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "7-phase pipeline: seed papers to persuasive narrative",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "F2buE",
+                  "name": "Card 3",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "f1DCkP",
+                      "name": "Image 3",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#D1D5DB",
+                      "cornerRadius": [
+                        8,
+                        8,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Hvahw",
+                      "name": "Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EFnPh",
+                          "name": "mc3Name",
+                          "fill": "$navy",
+                          "content": "credit-analysis",
+                          "fontFamily": "$font-family",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gAUCk",
+                          "name": "mc3Problem",
+                          "fill": "$secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Consumers can't compare debt payoff strategies",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "text",
+                          "id": "OCFy8",
+                          "name": "mc3Result",
+                          "fill": "$navy",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Simulator showing exact savings across snowball vs. avalanche",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PljGL",
+                  "name": "Card 4",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cb0fa",
+                      "name": "Image 4",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#D1D5DB",
+                      "cornerRadius": [
+                        8,
+                        8,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Y03au",
+                      "name": "Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WfDbT",
+                          "name": "mc4Name",
+                          "fill": "$navy",
+                          "content": "financial-analysis",
+                          "fontFamily": "$font-family",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jbNWJ",
+                          "name": "mc4Problem",
+                          "fill": "$secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEC filings are raw, unstructured, decision-hostile",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "text",
+                          "id": "VuZD5",
+                          "name": "mc4Result",
+                          "fill": "$navy",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "dbt + Data Vault pipeline to interactive D3 dashboard",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "e23Jz",
+                  "name": "Card 5",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RqhC1",
+                      "name": "Image 5",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#D1D5DB",
+                      "cornerRadius": [
+                        8,
+                        8,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Votqj",
+                      "name": "Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dKPw1",
+                          "name": "mc5Name",
+                          "fill": "$navy",
+                          "content": "Riptide",
+                          "fontFamily": "$font-family",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "r9oDZ4",
+                          "name": "mc5Problem",
+                          "fill": "$secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "AI agent orchestration adds bloat and complexity",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "text",
+                          "id": "CrisW",
+                          "name": "mc5Result",
+                          "fill": "$navy",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Lean framework: full SDLC orchestration in <15KB",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eahlx",
+                  "name": "Card 6",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eTp0R",
+                      "name": "Image 6",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#D1D5DB",
+                      "cornerRadius": [
+                        8,
+                        8,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CKUJq",
+                      "name": "Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DAzcr",
+                          "name": "mc6Name",
+                          "fill": "$navy",
+                          "content": "BullDozers_CHATBOT",
+                          "fontFamily": "$font-family",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TWFge",
+                          "name": "mc6Problem",
+                          "fill": "$secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Sales qualification takes a week of back-and-forth",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "text",
+                          "id": "nm6wa",
+                          "name": "mc6Result",
+                          "fill": "$navy",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Voice AI interview + document validation in minutes",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-family",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "dt5e6",
+          "name": "mDivider2",
+          "fill": "$border-soft",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "QzVsI",
+          "name": "Elsewhere",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            40,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "B6JZbZ",
+              "name": "mElseHead",
+              "fill": "$navy",
+              "content": "Connect with me",
+              "fontFamily": "$font-family",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "vkTHL",
+              "name": "Links",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T0wpM",
+                  "name": "mLink1",
+                  "fill": "$primary",
+                  "content": "Substack →",
+                  "fontFamily": "$font-family",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "JWqU4",
+                  "name": "mLink2",
+                  "fill": "$primary",
+                  "content": "LinkedIn →",
+                  "fontFamily": "$font-family",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "qsAhg",
+                  "name": "mLink3",
+                  "fill": "$primary",
+                  "content": "GitHub →",
+                  "fontFamily": "$font-family",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ovwWE",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$navy-dark",
+          "layout": "vertical",
+          "padding": [
+            32,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "lVBmP",
+              "name": "mFooterText",
+              "opacity": 0.6,
+              "fill": "#FFFFFF",
+              "content": "© 2026 Rho Lall",
+              "fontFamily": "$font-family",
+              "fontSize": 13
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#F06449"
+    },
+    "bg-soft": {
+      "type": "color",
+      "value": "#E3F5FA"
+    },
+    "border-soft": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "font-family": {
+      "type": "string",
+      "value": "Plus Jakarta Sans"
+    },
+    "navy": {
+      "type": "color",
+      "value": "#1A1A2E"
+    },
+    "navy-dark": {
+      "type": "color",
+      "value": "#0F0F1A"
+    },
+    "paper-white": {
+      "type": "color",
+      "value": "#F8F7F2"
+    },
+    "primary": {
+      "type": "color",
+      "value": "#2EB8CC"
+    },
+    "secondary": {
+      "type": "color",
+      "value": "#4A5568"
+    }
+  }
+}

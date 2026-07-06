@@ -1,0 +1,22 @@
+---
+import { personSchema, identity } from '../data/site-data';
+
+const [addressLocality, addressRegion] = identity.location.split(', ');
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	name: personSchema.name,
+	jobTitle: personSchema.jobTitle,
+	url: personSchema.url,
+	description: personSchema.description,
+	address: {
+		'@type': 'PostalAddress',
+		addressLocality,
+		addressRegion,
+	},
+	sameAs: personSchema.sameAs,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

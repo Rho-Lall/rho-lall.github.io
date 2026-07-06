@@ -3,7 +3,8 @@ node_modules/
 
 # Build output
 .cache/
-public/
+dist/
+.astro/
 .DS_Store
 
 # Credentials folder - NEVER COMMIT THIS FOLDER
@@ -33,5 +34,7 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Scripts folder
-scripts/
+# Local-only pre-commit helper (not part of the build/CI pipeline)
+scripts/security-check.sh
+
+.riptide/
