@@ -18,8 +18,8 @@ Research the codebase and produce a structured plan for a task. Uses the **Plann
 
 Read these in order:
 1. `CLAUDE.md` (shared rules)
-2. `docs/TECH_SPEC.md` (stack, data model, API surface)
-3. `docs/MODULE_MAP.md` (your wave's file ownership)
+2. `.kiro/specs/github-pages-site/design.md` (stack, data model, API surface)
+3. `.kiro/specs/github-pages-site/tasks.md` MODULE_MAP section (your wave's file ownership)
 4. `docs/solutions/*.md` (prior patterns and gotchas)
 
 ### 2. Research Codebase
@@ -27,7 +27,7 @@ Read these in order:
 - Examine existing patterns in the relevant module
 - Identify shared utilities to reuse
 - Check how similar features are structured
-- Note any constraints from MODULE_MAP.md boundaries
+- Note any constraints from the tasks.md MODULE_MAP boundaries
 
 ### 3. Write Plan
 
@@ -65,4 +65,4 @@ Update `.riptide/status.json` — set the task's status to `"planning"` and agen
 - Every acceptance criterion must map to at least one test case.
 - Every file reference must include its full path.
 - If something is unclear, note it in the plan as an open question.
-- Stay within your wave's module boundary (see MODULE_MAP.md).
+- Stay within your wave's module boundary (see tasks.md MODULE_MAP).

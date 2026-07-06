@@ -75,6 +75,6 @@ On freeze:
 ## Rules
 
 - Follow the plan. Don't make architecture decisions.
-- Stay within your wave's module boundary (MODULE_MAP.md).
+- Stay within your wave's module boundary (`.kiro/specs/github-pages-site/tasks.md` MODULE_MAP).
 - Check `docs/solutions/` before implementing — reuse existing patterns.
 - Never force push. Never reset --hard.

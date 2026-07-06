@@ -25,7 +25,7 @@ fi
 
 # Project directory
 PROJECT_DIR="${CLAUDE_PROJECT_DIR:-.}"
-MODULE_MAP="$PROJECT_DIR/docs/MODULE_MAP.md"
+MODULE_MAP="$PROJECT_DIR/.kiro/specs/github-pages-site/tasks.md"
 
 # If MODULE_MAP.md doesn't exist, allow (not yet configured)
 if [ ! -f "$MODULE_MAP" ]; then

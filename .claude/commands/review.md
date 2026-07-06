@@ -20,16 +20,18 @@ Run a multi-perspective code review. Uses the **Tester** agent role.
 ### 1. Compute Diff
 
 ```bash
-git diff main...HEAD
+git diff astro...HEAD
 ```
+
+(`astro` is the integration branch all wave branches fork from — see RIPTIDE.md branch model)
 
 If no changes, report "No changes to review" and stop.
 
 ### 2. Load Context
 
 1. Read `.riptide/plans/{task-id}.md` (the plan to verify against)
-2. Read `docs/MODULE_MAP.md` (boundary rules)
-3. Read `docs/TECH_SPEC.md` (architecture expectations)
+2. Read `.kiro/specs/github-pages-site/tasks.md` MODULE_MAP section (boundary rules)
+3. Read `.kiro/specs/github-pages-site/design.md` (architecture expectations)
 
 ### 3. Review Perspectives
 
@@ -49,7 +51,7 @@ If no changes, report "No changes to review" and stop.
 - Missing caching for expensive computations
 
 #### 3.4 — Module Isolation
-- No imports outside MODULE_MAP.md boundaries
+- No imports outside the tasks.md MODULE_MAP boundaries
 - No writes to files owned by other waves
 
 ### 4. Update Status
