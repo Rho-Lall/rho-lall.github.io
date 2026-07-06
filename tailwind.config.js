@@ -14,8 +14,8 @@ module.exports = {
 
     extend: {
       colors: {
-        primary: '#50CFD8',
-        'primary-light': '#50CFD810',
+        primary: '#2EB8CC',
+        'primary-light': '#2EB8CC10',
         secondary: '#4A5568',
         navy: '#1A1A2E',
         'navy-dark': '#0F0F1A',
@@ -23,11 +23,11 @@ module.exports = {
         'accent-light': '#F0644915',
         'accent-muted': '#D94E35',
         'border-soft': '#E2E8F0',
-        'bg-soft': '#E8F9FA',
-        'bg-gradient-start': '#E8F9FA',
+        'bg-soft': '#E3F5FA',
+        'bg-gradient-start': '#E3F5FA',
       },
       textColor: {
-        primary: '#50CFD8',
+        primary: '#2EB8CC',
         secondary: '#4A5568',
         navy: '#1A1A2E',
         accent: '#F06449',

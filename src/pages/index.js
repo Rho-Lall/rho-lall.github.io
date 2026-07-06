@@ -107,7 +107,7 @@ const IndexPage = () => {
             </div>
 
             <h1 className="font-display text-4xl lg:text-[52px] text-navy leading-tight lg:leading-[1.15] tracking-tight normal-case mt-0">
-              Build Your Legacy.<br />
+              I Invest in Knowledge.<br />
               Bull Doze Thru the Bull.
             </h1>
 
@@ -297,11 +297,11 @@ const IndexPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
             <ProjectCard
               image="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
-              tag="AI Education"
+              tag="AI Leadership"
               tagColor="text-primary"
               tagBg="bg-primary/5"
               title="Building Humanity emPowered by AI"
-              description="Helping parents navigate AI in education — practical tools for the age of intelligent technology."
+              description="Founder-focused strategy for building leverage with AI — 3x your results without the grind."
               link="https://bulldozer.life/"
               size="small"
             />
