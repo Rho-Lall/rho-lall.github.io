@@ -11,6 +11,7 @@ export interface ProofCard {
   result: string; // max 120 chars
   repoUrl: string;
   fallbackUrl: string;
+  image: string; // path relative to src/images/
 }
 
 export interface ElsewhereLink {
@@ -64,6 +65,7 @@ export const proofCards: ProofCard[] = [
     result: 'Voice + chat AI concierge that books missed appointments',
     repoUrl: 'https://github.com/Rho-Lall/lead-recovery-case-study',
     fallbackUrl: 'https://github.com/Rho-Lall',
+    image: 'lead-recovery.png',
   },
   {
     name: 'big-banana',
@@ -73,6 +75,7 @@ export const proofCards: ProofCard[] = [
       'AI research pipeline that mines primary sources and synthesizes structured findings',
     repoUrl: 'https://github.com/Rho-Lall/big-banana',
     fallbackUrl: 'https://github.com/Rho-Lall',
+    image: 'big-banana.png',
   },
   {
     name: 'credit-analysis',
@@ -82,6 +85,7 @@ export const proofCards: ProofCard[] = [
       'Branch-and-bound optimizer that computes the fastest, cheapest payoff strategy automatically',
     repoUrl: 'https://github.com/Rho-Lall/credit-analysis',
     fallbackUrl: 'https://github.com/Rho-Lall',
+    image: 'credit-analysis.jpg',
   },
   {
     name: 'financial-analysis',
@@ -91,6 +95,7 @@ export const proofCards: ProofCard[] = [
       'dbt Fusion + Data Vault 2.0 pipeline with an interactive financial reporting dashboard',
     repoUrl: 'https://github.com/Rho-Lall/financial-analysis',
     fallbackUrl: 'https://github.com/Rho-Lall',
+    image: 'financial-analysis.jpg',
   },
   {
     name: 'Riptide',
@@ -100,6 +105,7 @@ export const proofCards: ProofCard[] = [
       'Lightweight framework orchestrating 6-30 agents through structured parallel waves',
     repoUrl: 'https://github.com/Rho-Lall/Riptide',
     fallbackUrl: 'https://github.com/Rho-Lall',
+    image: 'riptide.jpg',
   },
   {
     name: 'BullDozers_CHATBOT',
@@ -109,6 +115,7 @@ export const proofCards: ProofCard[] = [
       'AI assistant that interviews, collects documents, and assembles underwriting packages in minutes',
     repoUrl: 'https://github.com/Rho-Lall/BullDozers_CHATBOT',
     fallbackUrl: 'https://github.com/Rho-Lall',
+    image: 'bulldozers-chatbot.jpg',
   },
 ];
 

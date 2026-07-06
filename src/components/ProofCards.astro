@@ -1,6 +1,16 @@
 ---
 import { proofCards } from '../data/site-data';
 import ProofCard from './ProofCard.astro';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../images/*.*', { eager: true });
+
+function getImage(filename: string): ImageMetadata {
+	const path = `../images/${filename}`;
+	if (!images[path]) {
+		throw new Error(`Image not found: ${path}`);
+	}
+	return images[path].default;
+}
 ---
 
 <section class="px-6 py-10 md:px-12 md:py-[60px]">
@@ -13,6 +23,7 @@ import ProofCard from './ProofCard.astro';
 				result={card.result}
 				url={card.repoUrl}
 				fallbackUrl={card.fallbackUrl}
+				image={getImage(card.image)}
 			/>
 		))}
 	</div>
