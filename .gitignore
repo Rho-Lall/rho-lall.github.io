@@ -35,3 +35,5 @@ Thumbs.db
 
 # Scripts folder
 scripts/
+
+.riptide/
