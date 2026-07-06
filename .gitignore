@@ -3,7 +3,8 @@ node_modules/
 
 # Build output
 .cache/
-public/
+dist/
+.astro/
 .DS_Store
 
 # Credentials folder - NEVER COMMIT THIS FOLDER
