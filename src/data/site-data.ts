@@ -54,7 +54,7 @@ export const currentlyBuilding = {
   heading: 'Currently Building',
   description:
     'Lead recovery system for appointment businesses: voice + chat AI that answers missed calls and dead DMs, and books the appointment.',
-  caseStudyUrl: 'https://github.com/Rho-Lall/lead-recovery-case-study',
+  caseStudyUrl: 'https://bulldozer.life/med-spa',
   caseStudyLabel: 'Case study →',
 };
 
