@@ -1,0 +1,22 @@
+---
+interface Props {
+	name: string;
+	problem: string;
+	result: string;
+	url: string;
+	fallbackUrl: string;
+}
+
+const { name, problem, result, url } = Astro.props;
+---
+
+<a href={url} target="_blank" rel="noopener noreferrer" class="block">
+	<article class="overflow-hidden rounded-xl border border-border-soft bg-white">
+		<div class="h-[100px] rounded-t-lg bg-[#D1D5DB] md:h-[120px]"></div>
+		<div class="p-4 md:p-5">
+			<p class="text-[15px] font-bold text-navy md:text-base">{name}</p>
+			<p class="mt-2 text-sm leading-[1.4] text-secondary md:leading-[1.5]">{problem}</p>
+			<p class="mt-2 text-sm font-medium leading-[1.4] text-navy md:leading-[1.5]">{result}</p>
+		</div>
+	</article>
+</a>
