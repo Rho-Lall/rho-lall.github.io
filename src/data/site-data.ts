@@ -5,18 +5,10 @@ export interface IdentityBlock {
   location: string;
 }
 
-export interface ProofCard {
-  name: string;
-  problem: string; // max 120 chars
-  result: string; // max 120 chars
-  repoUrl: string;
-  fallbackUrl: string;
-  image: string; // path relative to src/images/
-}
-
 export interface ElsewhereLink {
   label: string;
   url: string;
+  icon: string;
 }
 
 export interface PersonSchema {
@@ -37,97 +29,97 @@ export interface SocialMeta {
   twitterDescription: string;
 }
 
+export interface DiagnosticArea {
+  label: string;
+  icon: string;
+}
+
 // --- Data ---
 
 export const identity: IdentityBlock = {
   name: 'Rho Lall',
-  title: 'AI Analytics Engineer',
+  title: 'BI Architect',
   taglines: [
-    'I build AI systems that recover revenue for real businesses.',
+    'I build systems that recover revenue for real businesses.',
     'I document solutions for both human and machine readers.',
     'I bring down ruthless clarity on complex problems.',
   ],
   location: 'Phoenix, AZ',
 };
 
-export const currentlyBuilding = {
-  heading: 'Currently Building',
-  description:
-    'Lead recovery system for appointment businesses: voice + chat AI that answers missed calls and dead DMs, and books the appointment.',
-  caseStudyUrl: 'https://bulldozer.life/med-spa',
-  caseStudyLabel: 'Case study →',
+export const problem = {
+  lead: 'Your data environment has years of decisions baked into it.',
+  lines: ['Some live in code.', 'Some live in dashboards.', 'Some live in people’s heads.'],
 };
 
-export const proofCards: ProofCard[] = [
-  {
-    name: 'lead-recovery-case-study',
-    problem: 'Missed calls cost appointment businesses $800+ per lost client',
-    result: 'Voice + chat AI concierge that books missed appointments',
-    repoUrl: 'https://github.com/Rho-Lall/lead-recovery-case-study',
-    fallbackUrl: 'https://github.com/Rho-Lall',
-    image: 'lead-recovery.png',
-  },
-  {
-    name: 'big-banana',
-    problem:
-      'Banana pricing history is scattered across obscure sources, hard to research systematically',
-    result:
-      'AI research pipeline that mines primary sources and synthesizes structured findings',
-    repoUrl: 'https://github.com/Rho-Lall/big-banana',
-    fallbackUrl: 'https://github.com/Rho-Lall',
-    image: 'big-banana.png',
-  },
-  {
-    name: 'credit-analysis',
-    problem:
-      'Paying down multiple credit cards optimally is a manual, error-prone spreadsheet exercise',
-    result:
-      'Branch-and-bound optimizer that computes the fastest, cheapest payoff strategy automatically',
-    repoUrl: 'https://github.com/Rho-Lall/credit-analysis',
-    fallbackUrl: 'https://github.com/Rho-Lall',
-    image: 'credit-analysis.jpg',
-  },
-  {
-    name: 'financial-analysis',
-    problem:
-      'SEC financial filings are hard to model and analyze without slow, ad-hoc pipelines',
-    result:
-      'dbt Fusion + Data Vault 2.0 pipeline with an interactive financial reporting dashboard',
-    repoUrl: 'https://github.com/Rho-Lall/financial-analysis',
-    fallbackUrl: 'https://github.com/Rho-Lall',
-    image: 'financial-analysis.jpg',
-  },
-  {
-    name: 'Riptide',
-    problem:
-      'Coordinating many concurrent Claude Code agents by hand does not scale past a couple terminals',
-    result:
-      'Lightweight framework orchestrating 6-30 agents through structured parallel waves',
-    repoUrl: 'https://github.com/Rho-Lall/Riptide',
-    fallbackUrl: 'https://github.com/Rho-Lall',
-    image: 'riptide.jpg',
-  },
-  {
-    name: 'BullDozers_CHATBOT',
-    problem:
-      'Sales teams lose deals to a week-long, manual interview-to-underwriting process',
-    result:
-      'AI assistant that interviews, collects documents, and assembles underwriting packages in minutes',
-    repoUrl: 'https://github.com/cshumac/BullDozers',
-    fallbackUrl: 'https://github.com/Rho-Lall',
-    image: 'bulldozers-chatbot.jpg',
-  },
-];
+export const headline = {
+  heading: ['Rebuild the engine without', 'grounding the plane.'],
+  paragraphs: [
+    'Your business has grown faster than the data systems supporting it. Now those systems need to catch up while the business keeps moving.',
+    'A free, code-first governance diagnostic for the BI architect responsible for keeping a growing data environment reliable while the business keeps moving.',
+  ],
+  hook: 'Find where your environment is carrying risk and the 2–3 issues worth tackling first.',
+};
+
+export const failurePoints = {
+  heading: 'Find the failure points.',
+  intro: 'The diagnostic looks at your environment from two directions:',
+  directions: [
+    {
+      label: 'Your systems',
+      description:
+        'Analyze the code, models, reporting, definitions, and architecture that have accumulated over time.',
+    },
+    {
+      label: 'Your institutional knowledge',
+      description:
+        'Identify the decisions, dependencies, and business context that still live with individual people.',
+    },
+  ],
+  areasIntro: 'Together, they evaluate six areas:',
+  areas: [
+    { label: 'Definitions', icon: 'book-open' },
+    { label: 'Architecture', icon: 'layers' },
+    { label: 'Reporting', icon: 'chart-bar' },
+    { label: 'Ownership', icon: 'users' },
+    { label: 'Institutional Memory', icon: 'brain' },
+    { label: 'Change Risk', icon: 'shield-alert' },
+  ] satisfies DiagnosticArea[],
+};
+
+export const flightPlan = {
+  heading: 'Get a clear flight plan.',
+  intro: 'As a BI architect, you already know there’s a lot to clean up.',
+  subtext: 'The executive findings report helps narrow the field:',
+  questions: [
+    'Where is the risk?',
+    'What is most likely to create problems later?',
+    'What are the 2–3 issues we should tackle first?',
+  ],
+  ctaLabel: 'Run the free diagnostic',
+};
+
+export const diagnosticForm = {
+  apiEndpoint: 'https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads',
+  leadSource: 'bi-governance-diagnostic',
+  heading: 'Run the free diagnostic',
+  subtext: 'Tell me where to send it and I’ll follow up with next steps.',
+  detailsLabel: 'What’s your primary goal right now?',
+  submitLabel: 'Send my request',
+  successHeading: 'Thank you!',
+  successMessage: 'Your request is in. Check your email for next steps.',
+  errorMessage: 'Something went wrong. Please try again.',
+};
 
 export const elsewhereLinks: ElsewhereLink[] = [
-  { label: 'Substack', url: 'https://rholall.substack.com' },
-  { label: 'LinkedIn', url: 'https://linkedin.com/in/rholall' },
-  { label: 'GitHub', url: 'https://github.com/Rho-Lall' },
+  { label: 'Substack', url: 'https://rholall.substack.com', icon: 'rss' },
+  { label: 'LinkedIn', url: 'https://linkedin.com/in/rholall', icon: 'linkedin' },
+  { label: 'GitHub', url: 'https://github.com/Rho-Lall', icon: 'github' },
 ];
 
 export const personSchema: PersonSchema = {
   name: 'Rho Lall',
-  jobTitle: 'AI Analytics Engineer',
+  jobTitle: 'BI Architect',
   url: 'https://rho-lall.github.io',
   sameAs: [
     'https://github.com/Rho-Lall',
@@ -136,25 +128,17 @@ export const personSchema: PersonSchema = {
     'https://bulldozer.life',
   ],
   description:
-    'AI Analytics Engineer building AI systems that recover revenue for real businesses.',
+    'BI Architect offering a free, code-first governance diagnostic for growing data environments.',
 };
 
-export function validateProofCard(card: ProofCard): boolean {
-  return (
-    card.problem.length > 0 &&
-    card.problem.length <= 120 &&
-    card.result.length > 0 &&
-    card.result.length <= 120
-  );
-}
-
 export const socialMeta: SocialMeta = {
-  ogTitle: 'Rho Lall — AI Analytics Engineer',
-  ogDescription: 'I build AI systems that recover revenue for real businesses.',
+  ogTitle: 'Rho Lall — BI Architect',
+  ogDescription:
+    'Rebuild the engine without grounding the plane. A free, code-first governance diagnostic for BI architects.',
   ogType: 'website',
   ogUrl: 'https://rho-lall.github.io',
   twitterCard: 'summary',
-  twitterTitle: 'Rho Lall — AI Analytics Engineer',
+  twitterTitle: 'Rho Lall — BI Architect',
   twitterDescription:
-    'I build AI systems that recover revenue for real businesses.',
+    'Rebuild the engine without grounding the plane. A free, code-first governance diagnostic for BI architects.',
 };

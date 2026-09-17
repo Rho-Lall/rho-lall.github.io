@@ -5,17 +5,20 @@ import heroBanner from '../images/no-strings-on-me.png';
 ---
 
 <header aria-label="Identity">
-	<div class="-mx-6 md:-mx-12 relative flex h-[211px] items-end justify-start overflow-hidden md:h-[576px] rounded-t-2xl">
+	<div class="relative flex h-[300px] items-end overflow-hidden rounded-t-2xl md:h-[520px]">
 		<Image src={heroBanner} alt="" class="absolute inset-0 h-full w-full object-cover" />
-		<h1 class="relative p-6 md:p-10 text-[36px] font-extrabold text-white md:text-[72px]">{identity.name}</h1>
+		<div class="absolute inset-0 bg-linear-to-b from-navy/0 via-navy/80 via-65% to-navy/95"></div>
+		<h1 class="relative px-6 pb-8 text-[44px] leading-[1.1] font-extrabold text-white md:px-12 md:pb-12 md:text-[72px]">
+			{identity.name}
+		</h1>
 	</div>
-	<div class="px-6 py-10 md:px-12 md:py-14">
+	<div class="flex flex-col gap-4 px-6 py-10 md:px-12">
 		<p class="text-2xl font-bold text-navy md:text-[32px]">{identity.title}</p>
-		<div class="mt-4 space-y-3 md:space-y-4">
+		<div class="flex flex-col gap-3">
 			{identity.taglines.map((tagline) => (
-				<p class="text-base leading-[1.5] text-secondary md:text-lg md:leading-[1.6]">{tagline}</p>
+				<p class="text-base leading-[1.5] text-secondary md:text-lg">{tagline}</p>
 			))}
 		</div>
-		<p class="mt-4 text-[13px] text-secondary opacity-70 md:text-sm">{identity.location}</p>
+		<p class="text-sm text-secondary/60">{identity.location}</p>
 	</div>
 </header>

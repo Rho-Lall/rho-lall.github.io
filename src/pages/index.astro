@@ -1,23 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import CurrentlyBuilding from '../components/CurrentlyBuilding.astro';
-import ProofCards from '../components/ProofCards.astro';
-import Elsewhere from '../components/Elsewhere.astro';
+import Problem from '../components/Problem.astro';
+import Headline from '../components/Headline.astro';
+import FailurePoints from '../components/FailurePoints.astro';
+import FlightPlan from '../components/FlightPlan.astro';
 import Footer from '../components/Footer.astro';
+import DiagnosticDialog from '../components/DiagnosticDialog.astro';
 import { socialMeta, personSchema } from '../data/site-data';
 ---
 
 <BaseLayout title={socialMeta.ogTitle} description={personSchema.description}>
-	<div class="py-10 md:py-16">
-		<div class="mx-auto max-w-[1024px] rounded-2xl bg-paper-white px-6 shadow-[0_4px_24px_#00000012] md:px-12">
+	<div class="px-4 py-10 md:py-16">
+		<div class="mx-auto max-w-[1024px] rounded-2xl bg-paper-white shadow-[0_6px_32px_#0000001A]">
 			<Hero />
-			<CurrentlyBuilding />
 			<div class="border-t border-border-soft"></div>
-			<ProofCards />
+			<Problem />
+			<Headline />
 			<div class="border-t border-border-soft"></div>
-			<Elsewhere />
+			<FailurePoints />
+			<div class="border-t border-border-soft"></div>
+			<FlightPlan />
+			<Footer />
 		</div>
 	</div>
-	<Footer />
+	<DiagnosticDialog />
 </BaseLayout>
