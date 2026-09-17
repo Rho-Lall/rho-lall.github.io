@@ -1,6 +1,18 @@
 ---
+import { elsewhereLinks } from '../data/site-data';
+import Icon from './Icon.astro';
 ---
 
-<footer class="bg-navy-dark px-6 pb-6 pt-8 text-center md:px-12 md:py-10">
-	<p class="text-[13px] text-white/60 md:text-sm">© 2026 Rho Lall</p>
+<footer class="flex flex-wrap justify-center gap-6 rounded-b-2xl bg-navy px-6 py-6 md:px-12">
+	{elsewhereLinks.map((link) => (
+		<a
+			href={link.url}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="inline-flex items-center gap-1.5 text-sm text-white/60 transition hover:text-white"
+		>
+			<Icon name={link.icon} size={16} />
+			{link.label}
+		</a>
+	))}
 </footer>
