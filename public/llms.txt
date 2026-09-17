@@ -1,13 +1,14 @@
-# Rho Lall — AI Analytics Engineer
+# Rho Lall — BI Architect
 
-> Verification surface for Rho Lall: practitioner profile proving the claim
-> "AI Analytics Engineer building real-world AI systems" to technical humans
-> and AI agents.
+> Rho Lall is a BI Architect offering a free, code-first governance diagnostic
+> for growing data environments. It evaluates six areas (definitions,
+> architecture, reporting, ownership, institutional memory, change risk) and
+> identifies the 2–3 issues worth tackling first.
 
 ## About
 
 - Name: Rho Lall
-- Title: AI Analytics Engineer
+- Title: BI Architect
 - Location: Phoenix, AZ
 - Site: https://rho-lall.github.io
 

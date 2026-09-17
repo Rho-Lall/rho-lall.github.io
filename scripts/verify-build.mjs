@@ -8,18 +8,19 @@ export function findMissingContent(html, requiredStrings) {
 const requiredStrings = [
   // Identity block
   'Rho Lall',
-  'AI Analytics Engineer',
-  'I build AI systems that recover revenue for real businesses.',
+  'BI Architect',
+  'I build systems that recover revenue for real businesses.',
   'I document solutions for both human and machine readers.',
   'I bring down ruthless clarity on complex problems.',
   'Phoenix, AZ',
-  // Proof card repo names
-  'lead-recovery-case-study',
-  'big-banana',
-  'credit-analysis',
-  'financial-analysis',
-  'Riptide',
-  'BullDozers_CHATBOT',
+  // Diagnostic offer
+  'grounding the plane.',
+  'Find the failure points.',
+  'Get a clear flight plan.',
+  'Run the free diagnostic',
+  // Diagnostic form popup
+  'diagnostic-dialog',
+  'What’s your primary goal right now?',
   // Elsewhere links
   'rholall.substack.com',
   'linkedin.com/in/rholall',
