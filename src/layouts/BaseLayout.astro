@@ -33,5 +33,11 @@ const { title, description } = Astro.props;
 			<slot />
 		</main>
 		<slot name="footer" />
+
+		<script>
+			import { initScrollStory } from '../scripts/scroll-story';
+
+			initScrollStory();
+		</script>
 	</body>
 </html>

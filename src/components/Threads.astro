@@ -1,17 +1,17 @@
 ---
 // Decorative "hidden dependency" threads. Dark sections only (frames 03 and 06).
 const threads = [
-	{ class: 'left-[4%] top-[22%] h-[55%] rotate-2', opacity: '#FFFFFF11' },
-	{ class: 'right-[4%] top-[31%] h-[45%] -rotate-3', opacity: '#FFFFFF0A' },
-	{ class: 'left-[22%] top-[13%] h-[73%] rotate-8', opacity: '#FFFFFF08' },
+	{ class: 'left-[4%] top-[22%] h-[55%]', rotate: '3deg', opacity: '#FFFFFF11', delay: '0s' },
+	{ class: 'right-[4%] top-[31%] h-[45%]', rotate: '-5deg', opacity: '#FFFFFF0A', delay: '-9s' },
+	{ class: 'left-[22%] top-[13%] h-[73%]', rotate: '8deg', opacity: '#FFFFFF08', delay: '-17s' },
 ];
 ---
 
 <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
 	{threads.map((thread) => (
 		<span
-			class:list={['absolute w-px', thread.class]}
-			style={`background: linear-gradient(to bottom, transparent, ${thread.opacity} 40%, ${thread.opacity} 60%, transparent);`}
+			class:list={['thread absolute w-px', thread.class]}
+			style={`--thread-rotate: ${thread.rotate}; animation-delay: ${thread.delay}; transform: rotate(${thread.rotate}); background: linear-gradient(to bottom, transparent, ${thread.opacity} 40%, ${thread.opacity} 60%, transparent);`}
 		></span>
 	))}
 </div>
