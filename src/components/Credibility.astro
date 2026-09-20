@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets';
+import { credibility } from '../data/site-data';
+import sandGardenImage from '../images/sand-garden.png';
+---
+
+<section class="relative flex min-h-svh items-center overflow-hidden bg-charcoal" data-section="09">
+	<Image
+		src={sandGardenImage}
+		alt="Raked sand garden at low sun, the neat lines curving and breaking around a single buried stone"
+		widths={[900, 1440, 1920]}
+		sizes="100vw"
+		class="absolute inset-0 h-full w-full object-cover"
+	/>
+	<div
+		class="absolute inset-0 bg-linear-to-b from-charcoal/95 via-charcoal/80 to-charcoal/60 md:bg-linear-to-r md:from-charcoal/95 md:via-charcoal/85 md:via-45% md:to-charcoal/20"
+		aria-hidden="true"
+	>
+	</div>
+
+	<div class="relative flex max-w-[64ch] flex-col gap-4.5 px-6 py-20 md:w-[58%] md:max-w-none md:py-24 md:pr-15 md:pl-25">
+		<h2 class="text-[26px] leading-[1.2] font-bold text-white md:text-[32px]">{credibility.heading}</h2>
+		{credibility.paragraphs.map((paragraph) => (
+			<p class="text-sm leading-[1.7] text-white/65">{paragraph}</p>
+		))}
+		<p class="text-[15px] font-medium text-white/80">{credibility.punch}</p>
+		<p class="text-sm leading-[1.7] text-white/65">{credibility.core}</p>
+		<p class="text-base font-semibold text-white">{credibility.close}</p>
+		<p class="mt-1 text-[13px] text-white/45">
+			{credibility.substackPrefix}{' '}
+			<a
+				href={credibility.substackUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="font-semibold text-sage underline-offset-4 hover:underline"
+			>
+				{credibility.substackLabel}
+			</a>
+		</p>
+	</div>
+</section>

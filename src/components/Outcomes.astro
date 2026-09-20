@@ -1,0 +1,27 @@
+---
+import { outcomes } from '../data/site-data';
+import Icon from './Icon.astro';
+---
+
+<section class="relative flex min-h-svh items-center bg-canvas px-6 py-20 md:px-30" data-section="08">
+	<div class="flex w-full flex-col items-center gap-8 text-center">
+		<h2 class="text-[28px] leading-[1.2] font-bold text-text-primary md:text-[36px]">{outcomes.heading}</h2>
+		<p class="text-base leading-[1.6] text-text-secondary">{outcomes.intro}</p>
+
+		<ul class="grid w-full grid-cols-1 gap-3.5 text-left sm:grid-cols-2 lg:grid-cols-3">
+			{outcomes.cards.map((card) => (
+				<li
+					class="flex flex-col gap-2.5 rounded-md border border-fold-shadow bg-paper px-4.5 py-5 shadow-[0_2px_6px_#0000000A]"
+				>
+					<Icon name={card.icon} size={24} class="text-sage" />
+					<span class="text-sm leading-[1.5] font-medium text-text-primary">{card.label}</span>
+				</li>
+			))}
+		</ul>
+
+		<div class="flex flex-col items-center gap-1.5">
+			<p class="text-sm leading-[1.6] text-text-secondary">{outcomes.antiChecklist}</p>
+			<p class="text-base leading-[1.5] font-semibold text-text-primary">{outcomes.antiPromise}</p>
+		</div>
+	</div>
+</section>

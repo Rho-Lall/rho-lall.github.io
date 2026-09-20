@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import { valueProp } from '../data/site-data';
+import CtaButton from './CtaButton.astro';
+import zenGardenImage from '../images/zen-garden-aerial.png';
+---
+
+<section class="relative flex min-h-svh flex-col bg-canvas md:flex-row" data-section="04">
+	<div class="relative h-60 shrink-0 overflow-hidden md:h-auto md:w-[39%]">
+		<Image
+			src={zenGardenImage}
+			alt="Aerial view of a raked zen garden, concentric lines circling dark stones"
+			widths={[560, 960]}
+			sizes="(max-width: 768px) 100vw, 39vw"
+			class="h-full w-full object-cover"
+			data-slow-scale
+		/>
+	</div>
+
+	<div class="flex flex-1 flex-col justify-center gap-6 px-6 py-14 md:px-16 md:py-20 lg:pr-25">
+		<h2 class="max-w-[14ch] text-[28px] leading-[1.2] font-bold text-text-primary md:text-[36px]">
+			{valueProp.heading}
+		</h2>
+		<p class="max-w-[58ch] text-base leading-[1.7] text-text-secondary">{valueProp.intro}</p>
+		<p class="max-w-[52ch] text-[19px] leading-[1.4] font-bold text-text-primary">{valueProp.goal}</p>
+		<p class="max-w-[58ch] text-[15px] leading-[1.7] text-text-secondary">{valueProp.detail}</p>
+		<CtaButton class="mt-2 self-start" />
+	</div>
+</section>

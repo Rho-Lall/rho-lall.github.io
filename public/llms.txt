@@ -1,9 +1,9 @@
 # Rho Lall — BI Architect
 
-> Rho Lall is a BI Architect offering a free, code-first governance diagnostic
-> for growing data environments. It evaluates six areas (definitions,
-> architecture, reporting, ownership, institutional memory, change risk) and
-> identifies the 2–3 issues worth tackling first.
+> Rho Lall is a BI Architect. This page presents Follow the Friction, a short
+> AI-guided executive session that helps leaders connect the dots inside their
+> business and identify what deserves their focus. Start where there is
+> friction. See where it leads.
 
 ## About
 

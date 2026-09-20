@@ -1,28 +1,33 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import Problem from '../components/Problem.astro';
-import Headline from '../components/Headline.astro';
-import FailurePoints from '../components/FailurePoints.astro';
-import FlightPlan from '../components/FlightPlan.astro';
+import Friction from '../components/Friction.astro';
+import Pivot from '../components/Pivot.astro';
+import ValueProp from '../components/ValueProp.astro';
+import Reframing from '../components/Reframing.astro';
+import Audience from '../components/Audience.astro';
+import OnYourMind from '../components/OnYourMind.astro';
+import Outcomes from '../components/Outcomes.astro';
+import Credibility from '../components/Credibility.astro';
+import Closing from '../components/Closing.astro';
 import Footer from '../components/Footer.astro';
 import DiagnosticDialog from '../components/DiagnosticDialog.astro';
+import KiteThread from '../components/KiteThread.astro';
 import { socialMeta, personSchema } from '../data/site-data';
 ---
 
 <BaseLayout title={socialMeta.ogTitle} description={personSchema.description}>
-	<div class="px-4 py-10 md:py-16">
-		<div class="mx-auto max-w-[1024px] rounded-2xl bg-paper-white shadow-[0_6px_32px_#0000001A]">
-			<Hero />
-			<div class="border-t border-border-soft"></div>
-			<Problem />
-			<Headline />
-			<div class="border-t border-border-soft"></div>
-			<FailurePoints />
-			<div class="border-t border-border-soft"></div>
-			<FlightPlan />
-			<Footer />
-		</div>
-	</div>
-	<DiagnosticDialog />
+	<Hero />
+	<Friction />
+	<Pivot />
+	<ValueProp />
+	<Reframing />
+	<Audience />
+	<OnYourMind />
+	<Outcomes />
+	<Credibility />
+	<Closing />
+	<KiteThread slot="footer" />
+	<Footer slot="footer" />
+	<DiagnosticDialog slot="footer" />
 </BaseLayout>

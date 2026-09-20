@@ -3,13 +3,13 @@ import { elsewhereLinks } from '../data/site-data';
 import Icon from './Icon.astro';
 ---
 
-<footer class="flex flex-wrap justify-center gap-6 rounded-b-2xl bg-navy px-6 py-6 md:px-12">
+<footer class="flex flex-wrap justify-center gap-6 bg-charcoal px-6 py-8 md:px-12">
 	{elsewhereLinks.map((link) => (
 		<a
 			href={link.url}
 			target="_blank"
 			rel="noopener noreferrer"
-			class="inline-flex items-center gap-1.5 text-sm text-white/60 transition hover:text-white"
+			class="inline-flex items-center gap-1.5 text-sm text-white/45 transition hover:text-white/80"
 		>
 			<Icon name={link.icon} size={16} />
 			{link.label}

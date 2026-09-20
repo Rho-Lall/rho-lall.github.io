@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import { onYourMind } from '../data/site-data';
+import CtaButton from './CtaButton.astro';
+import waterImage from '../images/still-water-ripple.png';
+---
+
+<section class="relative flex min-h-svh flex-col bg-canvas md:flex-row-reverse" data-section="07">
+	<div class="relative h-60 shrink-0 overflow-hidden md:h-auto md:w-[36%]">
+		<Image
+			src={waterImage}
+			alt="Still water at dawn reflecting forested mountains, with a single ripple spreading across the surface"
+			widths={[520, 900]}
+			sizes="(max-width: 768px) 100vw, 36vw"
+			class="h-full w-full object-cover"
+			data-parallax
+		/>
+	</div>
+
+	<div class="flex flex-1 flex-col justify-center gap-5 px-6 py-14 md:px-16 md:py-20 lg:px-30">
+		<h2 class="text-[30px] leading-[1.15] font-bold text-text-primary md:text-[38px]">{onYourMind.heading}</h2>
+		<p class="text-base leading-[1.5] text-text-secondary">{onYourMind.sub}</p>
+
+		<ul class="flex max-w-[56ch] flex-col gap-1.5">
+			{onYourMind.maybes.map((maybe) => (
+				<li class="text-sm leading-[1.6] text-text-secondary">{maybe}</li>
+			))}
+		</ul>
+
+		<div class="flex flex-col gap-1">
+			<p class="text-[17px] font-bold text-text-primary">{onYourMind.anchor}</p>
+			<p class="text-[15px] text-text-secondary">{onYourMind.follow}</p>
+		</div>
+
+		<CtaButton class="mt-2 self-start" />
+	</div>
+</section>
