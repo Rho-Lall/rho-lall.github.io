@@ -1,0 +1,2229 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "I4y9Ai",
+      "x": 0,
+      "y": 0,
+      "name": "CTA Button",
+      "reusable": true,
+      "fill": "$accent",
+      "cornerRadius": 8,
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#C4553A40",
+        "offset": {
+          "x": 0,
+          "y": 3
+        },
+        "blur": 12
+      },
+      "gap": 8,
+      "padding": [
+        14,
+        28
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "w5IEI",
+          "name": "Label",
+          "fill": "$white",
+          "content": "Start your session",
+          "fontFamily": "$font-sans",
+          "fontSize": 16,
+          "fontWeight": "700"
+        },
+        {
+          "type": "icon",
+          "id": "Arwkw",
+          "name": "Arrow",
+          "width": 18,
+          "height": 18,
+          "icon": "arrow-right",
+          "library": "lucide",
+          "fill": "$white"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "OWPJU",
+      "x": 0,
+      "y": 0,
+      "name": "01 — Hero",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "msMOR",
+          "x": 0,
+          "y": 0,
+          "name": "Hero Image",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../src/images/no-strings-on-me.png",
+            "mode": "fill"
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "rectangle",
+          "id": "YMlgH",
+          "x": 0,
+          "y": 0,
+          "name": "Hero Overlay",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2A2A2A00",
+                "position": 0
+              },
+              {
+                "color": "#2A2A2A88",
+                "position": 0.35
+              },
+              {
+                "color": "#2A2A2ADD",
+                "position": 0.7
+              },
+              {
+                "color": "#2A2A2AF0",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "frame",
+          "id": "eK7NS",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Hero Content",
+          "width": 1440,
+          "height": 900,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            0,
+            120,
+            100,
+            120
+          ],
+          "justifyContent": "end",
+          "children": [
+            {
+              "type": "text",
+              "id": "wecbE",
+              "name": "Name",
+              "fill": "$white",
+              "content": "Rho Lall",
+              "lineHeight": 1,
+              "fontFamily": "$font-sans",
+              "fontSize": 72,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "jcEjG",
+              "name": "Title",
+              "fill": "#FFFFFFBB",
+              "content": "BI Architect",
+              "fontFamily": "$font-sans",
+              "fontSize": 26,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "N3WWI",
+              "name": "Taglines Wrap",
+              "layout": "vertical",
+              "padding": [
+                14,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "b1TmN",
+                  "name": "Taglines",
+                  "layout": "vertical",
+                  "gap": 5,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SHyeq",
+                      "name": "Tag 1",
+                      "fill": "#FFFFFF88",
+                      "content": "I bring down ruthless clarity on complex problems.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "B2pqHu",
+                      "name": "Tag 2",
+                      "fill": "#FFFFFF88",
+                      "content": "I build systems that recover revenue for real businesses.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "odMBd",
+                      "name": "Tag 3",
+                      "fill": "#FFFFFF88",
+                      "content": "I document solutions for both human and machine readers.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "y60eN",
+                  "name": "Location",
+                  "fill": "#FFFFFF55",
+                  "content": "Phoenix, AZ",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z41CK",
+              "name": "Spacer",
+              "width": 10,
+              "height": 16
+            },
+            {
+              "id": "mnxPn",
+              "type": "ref",
+              "ref": "I4y9Ai",
+              "name": "Hero CTA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BHheZ",
+      "x": 0,
+      "y": 904,
+      "name": "02 — Friction",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "children": [
+        {
+          "type": "frame",
+          "id": "t8UQT",
+          "name": "Text Side",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            0,
+            60,
+            0,
+            120
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "FYgIC",
+              "name": "Friction Headline",
+              "fill": "$text-primary",
+              "content": "You probably already\nknow where the\nfriction is.",
+              "lineHeight": 1.2,
+              "fontFamily": "$font-sans",
+              "fontSize": 38,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "Zdy4g",
+              "name": "Pain Points",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BUYn2",
+                  "name": "Pain 1",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "tShl7",
+                      "name": "Dash 1",
+                      "fill": "$sage",
+                      "width": 20,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "vzFSZ",
+                      "name": "Pain Text 1",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 420,
+                      "content": "The process that still depends on one person knowing what to do.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q3FpVq",
+                  "name": "Pain 2",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "o8zKj",
+                      "name": "Dash 2",
+                      "fill": "$sage",
+                      "width": 20,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "f3vTGs",
+                      "name": "Pain Text 2",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 420,
+                      "content": "The numbers that trigger a debate before they can trigger a decision.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "XwE0m",
+                  "name": "Pain 3",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "yWxtb",
+                      "name": "Dash 3",
+                      "fill": "$sage",
+                      "width": 20,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "N2cyU9",
+                      "name": "Pain Text 3",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 420,
+                      "content": "The project everyone agrees matters, but nobody can quite get moving.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Z9TuF",
+                  "name": "Pain 4",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "e7IHq",
+                      "name": "Dash 4",
+                      "fill": "$sage",
+                      "width": 20,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "qEsyf",
+                      "name": "Pain Text 4",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 420,
+                      "content": "The report everyone loves to doubt.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VtKXW",
+          "name": "Visual Side",
+          "clip": true,
+          "width": 600,
+          "height": "fill_container",
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "ztCOA",
+              "x": 0,
+              "y": 0,
+              "name": "River Image",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1789917132057.png",
+                "mode": "fill"
+              },
+              "width": 600,
+              "height": 900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "innTC",
+      "x": 0,
+      "y": 1808,
+      "name": "03 — Pivot",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$charcoal",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "aijfc",
+          "layoutPosition": "absolute",
+          "x": 60,
+          "y": 200,
+          "name": "Thread Left",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#FFFFFF00",
+                "position": 0
+              },
+              {
+                "color": "#FFFFFF11",
+                "position": 0.3
+              },
+              {
+                "color": "#FFFFFF11",
+                "position": 0.7
+              },
+              {
+                "color": "#FFFFFF00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1,
+          "height": 500
+        },
+        {
+          "type": "rectangle",
+          "id": "U88Qc",
+          "layoutPosition": "absolute",
+          "x": 1380,
+          "y": 280,
+          "name": "Thread Right",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#FFFFFF00",
+                "position": 0
+              },
+              {
+                "color": "#FFFFFF0A",
+                "position": 0.4
+              },
+              {
+                "color": "#FFFFFF0A",
+                "position": 0.6
+              },
+              {
+                "color": "#FFFFFF00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1,
+          "height": 400
+        },
+        {
+          "type": "rectangle",
+          "id": "E8USbN",
+          "layoutPosition": "absolute",
+          "x": 320,
+          "y": 120,
+          "name": "Thread Drift",
+          "rotation": 8,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#FFFFFF00",
+                "position": 0
+              },
+              {
+                "color": "#FFFFFF08",
+                "position": 0.5
+              },
+              {
+                "color": "#FFFFFF00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1,
+          "height": 660
+        },
+        {
+          "type": "frame",
+          "id": "GRpdz",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Pivot Content",
+          "width": 1440,
+          "height": 900,
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            0,
+            280
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "i9Y51Y",
+              "name": "Pivot Line 1",
+              "fill": "#FFFFFF77",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The hard part usually isn't finding more problems.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "g4XLb",
+              "name": "Pivot Line 2",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "It's figuring out what the\nproblems are actually telling you.",
+              "lineHeight": 1.3,
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 34,
+              "fontWeight": "700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "J3Q3P",
+      "x": 0,
+      "y": 2712,
+      "name": "04 — Value Prop",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "children": [
+        {
+          "type": "frame",
+          "id": "l7eBj",
+          "name": "Visual Left",
+          "clip": true,
+          "width": 560,
+          "height": "fill_container",
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "bsWOW",
+              "x": 0,
+              "y": 0,
+              "name": "Zen Garden Aerial",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1789917165266.png",
+                "mode": "fill"
+              },
+              "width": 560,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XJutI",
+          "name": "Text Right",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            0,
+            100,
+            0,
+            80
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "rfVeu",
+              "name": "Section Head",
+              "fill": "$text-primary",
+              "content": "See the problem\ndifferently.",
+              "lineHeight": 1.2,
+              "fontFamily": "$font-sans",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "gPEbX",
+              "name": "FTF Intro",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Follow the Friction is a short, AI-guided executive session built around one goal:",
+              "lineHeight": 1.7,
+              "fontFamily": "$font-sans",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "hkqy9",
+              "name": "FTF Goal",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Help you connect the dots inside your business and identify what deserves your focus.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font-sans",
+              "fontSize": 19,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "jx6NQ",
+              "name": "FTF Detail",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "You know what you know. But this will enable you to test assumptions, surface contradictions, expose hidden dependencies, and follow the implications.",
+              "lineHeight": 1.7,
+              "fontFamily": "$font-sans",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "m5upg",
+              "type": "ref",
+              "ref": "I4y9Ai",
+              "name": "CTA 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nXSmt",
+      "x": 0,
+      "y": 3616,
+      "name": "05 — Reframing",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        0,
+        200
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "WXaO6",
+          "name": "Reframe Headline",
+          "fill": "$text-primary",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Because the problem you bring in\nmay not be the problem you leave with.",
+          "lineHeight": 1.35,
+          "fontFamily": "$font-sans",
+          "fontSize": 26,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "FSFM6",
+          "name": "Reframe Cards",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 14,
+          "children": [
+            {
+              "type": "frame",
+              "id": "YgPqa",
+              "name": "Reframe 1",
+              "width": "fill_container",
+              "fill": "$paper",
+              "cornerRadius": 6,
+              "stroke": "$fold-shadow",
+              "strokeWidth": 1,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000A",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "gap": 20,
+              "padding": [
+                20,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a1Lu4S",
+                  "name": "From 1",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "What looks like a reporting problem",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "BWEKi",
+                  "name": "Arrow 1",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "arrow-right",
+                  "library": "lucide",
+                  "fill": "$sage"
+                },
+                {
+                  "type": "text",
+                  "id": "lKjl1",
+                  "name": "To 1",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "might be an ownership problem.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bNuFE",
+              "name": "Reframe 2",
+              "width": "fill_container",
+              "fill": "$paper",
+              "cornerRadius": 6,
+              "stroke": "$fold-shadow",
+              "strokeWidth": 1,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000A",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "gap": 20,
+              "padding": [
+                20,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OXDtV",
+                  "name": "From 2",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "What looks like a technology problem",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "wibS7",
+                  "name": "Arrow 2",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "arrow-right",
+                  "library": "lucide",
+                  "fill": "$sage"
+                },
+                {
+                  "type": "text",
+                  "id": "XeHnF",
+                  "name": "To 2",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "might be a process problem.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WUbXW",
+              "name": "Reframe 3",
+              "width": "fill_container",
+              "fill": "$paper",
+              "cornerRadius": 6,
+              "stroke": "$fold-shadow",
+              "strokeWidth": 1,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000A",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "gap": 20,
+              "padding": [
+                20,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g6MqiP",
+                  "name": "From 3",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "What looks like an isolated workaround",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "VBrMW",
+                  "name": "Arrow 3",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "arrow-right",
+                  "library": "lucide",
+                  "fill": "$sage"
+                },
+                {
+                  "type": "text",
+                  "id": "BCwuk",
+                  "name": "To 3",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "might be evidence that the business has outgrown a decision made years ago.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "qkgrp",
+          "name": "Thats the point",
+          "fill": "$text-primary",
+          "content": "That's the point.",
+          "fontFamily": "$font-sans",
+          "fontSize": 17,
+          "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gJGNA",
+      "x": 0,
+      "y": 4520,
+      "name": "06 — Audience",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$charcoal",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "NnQTk",
+          "layoutPosition": "absolute",
+          "x": 1340,
+          "y": 100,
+          "name": "Thread A",
+          "rotation": -5,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#FFFFFF00",
+                "position": 0
+              },
+              {
+                "color": "#FFFFFF0C",
+                "position": 0.4
+              },
+              {
+                "color": "#FFFFFF0C",
+                "position": 0.6
+              },
+              {
+                "color": "#FFFFFF00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1,
+          "height": 700
+        },
+        {
+          "type": "rectangle",
+          "id": "EulSw",
+          "layoutPosition": "absolute",
+          "x": 100,
+          "y": 300,
+          "name": "Thread B",
+          "rotation": 3.0000000000000004,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#FFFFFF00",
+                "position": 0
+              },
+              {
+                "color": "#FFFFFF08",
+                "position": 0.5
+              },
+              {
+                "color": "#FFFFFF00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1,
+          "height": 500
+        },
+        {
+          "type": "frame",
+          "id": "ascgT",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Audience Content",
+          "width": 1440,
+          "height": 900,
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            0,
+            200
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "sMvop",
+              "name": "Audience Headline",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "This is for businesses that got more\ncomplicated as they grew.",
+              "lineHeight": 1.3,
+              "fontFamily": "$font-sans",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "p2BaK",
+              "name": "Audience Context",
+              "fill": "#FFFFFFAA",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Especially growing e-commerce and lifestyle brands where systems like NetSuite, Snowflake, and Looker now sit between more people, more processes, and more decisions than they used to.",
+              "lineHeight": 1.7,
+              "fontFamily": "$font-sans",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "N6ic69",
+              "name": "Audience Bridge",
+              "fill": "#FFFFFFCC",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The business works. But it has become harder to understand from end to end.",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-sans",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "KCbH5",
+              "name": "Symptoms",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "byhXr",
+                  "name": "Symptom 1",
+                  "fill": "#FFFFFF88",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "You can feel it when a simple question requires three people.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RYH49",
+                  "name": "Symptom 2",
+                  "fill": "#FFFFFF88",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "When two departments bring different numbers to the same meeting.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "X7CFF",
+                  "name": "Symptom 3",
+                  "fill": "#FFFFFF88",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "When a project crosses enough systems that nobody quite owns the whole thing.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "XoAop",
+                  "name": "Symptom 4",
+                  "fill": "#FFFFFF88",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "When the person who \"just knows how it works\" becomes part of the infrastructure.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "A1YDY",
+      "x": 0,
+      "y": 5424,
+      "name": "07 — Whats On Your Mind",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "children": [
+        {
+          "type": "frame",
+          "id": "UDERh",
+          "name": "Text Left",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            0,
+            60,
+            0,
+            120
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "gI5cd",
+              "name": "WOYM Headline",
+              "fill": "$text-primary",
+              "content": "What's on\nyour mind?",
+              "lineHeight": 1.15,
+              "fontFamily": "$font-sans",
+              "fontSize": 38,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "sD3oj",
+              "name": "WOYM Sub",
+              "fill": "$text-secondary",
+              "content": "What's taking up space?",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-sans",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "tgH9W",
+              "name": "Maybes",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 7,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "THfrh",
+                  "name": "Maybe 1",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Maybe your numbers don't agree.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "m4vvld",
+                  "name": "Maybe 2",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Maybe too much knowledge still lives in people's heads.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "n9WBY4",
+                  "name": "Maybe 3",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Maybe the business has outgrown systems that used to work perfectly well.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "jDW5p",
+                  "name": "Maybe 4",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Maybe a manual workaround has quietly become part of how the company operates.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "z0SBNb",
+                  "name": "Maybe 5",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Maybe you're considering a major data, AI, reporting, or technology initiative and aren't sure what has to be true first.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Dztm7",
+                  "name": "Maybe 6",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Maybe you just know something feels harder than it should.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EmWt5",
+              "name": "Start There",
+              "layout": "vertical",
+              "gap": 5,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cOiah",
+                  "name": "Start Bold",
+                  "fill": "$text-primary",
+                  "content": "Start there.",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "aXO8B",
+                  "name": "Start Follow",
+                  "fill": "$text-secondary",
+                  "content": "Start where there is friction. See where it leads.",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "id": "e64tm",
+              "type": "ref",
+              "ref": "I4y9Ai",
+              "name": "CTA 2"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R2u50",
+          "name": "Visual Right",
+          "clip": true,
+          "width": 520,
+          "height": "fill_container",
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "Fb1HO",
+              "x": 0,
+              "y": 0,
+              "name": "Water Image",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1789917221120.png",
+                "mode": "fill"
+              },
+              "width": 520,
+              "height": 900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "E2e47U",
+      "x": 0,
+      "y": 6328,
+      "name": "08 — Outcomes",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        0,
+        120
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "E5DFI",
+          "name": "Outcomes Headline",
+          "fill": "$text-primary",
+          "content": "What you'll leave with.",
+          "lineHeight": 1.2,
+          "fontFamily": "$font-sans",
+          "fontSize": 36,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "oxrCF",
+          "name": "Outcomes Intro",
+          "fill": "$text-secondary",
+          "content": "The session is designed to help you uncover:",
+          "lineHeight": 1.6,
+          "fontFamily": "$font-sans",
+          "fontSize": 16,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "Z0Zhq",
+          "name": "Outcome Grid",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 14,
+          "children": [
+            {
+              "type": "frame",
+              "id": "A4iC9",
+              "name": "Row 1",
+              "width": "fill_container",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Q8FLTT",
+                  "name": "Outcome 1",
+                  "width": "fill_container",
+                  "fill": "$paper",
+                  "cornerRadius": 6,
+                  "stroke": "$fold-shadow",
+                  "strokeWidth": 1,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000A",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 6
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    20,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "iAzNa",
+                      "name": "Icon 1",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "git-branch",
+                      "library": "lucide",
+                      "fill": "$sage"
+                    },
+                    {
+                      "type": "text",
+                      "id": "A6Vtei",
+                      "name": "Label 1",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Patterns you may not have connected before",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RLHij",
+                  "name": "Outcome 2",
+                  "width": "fill_container",
+                  "fill": "$paper",
+                  "cornerRadius": 6,
+                  "stroke": "$fold-shadow",
+                  "strokeWidth": 1,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000A",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 6
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    20,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "TKU6D",
+                      "name": "Icon 2",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "scan",
+                      "library": "lucide",
+                      "fill": "$sage"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FYr3T",
+                      "name": "Label 2",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "What appears to deserve deeper attention",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SReys",
+                  "name": "Outcome 3",
+                  "width": "fill_container",
+                  "fill": "$paper",
+                  "cornerRadius": 6,
+                  "stroke": "$fold-shadow",
+                  "strokeWidth": 1,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000A",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 6
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    20,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "G9uao",
+                      "name": "Icon 3",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "target",
+                      "library": "lucide",
+                      "fill": "$sage"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wnhF4",
+                      "name": "Label 3",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Why it matters to the business",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "W7xulr",
+              "name": "Row 2",
+              "width": "fill_container",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "D5MrZ",
+                  "name": "Outcome 4",
+                  "width": "fill_container",
+                  "fill": "$paper",
+                  "cornerRadius": 6,
+                  "stroke": "$fold-shadow",
+                  "strokeWidth": 1,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000A",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 6
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    20,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "SBK21",
+                      "name": "Icon 4",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "trending-down",
+                      "library": "lucide",
+                      "fill": "$sage"
+                    },
+                    {
+                      "type": "text",
+                      "id": "r9YDe",
+                      "name": "Label 4",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "What the current situation may be costing you",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "OfDjT",
+                  "name": "Outcome 5",
+                  "width": "fill_container",
+                  "fill": "$paper",
+                  "cornerRadius": 6,
+                  "stroke": "$fold-shadow",
+                  "strokeWidth": 1,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000A",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 6
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    20,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "L1Xg6i",
+                      "name": "Icon 5",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "compass",
+                      "library": "lucide",
+                      "fill": "$sage"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ecoeH",
+                      "name": "Label 5",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "What still needs to be understood before making a decision",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "z3Mi4",
+          "name": "Anti Checklist",
+          "layout": "vertical",
+          "gap": 5,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "FcXkG",
+              "name": "Anti 1",
+              "fill": "$text-secondary",
+              "content": "You won't leave with a canned maturity score or a generic checklist.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "vYdwB",
+              "name": "Anti 2",
+              "fill": "$text-primary",
+              "content": "You'll leave with a clearer way to think about what's happening.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "N7JrE",
+      "x": 0,
+      "y": 7232,
+      "name": "09 — Credibility",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rkTSh",
+          "x": 0,
+          "y": 0,
+          "name": "Sand Garden",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1789917278251.png",
+            "mode": "fill"
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "rectangle",
+          "id": "ubomN",
+          "x": 0,
+          "y": 0,
+          "name": "Sand Overlay",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 90,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2A2A2AE8",
+                "position": 0
+              },
+              {
+                "color": "#2A2A2ACC",
+                "position": 0.5
+              },
+              {
+                "color": "#2A2A2A55",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "frame",
+          "id": "F7ltFi",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Cred Content",
+          "width": 840,
+          "height": 900,
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            0,
+            60,
+            0,
+            100
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "FDAGw",
+              "name": "Cred Headline",
+              "fill": "$white",
+              "content": "Technically Correct\nis Still Wrong.",
+              "lineHeight": 1.2,
+              "fontFamily": "$font-sans",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Marxg",
+              "name": "Cred Intro",
+              "fill": "#FFFFFFAA",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "I'm a BI Architect. My work sits in the space between the systems and the business trying to use them.",
+              "lineHeight": 1.7,
+              "fontFamily": "$font-sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Ddyl7",
+              "name": "Cred Suspicion",
+              "fill": "#FFFFFFAA",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "That has taught me to be suspicious of technically correct answers to business problems. A dashboard can be fast and still fail the people relying on it. A data platform can be healthy while nobody trusts the number. A system can follow best practices and still be painful to change.",
+              "lineHeight": 1.7,
+              "fontFamily": "$font-sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "fsT5X",
+              "name": "Cred Machines",
+              "fill": "#FFFFFFAA",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "And increasingly, business logic has to make sense to more than just the person who built it. It has to be understandable to the next person, the next system, and the machines beginning to work alongside them.",
+              "lineHeight": 1.7,
+              "fontFamily": "$font-sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Cc95s",
+              "name": "Cred Beyond",
+              "fill": "#FFFFFFCC",
+              "content": "So I look beyond whether something works.",
+              "fontFamily": "$font-sans",
+              "fontSize": 15,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "qBocP",
+              "name": "Cred Core",
+              "fill": "#FFFFFFAA",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "I want to know what depends on it, who trusts it, what happens around it, and what the business has quietly learned to compensate for.",
+              "lineHeight": 1.7,
+              "fontFamily": "$font-sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "HK53w",
+              "name": "Cred Punch",
+              "fill": "$white",
+              "content": "That's usually where the interesting problem is.",
+              "fontFamily": "$font-sans",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "SpN1C",
+              "name": "Substack",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PTBap",
+                  "name": "Sub Text",
+                  "fill": "#FFFFFF77",
+                  "content": "I write about these problems on",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "fK3ur",
+                  "name": "Sub Link",
+                  "fill": "$sage",
+                  "content": "Substack",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "yq14p",
+      "x": 0,
+      "y": 8136,
+      "name": "10 — Closing",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "uyo3A",
+          "x": 0,
+          "y": 0,
+          "name": "Kite Image",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1789917304312.png",
+            "mode": "fill"
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "rectangle",
+          "id": "YB4o2",
+          "x": 0,
+          "y": 0,
+          "name": "Kite Overlay",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#F5F0E800",
+                "position": 0
+              },
+              {
+                "color": "#F5F0E866",
+                "position": 0.4
+              },
+              {
+                "color": "#F5F0E8DD",
+                "position": 0.7
+              },
+              {
+                "color": "#F5F0E8F5",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "frame",
+          "id": "cmPkJ",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Closing Content",
+          "width": 1440,
+          "height": 900,
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            0,
+            280,
+            100,
+            280
+          ],
+          "justifyContent": "end",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "QuSj7",
+              "name": "Close Headline",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Years of decisions are baked\ninto your business.",
+              "lineHeight": 1.3,
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "RPKY3",
+              "name": "Decision Lines",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r2OSS",
+                  "name": "Line 1",
+                  "fill": "$text-secondary",
+                  "content": "Some live in code.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "oN9h3",
+                  "name": "Line 2",
+                  "fill": "$text-secondary",
+                  "content": "Some live in dashboards.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FpJQC",
+                  "name": "Line 3",
+                  "fill": "$text-secondary",
+                  "content": "Some live in spreadsheets.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "hYhGE",
+                  "name": "Line 4",
+                  "fill": "$text-secondary",
+                  "content": "Some live in people's heads.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "$font-sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "y5PmM",
+              "name": "Growing",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "As the business grows, those decisions become connected in ways that are increasingly difficult to see from inside the company.",
+              "lineHeight": 1.7,
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "z0pgC",
+              "name": "Web Quote",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Sometimes you need someone outside\nthe web to help you see the web.",
+              "lineHeight": 1.35,
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 1,
+              "id": "RPZch",
+              "name": "Divider",
+              "fill": "$accent",
+              "width": 48,
+              "height": 2
+            },
+            {
+              "type": "text",
+              "id": "xYXsF",
+              "name": "Final Headline",
+              "fill": "$text-primary",
+              "content": "Start Your Session.",
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Td6Bk",
+              "name": "Final Sub",
+              "fill": "$text-secondary",
+              "content": "Bring whatever feels harder than it should.\nWe'll start there.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "$font-sans",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "wlpoq",
+              "type": "ref",
+              "ref": "I4y9Ai",
+              "name": "CTA 3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "paper-white": {
+      "type": "color",
+      "value": "#F8F7F2"
+    },
+    "navy": {
+      "type": "color",
+      "value": "#1A1A2E"
+    },
+    "navy-dark": {
+      "type": "color",
+      "value": "#0F0F1A"
+    },
+    "primary": {
+      "type": "color",
+      "value": "#4A8FA0"
+    },
+    "secondary": {
+      "type": "color",
+      "value": "#4A5568"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#C4553A"
+    },
+    "bg-soft": {
+      "type": "color",
+      "value": "#EEF4F6"
+    },
+    "border-soft": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "page-bg": {
+      "type": "color",
+      "value": "#E8E6E1"
+    },
+    "white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "font-sans": {
+      "type": "string",
+      "value": "Plus Jakarta Sans"
+    },
+    "canvas": {
+      "type": "color",
+      "value": "#F5F0E8"
+    },
+    "charcoal": {
+      "type": "color",
+      "value": "#2A2A2A"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#2A2A2A"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#6B6560"
+    },
+    "accent-muted": {
+      "type": "color",
+      "value": "#C4553A33"
+    },
+    "sage": {
+      "type": "color",
+      "value": "#7A8B6F"
+    },
+    "fold-shadow": {
+      "type": "color",
+      "value": "#D4CFC5"
+    },
+    "paper": {
+      "type": "color",
+      "value": "#FAF7F0"
+    }
+  },
+  "fileToken": "9583247f-3aec-4178-9f74-145854bedab5"
+}
