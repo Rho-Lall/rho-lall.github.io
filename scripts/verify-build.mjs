@@ -6,22 +6,24 @@ export function findMissingContent(html, requiredStrings) {
 }
 
 const requiredStrings = [
-  // Identity block
+  // Identity
   'Rho Lall',
   'BI Architect',
-  'I build systems that recover revenue for real businesses.',
-  'I document solutions for both human and machine readers.',
-  'I bring down ruthless clarity on complex problems.',
   'Phoenix, AZ',
-  // Diagnostic offer
-  'grounding the plane.',
-  'Find the failure points.',
-  'Get a clear flight plan.',
-  'Run the free diagnostic',
-  // Diagnostic form popup
+  // Narrative beats, one per frame
+  'You probably already know where the friction is.',
+  'It&#39;s figuring out what the problems are actually telling you.',
+  'See the problem differently.',
+  'That&#39;s the point.',
+  'This is for businesses that got more complicated as they grew.',
+  'What&#39;s on your mind?',
+  'What you&#39;ll leave with.',
+  'Technically Correct is Still Wrong.',
+  'Start Your Session.',
+  // CTA and form
+  'Start your session',
   'diagnostic-dialog',
-  'What’s your primary goal right now?',
-  // Elsewhere links
+  // Footer links
   'rholall.substack.com',
   'linkedin.com/in/rholall',
   'github.com/Rho-Lall',
