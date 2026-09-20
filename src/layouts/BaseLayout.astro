@@ -22,9 +22,16 @@ const { title, description } = Astro.props;
 		<JsonLd />
 		<SocialMeta />
 	</head>
-	<body class="bg-page-bg font-sans">
-		<main>
+	<body class="bg-canvas font-sans">
+		<a
+			href="#main"
+			class="sr-only rounded-lg bg-charcoal px-4 py-2 text-white focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50"
+		>
+			Skip to content
+		</a>
+		<main id="main">
 			<slot />
 		</main>
+		<slot name="footer" />
 	</body>
 </html>

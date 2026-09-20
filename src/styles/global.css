@@ -2,15 +2,23 @@
 @import "@fontsource-variable/plus-jakarta-sans";
 
 @theme {
-	--color-paper-white: #F8F7F2;
-	--color-navy: #1A1A2E;
-	--color-navy-dark: #0F0F1A;
-	--color-primary: #4A8FA0;
-	--color-secondary: #4A5568;
-	--color-accent: #F06449;
-	--color-bg-soft: #EEF4F6;
-	--color-border-soft: #E2E8F0;
-	--color-page-bg: #E8E6E1;
+	/* Follow the Friction tokens — see docs/scroll-direction.md */
+	--color-canvas: #F5F0E8;
+	--color-charcoal: #2A2A2A;
+	--color-text-primary: #2A2A2A;
+	--color-text-secondary: #6B6560;
+	--color-accent: #C4553A;
+	--color-accent-muted: #C4553A33;
+	--color-sage: #7A8B6F;
+	--color-fold-shadow: #D4CFC5;
+	--color-paper: #FAF7F0;
 
 	--font-sans: "Plus Jakarta Sans Variable", sans-serif;
+}
+
+@layer base {
+	body {
+		background-color: var(--color-canvas);
+		color: var(--color-text-primary);
+	}
 }

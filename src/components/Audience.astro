@@ -1,0 +1,20 @@
+---
+import { audience } from '../data/site-data';
+import Threads from './Threads.astro';
+---
+
+<section class="relative flex min-h-svh items-center bg-charcoal px-6 py-20 md:px-25 lg:px-50" data-section="06">
+	<Threads />
+	<div class="relative flex w-full flex-col gap-7">
+		<h2 class="max-w-[30ch] text-[24px] leading-[1.3] font-bold text-white md:text-[30px]">
+			{audience.heading}
+		</h2>
+		<p class="max-w-[68ch] text-[15px] leading-[1.7] text-white/65">{audience.context}</p>
+		<p class="max-w-[60ch] text-base leading-[1.6] font-medium text-white/80">{audience.bridge}</p>
+		<ul class="flex max-w-[64ch] flex-col gap-2">
+			{audience.symptoms.map((symptom) => (
+				<li class="text-sm leading-[1.6] text-white/55">{symptom}</li>
+			))}
+		</ul>
+	</div>
+</section>
