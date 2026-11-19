@@ -1,0 +1,130 @@
+---
+import '../styles/global.css';
+import SocialIcon from '../components/SocialIcon.astro';
+import SessionModal from '../components/SessionModal.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+	theme?: 'light' | 'dark';
+	shareImage?: string;
+	shareImageAlt?: string;
+}
+
+const siteUrl = 'https://rho-lall.com';
+const defaultTitle = 'Rho Lall — AI Analytics Engineer | Business Intelligence Architecture, Looker & Snowflake';
+const defaultDescription = 'Rho Lall is a BI Architect helping founder-led ecommerce and lifestyle brands untangle accumulated data, reporting, and business logic for clearer decisions.';
+const heroImage = `${siteUrl}/no-strings-on-me.webp`;
+const heroImageAlt = 'A marionette figure that has cut its own strings, rendered in dark tones';
+const { title = defaultTitle, description = defaultDescription, theme = 'light', shareImage = heroImage, shareImageAlt = heroImageAlt } = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
+const shareImageUrl = new URL(shareImage, siteUrl).toString();
+const isAboutPage = Astro.url.pathname === '/about';
+const structuredData = {
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'Person',
+			'@id': `${siteUrl}/#rho-lall`,
+			name: 'Rho Lall',
+			jobTitle: 'AI Analytics Engineer',
+			url: siteUrl,
+			address: {
+				'@type': 'PostalAddress',
+				addressLocality: 'Phoenix',
+				addressRegion: 'AZ',
+				addressCountry: 'US',
+			},
+			sameAs: ['https://rholall.substack.com'],
+			knowsAbout: ['Business intelligence architecture', 'Looker BI architecture', 'Looker BI Architect'],
+		},
+		{
+			'@type': 'ProfessionalService',
+			'@id': `${siteUrl}/#professional-service`,
+			name: 'Rho Lall BI Architecture',
+			url: siteUrl,
+			description,
+			provider: { '@id': `${siteUrl}/#rho-lall` },
+			address: {
+				'@type': 'PostalAddress',
+				addressLocality: 'Phoenix',
+				addressRegion: 'AZ',
+				addressCountry: 'US',
+			},
+			serviceType: ['Business intelligence architecture', 'Looker BI architecture'],
+		},
+		...(isAboutPage
+			? [
+					{
+						'@type': 'ProfilePage',
+						'@id': `${canonicalUrl}#profilepage`,
+						url: canonicalUrl,
+						name: title,
+						mainEntity: { '@id': `${siteUrl}/#rho-lall` },
+					},
+				]
+			: []),
+	],
+};
+const isDark = theme === 'dark';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.png" />
+		<link rel="stylesheet" href="/brand-tokens.css" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalUrl} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={shareImageUrl} />
+		<meta property="og:image:alt" content={shareImageAlt} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={shareImageUrl} />
+		<script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
+		<title>{title}</title>
+		<script src="../scripts/walterNavigation.js"></script>
+	</head>
+	<body class:list={['m-0 min-h-screen w-full font-site-body antialiased', isDark ? 'bg-[#010101] text-paper' : 'bg-brand-bg-soft text-ink']}>
+		<header class="bg-white">
+			<nav class="mx-auto flex w-full max-w-7xl flex-nowrap items-center justify-between px-5 py-4 sm:px-8 sm:py-5 lg:px-12" aria-label="Primary navigation">
+				<a href="/" class="block w-[clamp(6.25rem,12vw,7.5rem)] max-w-[7.5rem] shrink-0 no-underline" aria-label="Rho Lall home">
+					<img src="/rholall-logo.png" alt="Rho Lall wordmark" class="block h-auto w-full max-w-full" />
+				</a>
+				<div class="ml-4 flex shrink-0 flex-nowrap items-center gap-5">
+					<a href="/#thoughts" class="whitespace-nowrap text-sm font-medium text-brand-navy/70 no-underline transition-colors hover:text-brand-primary focus-visible:text-brand-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary">My Thoughts</a>
+					<a href="/#about" class="whitespace-nowrap text-sm font-medium text-brand-navy/70 no-underline transition-colors hover:text-brand-primary focus-visible:text-brand-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary">About</a>
+				</div>
+			</nav>
+		</header>
+		<main><slot /></main>
+		<SessionModal />
+		<footer class="flex flex-col items-center bg-[#010101] px-6 py-8 md:px-12">
+			<nav class="flex flex-wrap justify-center gap-6" aria-label="Elsewhere">
+				<a href="/#about" class="inline-flex items-center text-sm text-white/45 transition-colors hover:text-white/80 focus-visible:text-white/80 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">About</a>
+				<a href="/agents.md" class="inline-flex items-center text-sm text-white/45 transition-colors hover:text-white/80 focus-visible:text-white/80 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Agents</a>
+				<a href="https://rholall.substack.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-white/45 transition-colors hover:text-white/80 focus-visible:text-white/80 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+					<SocialIcon name="rss" size={16} title="Substack" />
+					<span>Substack</span>
+				</a>
+				<a href="https://linkedin.com/in/rholall" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-white/45 transition-colors hover:text-white/80 focus-visible:text-white/80 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+					<SocialIcon name="linkedin" size={16} title="LinkedIn" />
+					<span>LinkedIn</span>
+				</a>
+				<a href="https://github.com/Rho-Lall" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-white/45 transition-colors hover:text-white/80 focus-visible:text-white/80 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+					<SocialIcon name="github" size={16} title="GitHub" />
+					<span>GitHub</span>
+				</a>
+			</nav>
+		</footer>
+		<script src="../scripts/sessionModal.js"></script>
+	</body>
+</html>

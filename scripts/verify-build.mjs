@@ -6,24 +6,21 @@ export function findMissingContent(html, requiredStrings) {
 }
 
 const requiredStrings = [
-  // Identity
-  'Rho Lall',
-  'BI Architect',
-  'Phoenix, AZ',
-  // Narrative beats, one per frame
-  'You probably already know where the friction is.',
-  'It&#39;s figuring out what the problems are actually telling you.',
-  'See the problem differently.',
-  'That&#39;s the point.',
-  'This is for businesses that got more complicated as they grew.',
-  'What&#39;s on your mind?',
-  'What you&#39;ll leave with.',
-  'Technically Correct is Still Wrong.',
+  // Hero
+  'I started a blog you',
+  'A blog for your AI.',
+  'Visit my Substack',
+  'Building humanity emPowered by AI.',
+  // About / narrative
+  'ABOUT RHO',
+  'Your business probably didn',
+  'Good systems preserve what works.',
+  // Thoughts feed + session modal
+  'My Thoughts',
+  'session-modal',
   'Start Your Session.',
-  // CTA and form
-  'Start your session',
-  'diagnostic-dialog',
-  // Footer links
+  // Nav + footer links
+  'rholall-logo.png',
   'rholall.substack.com',
   'linkedin.com/in/rholall',
   'github.com/Rho-Lall',

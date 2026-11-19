@@ -27,24 +27,26 @@ test('extractJsonLd pulls the raw payload out of a script tag', () => {
 });
 
 test('dist/index.html contains valid JSON-LD with required schema.org Person fields', () => {
-  const html = readFileSync(new URL('../dist/index.html', import.meta.url), 'utf-8');
-  const raw = extractJsonLd(html);
-  assert.ok(raw, 'expected an application/ld+json script tag in dist/index.html');
+	const html = readFileSync(new URL('../dist/index.html', import.meta.url), 'utf-8');
+	const raw = extractJsonLd(html);
+	assert.ok(raw, 'expected an application/ld+json script tag in dist/index.html');
 
-  const schema = JSON.parse(raw);
+	const parsed = JSON.parse(raw);
+	assert.equal(parsed['@context'], 'https://schema.org');
 
-  assert.equal(schema['@context'], 'https://schema.org');
-  assert.equal(schema['@type'], 'Person');
-  assert.equal(typeof schema.name, 'string');
-  assert.ok(schema.name.length > 0);
-  assert.equal(typeof schema.jobTitle, 'string');
-  assert.ok(schema.jobTitle.length > 0);
-  assert.equal(typeof schema.url, 'string');
-  assert.ok(schema.url.startsWith('https://'), 'url must be absolute');
-  assert.equal(typeof schema.description, 'string');
-  assert.ok(schema.description.length > 0);
-  assert.ok(Array.isArray(schema.sameAs) && schema.sameAs.length > 0, 'sameAs must be a non-empty array');
-  for (const url of schema.sameAs) {
-    assert.ok(url.startsWith('https://'), `sameAs entry not absolute: ${url}`);
-  }
+	// The site ships an @graph; the Person node is the one under test.
+	const nodes = Array.isArray(parsed['@graph']) ? parsed['@graph'] : [parsed];
+	const person = nodes.find((node) => node['@type'] === 'Person');
+	assert.ok(person, 'expected a Person node in the JSON-LD graph');
+
+	assert.equal(typeof person.name, 'string');
+	assert.ok(person.name.length > 0);
+	assert.equal(typeof person.jobTitle, 'string');
+	assert.ok(person.jobTitle.length > 0);
+	assert.equal(typeof person.url, 'string');
+	assert.ok(person.url.startsWith('https://'), 'url must be absolute');
+	assert.ok(Array.isArray(person.sameAs) && person.sameAs.length > 0, 'sameAs must be a non-empty array');
+	for (const url of person.sameAs) {
+		assert.ok(url.startsWith('https://'), `sameAs entry not absolute: ${url}`);
+	}
 });

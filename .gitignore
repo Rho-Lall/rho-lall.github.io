@@ -38,3 +38,9 @@ Thumbs.db
 scripts/security-check.sh
 
 .riptide/
+
+# Local copy of the rho-lall.com source, kept for reference only
+reference/
+
+# Vendored 10k-websites skill (reference material, not part of the site)
+docs/10k-websites/

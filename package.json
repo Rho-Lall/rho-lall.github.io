@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "rho-lall.github.io",
+  "description": "rho-lall.github.io \u2014 mirror of rho-lall.com",
   "author": "Rho",
   "engines": {
     "node": ">=22.12.0"
@@ -17,10 +17,8 @@
     "verify": "node scripts/verify-build.mjs"
   },
   "dependencies": {
-    "@fontsource-variable/plus-jakarta-sans": "^5.2.8",
     "@tailwindcss/vite": "^4.3.2",
     "astro": "^7.0.6",
-    "gsap": "^3.15.0",
     "tailwindcss": "^4.3.2"
   },
   "devDependencies": {

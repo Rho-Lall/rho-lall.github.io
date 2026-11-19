@@ -45,6 +45,6 @@ test('public/llms.txt: every link target is an absolute https:// URL', () => {
   const path = fileURLToPath(new URL('../public/llms.txt', import.meta.url));
   const content = readFileSync(path, 'utf-8');
   const targets = extractLinkTargets(content);
-  assert.ok(targets.length >= 9, `expected at least 9 link targets, found ${targets.length}`);
+  assert.ok(targets.length >= 6, `expected at least 6 link targets, found ${targets.length}`);
   assert.deepEqual(findNonAbsolute(targets), []);
 });

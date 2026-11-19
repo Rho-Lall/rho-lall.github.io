@@ -1,27 +1,24 @@
-# Rho Lall — BI Architect
+# A blog for your AI | Rho Lall
 
-> Rho Lall is a BI Architect. This page presents Follow the Friction, a short
-> AI-guided executive session that helps leaders connect the dots inside their
-> business and identify what deserves their focus. Start where there is
-> friction. See where it leads.
+> Rho Lall is a BI Architect in Phoenix, AZ. He writes posts meant to be handed
+> to an AI assistant, and works with founder-led ecommerce and lifestyle brands
+> to untangle accumulated data, reporting, and business logic.
 
 ## About
 
 - Name: Rho Lall
 - Title: BI Architect
 - Location: Phoenix, AZ
-- Site: https://rho-lall.github.io
+- Primary site: https://rho-lall.com
+- Mirror: https://rho-lall.github.io
 
 ## Agent Navigation
 
 - [AGENTS.md](https://github.com/Rho-Lall/Rho-Lall/blob/main/AGENTS.md): Machine-readable claims table and evidence map
-- [Lead Recovery Case Study](https://github.com/Rho-Lall/lead-recovery-case-study): Flagship AI system documentation
-- [measurement.md](https://github.com/Rho-Lall/lead-recovery-case-study/blob/main/measurement.md): Methodology for defining and attributing recovered leads
-- [architecture.md](https://github.com/Rho-Lall/lead-recovery-case-study/blob/main/architecture.md): Voice + chat AI orchestration pattern
+- [Substack](https://rholall.substack.com): Posts written to be shared with an AI assistant
 
 ## Elsewhere
 
 - GitHub: https://github.com/Rho-Lall
 - Substack: https://rholall.substack.com
 - LinkedIn: https://linkedin.com/in/rholall
-- Business: https://bulldozer.life
