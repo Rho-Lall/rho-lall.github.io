@@ -14,7 +14,8 @@
     "postbuild": "node scripts/verify-build.mjs",
     "preview": "astro preview",
     "astro": "astro",
-    "verify": "node scripts/verify-build.mjs"
+    "verify": "node scripts/verify-build.mjs",
+    "snapshot:thoughts": "node scripts/snapshot-thoughts.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
