@@ -17,6 +17,8 @@ const requiredStrings = [
   'Good systems preserve what works.',
   // Thoughts feed + session modal
   'My Thoughts',
+  // Guards an empty Thoughts section: live feed or snapshot, posts must render
+  'substack.com/p/',
   'session-modal',
   'Start Your Session.',
   // Nav + footer links
