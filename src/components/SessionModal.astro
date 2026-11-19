@@ -1,0 +1,23 @@
+<div id="session-modal" data-session-modal hidden class="fixed inset-0 z-50 overflow-y-auto bg-brand-navy-dark/80 px-5 py-6 sm:px-8 sm:py-10" role="dialog" aria-modal="true" aria-labelledby="session-modal-title">
+	<div data-modal-backdrop class="flex min-h-full items-center justify-center">
+		<div class="relative my-auto w-full max-w-xl border border-[rgba(255,255,255,0.12)] bg-[#111119] p-6 shadow-2xl sm:p-8">
+			<button type="button" data-modal-close aria-label="Close session form" class="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center text-2xl leading-none text-paper/70 transition-colors hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary">&times;</button>
+			<div class="max-w-lg pr-10">
+				<p class="text-sm font-semibold uppercase tracking-[0.14em] text-brand-primary">Follow the friction</p>
+				<h2 id="session-modal-title" class="mt-3 font-display text-[clamp(2.25rem,6vw,4rem)] font-semibold leading-[0.92] tracking-[-0.07em] text-paper">Start Your Session.</h2>
+				<p class="mt-5 text-base leading-7 text-paper/72">Bring whatever feels harder than it should. We’ll start there.</p>
+			</div>
+			<form data-session-form action="https://y1krjhl41m.execute-api.us-east-1.amazonaws.com/prod/leads" method="POST" novalidate class="mt-6 grid gap-4">
+				<input type="hidden" name="source" value="" />
+				<div class="grid gap-4 sm:grid-cols-2">
+					<label class="grid gap-2 text-sm font-medium text-paper/78">Name<input required type="text" name="name" autocomplete="name" class="min-h-12 border border-brand-secondary bg-brand-navy-dark px-4 py-3 text-base text-paper outline-none transition-colors placeholder:text-paper/35 focus:border-brand-primary" /></label>
+					<label class="grid gap-2 text-sm font-medium text-paper/78">Email<input required type="email" name="email" autocomplete="email" class="min-h-12 border border-brand-secondary bg-brand-navy-dark px-4 py-3 text-base text-paper outline-none transition-colors placeholder:text-paper/35 focus:border-brand-primary" /></label>
+				</div>
+				<div class="flex flex-wrap items-center gap-4">
+					<button data-form-submit type="submit" class="inline-flex min-h-12 items-center justify-center rounded-full bg-brand-accent px-6 py-3.5 text-sm font-semibold text-brand-navy-dark transition-colors hover:bg-brand-accent-muted focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-accent disabled:cursor-wait disabled:opacity-60">Start your session</button>
+					<p data-form-status class="min-h-6 text-sm leading-6 text-paper/70" aria-live="polite"></p>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
