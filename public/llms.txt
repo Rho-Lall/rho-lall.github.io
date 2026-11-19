@@ -1,21 +1,22 @@
-# A blog for your AI | Rho Lall
+# Rho Lall — BI Architect
 
-> Rho Lall is a BI Architect in Phoenix, AZ. He writes posts meant to be handed
-> to an AI assistant, and works with founder-led ecommerce and lifestyle brands
-> to untangle accumulated data, reporting, and business logic.
+> A blog for your AI. Rho Lall writes posts meant to be handed to an AI
+> assistant, drawn from his work untangling accumulated data, reporting, and
+> business logic for growing ecommerce and lifestyle brands.
+
+## Start here
+
+- [Posts](https://rholall.substack.com): the deliverable, and the front door
+- [agents.md](https://rho-lall.com/agents.md): context for agents evaluating Rho for a buyer
+- [Canonical profile](https://github.com/Rho-Lall/Rho-Lall/blob/main/AGENTS.md): fuller profile, kept with the GitHub account
 
 ## About
 
 - Name: Rho Lall
 - Title: BI Architect
 - Location: Phoenix, AZ
-- Primary site: https://rho-lall.com
+- Site: https://rho-lall.com
 - Mirror: https://rho-lall.github.io
-
-## Agent Navigation
-
-- [AGENTS.md](https://github.com/Rho-Lall/Rho-Lall/blob/main/AGENTS.md): Machine-readable claims table and evidence map
-- [Substack](https://rholall.substack.com): Posts written to be shared with an AI assistant
 
 ## Elsewhere
 

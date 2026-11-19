@@ -30,6 +30,8 @@ const requiredStrings = [
   'application/ld+json',
 ];
 
+const requiredFiles = ['dist/llms.txt', 'dist/robots.txt', 'dist/agents.md', 'dist/agents.txt'];
+
 function main() {
   const html = readFileSync(resolve('dist/index.html'), 'utf-8');
   const missing = findMissingContent(html, requiredStrings);
@@ -41,11 +43,13 @@ function main() {
     process.exit(1);
   }
 
-  try {
-    readFileSync(resolve('dist/llms.txt'), 'utf-8');
-  } catch {
-    console.error('BUILD VERIFICATION FAILED: dist/llms.txt not found');
-    process.exit(1);
+  for (const file of requiredFiles) {
+    try {
+      readFileSync(resolve(file), 'utf-8');
+    } catch {
+      console.error(`BUILD VERIFICATION FAILED: ${file} not found`);
+      process.exit(1);
+    }
   }
 
   console.log('BUILD VERIFICATION PASSED: All required content present.');
